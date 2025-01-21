@@ -1,46 +1,45 @@
 Pod::Spec.new do |spec|
-  # Metadata
- spec.name         = "Ibadah"
+  spec.name         = "Ibadah"
   spec.version      = "1.0.0"
   spec.summary      = "An Islamic SDK for MyGP iOS app"
   spec.description  = <<-DESC
     Ibadah provides Islamic content and features for the MyGP iOS app, including prayer times, 
-    Quran recitations, and other Islamic functionalities. This SDK helps integrate Islamic 
-    features seamlessly into iOS applications.
+    Quran recitations, and other Islamic functionalities.
   DESC
   spec.homepage     = "https://github.com/shadhin-music/IbadahGPSDKiOS"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Talut Mahamud Deep" => "gakkdeep@gmail.com" }
   
-  # Platform
   spec.platform     = :ios
   spec.ios.deployment_target = "13.0"
   spec.swift_version = "5.7"
   
-  # Source location
   spec.source       = { 
     :git => "https://github.com/shadhin-music/IbadahGPSDKiOS.git", 
     :tag => spec.version.to_s 
   }
   
-  # Framework
+  # Framework and Resources
   spec.ios.vendored_frameworks = "DeenIslamSDK.xcframework"
+  spec.preserve_paths = "DeenIslamSDK.xcframework/**/*"
   
-  # Resource bundles
-  spec.resource_bundles = {
-    'Ibadah' => ['DeenIslamSDK/**/*.{nib,xib,storyboard,xcassets,json,lproj}']
-  }
-  
-  # Build settings
-  spec.requires_arc = true
-  spec.static_framework = true
-  spec.frameworks = 'UIKit'
-  
-  # Additional configurations to prevent sandbox issues
+  # Build settings to handle sandbox issues
   spec.pod_target_xcconfig = {
     'SKIP_INSTALL' => 'NO',
     'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
     'CODE_SIGNING_ALLOWED' => 'YES',
+    'CODE_SIGNING_REQUIRED' => 'NO',
+    'CODE_SIGN_IDENTITY' => '',
+    'ENABLE_BITCODE' => 'NO',
+    'OTHER_LDFLAGS' => '$(inherited) -ObjC'
+  }
+  
+  spec.user_target_xcconfig = {
+    'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
     'ENABLE_BITCODE' => 'NO'
   }
+  
+  spec.requires_arc = true
+  spec.static_framework = true
+  spec.frameworks = 'UIKit'
 end
