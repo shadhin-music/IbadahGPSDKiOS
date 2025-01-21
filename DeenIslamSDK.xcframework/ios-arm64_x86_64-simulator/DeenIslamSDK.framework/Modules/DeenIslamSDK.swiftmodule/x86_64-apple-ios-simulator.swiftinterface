@@ -1,0 +1,2451 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DeenIslamSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import AVFoundation
+import AVKit
+import Accelerate
+import Combine
+import CommonCrypto
+import CoreGraphics
+import CoreImage
+import CoreLocation
+import CoreMedia
+@_exported import DeenIslamSDK
+import DeveloperToolsSupport
+import Dispatch
+import EventKit
+import Foundation
+import ImageIO
+import MediaPlayer
+import MobileCoreServices
+import ObjectiveC
+import QuartzCore
+import Swift
+import SwiftUI
+import SystemConfiguration
+import UIKit
+import UniformTypeIdentifiers
+import UserNotifications
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CustomView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var sdk: DeenIslamSDK.DeenIslamGPSDK?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToSuperview()
+  @objc deinit
+}
+extension DeenIslamSDK.CustomView : UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegate, UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, insetForSectionAt section: Swift.Int) -> UIKit.UIEdgeInsets
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, minimumLineSpacingForSectionAt section: Swift.Int) -> CoreFoundation.CGFloat
+}
+extension DeenIslamSDK.CustomView : UIKit.UIViewControllerTransitioningDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func presentationController(forPresented presented: UIKit.UIViewController, presenting: UIKit.UIViewController?, source: UIKit.UIViewController) -> UIKit.UIPresentationController?
+}
+public typealias ConstraintView = UIKit.UIView
+public protocol VGPlayerResourceLoaderManagerDelegate : AnyObject {
+  func resourceLoaderManager(_ loadURL: Foundation.URL, didFailWithError error: (any Swift.Error)?)
+}
+@objc @_inheritsConvenienceInitializers open class VGPlayerResourceLoaderManager : ObjectiveC.NSObject {
+  weak open var delegate: (any DeenIslamSDK.VGPlayerResourceLoaderManagerDelegate)?
+  @objc override dynamic public init()
+  open func cleanCache()
+  open func cancelLoaders()
+  open func assetURL(_ url: Foundation.URL?) -> Foundation.URL?
+  open func playerItem(_ url: Foundation.URL) -> AVFoundation.AVPlayerItem
+  @objc deinit
+}
+extension DeenIslamSDK.VGPlayerResourceLoaderManager : AVFoundation.AVAssetResourceLoaderDelegate {
+  @objc dynamic public func resourceLoader(_ resourceLoader: AVFoundation.AVAssetResourceLoader, shouldWaitForLoadingOfRequestedResource loadingRequest: AVFoundation.AVAssetResourceLoadingRequest) -> Swift.Bool
+  @objc dynamic public func resourceLoader(_ resourceLoader: AVFoundation.AVAssetResourceLoader, didCancel loadingRequest: AVFoundation.AVAssetResourceLoadingRequest)
+}
+extension DeenIslamSDK.VGPlayerResourceLoaderManager : DeenIslamSDK.VGPlayerResourceLoaderDelegate {
+  public func resourceLoader(_ resourceLoader: DeenIslamSDK.VGPlayerResourceLoader, didFailWithError error: (any Swift.Error)?)
+}
+public protocol ConstraintDSL {
+  var target: Swift.AnyObject? { get }
+  func setLabel(_ value: Swift.String?)
+  func label() -> Swift.String?
+}
+extension DeenIslamSDK.ConstraintDSL {
+  public func setLabel(_ value: Swift.String?)
+  public func label() -> Swift.String?
+}
+public protocol ConstraintBasicAttributesDSL : DeenIslamSDK.ConstraintDSL {
+}
+extension DeenIslamSDK.ConstraintBasicAttributesDSL {
+  public var left: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  public var top: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  public var right: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  public var bottom: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  public var leading: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  public var trailing: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  public var width: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  public var height: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  public var centerX: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  public var centerY: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  public var edges: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  public var size: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  public var center: DeenIslamSDK.ConstraintItem {
+    get
+  }
+}
+public protocol ConstraintAttributesDSL : DeenIslamSDK.ConstraintBasicAttributesDSL {
+}
+extension DeenIslamSDK.ConstraintAttributesDSL {
+  public var baseline: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, macOS 10.11, *)
+  public var lastBaseline: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, macOS 10.11, *)
+  public var firstBaseline: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var leftMargin: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var topMargin: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var rightMargin: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var bottomMargin: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var leadingMargin: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var trailingMargin: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var centerXWithinMargins: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var centerYWithinMargins: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var margins: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var centerWithinMargins: DeenIslamSDK.ConstraintItem {
+    get
+  }
+}
+@available(iOSApplicationExtension, unavailable)
+extension DeenIslamSDK.IQKeyboardManager {
+  @objc final public var movedDistance: CoreFoundation.CGFloat {
+    @objc get
+  }
+  @objc final public var movedDistanceChanged: ((CoreFoundation.CGFloat) -> Swift.Void)? {
+    @objc get
+    @objc set(newValue)
+  }
+}
+@available(iOSApplicationExtension, unavailable)
+@objc extension UIKit.UIViewController {
+  @objc @_Concurrency.MainActor @preconcurrency dynamic open func parentIQContainerViewController() -> UIKit.UIViewController?
+  @objc @available(*, deprecated, message: "Due to change in core-logic of handling distance between textField and keyboard distance, this layout contraint tweak is no longer needed and things will just work out of the box regardless of constraint pinned with safeArea/layoutGuide/superview.")
+  @IBOutlet @_Concurrency.MainActor @preconcurrency dynamic public var IQLayoutGuideConstraint: UIKit.NSLayoutConstraint? {
+    @objc get
+    @objc set(newValue)
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class VGPlayerLoadingIndicator : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc convenience dynamic public init()
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency open var lineWidth: CoreFoundation.CGFloat {
+    get
+    set(newValue)
+  }
+  @_Concurrency.MainActor @preconcurrency open var strokeColor: UIKit.UIColor {
+    get
+    set(newValue)
+  }
+  @_Concurrency.MainActor @preconcurrency open func startAnimating()
+  @_Concurrency.MainActor @preconcurrency open func stopAnimating()
+  @objc deinit
+}
+@objc public protocol DeenIslamSDKNotifier : ObjectiveC.NSObjectProtocol {
+  @objc func tokenStatus(token isValid: Swift.Bool, error: Swift.String?)
+  @objc func errorMessage(error: Swift.String)
+}
+@_hasMissingDesignatedInitializers public class ConstraintMakerRelatable {
+  @discardableResult
+  public func equalTo(_ other: any DeenIslamSDK.ConstraintRelatableTarget, _ file: Swift.String = #file, _ line: Swift.UInt = #line) -> DeenIslamSDK.ConstraintMakerEditable
+  @discardableResult
+  public func equalToSuperview(_ file: Swift.String = #file, _ line: Swift.UInt = #line) -> DeenIslamSDK.ConstraintMakerEditable
+  @discardableResult
+  public func lessThanOrEqualTo(_ other: any DeenIslamSDK.ConstraintRelatableTarget, _ file: Swift.String = #file, _ line: Swift.UInt = #line) -> DeenIslamSDK.ConstraintMakerEditable
+  @discardableResult
+  public func lessThanOrEqualToSuperview(_ file: Swift.String = #file, _ line: Swift.UInt = #line) -> DeenIslamSDK.ConstraintMakerEditable
+  @discardableResult
+  public func greaterThanOrEqualTo(_ other: any DeenIslamSDK.ConstraintRelatableTarget, _ file: Swift.String = #file, line: Swift.UInt = #line) -> DeenIslamSDK.ConstraintMakerEditable
+  @discardableResult
+  public func greaterThanOrEqualToSuperview(_ file: Swift.String = #file, line: Swift.UInt = #line) -> DeenIslamSDK.ConstraintMakerEditable
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class AudioPlayer : ObjectiveC.NSObject {
+  public var currentItem: DeenIslamSDK.AudioItem? {
+    get
+  }
+  weak public var delegate: (any DeenIslamSDK.AudioPlayerDelegate)?
+  public var maximumConnectionLossTime: Foundation.TimeInterval
+  public var adjustQualityAutomatically: Swift.Bool
+  public var defaultQuality: DeenIslamSDK.AudioQuality
+  public var adjustQualityTimeInternal: Foundation.TimeInterval {
+    get
+    set
+  }
+  public var adjustQualityAfterInterruptionCount: Swift.Int {
+    get
+    set
+  }
+  public var maximumRetryCount: Swift.Int {
+    get
+    set
+  }
+  public var retryTimeout: Foundation.TimeInterval {
+    get
+    set
+  }
+  public var resumeAfterInterruption: Swift.Bool
+  public var resumeAfterConnectionLoss: Swift.Bool
+  public var mode: DeenIslamSDK.AudioPlayerMode {
+    get
+    set
+  }
+  public var volume: Swift.Float {
+    get
+    set
+  }
+  public var rate: Swift.Float {
+    get
+    set
+  }
+  public var bufferingStrategy: DeenIslamSDK.AudioPlayerBufferingStrategy {
+    get
+    set
+  }
+  public var preferredBufferDurationBeforePlayback: Foundation.TimeInterval
+  public var preferredForwardBufferDuration: Foundation.TimeInterval
+  public enum SeekingBehavior {
+    case multiplyRate(Swift.Float)
+    case changeTime(every: Foundation.TimeInterval, delta: Foundation.TimeInterval)
+  }
+  public var seekingBehavior: DeenIslamSDK.AudioPlayer.SeekingBehavior {
+    get
+    set
+  }
+  public var state: DeenIslamSDK.AudioPlayerState {
+    get
+  }
+  public var currentQuality: DeenIslamSDK.AudioQuality {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ConstraintDescription {
+  @objc deinit
+}
+public enum AudioPlayerError : Swift.Error {
+  case maximumRetryCountHit
+  case foundationError(any Swift.Error)
+  case itemNotConsideredPlayable
+  case noItemsConsideredPlayable
+}
+public enum AudioPlayerState {
+  case buffering
+  case playing
+  case paused
+  case stopped
+  case waitingForConnection
+  case failed(DeenIslamSDK.AudioPlayerError)
+}
+extension DeenIslamSDK.AudioPlayerState : Swift.Equatable {
+}
+public func == (lhs: DeenIslamSDK.AudioPlayerState, rhs: DeenIslamSDK.AudioPlayerState) -> Swift.Bool
+public protocol ConstraintConstantTarget {
+}
+extension CoreFoundation.CGPoint : DeenIslamSDK.ConstraintConstantTarget {
+}
+extension CoreFoundation.CGSize : DeenIslamSDK.ConstraintConstantTarget {
+}
+extension UIKit.UIEdgeInsets : DeenIslamSDK.ConstraintConstantTarget {
+}
+@_inheritsConvenienceInitializers @available(iOSApplicationExtension, unavailable)
+@objc @_Concurrency.MainActor @preconcurrency open class IQTextView : UIKit.UITextView {
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect, textContainer: UIKit.NSTextContainer?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func awakeFromNib()
+  @objc deinit
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var placeholderTextColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var placeholder: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency open var attributedPlaceholder: Foundation.NSAttributedString? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var text: Swift.String! {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var attributedText: Foundation.NSAttributedString! {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var font: UIKit.UIFont? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var textAlignment: UIKit.NSTextAlignment {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override weak dynamic open var delegate: (any UIKit.UITextViewDelegate)? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+}
+public protocol ConstraintInsetTarget : DeenIslamSDK.ConstraintConstantTarget {
+}
+extension Swift.Int : DeenIslamSDK.ConstraintInsetTarget {
+}
+extension Swift.UInt : DeenIslamSDK.ConstraintInsetTarget {
+}
+extension Swift.Float : DeenIslamSDK.ConstraintInsetTarget {
+}
+extension Swift.Double : DeenIslamSDK.ConstraintInsetTarget {
+}
+extension CoreFoundation.CGFloat : DeenIslamSDK.ConstraintInsetTarget {
+}
+extension UIKit.UIEdgeInsets : DeenIslamSDK.ConstraintInsetTarget {
+}
+prefix operator ^
+@_hasMissingDesignatedInitializers final public class ConstraintItem {
+  @objc deinit
+}
+public func == (lhs: DeenIslamSDK.ConstraintItem, rhs: DeenIslamSDK.ConstraintItem) -> Swift.Bool
+extension DeenIslamSDK.AudioPlayer {
+  public func resume()
+  public func pause()
+  public func previous()
+  public func next()
+  public func nextOrStop()
+  public func stop()
+  public func seek(to time: Foundation.TimeInterval, byAdaptingTimeToFitSeekableRanges: Swift.Bool = false, toleranceBefore: CoreMedia.CMTime = CMTime.positiveInfinity, toleranceAfter: CoreMedia.CMTime = CMTime.positiveInfinity, completionHandler: ((Swift.Bool) -> Swift.Void)? = nil)
+  public func seekToSeekableRangeStart(padding: Foundation.TimeInterval, completionHandler: ((Swift.Bool) -> Swift.Void)? = nil)
+  public func seekToSeekableRangeEnd(padding: Foundation.TimeInterval, completionHandler: ((Swift.Bool) -> Swift.Void)? = nil)
+  public func remoteControlReceived(with event: UIKit.UIEvent)
+}
+@available(iOSApplicationExtension, unavailable)
+extension DeenIslamSDK.IQKeyboardManager {
+  @objc final public var enableDebugging: Swift.Bool {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc final public func registerAllNotifications()
+  @objc final public func unregisterAllNotifications()
+  public struct Static {
+  }
+}
+public protocol VGPlayerDownloadeURLSessionManagerDelegate : ObjectiveC.NSObjectProtocol {
+  func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive response: Foundation.URLResponse, completionHandler: @escaping (Foundation.URLSession.ResponseDisposition) -> Swift.Void)
+  func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive data: Foundation.Data)
+  func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWithError error: (any Swift.Error)?)
+}
+@objc open class VGPlayerDownloadURLSessionManager : ObjectiveC.NSObject, Foundation.URLSessionDataDelegate {
+  weak open var delegate: (any DeenIslamSDK.VGPlayerDownloadeURLSessionManagerDelegate)?
+  public init(delegate: (any DeenIslamSDK.VGPlayerDownloadeURLSessionManagerDelegate)?)
+  @objc public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive response: Foundation.URLResponse, completionHandler: @escaping (Foundation.URLSession.ResponseDisposition) -> Swift.Void)
+  @objc public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive data: Foundation.Data)
+  @objc public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWithError error: (any Swift.Error)?)
+  @objc deinit
+}
+@available(iOSApplicationExtension, unavailable)
+public let kIQUseDefaultKeyboardDistance: CoreFoundation.CGFloat
+@available(iOSApplicationExtension, unavailable)
+@objc extension UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public var keyboardDistanceFromTextField: CoreFoundation.CGFloat {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public var ignoreSwitchingByNextPrevious: Swift.Bool {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public var enableMode: DeenIslamSDK.IQEnableMode {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public var shouldResignOnTouchOutsideMode: DeenIslamSDK.IQEnableMode {
+    @objc get
+    @objc set(newValue)
+  }
+}
+public typealias Image = UIKit.UIImage
+public enum AudioQuality : Swift.Int {
+  case low
+  case medium
+  case high
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct AudioItemURL {
+  public let quality: DeenIslamSDK.AudioQuality
+  public let url: Foundation.URL
+  public init?(quality: DeenIslamSDK.AudioQuality, url: Foundation.URL?)
+}
+@objc open class AudioItem : ObjectiveC.NSObject {
+  convenience public init?(highQualitySoundURL: Foundation.URL? = nil, mediumQualitySoundURL: Foundation.URL? = nil, lowQualitySoundURL: Foundation.URL? = nil)
+  public init?(soundURLs: [DeenIslamSDK.AudioQuality : Foundation.URL])
+  open var highestQualityURL: DeenIslamSDK.AudioItemURL {
+    get
+  }
+  open var mediumQualityURL: DeenIslamSDK.AudioItemURL {
+    get
+  }
+  open var lowestQualityURL: DeenIslamSDK.AudioItemURL {
+    get
+  }
+  @objc dynamic open var artist: Swift.String?
+  @objc dynamic open var title: Swift.String?
+  @objc dynamic open var album: Swift.String?
+  @objc dynamic open var trackCount: Foundation.NSNumber?
+  @objc dynamic open var trackNumber: Foundation.NSNumber?
+  open var artworkImage: DeenIslamSDK.Image? {
+    get
+    set
+  }
+  @objc dynamic open var artwork: MediaPlayer.MPMediaItemArtwork?
+  open func parseMetadata(_ items: [AVFoundation.AVMetadataItem])
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(iOSApplicationExtension, unavailable)
+@objc @_Concurrency.MainActor @preconcurrency open class IQPreviousNextView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ConstraintMakerFinalizable {
+  @discardableResult
+  public func labeled(_ label: Swift.String) -> DeenIslamSDK.ConstraintMakerFinalizable
+  public var constraint: DeenIslamSDK.Constraint {
+    get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOSApplicationExtension, unavailable)
+@objc @_Concurrency.MainActor @preconcurrency open class IQTitleBarButtonItem : DeenIslamSDK.IQBarButtonItem {
+  @objc @_Concurrency.MainActor @preconcurrency open var titleFont: UIKit.UIFont? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var title: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor @preconcurrency open var titleColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor @preconcurrency open var selectableTitleColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override open var invocation: DeenIslamSDK.IQInvocation? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor @preconcurrency convenience public init(title: Swift.String?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol VGPlayerResourceLoadingRequestDelegate : AnyObject {
+  func resourceLoadingRequest(_ resourceLoadingRequest: DeenIslamSDK.VGPlayerResourceLoadingRequest, didCompleteWithError error: (any Swift.Error)?)
+}
+@objc open class VGPlayerResourceLoadingRequest : ObjectiveC.NSObject {
+  open var request: AVFoundation.AVAssetResourceLoadingRequest {
+    get
+  }
+  weak open var delegate: (any DeenIslamSDK.VGPlayerResourceLoadingRequestDelegate)?
+  public init(_ downloader: DeenIslamSDK.VGPlayerDownloader, _ resourceLoadingRequest: AVFoundation.AVAssetResourceLoadingRequest)
+  open func finish()
+  open func startWork()
+  open func cancel()
+  @objc deinit
+}
+extension DeenIslamSDK.VGPlayerResourceLoadingRequest : DeenIslamSDK.VGPlayerDownloaderDelegate {
+  public func downloader(_ downloader: DeenIslamSDK.VGPlayerDownloader, didReceiveData data: Foundation.Data)
+  public func downloader(_ downloader: DeenIslamSDK.VGPlayerDownloader, didFinishedWithError error: (any Swift.Error)?)
+  public func downloader(_ downloader: DeenIslamSDK.VGPlayerDownloader, didReceiveResponse response: Foundation.URLResponse)
+}
+public struct VGPlayerError : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public typealias TimeRange = (earliest: Foundation.TimeInterval, latest: Foundation.TimeInterval)
+extension DeenIslamSDK.AudioPlayer {
+  public var currentItemProgression: Foundation.TimeInterval? {
+    get
+  }
+  public var currentItemDuration: Foundation.TimeInterval? {
+    get
+  }
+  public var currentItemSeekableRange: DeenIslamSDK.TimeRange? {
+    get
+  }
+  public var currentItemLoadedRange: DeenIslamSDK.TimeRange? {
+    get
+  }
+  public var currentItemLoadedAhead: Foundation.TimeInterval? {
+    get
+  }
+}
+@available(iOS 8.0, *)
+public typealias ConstraintLayoutSupport = UIKit.UILayoutSupport
+@available(iOS 9.0, macOS 10.11, *)
+extension UIKit.UILayoutGuide {
+  @_Concurrency.MainActor @preconcurrency public var snp: DeenIslamSDK.ConstraintLayoutGuideDSL {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers open class VGPlayerCacheMedia : ObjectiveC.NSObject, Foundation.NSCoding {
+  open var contentType: Swift.String?
+  open var isByteRangeAccessSupported: Swift.Bool
+  open var contentLength: Swift.Int64
+  open var downloadedLength: Swift.UInt64
+  @objc override dynamic public init()
+  @objc override dynamic open var description: Swift.String {
+    @objc get
+  }
+  @objc public func encode(with aCoder: Foundation.NSCoder)
+  @objc required public init(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class LayoutConstraint : UIKit.NSLayoutConstraint {
+  @_Concurrency.MainActor @preconcurrency public var label: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ConstraintMaker {
+  public var left: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var top: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var bottom: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var right: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var leading: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var trailing: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var width: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var height: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var centerX: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var centerY: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var baseline: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var lastBaseline: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, macOS 10.11, *)
+  public var firstBaseline: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var leftMargin: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var rightMargin: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var topMargin: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var bottomMargin: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var leadingMargin: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var trailingMargin: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var centerXWithinMargins: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var centerYWithinMargins: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var edges: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var size: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var center: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var margins: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var centerWithinMargins: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @objc deinit
+}
+@available(iOS 9.0, *)
+public typealias ConstraintLayoutGuide = UIKit.UILayoutGuide
+@_inheritsConvenienceInitializers @available(iOSApplicationExtension, unavailable)
+@objc @_Concurrency.MainActor @preconcurrency open class IQBarButtonItem : UIKit.UIBarButtonItem {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init()
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var tintColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor @preconcurrency open func setTarget(_ target: Swift.AnyObject?, action: ObjectiveC.Selector?)
+  @objc @_Concurrency.MainActor @preconcurrency open var invocation: DeenIslamSDK.IQInvocation?
+  @objc deinit
+}
+@available(iOSApplicationExtension, unavailable)
+@objc extension UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func viewContainingController() -> UIKit.UIViewController?
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func topMostController() -> UIKit.UIViewController?
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func parentContainerViewController() -> UIKit.UIViewController?
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func superviewOfClassType(_ classType: UIKit.UIView.Type, belowView: UIKit.UIView? = nil) -> UIKit.UIView?
+}
+public enum AFError : Swift.Error {
+  public enum MultipartEncodingFailureReason {
+    case bodyPartURLInvalid(url: Foundation.URL)
+    case bodyPartFilenameInvalid(in: Foundation.URL)
+    case bodyPartFileNotReachable(at: Foundation.URL)
+    case bodyPartFileNotReachableWithError(atURL: Foundation.URL, error: any Swift.Error)
+    case bodyPartFileIsDirectory(at: Foundation.URL)
+    case bodyPartFileSizeNotAvailable(at: Foundation.URL)
+    case bodyPartFileSizeQueryFailedWithError(forURL: Foundation.URL, error: any Swift.Error)
+    case bodyPartInputStreamCreationFailed(for: Foundation.URL)
+    case outputStreamCreationFailed(for: Foundation.URL)
+    case outputStreamFileAlreadyExists(at: Foundation.URL)
+    case outputStreamURLInvalid(url: Foundation.URL)
+    case outputStreamWriteFailed(error: any Swift.Error)
+    case inputStreamReadFailed(error: any Swift.Error)
+  }
+  public struct UnexpectedInputStreamLength : Swift.Error {
+    public var bytesExpected: Swift.UInt64
+    public var bytesRead: Swift.UInt64
+  }
+  public enum ParameterEncodingFailureReason {
+    case missingURL
+    case jsonEncodingFailed(error: any Swift.Error)
+    case customEncodingFailed(error: any Swift.Error)
+  }
+  public enum ParameterEncoderFailureReason {
+    public enum RequiredComponent {
+      case url
+      case httpMethod(rawValue: Swift.String)
+    }
+    case missingRequiredComponent(DeenIslamSDK.AFError.ParameterEncoderFailureReason.RequiredComponent)
+    case encoderFailed(error: any Swift.Error)
+  }
+  public enum ResponseValidationFailureReason {
+    case dataFileNil
+    case dataFileReadFailed(at: Foundation.URL)
+    case missingContentType(acceptableContentTypes: [Swift.String])
+    case unacceptableContentType(acceptableContentTypes: [Swift.String], responseContentType: Swift.String)
+    case unacceptableStatusCode(code: Swift.Int)
+    case customValidationFailed(error: any Swift.Error)
+  }
+  public enum ResponseSerializationFailureReason {
+    case inputDataNilOrZeroLength
+    case inputFileNil
+    case inputFileReadFailed(at: Foundation.URL)
+    case stringSerializationFailed(encoding: Swift.String.Encoding)
+    case jsonSerializationFailed(error: any Swift.Error)
+    case decodingFailed(error: any Swift.Error)
+    case customSerializationFailed(error: any Swift.Error)
+    case invalidEmptyResponse(type: Swift.String)
+  }
+  public enum ServerTrustFailureReason {
+    public struct Output {
+      public let host: Swift.String
+      public let trust: Security.SecTrust
+      public let status: Darwin.OSStatus
+      public let result: Security.SecTrustResultType
+    }
+    case noRequiredEvaluator(host: Swift.String)
+    case noCertificatesFound
+    case noPublicKeysFound
+    case policyApplicationFailed(trust: Security.SecTrust, policy: Security.SecPolicy, status: Darwin.OSStatus)
+    case settingAnchorCertificatesFailed(status: Darwin.OSStatus, certificates: [Security.SecCertificate])
+    case revocationPolicyCreationFailed
+    case trustEvaluationFailed(error: (any Swift.Error)?)
+    case defaultEvaluationFailed(output: DeenIslamSDK.AFError.ServerTrustFailureReason.Output)
+    case hostValidationFailed(output: DeenIslamSDK.AFError.ServerTrustFailureReason.Output)
+    case revocationCheckFailed(output: DeenIslamSDK.AFError.ServerTrustFailureReason.Output, options: DeenIslamSDK.RevocationTrustEvaluator.Options)
+    case certificatePinningFailed(host: Swift.String, trust: Security.SecTrust, pinnedCertificates: [Security.SecCertificate], serverCertificates: [Security.SecCertificate])
+    case publicKeyPinningFailed(host: Swift.String, trust: Security.SecTrust, pinnedKeys: [Security.SecKey], serverKeys: [Security.SecKey])
+    case customEvaluationFailed(error: any Swift.Error)
+  }
+  public enum URLRequestValidationFailureReason {
+    case bodyDataInGETRequest(Foundation.Data)
+  }
+  case createUploadableFailed(error: any Swift.Error)
+  case createURLRequestFailed(error: any Swift.Error)
+  case downloadedFileMoveFailed(error: any Swift.Error, source: Foundation.URL, destination: Foundation.URL)
+  case explicitlyCancelled
+  case invalidURL(url: any DeenIslamSDK.URLConvertible)
+  case multipartEncodingFailed(reason: DeenIslamSDK.AFError.MultipartEncodingFailureReason)
+  case parameterEncodingFailed(reason: DeenIslamSDK.AFError.ParameterEncodingFailureReason)
+  case parameterEncoderFailed(reason: DeenIslamSDK.AFError.ParameterEncoderFailureReason)
+  case requestAdaptationFailed(error: any Swift.Error)
+  case requestRetryFailed(retryError: any Swift.Error, originalError: any Swift.Error)
+  case responseValidationFailed(reason: DeenIslamSDK.AFError.ResponseValidationFailureReason)
+  case responseSerializationFailed(reason: DeenIslamSDK.AFError.ResponseSerializationFailureReason)
+  case serverTrustEvaluationFailed(reason: DeenIslamSDK.AFError.ServerTrustFailureReason)
+  case sessionDeinitialized
+  case sessionInvalidated(error: (any Swift.Error)?)
+  case sessionTaskFailed(error: any Swift.Error)
+  case urlRequestValidationFailed(reason: DeenIslamSDK.AFError.URLRequestValidationFailureReason)
+}
+extension Swift.Error {
+  public var asAFError: DeenIslamSDK.AFError? {
+    get
+  }
+  public func asAFError(orFailWith message: @autoclosure () -> Swift.String, file: Swift.StaticString = #file, line: Swift.UInt = #line) -> DeenIslamSDK.AFError
+}
+extension DeenIslamSDK.AFError {
+  public var isSessionDeinitializedError: Swift.Bool {
+    get
+  }
+  public var isSessionInvalidatedError: Swift.Bool {
+    get
+  }
+  public var isExplicitlyCancelledError: Swift.Bool {
+    get
+  }
+  public var isInvalidURLError: Swift.Bool {
+    get
+  }
+  public var isParameterEncodingError: Swift.Bool {
+    get
+  }
+  public var isParameterEncoderError: Swift.Bool {
+    get
+  }
+  public var isMultipartEncodingError: Swift.Bool {
+    get
+  }
+  public var isRequestAdaptationError: Swift.Bool {
+    get
+  }
+  public var isResponseValidationError: Swift.Bool {
+    get
+  }
+  public var isResponseSerializationError: Swift.Bool {
+    get
+  }
+  public var isServerTrustEvaluationError: Swift.Bool {
+    get
+  }
+  public var isRequestRetryError: Swift.Bool {
+    get
+  }
+  public var isCreateUploadableError: Swift.Bool {
+    get
+  }
+  public var isCreateURLRequestError: Swift.Bool {
+    get
+  }
+  public var isDownloadedFileMoveError: Swift.Bool {
+    get
+  }
+  public var isSessionTaskError: Swift.Bool {
+    get
+  }
+}
+extension DeenIslamSDK.AFError {
+  public var url: Foundation.URL? {
+    get
+  }
+  public var underlyingError: (any Swift.Error)? {
+    get
+  }
+  public var acceptableContentTypes: [Swift.String]? {
+    get
+  }
+  public var responseContentType: Swift.String? {
+    get
+  }
+  public var responseCode: Swift.Int? {
+    get
+  }
+  public var failedStringEncoding: Swift.String.Encoding? {
+    get
+  }
+  public var sourceURL: Foundation.URL? {
+    get
+  }
+  public var destinationURL: Foundation.URL? {
+    get
+  }
+  public var downloadResumeData: Foundation.Data? {
+    get
+  }
+}
+extension DeenIslamSDK.AFError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers open class VGPlayerCacheSession : ObjectiveC.NSObject {
+  public var downloadQueue: Foundation.OperationQueue {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum AudioPlayerBufferingStrategy : Swift.Int {
+  case defaultBuffering = 0
+  case playWhenPreferredBufferDurationFull = 1
+  case playWhenBufferNotEmpty = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc open class VGPlayerCacheMediaWorker : ObjectiveC.NSObject {
+  open var cacheConfiguration: DeenIslamSDK.VGPlayerCacheMediaConfiguration? {
+    get
+  }
+  open var setupError: (any Swift.Error)? {
+    get
+  }
+  @objc deinit
+  public init(url: Foundation.URL)
+  open func cache(_ data: Foundation.Data, forRange range: Foundation.NSRange, closure: (Swift.Bool) -> Swift.Void)
+  open func cache(forRange range: Foundation.NSRange) -> Foundation.Data?
+  open func cachedDataActions(forRange range: Foundation.NSRange) -> Swift.Array<DeenIslamSDK.VGPlayerCacheAction>
+  open func set(cacheMedia: DeenIslamSDK.VGPlayerCacheMedia) -> Swift.Bool
+  open func save()
+  open func startWritting()
+  open func finishWritting()
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ConstraintMakerPriortizable : DeenIslamSDK.ConstraintMakerFinalizable {
+  @discardableResult
+  public func priority(_ amount: DeenIslamSDK.ConstraintPriority) -> DeenIslamSDK.ConstraintMakerFinalizable
+  @discardableResult
+  public func priority(_ amount: any DeenIslamSDK.ConstraintPriorityTarget) -> DeenIslamSDK.ConstraintMakerFinalizable
+  @available(*, deprecated, message: "Use priority(.required) instead.")
+  @discardableResult
+  public func priorityRequired() -> DeenIslamSDK.ConstraintMakerFinalizable
+  @discardableResult
+  public func priorityHigh() -> DeenIslamSDK.ConstraintMakerFinalizable
+  @discardableResult
+  public func priorityMedium() -> DeenIslamSDK.ConstraintMakerFinalizable
+  @discardableResult
+  public func priorityLow() -> DeenIslamSDK.ConstraintMakerFinalizable
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ConstraintMakerEditable : DeenIslamSDK.ConstraintMakerPriortizable {
+  @discardableResult
+  public func multipliedBy(_ amount: any DeenIslamSDK.ConstraintMultiplierTarget) -> DeenIslamSDK.ConstraintMakerEditable
+  @discardableResult
+  public func dividedBy(_ amount: any DeenIslamSDK.ConstraintMultiplierTarget) -> DeenIslamSDK.ConstraintMakerEditable
+  @discardableResult
+  public func offset(_ amount: any DeenIslamSDK.ConstraintOffsetTarget) -> DeenIslamSDK.ConstraintMakerEditable
+  @discardableResult
+  public func inset(_ amount: any DeenIslamSDK.ConstraintInsetTarget) -> DeenIslamSDK.ConstraintMakerEditable
+  @objc deinit
+}
+public enum VGPlayerState : Swift.Int {
+  case none
+  case playing
+  case paused
+  case playFinished
+  case error
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum VGPlayerBufferstate : Swift.Int {
+  case none
+  case readyToPlay
+  case buffering
+  case stop
+  case bufferFinished
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum VGVideoGravityMode : Swift.Int {
+  case resize
+  case resizeAspect
+  case resizeAspectFill
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum VGPlayerBackgroundMode : Swift.Int {
+  case suspend
+  case autoPlayAndPaused
+  case proceed
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol VGPlayerDelegate : AnyObject {
+  func vgPlayer(_ player: DeenIslamSDK.VGPlayer, stateDidChange state: DeenIslamSDK.VGPlayerState)
+  func vgPlayer(_ player: DeenIslamSDK.VGPlayer, playerDurationDidChange currentDuration: Foundation.TimeInterval, totalDuration: Foundation.TimeInterval)
+  func vgPlayer(_ player: DeenIslamSDK.VGPlayer, bufferStateDidChange state: DeenIslamSDK.VGPlayerBufferstate)
+  func vgPlayer(_ player: DeenIslamSDK.VGPlayer, bufferedDidChange bufferedDuration: Foundation.TimeInterval, totalDuration: Foundation.TimeInterval)
+  func vgPlayer(_ player: DeenIslamSDK.VGPlayer, playerFailed error: DeenIslamSDK.VGPlayerError)
+}
+extension DeenIslamSDK.VGPlayerDelegate {
+  public func vgPlayer(_ player: DeenIslamSDK.VGPlayer, stateDidChange state: DeenIslamSDK.VGPlayerState)
+  public func vgPlayer(_ player: DeenIslamSDK.VGPlayer, playerDurationDidChange currentDuration: Foundation.TimeInterval, totalDuration: Foundation.TimeInterval)
+  public func vgPlayer(_ player: DeenIslamSDK.VGPlayer, bufferStateDidChange state: DeenIslamSDK.VGPlayerBufferstate)
+  public func vgPlayer(_ player: DeenIslamSDK.VGPlayer, bufferedDidChange bufferedDuration: Foundation.TimeInterval, totalDuration: Foundation.TimeInterval)
+  public func vgPlayer(_ player: DeenIslamSDK.VGPlayer, playerFailed error: DeenIslamSDK.VGPlayerError)
+}
+@objc @_inheritsConvenienceInitializers open class VGPlayer : ObjectiveC.NSObject {
+  open var state: DeenIslamSDK.VGPlayerState {
+    get
+    set
+  }
+  open var bufferState: DeenIslamSDK.VGPlayerBufferstate {
+    get
+    set
+  }
+  open var displayView: DeenIslamSDK.VGPlayerView
+  open var gravityMode: DeenIslamSDK.VGVideoGravityMode
+  open var backgroundMode: DeenIslamSDK.VGPlayerBackgroundMode
+  open var bufferInterval: Swift.Double
+  weak open var delegate: (any DeenIslamSDK.VGPlayerDelegate)?
+  open var mediaFormat: DeenIslamSDK.VGPlayerMediaFormat {
+    get
+  }
+  open var totalDuration: Swift.Double {
+    get
+  }
+  open var currentDuration: Swift.Double {
+    get
+  }
+  open var buffering: Swift.Bool {
+    get
+  }
+  open var player: AVFoundation.AVPlayer? {
+    get
+  }
+  open var playerItem: AVFoundation.AVPlayerItem? {
+    get
+  }
+  open var playerAsset: AVFoundation.AVURLAsset? {
+    get
+  }
+  open var contentURL: Foundation.URL? {
+    get
+  }
+  open var error: DeenIslamSDK.VGPlayerError {
+    get
+  }
+  public init(URL: Foundation.URL?, playerView: DeenIslamSDK.VGPlayerView?)
+  convenience public init(URL: Foundation.URL)
+  convenience public init(playerView: DeenIslamSDK.VGPlayerView)
+  @objc override convenience dynamic public init()
+  @objc deinit
+}
+extension DeenIslamSDK.VGPlayer {
+  open func replaceVideo(_ URL: Foundation.URL)
+  open func reloadPlayer()
+  public func cleanPlayer()
+  public func play()
+  public func pause()
+  public func seekTime(_ time: Foundation.TimeInterval)
+  public func seekTime(_ time: Foundation.TimeInterval, completion: ((Swift.Bool) -> Swift.Void)?)
+}
+extension DeenIslamSDK.VGPlayer {
+  @objc override dynamic open func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+}
+public typealias Metadata = [AVFoundation.AVMetadataItem]
+public protocol AudioPlayerDelegate : AnyObject {
+  func audioPlayer(_ audioPlayer: DeenIslamSDK.AudioPlayer, didChangeStateFrom from: DeenIslamSDK.AudioPlayerState, to state: DeenIslamSDK.AudioPlayerState)
+  func audioPlayer(_ audioPlayer: DeenIslamSDK.AudioPlayer, shouldStartPlaying item: DeenIslamSDK.AudioItem) -> Swift.Bool
+  func audioPlayer(_ audioPlayer: DeenIslamSDK.AudioPlayer, willStartPlaying item: DeenIslamSDK.AudioItem)
+  func audioPlayer(_ audioPlayer: DeenIslamSDK.AudioPlayer, didUpdateProgressionTo time: Foundation.TimeInterval, percentageRead: Swift.Float)
+  func audioPlayer(_ audioPlayer: DeenIslamSDK.AudioPlayer, didFindDuration duration: Foundation.TimeInterval, for item: DeenIslamSDK.AudioItem)
+  func audioPlayer(_ audioPlayer: DeenIslamSDK.AudioPlayer, didUpdateEmptyMetadataOn item: DeenIslamSDK.AudioItem, withData data: DeenIslamSDK.Metadata)
+  func audioPlayer(_ audioPlayer: DeenIslamSDK.AudioPlayer, didLoad range: DeenIslamSDK.TimeRange, for item: DeenIslamSDK.AudioItem)
+}
+extension DeenIslamSDK.AudioPlayerDelegate {
+  public func audioPlayer(_ audioPlayer: DeenIslamSDK.AudioPlayer, didChangeStateFrom from: DeenIslamSDK.AudioPlayerState, to state: DeenIslamSDK.AudioPlayerState)
+  public func audioPlayer(_ audioPlayer: DeenIslamSDK.AudioPlayer, shouldStartPlaying item: DeenIslamSDK.AudioItem) -> Swift.Bool
+  public func audioPlayer(_ audioPlayer: DeenIslamSDK.AudioPlayer, willStartPlaying item: DeenIslamSDK.AudioItem)
+  public func audioPlayer(_ audioPlayer: DeenIslamSDK.AudioPlayer, didUpdateProgressionTo time: Foundation.TimeInterval, percentageRead: Swift.Float)
+  public func audioPlayer(_ audioPlayer: DeenIslamSDK.AudioPlayer, didFindDuration duration: Foundation.TimeInterval, for item: DeenIslamSDK.AudioItem)
+  public func audioPlayer(_ audioPlayer: DeenIslamSDK.AudioPlayer, didUpdateEmptyMetadataOn item: DeenIslamSDK.AudioItem, withData data: DeenIslamSDK.Metadata)
+  public func audioPlayer(_ audioPlayer: DeenIslamSDK.AudioPlayer, didLoad range: DeenIslamSDK.TimeRange, for item: DeenIslamSDK.AudioItem)
+}
+public protocol ConstraintOffsetTarget : DeenIslamSDK.ConstraintConstantTarget {
+}
+extension Swift.Int : DeenIslamSDK.ConstraintOffsetTarget {
+}
+extension Swift.UInt : DeenIslamSDK.ConstraintOffsetTarget {
+}
+extension Swift.Float : DeenIslamSDK.ConstraintOffsetTarget {
+}
+extension Swift.Double : DeenIslamSDK.ConstraintOffsetTarget {
+}
+extension CoreFoundation.CGFloat : DeenIslamSDK.ConstraintOffsetTarget {
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var snp_left: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var snp_top: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var snp_right: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var snp_bottom: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var snp_leading: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var snp_trailing: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var snp_width: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var snp_height: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var snp_centerX: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var snp_centerY: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var snp_baseline: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, macOS 10.11, *)
+  @_Concurrency.MainActor @preconcurrency public var snp_lastBaseline: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, macOS 10.11, *)
+  @available(iOS, deprecated: 3.0, message: "Use newer snp.* syntax.")
+  @_Concurrency.MainActor @preconcurrency public var snp_firstBaseline: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  @available(iOS, deprecated: 3.0, message: "Use newer snp.* syntax.")
+  @_Concurrency.MainActor @preconcurrency public var snp_leftMargin: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  @available(iOS, deprecated: 3.0, message: "Use newer snp.* syntax.")
+  @_Concurrency.MainActor @preconcurrency public var snp_topMargin: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  @available(iOS, deprecated: 3.0, message: "Use newer snp.* syntax.")
+  @_Concurrency.MainActor @preconcurrency public var snp_rightMargin: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  @available(iOS, deprecated: 3.0, message: "Use newer snp.* syntax.")
+  @_Concurrency.MainActor @preconcurrency public var snp_bottomMargin: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  @available(iOS, deprecated: 3.0, message: "Use newer snp.* syntax.")
+  @_Concurrency.MainActor @preconcurrency public var snp_leadingMargin: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  @available(iOS, deprecated: 3.0, message: "Use newer snp.* syntax.")
+  @_Concurrency.MainActor @preconcurrency public var snp_trailingMargin: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  @available(iOS, deprecated: 3.0, message: "Use newer snp.* syntax.")
+  @_Concurrency.MainActor @preconcurrency public var snp_centerXWithinMargins: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  @available(iOS, deprecated: 3.0, message: "Use newer snp.* syntax.")
+  @_Concurrency.MainActor @preconcurrency public var snp_centerYWithinMargins: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var snp_edges: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var snp_size: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var snp_center: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  @available(iOS, deprecated: 3.0, message: "Use newer snp.* syntax.")
+  @_Concurrency.MainActor @preconcurrency public var snp_margins: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  @available(iOS, deprecated: 3.0, message: "Use newer snp.* syntax.")
+  @_Concurrency.MainActor @preconcurrency public var snp_centerWithinMargins: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public func snp_prepareConstraints(_ closure: (_ make: DeenIslamSDK.ConstraintMaker) -> Swift.Void) -> [DeenIslamSDK.Constraint]
+  @_Concurrency.MainActor @preconcurrency public func snp_makeConstraints(_ closure: (_ make: DeenIslamSDK.ConstraintMaker) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func snp_remakeConstraints(_ closure: (_ make: DeenIslamSDK.ConstraintMaker) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func snp_updateConstraints(_ closure: (_ make: DeenIslamSDK.ConstraintMaker) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func snp_removeConstraints()
+  @_Concurrency.MainActor @preconcurrency public var snp: DeenIslamSDK.ConstraintViewDSL {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers open class VGPlayerCacheMediaConfiguration : ObjectiveC.NSObject, Foundation.NSCoding, Foundation.NSCopying {
+  public var filePath: Swift.String? {
+    get
+  }
+  public var cacheSegments: [Foundation.NSValue] {
+    get
+  }
+  public var cacheMedia: DeenIslamSDK.VGPlayerCacheMedia?
+  public var url: Foundation.URL?
+  public var progress: Swift.Double {
+    get
+  }
+  public var downloadedBytes: Swift.Int64? {
+    get
+  }
+  public var downloadSpeed: Swift.Double? {
+    get
+  }
+  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
+  @objc public func encode(with aCoder: Foundation.NSCoder)
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc override dynamic open var debugDescription: Swift.String {
+    @objc get
+  }
+  public static func filePath(for filePath: Swift.String) -> Swift.String
+  public static func configuration(filePath: Swift.String) -> DeenIslamSDK.VGPlayerCacheMediaConfiguration
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension DeenIslamSDK.VGPlayerCacheMediaConfiguration {
+  open func save()
+  open func addCache(_ segment: Foundation.NSRange)
+  open func add(_ downloadedBytes: Swift.UInt64, time: Foundation.TimeInterval)
+}
+extension DeenIslamSDK.AudioPlayer {
+  public var items: [DeenIslamSDK.AudioItem]? {
+    get
+  }
+  public var currentItemIndexInQueue: Swift.Int? {
+    get
+  }
+  public var hasNext: Swift.Bool {
+    get
+  }
+  public var hasPrevious: Swift.Bool {
+    get
+  }
+  public func play(item: DeenIslamSDK.AudioItem)
+  public func play(items: [DeenIslamSDK.AudioItem], startAtIndex index: Swift.Int = 0)
+  public func add(item: DeenIslamSDK.AudioItem)
+  public func add(items: [DeenIslamSDK.AudioItem])
+  public func removeItem(at index: Swift.Int)
+}
+@available(iOSApplicationExtension, unavailable)
+extension DeenIslamSDK.IQKeyboardManager {
+  public typealias SizeBlock = (_ size: CoreFoundation.CGSize) -> Swift.Void
+  @objc final public func registerKeyboardSizeChange(identifier: Swift.AnyHashable, sizeHandler: @escaping DeenIslamSDK.IQKeyboardManager.SizeBlock)
+  @objc final public func unregisterKeyboardSizeChange(identifier: Swift.AnyHashable)
+  @objc final public var keyboardShowing: Swift.Bool {
+    @objc get
+  }
+  @objc final public var keyboardFrame: CoreFoundation.CGRect {
+    @objc get
+  }
+}
+public protocol VGPlayerResourceLoaderDelegate : AnyObject {
+  func resourceLoader(_ resourceLoader: DeenIslamSDK.VGPlayerResourceLoader, didFailWithError error: (any Swift.Error)?)
+}
+@objc open class VGPlayerResourceLoader : ObjectiveC.NSObject {
+  open var url: Foundation.URL {
+    get
+  }
+  weak open var delegate: (any DeenIslamSDK.VGPlayerResourceLoaderDelegate)?
+  @objc deinit
+  public init(url: Foundation.URL)
+  open func add(_ request: AVFoundation.AVAssetResourceLoadingRequest)
+  open func remove(_ request: AVFoundation.AVAssetResourceLoadingRequest)
+  open func cancel()
+}
+extension DeenIslamSDK.VGPlayerResourceLoader : DeenIslamSDK.VGPlayerResourceLoadingRequestDelegate {
+  public func resourceLoadingRequest(_ resourceLoadingRequest: DeenIslamSDK.VGPlayerResourceLoadingRequest, didCompleteWithError error: (any Swift.Error)?)
+}
+public enum YouTubePlayerState : Swift.String {
+  case Unstarted
+  case Ended
+  case Playing
+  case Paused
+  case Buffering
+  case Queued
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum YouTubePlayerEvents : Swift.String {
+  case YouTubeIframeAPIReady
+  case Ready
+  case StateChange
+  case PlaybackQualityChange
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum YouTubePlaybackQuality : Swift.String {
+  case Small
+  case Medium
+  case Large
+  case HD720
+  case HD1080
+  case HighResolution
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol YouTubePlayerDelegate : AnyObject {
+  func playerReady(_ videoPlayer: DeenIslamSDK.YouTubePlayerView)
+  func playerStateChanged(_ videoPlayer: DeenIslamSDK.YouTubePlayerView, playerState: DeenIslamSDK.YouTubePlayerState)
+  func playerQualityChanged(_ videoPlayer: DeenIslamSDK.YouTubePlayerView, playbackQuality: DeenIslamSDK.YouTubePlaybackQuality)
+}
+extension DeenIslamSDK.YouTubePlayerDelegate {
+  public func playerReady(_ videoPlayer: DeenIslamSDK.YouTubePlayerView)
+  public func playerStateChanged(_ videoPlayer: DeenIslamSDK.YouTubePlayerView, playerState: DeenIslamSDK.YouTubePlayerState)
+  public func playerQualityChanged(_ videoPlayer: DeenIslamSDK.YouTubePlayerView, playbackQuality: DeenIslamSDK.YouTubePlaybackQuality)
+}
+public func videoIDFromYouTubeURL(_ videoURL: Foundation.URL) -> Swift.String?
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class YouTubePlayerView : UIKit.UIView, WebKit.WKNavigationDelegate {
+  public typealias YouTubePlayerParameters = [Swift.String : Swift.AnyObject]
+  @_Concurrency.MainActor @preconcurrency public var baseURL: Swift.String
+  @_Concurrency.MainActor @preconcurrency open var ready: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency open var playerState: DeenIslamSDK.YouTubePlayerState {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency open var playbackQuality: DeenIslamSDK.YouTubePlaybackQuality {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency open var playerVars: DeenIslamSDK.YouTubePlayerView.YouTubePlayerParameters
+  @_Concurrency.MainActor @preconcurrency weak open var delegate: (any DeenIslamSDK.YouTubePlayerDelegate)?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency open func loadVideoURL(_ videoURL: Foundation.URL)
+  @_Concurrency.MainActor @preconcurrency open func loadVideoID(_ videoID: Swift.String)
+  @_Concurrency.MainActor @preconcurrency open func loadPlaylistID(_ playlistID: Swift.String)
+  @_Concurrency.MainActor @preconcurrency open func mute()
+  @_Concurrency.MainActor @preconcurrency open func unMute()
+  @_Concurrency.MainActor @preconcurrency open func play()
+  @_Concurrency.MainActor @preconcurrency open func pause()
+  @_Concurrency.MainActor @preconcurrency open func stop()
+  @_Concurrency.MainActor @preconcurrency open func clear()
+  @_Concurrency.MainActor @preconcurrency open func seekTo(_ seconds: Swift.Float, seekAhead: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency open func getDuration(completion: ((Swift.Double?) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency open func getCurrentTime(completion: ((Swift.Double?) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency open func previousVideo()
+  @_Concurrency.MainActor @preconcurrency open func nextVideo()
+  @_Concurrency.MainActor @preconcurrency @objc open func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class DeenIslamGPSDK : ObjectiveC.NSObject {
+  public static let shared: DeenIslamSDK.DeenIslamGPSDK
+  @objc deinit
+}
+extension DeenIslamSDK.DeenIslamGPSDK {
+  @objc final public func logIn(with msisdn: Swift.String, isBL: Swift.Bool, complete: @escaping (Swift.String?, Swift.String?) -> Swift.Void)
+  @objc final public func initialize(with tabBar: UIKit.UITabBarController?, nav: UIKit.UINavigationController, delegate: any DeenIslamSDK.DeenIslamSDKNotifier, token: Swift.String, isBL: Swift.Bool)
+  @objc final public func gotoHome()
+  @objc final public func goto(feature: DeenIslamSDK.AppFeature)
+  @objc final public func eventRegister(with event: UIKit.UIEvent)
+  @objc final public func terminate()
+  @objc final public func openFromRC(code: Swift.String)
+  @objc final public func isPrayerNotificationEnabled() -> Swift.Bool
+  @objc final public func clearAllPrayerNotification()
+  @objc final public func prayerNotification(isEnable: Swift.Bool)
+}
+@_hasMissingDesignatedInitializers final public class Constraint {
+  final public var layoutConstraints: [DeenIslamSDK.LayoutConstraint]
+  final public var isActive: Swift.Bool {
+    get
+    set
+  }
+  final public func install()
+  final public func uninstall()
+  final public func activate()
+  final public func deactivate()
+  @discardableResult
+  final public func update(offset: any DeenIslamSDK.ConstraintOffsetTarget) -> DeenIslamSDK.Constraint
+  @discardableResult
+  final public func update(inset: any DeenIslamSDK.ConstraintInsetTarget) -> DeenIslamSDK.Constraint
+  @discardableResult
+  final public func update(priority: any DeenIslamSDK.ConstraintPriorityTarget) -> DeenIslamSDK.Constraint
+  @discardableResult
+  final public func update(priority: DeenIslamSDK.ConstraintPriority) -> DeenIslamSDK.Constraint
+  final public func updateOffset(amount: any DeenIslamSDK.ConstraintOffsetTarget)
+  final public func updateInsets(amount: any DeenIslamSDK.ConstraintInsetTarget)
+  final public func updatePriority(amount: any DeenIslamSDK.ConstraintPriorityTarget)
+  final public func updatePriorityRequired()
+  final public func updatePriorityHigh()
+  final public func updatePriorityMedium()
+  final public func updatePriorityLow()
+  @objc deinit
+}
+public typealias ConstraintInsets = UIKit.UIEdgeInsets
+@objc @_inheritsConvenienceInitializers open class VGPlayerCacheConfiguration : ObjectiveC.NSObject {
+  open var maxCacheAge: Swift.Double
+  open var maxCacheSize: Swift.UInt
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct ConstraintViewDSL : DeenIslamSDK.ConstraintAttributesDSL {
+  @discardableResult
+  public func prepareConstraints(_ closure: (_ make: DeenIslamSDK.ConstraintMaker) -> Swift.Void) -> [DeenIslamSDK.Constraint]
+  public func makeConstraints(_ closure: (_ make: DeenIslamSDK.ConstraintMaker) -> Swift.Void)
+  public func remakeConstraints(_ closure: (_ make: DeenIslamSDK.ConstraintMaker) -> Swift.Void)
+  public func updateConstraints(_ closure: (_ make: DeenIslamSDK.ConstraintMaker) -> Swift.Void)
+  public func removeConstraints()
+  public var contentHuggingHorizontalPriority: Swift.Float {
+    get
+    set
+  }
+  public var contentHuggingVerticalPriority: Swift.Float {
+    get
+    set
+  }
+  public var contentCompressionResistanceHorizontalPriority: Swift.Float {
+    get
+    set
+  }
+  public var contentCompressionResistanceVerticalPriority: Swift.Float {
+    get
+    set
+  }
+  public var target: Swift.AnyObject? {
+    get
+  }
+}
+public enum VGPlayerCacheActionType : Swift.Int {
+  case local
+  case remote
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct VGPlayerCacheAction : Swift.Hashable, Swift.CustomStringConvertible {
+  public var type: DeenIslamSDK.VGPlayerCacheActionType
+  public var range: Foundation.NSRange
+  public var description: Swift.String {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+  public static func == (lhs: DeenIslamSDK.VGPlayerCacheAction, rhs: DeenIslamSDK.VGPlayerCacheAction) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public struct ConstraintPriority : Swift.ExpressibleByFloatLiteral, Swift.Equatable, Swift.Strideable {
+  public typealias FloatLiteralType = Swift.Float
+  public let value: Swift.Float
+  public init(floatLiteral value: Swift.Float)
+  public init(_ value: Swift.Float)
+  public static var required: DeenIslamSDK.ConstraintPriority {
+    get
+  }
+  public static var high: DeenIslamSDK.ConstraintPriority {
+    get
+  }
+  public static var medium: DeenIslamSDK.ConstraintPriority {
+    get
+  }
+  public static var low: DeenIslamSDK.ConstraintPriority {
+    get
+  }
+  public static func == (lhs: DeenIslamSDK.ConstraintPriority, rhs: DeenIslamSDK.ConstraintPriority) -> Swift.Bool
+  public func advanced(by n: DeenIslamSDK.ConstraintPriority.FloatLiteralType) -> DeenIslamSDK.ConstraintPriority
+  public func distance(to other: DeenIslamSDK.ConstraintPriority) -> DeenIslamSDK.ConstraintPriority.FloatLiteralType
+  public typealias Stride = DeenIslamSDK.ConstraintPriority.FloatLiteralType
+}
+public struct AudioPlayerMode : Swift.OptionSet {
+  public let rawValue: Swift.UInt
+  public init(rawValue: Swift.UInt)
+  public static let normal: DeenIslamSDK.AudioPlayerMode
+  public static let shuffle: DeenIslamSDK.AudioPlayerMode
+  public static let `repeat`: DeenIslamSDK.AudioPlayerMode
+  public static let repeatAll: DeenIslamSDK.AudioPlayerMode
+  public typealias ArrayLiteralElement = DeenIslamSDK.AudioPlayerMode
+  public typealias Element = DeenIslamSDK.AudioPlayerMode
+  public typealias RawValue = Swift.UInt
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOSApplicationExtension, unavailable)
+@objc final public class IQKeyboardManager : ObjectiveC.NSObject {
+  @objc public static let shared: DeenIslamSDK.IQKeyboardManager
+  @objc final public var enable: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc final public var keyboardDistanceFromTextField: CoreFoundation.CGFloat
+  @objc final public var enableAutoToolbar: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc final public var toolbarManageBehaviour: DeenIslamSDK.IQAutoToolbarManageBehaviour
+  @objc final public var shouldToolbarUsesTextFieldTintColor: Swift.Bool
+  @objc final public var toolbarTintColor: UIKit.UIColor?
+  @objc final public var toolbarBarTintColor: UIKit.UIColor?
+  @objc final public var previousNextDisplayMode: DeenIslamSDK.IQPreviousNextDisplayMode
+  @objc final public var toolbarPreviousBarButtonItemImage: UIKit.UIImage?
+  @objc final public var toolbarNextBarButtonItemImage: UIKit.UIImage?
+  @objc final public var toolbarDoneBarButtonItemImage: UIKit.UIImage?
+  @objc final public var toolbarPreviousBarButtonItemText: Swift.String?
+  @objc final public var toolbarPreviousBarButtonItemAccessibilityLabel: Swift.String?
+  @objc final public var toolbarNextBarButtonItemText: Swift.String?
+  @objc final public var toolbarNextBarButtonItemAccessibilityLabel: Swift.String?
+  @objc final public var toolbarDoneBarButtonItemText: Swift.String?
+  @objc final public var toolbarDoneBarButtonItemAccessibilityLabel: Swift.String?
+  @objc final public var shouldShowToolbarPlaceholder: Swift.Bool
+  @objc final public var placeholderFont: UIKit.UIFont?
+  @objc final public var placeholderColor: UIKit.UIColor?
+  @objc final public var placeholderButtonColor: UIKit.UIColor?
+  @objc final public var overrideKeyboardAppearance: Swift.Bool
+  @objc final public var keyboardAppearance: UIKit.UIKeyboardAppearance
+  @objc final public var shouldResignOnTouchOutside: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc final public var resignFirstResponderGesture: UIKit.UITapGestureRecognizer {
+    @objc get
+    @objc set
+  }
+  @discardableResult
+  @objc final public func resignFirstResponder() -> Swift.Bool
+  @objc final public var shouldPlayInputClicks: Swift.Bool
+  @objc final public var layoutIfNeededOnUpdate: Swift.Bool
+  @objc final public var disabledDistanceHandlingClasses: [UIKit.UIViewController.Type]
+  @objc final public var enabledDistanceHandlingClasses: [UIKit.UIViewController.Type]
+  @objc final public var disabledToolbarClasses: [UIKit.UIViewController.Type]
+  @objc final public var enabledToolbarClasses: [UIKit.UIViewController.Type]
+  @objc final public var toolbarPreviousNextAllowedClasses: [UIKit.UIView.Type]
+  @objc final public var disabledTouchResignedClasses: [UIKit.UIViewController.Type]
+  @objc final public var enabledTouchResignedClasses: [UIKit.UIViewController.Type]
+  @objc final public var touchResignedGestureIgnoreClasses: [UIKit.UIView.Type]
+  @objc final public func registerTextFieldViewClass(_ aClass: UIKit.UIView.Type, didBeginEditingNotificationName: Swift.String, didEndEditingNotificationName: Swift.String)
+  @objc final public func unregisterTextFieldViewClass(_ aClass: UIKit.UIView.Type, didBeginEditingNotificationName: Swift.String, didEndEditingNotificationName: Swift.String)
+  @objc deinit
+  @objc final public func reloadLayoutIfNeeded()
+}
+@available(iOSApplicationExtension, unavailable)
+extension DeenIslamSDK.IQKeyboardManager : UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc final public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc final public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
+}
+public protocol VGPlayerViewDelegate : AnyObject {
+  func vgPlayerView(_ playerView: DeenIslamSDK.VGPlayerView, willFullscreen isFullscreen: Swift.Bool)
+  func vgPlayerView(didTappedClose playerView: DeenIslamSDK.VGPlayerView)
+  func vgPlayerView(didDisplayControl playerView: DeenIslamSDK.VGPlayerView)
+}
+extension DeenIslamSDK.VGPlayerViewDelegate {
+  public func vgPlayerView(_ playerView: DeenIslamSDK.VGPlayerView, willFullscreen fullscreen: Swift.Bool)
+  public func vgPlayerView(didTappedClose playerView: DeenIslamSDK.VGPlayerView)
+  public func vgPlayerView(didDisplayControl playerView: DeenIslamSDK.VGPlayerView)
+}
+public enum VGPlayerViewPanGestureDirection : Swift.Int {
+  case vertical
+  case horizontal
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class VGPlayerView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency weak open var vgPlayer: DeenIslamSDK.VGPlayer?
+  @_Concurrency.MainActor @preconcurrency open var controlViewDuration: Swift.Double
+  @_Concurrency.MainActor @preconcurrency open var playerLayer: AVFoundation.AVPlayerLayer? {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency open var isFullScreen: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency open var isTimeSliding: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency open var isDisplayControl: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency weak open var delegate: (any DeenIslamSDK.VGPlayerViewDelegate)?
+  @_Concurrency.MainActor @preconcurrency open var topView: UIKit.UIView
+  @_Concurrency.MainActor @preconcurrency open var titleLabel: UIKit.UILabel
+  @_Concurrency.MainActor @preconcurrency open var closeButton: UIKit.UIButton
+  @_Concurrency.MainActor @preconcurrency open var bottomView: UIKit.UIView
+  @_Concurrency.MainActor @preconcurrency open var timeSlider: DeenIslamSDK.VGPlayerSlider
+  @_Concurrency.MainActor @preconcurrency open var loadingIndicator: DeenIslamSDK.VGPlayerLoadingIndicator
+  @_Concurrency.MainActor @preconcurrency open var fullscreenButton: UIKit.UIButton
+  @_Concurrency.MainActor @preconcurrency open var timeLabel: UIKit.UILabel
+  @_Concurrency.MainActor @preconcurrency open var playButtion: UIKit.UIButton
+  @_Concurrency.MainActor @preconcurrency open var volumeSlider: UIKit.UISlider!
+  @_Concurrency.MainActor @preconcurrency open var replayButton: UIKit.UIButton
+  @_Concurrency.MainActor @preconcurrency open var panGestureDirection: DeenIslamSDK.VGPlayerViewPanGestureDirection {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency open var singleTapGesture: UIKit.UITapGestureRecognizer
+  @_Concurrency.MainActor @preconcurrency open var doubleTapGesture: UIKit.UITapGestureRecognizer
+  @_Concurrency.MainActor @preconcurrency open var panGesture: UIKit.UIPanGestureRecognizer
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc convenience dynamic public init()
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency open func setvgPlayer(vgPlayer: DeenIslamSDK.VGPlayer)
+  @_Concurrency.MainActor @preconcurrency open func reloadPlayerLayer()
+  @_Concurrency.MainActor @preconcurrency open func playStateDidChange(_ state: DeenIslamSDK.VGPlayerState)
+  @_Concurrency.MainActor @preconcurrency open func bufferStateDidChange(_ state: DeenIslamSDK.VGPlayerBufferstate)
+  @_Concurrency.MainActor @preconcurrency open func bufferedDidChange(_ bufferedDuration: Foundation.TimeInterval, totalDuration: Foundation.TimeInterval)
+  @_Concurrency.MainActor @preconcurrency open func playerDurationDidChange(_ currentDuration: Foundation.TimeInterval, totalDuration: Foundation.TimeInterval)
+  @_Concurrency.MainActor @preconcurrency open func configurationUI()
+  @_Concurrency.MainActor @preconcurrency open func reloadPlayerView()
+  @_Concurrency.MainActor @preconcurrency open func displayControlView(_ isDisplay: Swift.Bool)
+}
+extension DeenIslamSDK.VGPlayerView {
+  @_Concurrency.MainActor @preconcurrency open func updateDisplayerView(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency open func reloadGravity()
+  @_Concurrency.MainActor @preconcurrency open func enterFullscreen()
+  @_Concurrency.MainActor @preconcurrency open func exitFullscreen()
+  @_Concurrency.MainActor @preconcurrency open func playFailed(_ error: DeenIslamSDK.VGPlayerError)
+  @_Concurrency.MainActor @preconcurrency public func formatSecondsToString(_ seconds: Foundation.TimeInterval) -> Swift.String
+}
+extension DeenIslamSDK.VGPlayerView : UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
+}
+extension DeenIslamSDK.VGPlayerView {
+  @objc @_Concurrency.MainActor @preconcurrency dynamic open func onSingleTapGesture(_ gesture: UIKit.UITapGestureRecognizer)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic open func onDoubleTapGesture(_ gesture: UIKit.UITapGestureRecognizer)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic open func onPanGesture(_ gesture: UIKit.UIPanGestureRecognizer)
+}
+@available(iOSApplicationExtension, unavailable)
+@objc public enum IQAutoToolbarManageBehaviour : Swift.Int {
+  case bySubviews
+  case byTag
+  case byPosition
+  public init?(rawValue: Swift.Int)
+  @available(iOSApplicationExtension, unavailable)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@available(iOSApplicationExtension, unavailable)
+@objc public enum IQPreviousNextDisplayMode : Swift.Int {
+  case `default`
+  case alwaysHide
+  case alwaysShow
+  public init?(rawValue: Swift.Int)
+  @available(iOSApplicationExtension, unavailable)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@available(iOSApplicationExtension, unavailable)
+@objc public enum IQEnableMode : Swift.Int {
+  case `default`
+  case enabled
+  case disabled
+  public init?(rawValue: Swift.Int)
+  @available(iOSApplicationExtension, unavailable)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOSApplicationExtension, unavailable)
+@objc @_Concurrency.MainActor @preconcurrency open class IQToolbar : UIKit.UIToolbar, UIKit.UIInputViewAudioFeedback {
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc @_Concurrency.MainActor @preconcurrency open var previousBarButton: DeenIslamSDK.IQBarButtonItem {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor @preconcurrency open var nextBarButton: DeenIslamSDK.IQBarButtonItem {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor @preconcurrency open var titleBarButton: DeenIslamSDK.IQTitleBarButtonItem {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor @preconcurrency open var doneBarButton: DeenIslamSDK.IQBarButtonItem {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor @preconcurrency open var fixedSpaceBarButton: DeenIslamSDK.IQBarButtonItem {
+    @objc get
+    @objc set(newValue)
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func sizeThatFits(_ size: CoreFoundation.CGSize) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var tintColor: UIKit.UIColor! {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc open var enableInputClicksWhenVisible: Swift.Bool {
+    @objc get
+  }
+  @objc deinit
+}
+public protocol VGPlayerDownloadActionWorkerDelegate : ObjectiveC.NSObjectProtocol {
+  func downloadActionWorker(_ actionWorker: DeenIslamSDK.VGPlayerDownloadActionWorker, didReceive response: Foundation.URLResponse)
+  func downloadActionWorker(_ actionWorker: DeenIslamSDK.VGPlayerDownloadActionWorker, didReceive data: Foundation.Data, isLocal: Swift.Bool)
+  func downloadActionWorker(_ actionWorker: DeenIslamSDK.VGPlayerDownloadActionWorker, didFinishWithError error: (any Swift.Error)?)
+}
+@objc open class VGPlayerDownloadActionWorker : ObjectiveC.NSObject {
+  open var actions: [DeenIslamSDK.VGPlayerCacheAction] {
+    get
+  }
+  open var url: Foundation.URL {
+    get
+  }
+  open var cacheMediaWorker: DeenIslamSDK.VGPlayerCacheMediaWorker {
+    get
+  }
+  open var session: Foundation.URLSession? {
+    get
+  }
+  open var task: Foundation.URLSessionDataTask? {
+    get
+  }
+  open var downloadURLSessionManager: DeenIslamSDK.VGPlayerDownloadURLSessionManager? {
+    get
+  }
+  open var startOffset: Swift.Int {
+    get
+  }
+  weak open var delegate: (any DeenIslamSDK.VGPlayerDownloadActionWorkerDelegate)?
+  public init(actions: [DeenIslamSDK.VGPlayerCacheAction], url: Foundation.URL, cacheMediaWorker: DeenIslamSDK.VGPlayerCacheMediaWorker)
+  @objc deinit
+  open func start()
+  open func cancel()
+}
+extension DeenIslamSDK.VGPlayerDownloadActionWorker : DeenIslamSDK.VGPlayerDownloadeURLSessionManagerDelegate {
+  public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWithError error: (any Swift.Error)?)
+  public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive data: Foundation.Data)
+  public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive response: Foundation.URLResponse, completionHandler: @escaping (Foundation.URLSession.ResponseDisposition) -> Swift.Void)
+}
+public enum subtitlesFormat : Swift.String {
+  case unknown
+  case srt
+  case ass
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct subtitles : Swift.CustomStringConvertible {
+  public var index: Swift.Int
+  public var start: Foundation.TimeInterval
+  public var end: Foundation.TimeInterval
+  public var content: Swift.String
+  public var description: Swift.String {
+    get
+  }
+}
+open class VGSubtitles {
+  open var subtitlesFormat: DeenIslamSDK.subtitlesFormat {
+    get
+  }
+  open var subtitlesGroups: [DeenIslamSDK.subtitles] {
+    get
+  }
+  public init(filePath: Foundation.URL, encoding: Swift.String.Encoding = String.Encoding.utf8)
+  public func search(for time: Foundation.TimeInterval) -> DeenIslamSDK.subtitles?
+  @objc deinit
+}
+extension UIKit.UIControl.State : Swift.Hashable {
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension DeenIslamSDK.LayoutConstraint {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+}
+@available(iOS 9.0, macOS 10.11, *)
+public struct ConstraintLayoutGuideDSL : DeenIslamSDK.ConstraintAttributesDSL {
+  @discardableResult
+  public func prepareConstraints(_ closure: (_ make: DeenIslamSDK.ConstraintMaker) -> Swift.Void) -> [DeenIslamSDK.Constraint]
+  public func makeConstraints(_ closure: (_ make: DeenIslamSDK.ConstraintMaker) -> Swift.Void)
+  public func remakeConstraints(_ closure: (_ make: DeenIslamSDK.ConstraintMaker) -> Swift.Void)
+  public func updateConstraints(_ closure: (_ make: DeenIslamSDK.ConstraintMaker) -> Swift.Void)
+  public func removeConstraints()
+  public var target: Swift.AnyObject? {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class VGPlayerSlider : UIKit.UISlider {
+  @_Concurrency.MainActor @preconcurrency open var progressView: UIKit.UIProgressView
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func thumbRect(forBounds bounds: CoreFoundation.CGRect, trackRect rect: CoreFoundation.CGRect, value: Swift.Float) -> CoreFoundation.CGRect
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func trackRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @_Concurrency.MainActor @preconcurrency open func setProgress(_ progress: Swift.Float, animated: Swift.Bool)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class DeenIslamCustomView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var sdk: DeenIslamSDK.DeenIslamGPSDK?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc deinit
+}
+@available(iOSApplicationExtension, unavailable)
+@objc final public class IQInvocation : ObjectiveC.NSObject {
+  @objc weak final public var target: Swift.AnyObject?
+  @objc final public var action: ObjectiveC.Selector
+  @objc public init(_ target: Swift.AnyObject, _ action: ObjectiveC.Selector)
+  @objc final public func invoke(from: Any)
+  @objc deinit
+}
+public protocol ConstraintMultiplierTarget {
+  var constraintMultiplierTargetValue: CoreFoundation.CGFloat { get }
+}
+extension Swift.Int : DeenIslamSDK.ConstraintMultiplierTarget {
+  public var constraintMultiplierTargetValue: CoreFoundation.CGFloat {
+    get
+  }
+}
+extension Swift.UInt : DeenIslamSDK.ConstraintMultiplierTarget {
+  public var constraintMultiplierTargetValue: CoreFoundation.CGFloat {
+    get
+  }
+}
+extension Swift.Float : DeenIslamSDK.ConstraintMultiplierTarget {
+  public var constraintMultiplierTargetValue: CoreFoundation.CGFloat {
+    get
+  }
+}
+extension Swift.Double : DeenIslamSDK.ConstraintMultiplierTarget {
+  public var constraintMultiplierTargetValue: CoreFoundation.CGFloat {
+    get
+  }
+}
+extension CoreFoundation.CGFloat : DeenIslamSDK.ConstraintMultiplierTarget {
+  public var constraintMultiplierTargetValue: CoreFoundation.CGFloat {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ConstraintMakerExtendable : DeenIslamSDK.ConstraintMakerRelatable {
+  public var left: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var top: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var bottom: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var right: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var leading: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var trailing: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var width: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var height: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var centerX: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var centerY: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var baseline: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var lastBaseline: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, macOS 10.11, *)
+  public var firstBaseline: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var leftMargin: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var rightMargin: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var topMargin: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var bottomMargin: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var leadingMargin: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var trailingMargin: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var centerXWithinMargins: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var centerYWithinMargins: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var edges: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  public var size: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var margins: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var centerWithinMargins: DeenIslamSDK.ConstraintMakerExtendable {
+    get
+  }
+  @objc deinit
+}
+public protocol ConstraintPriorityTarget {
+  var constraintPriorityTargetValue: Swift.Float { get }
+}
+extension Swift.Int : DeenIslamSDK.ConstraintPriorityTarget {
+  public var constraintPriorityTargetValue: Swift.Float {
+    get
+  }
+}
+extension Swift.UInt : DeenIslamSDK.ConstraintPriorityTarget {
+  public var constraintPriorityTargetValue: Swift.Float {
+    get
+  }
+}
+extension Swift.Float : DeenIslamSDK.ConstraintPriorityTarget {
+  public var constraintPriorityTargetValue: Swift.Float {
+    get
+  }
+}
+extension Swift.Double : DeenIslamSDK.ConstraintPriorityTarget {
+  public var constraintPriorityTargetValue: Swift.Float {
+    get
+  }
+}
+extension CoreFoundation.CGFloat : DeenIslamSDK.ConstraintPriorityTarget {
+  public var constraintPriorityTargetValue: Swift.Float {
+    get
+  }
+}
+extension UIKit.UILayoutPriority : DeenIslamSDK.ConstraintPriorityTarget {
+  public var constraintPriorityTargetValue: Swift.Float {
+    get
+  }
+}
+infix operator |> : AdditionPrecedence
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class BaseView : UIKit.UIView {
+  @objc deinit
+}
+public typealias ConstraintInterfaceLayoutDirection = UIKit.UIUserInterfaceLayoutDirection
+public struct ConstraintConfig {
+  public static var interfaceLayoutDirection: DeenIslamSDK.ConstraintInterfaceLayoutDirection
+}
+public enum VGPlayerMediaFormat : Swift.String {
+  case unknown
+  case mpeg4
+  case m3u8
+  case mov
+  case m4v
+  case error
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol LayoutConstraintItem : AnyObject {
+}
+@available(iOS 9.0, macOS 10.11, *)
+extension UIKit.UILayoutGuide : DeenIslamSDK.LayoutConstraintItem {
+}
+extension UIKit.UIView : DeenIslamSDK.LayoutConstraintItem {
+}
+public struct VGPlayerDownloaderStatus {
+  public func add(URL: Foundation.URL)
+  public func remove(URL: Foundation.URL)
+  public func contains(URL: Foundation.URL) -> Swift.Bool
+  public func urls() -> Foundation.NSSet
+}
+public protocol VGPlayerDownloaderDelegate : AnyObject {
+  func downloader(_ downloader: DeenIslamSDK.VGPlayerDownloader, didReceiveResponse response: Foundation.URLResponse)
+  func downloader(_ downloader: DeenIslamSDK.VGPlayerDownloader, didReceiveData data: Foundation.Data)
+  func downloader(_ downloader: DeenIslamSDK.VGPlayerDownloader, didFinishedWithError error: (any Swift.Error)?)
+}
+extension DeenIslamSDK.VGPlayerDownloaderDelegate {
+  public func downloader(_ downloader: DeenIslamSDK.VGPlayerDownloader, didReceiveResponse response: Foundation.URLResponse)
+  public func downloader(_ downloader: DeenIslamSDK.VGPlayerDownloader, didReceiveData data: Foundation.Data)
+  public func downloader(_ downloader: DeenIslamSDK.VGPlayerDownloader, didFinishedWithError error: (any Swift.Error)?)
+}
+@objc open class VGPlayerDownloader : ObjectiveC.NSObject {
+  open var url: Foundation.URL {
+    get
+  }
+  weak open var delegate: (any DeenIslamSDK.VGPlayerDownloaderDelegate)?
+  open var cacheMedia: DeenIslamSDK.VGPlayerCacheMedia?
+  open var cacheMediaWorker: DeenIslamSDK.VGPlayerCacheMediaWorker
+  @objc deinit
+  public init(url: Foundation.URL)
+  open func dowloaderTask(_ fromOffset: Swift.Int64, _ length: Swift.Int, _ isEnd: Swift.Bool)
+  open func dowloadFrameStartToEnd()
+  open func cancel()
+  open func invalidateAndCancel()
+}
+extension DeenIslamSDK.VGPlayerDownloader : DeenIslamSDK.VGPlayerDownloadActionWorkerDelegate {
+  public func downloadActionWorker(_ actionWorker: DeenIslamSDK.VGPlayerDownloadActionWorker, didFinishWithError error: (any Swift.Error)?)
+  public func downloadActionWorker(_ actionWorker: DeenIslamSDK.VGPlayerDownloadActionWorker, didReceive data: Foundation.Data, isLocal: Swift.Bool)
+  public func downloadActionWorker(_ actionWorker: DeenIslamSDK.VGPlayerDownloadActionWorker, didReceive response: Foundation.URLResponse)
+}
+@available(iOSApplicationExtension, unavailable)
+extension DeenIslamSDK.IQKeyboardManager {
+  @objc final public func reloadInputViews()
+}
+@available(iOSApplicationExtension, unavailable)
+extension DeenIslamSDK.IQKeyboardManager {
+  @objc final public var canGoPrevious: Swift.Bool {
+    @objc get
+  }
+  @objc final public var canGoNext: Swift.Bool {
+    @objc get
+  }
+  @discardableResult
+  @objc final public func goPrevious() -> Swift.Bool
+  @discardableResult
+  @objc final public func goNext() -> Swift.Bool
+}
+@available(iOS 8.0, *)
+extension UIKit.UILayoutSupport {
+  @_Concurrency.MainActor @preconcurrency public var snp: DeenIslamSDK.ConstraintLayoutSupportDSL {
+    get
+  }
+}
+@available(iOSApplicationExtension, unavailable)
+@objc final public class IQBarButtonItemConfiguration : ObjectiveC.NSObject {
+  @objc public init(barButtonSystemItem: UIKit.UIBarButtonItem.SystemItem, action: ObjectiveC.Selector)
+  @objc public init(image: UIKit.UIImage, action: ObjectiveC.Selector)
+  @objc public init(title: Swift.String, action: ObjectiveC.Selector)
+  final public let barButtonSystemItem: UIKit.UIBarButtonItem.SystemItem?
+  @objc final public let image: UIKit.UIImage?
+  @objc final public let title: Swift.String?
+  @objc final public let action: ObjectiveC.Selector?
+  @objc deinit
+}
+@available(iOSApplicationExtension, unavailable)
+@objc extension UIKit.UIImage {
+  @objc public static func keyboardLeftImage() -> UIKit.UIImage?
+  @objc public static func keyboardRightImage() -> UIKit.UIImage?
+  @objc public static func keyboardUpImage() -> UIKit.UIImage?
+  @objc public static func keyboardDownImage() -> UIKit.UIImage?
+  @objc public static func keyboardPreviousImage() -> UIKit.UIImage?
+  @objc public static func keyboardNextImage() -> UIKit.UIImage?
+}
+@available(iOSApplicationExtension, unavailable)
+@objc extension UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public var keyboardToolbar: DeenIslamSDK.IQToolbar {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public var shouldHideToolbarPlaceholder: Swift.Bool {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public var toolbarPlaceholder: Swift.String? {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public var drawingToolbarPlaceholder: Swift.String? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func addKeyboardToolbarWithTarget(target: Swift.AnyObject?, titleText: Swift.String?, rightBarButtonConfiguration: DeenIslamSDK.IQBarButtonItemConfiguration?, previousBarButtonConfiguration: DeenIslamSDK.IQBarButtonItemConfiguration? = nil, nextBarButtonConfiguration: DeenIslamSDK.IQBarButtonItemConfiguration? = nil)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func addDoneOnKeyboardWithTarget(_ target: Swift.AnyObject?, action: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func addDoneOnKeyboardWithTarget(_ target: Swift.AnyObject?, action: ObjectiveC.Selector, titleText: Swift.String?)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func addRightButtonOnKeyboardWithImage(_ image: UIKit.UIImage, target: Swift.AnyObject?, action: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func addRightButtonOnKeyboardWithImage(_ image: UIKit.UIImage, target: Swift.AnyObject?, action: ObjectiveC.Selector, titleText: Swift.String?)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func addRightButtonOnKeyboardWithText(_ text: Swift.String, target: Swift.AnyObject?, action: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func addRightButtonOnKeyboardWithText(_ text: Swift.String, target: Swift.AnyObject?, action: ObjectiveC.Selector, titleText: Swift.String?)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func addCancelDoneOnKeyboardWithTarget(_ target: Swift.AnyObject?, cancelAction: ObjectiveC.Selector, doneAction: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func addRightLeftOnKeyboardWithTarget(_ target: Swift.AnyObject?, leftButtonTitle: Swift.String, rightButtonTitle: Swift.String, leftButtonAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func addRightLeftOnKeyboardWithTarget(_ target: Swift.AnyObject?, leftButtonImage: UIKit.UIImage, rightButtonImage: UIKit.UIImage, leftButtonAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func addCancelDoneOnKeyboardWithTarget(_ target: Swift.AnyObject?, cancelAction: ObjectiveC.Selector, doneAction: ObjectiveC.Selector, titleText: Swift.String?)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func addRightLeftOnKeyboardWithTarget(_ target: Swift.AnyObject?, leftButtonTitle: Swift.String, rightButtonTitle: Swift.String, leftButtonAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, titleText: Swift.String?)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func addRightLeftOnKeyboardWithTarget(_ target: Swift.AnyObject?, leftButtonImage: UIKit.UIImage, rightButtonImage: UIKit.UIImage, leftButtonAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, titleText: Swift.String?)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func addPreviousNextDoneOnKeyboardWithTarget(_ target: Swift.AnyObject?, previousAction: ObjectiveC.Selector, nextAction: ObjectiveC.Selector, doneAction: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func addPreviousNextRightOnKeyboardWithTarget(_ target: Swift.AnyObject?, rightButtonImage: UIKit.UIImage, previousAction: ObjectiveC.Selector, nextAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func addPreviousNextRightOnKeyboardWithTarget(_ target: Swift.AnyObject?, rightButtonTitle: Swift.String, previousAction: ObjectiveC.Selector, nextAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func addPreviousNextDoneOnKeyboardWithTarget(_ target: Swift.AnyObject?, previousAction: ObjectiveC.Selector, nextAction: ObjectiveC.Selector, doneAction: ObjectiveC.Selector, titleText: Swift.String?)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func addPreviousNextRightOnKeyboardWithTarget(_ target: Swift.AnyObject?, rightButtonImage: UIKit.UIImage, previousAction: ObjectiveC.Selector, nextAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, titleText: Swift.String?)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func addPreviousNextRightOnKeyboardWithTarget(_ target: Swift.AnyObject?, rightButtonTitle: Swift.String, previousAction: ObjectiveC.Selector, nextAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, titleText: Swift.String?)
+}
+public protocol ConstraintRelatableTarget {
+}
+extension Swift.Int : DeenIslamSDK.ConstraintRelatableTarget {
+}
+extension Swift.UInt : DeenIslamSDK.ConstraintRelatableTarget {
+}
+extension Swift.Float : DeenIslamSDK.ConstraintRelatableTarget {
+}
+extension Swift.Double : DeenIslamSDK.ConstraintRelatableTarget {
+}
+extension CoreFoundation.CGFloat : DeenIslamSDK.ConstraintRelatableTarget {
+}
+extension CoreFoundation.CGSize : DeenIslamSDK.ConstraintRelatableTarget {
+}
+extension CoreFoundation.CGPoint : DeenIslamSDK.ConstraintRelatableTarget {
+}
+extension UIKit.UIEdgeInsets : DeenIslamSDK.ConstraintRelatableTarget {
+}
+extension DeenIslamSDK.ConstraintItem : DeenIslamSDK.ConstraintRelatableTarget {
+}
+extension UIKit.UIView : DeenIslamSDK.ConstraintRelatableTarget {
+}
+@available(iOS 9.0, macOS 10.11, *)
+extension UIKit.UILayoutGuide : DeenIslamSDK.ConstraintRelatableTarget {
+}
+extension UIKit.UIButton {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func hitTest(_ point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
+}
+@_hasMissingDesignatedInitializers final public class RevocationTrustEvaluator {
+  public struct Options : Swift.OptionSet {
+    public let rawValue: CoreFoundation.CFOptionFlags
+    public init(rawValue: CoreFoundation.CFOptionFlags)
+    public typealias ArrayLiteralElement = DeenIslamSDK.RevocationTrustEvaluator.Options
+    public typealias Element = DeenIslamSDK.RevocationTrustEvaluator.Options
+    public typealias RawValue = CoreFoundation.CFOptionFlags
+  }
+  @objc deinit
+}
+@available(iOSApplicationExtension, unavailable)
+@objc extension UIKit.UIScrollView {
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public var shouldIgnoreScrollingAdjustment: Swift.Bool {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public var shouldIgnoreContentInsetAdjustment: Swift.Bool {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public var shouldRestoreScrollViewContentOffset: Swift.Bool {
+    @objc get
+    @objc set(newValue)
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class DropDown : UIKit.UITextField {
+  @_Concurrency.MainActor @preconcurrency public var selectedIndex: Swift.Int?
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var rowHeight: CoreFoundation.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var rowBackgroundColor: UIKit.UIColor
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var itemsColor: UIKit.UIColor
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var itemsTintColor: UIKit.UIColor
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var selectedRowColor: UIKit.UIColor
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var hideOptionsWhenSelect: Swift.Bool
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var isSearchEnable: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var borderColorr: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var listHeight: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @IBInspectable @_Concurrency.MainActor @preconcurrency @objc dynamic public var borderWidth: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @IBInspectable @_Concurrency.MainActor @preconcurrency @objc dynamic public var cornerRadius: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency public var optionArray: [Swift.String] {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var optionImageArray: [Swift.String] {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var optionIds: [Swift.Int]?
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var arrowSize: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var arrowColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var checkMarkEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var handleKeyboard: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency public func showList()
+  @_Concurrency.MainActor @preconcurrency public func hideList()
+  @objc @_Concurrency.MainActor @preconcurrency public func touchAction()
+  @_Concurrency.MainActor @preconcurrency open func searchFilter(text: Swift.String, searchText: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func didSelect(completion: @escaping (_ selectedText: Swift.String, _ index: Swift.Int, _ id: Swift.Int) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func listWillAppear(completion: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func listDidAppear(completion: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func listWillDisappear(completion: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func listDidDisappear(completion: @escaping () -> Swift.Void)
+}
+extension DeenIslamSDK.DropDown : UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldShouldBeginEditing(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+}
+extension DeenIslamSDK.DropDown : UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+}
+extension DeenIslamSDK.DropDown : UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+extension Foundation.NSNotification.Name {
+  public static var VGPlayerCacheManagerDidUpdateCache: Foundation.Notification.Name
+  public static var VGPlayerCacheManagerDidFinishCache: Foundation.Notification.Name
+  public static var VGPlayerCacheManagerDidCleanCache: Foundation.Notification.Name
+}
+@objc @_inheritsConvenienceInitializers open class VGPlayerCacheManager : ObjectiveC.NSObject {
+  public static let VGPlayerCacheConfigurationKey: Swift.String
+  public static let VGPlayerCacheErrorKey: Swift.String
+  public static let VGPlayerCleanCacheKey: Swift.String
+  public static var mediaCacheNotifyInterval: Swift.Double
+  public static let shared: DeenIslamSDK.VGPlayerCacheManager
+  open var cacheConfig: DeenIslamSDK.VGPlayerCacheConfiguration {
+    get
+  }
+  @objc override dynamic public init()
+  public static func cacheDirectory() -> Swift.String
+  public static func cacheFilePath(for url: Foundation.URL) -> Swift.String
+  public static func cacheConfiguration(forURL url: Foundation.URL) -> DeenIslamSDK.VGPlayerCacheMediaConfiguration
+  open func calculateCacheSize(completion handler: @escaping ((_ size: Swift.UInt) -> ()))
+  open func cleanAllCache()
+  open func cleanOldFiles(completion handler: (() -> ())? = nil)
+  @objc deinit
+}
+public enum DeenError : Swift.Error {
+  case urlInvalided(Swift.String)
+  case error(Swift.String)
+}
+@_inheritsConvenienceInitializers @available(iOSApplicationExtension, unavailable)
+@objc final public class IQKeyboardReturnKeyHandler : ObjectiveC.NSObject {
+  @objc weak final public var delegate: (any UIKit.UITextFieldDelegate & UIKit.UITextViewDelegate)?
+  @objc final public var lastTextFieldReturnKeyType: UIKit.UIReturnKeyType {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public init()
+  @objc public init(controller: UIKit.UIViewController)
+  @objc deinit
+  @objc final public func addTextFieldView(_ view: UIKit.UIView)
+  @objc final public func removeTextFieldView(_ view: UIKit.UIView)
+  @objc final public func addResponderFromView(_ view: UIKit.UIView)
+  @objc final public func removeResponderFromView(_ view: UIKit.UIView)
+}
+@available(iOSApplicationExtension, unavailable)
+extension DeenIslamSDK.IQKeyboardReturnKeyHandler : UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc final public func textFieldShouldBeginEditing(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc final public func textFieldShouldEndEditing(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc final public func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor @preconcurrency @objc final public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+  @available(iOS 10.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc final public func textFieldDidEndEditing(_ textField: UIKit.UITextField, reason: UIKit.UITextField.DidEndEditingReason)
+  @_Concurrency.MainActor @preconcurrency @objc final public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc final public func textFieldShouldClear(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc final public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+}
+@available(iOSApplicationExtension, unavailable)
+extension DeenIslamSDK.IQKeyboardReturnKeyHandler : UIKit.UITextViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc final public func textViewShouldBeginEditing(_ textView: UIKit.UITextView) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc final public func textViewShouldEndEditing(_ textView: UIKit.UITextView) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc final public func textViewDidBeginEditing(_ textView: UIKit.UITextView)
+  @_Concurrency.MainActor @preconcurrency @objc final public func textViewDidEndEditing(_ textView: UIKit.UITextView)
+  @_Concurrency.MainActor @preconcurrency @objc final public func textView(_ textView: UIKit.UITextView, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc final public func textViewDidChange(_ textView: UIKit.UITextView)
+  @_Concurrency.MainActor @preconcurrency @objc final public func textViewDidChangeSelection(_ textView: UIKit.UITextView)
+  @available(iOS 10.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc final public func textView(_ aTextView: UIKit.UITextView, shouldInteractWith URL: Foundation.URL, in characterRange: Foundation.NSRange, interaction: UIKit.UITextItemInteraction) -> Swift.Bool
+  @available(iOS 10.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc final public func textView(_ aTextView: UIKit.UITextView, shouldInteractWith textAttachment: UIKit.NSTextAttachment, in characterRange: Foundation.NSRange, interaction: UIKit.UITextItemInteraction) -> Swift.Bool
+  @available(iOS, deprecated: 10.0)
+  @_Concurrency.MainActor @preconcurrency @objc final public func textView(_ aTextView: UIKit.UITextView, shouldInteractWith URL: Foundation.URL, in characterRange: Foundation.NSRange) -> Swift.Bool
+  @available(iOS, deprecated: 10.0)
+  @_Concurrency.MainActor @preconcurrency @objc final public func textView(_ aTextView: UIKit.UITextView, shouldInteractWith textAttachment: UIKit.NSTextAttachment, in characterRange: Foundation.NSRange) -> Swift.Bool
+  @available(iOS 16.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc final public func textView(_ aTextView: UIKit.UITextView, editMenuForTextIn range: Foundation.NSRange, suggestedActions: [UIKit.UIMenuElement]) -> UIKit.UIMenu?
+  @available(iOS 16.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc final public func textView(_ aTextView: UIKit.UITextView, willPresentEditMenuWith animator: any UIKit.UIEditMenuInteractionAnimating)
+  @available(iOS 16.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc final public func textView(_ aTextView: UIKit.UITextView, willDismissEditMenuWith animator: any UIKit.UIEditMenuInteractionAnimating)
+}
+public protocol URLConvertible {
+  func asURL() throws -> Foundation.URL
+}
+extension Swift.String : DeenIslamSDK.URLConvertible {
+  public func asURL() throws -> Foundation.URL
+}
+extension Foundation.URL : DeenIslamSDK.URLConvertible {
+  public func asURL() throws -> Foundation.URL
+}
+extension Foundation.URLComponents : DeenIslamSDK.URLConvertible {
+  public func asURL() throws -> Foundation.URL
+}
+@objc public enum AppFeature : Swift.Int {
+  case home
+  case dua
+  case hadith
+  case tasbeeh
+  case alQuaran
+  case islamicName
+  case prayerTime
+  case qibla
+  case zakat
+  case islamicEvent
+  case nearestMosque
+  case eidJamatPlace
+  case namazLearning
+  case moccaModinaLive
+  case duaAndAmol
+  case islamicLearningStory
+  case ramadan
+  case HajjAndUmrah
+  case KhotomQuran
+  case Qurbani
+  case IslamicBoyan
+  case IslamicCalender
+  case LivePodcast
+  case AllahNames
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 8.0, *)
+public struct ConstraintLayoutSupportDSL : DeenIslamSDK.ConstraintDSL {
+  public var target: Swift.AnyObject? {
+    get
+  }
+  public var top: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  public var bottom: DeenIslamSDK.ConstraintItem {
+    get
+  }
+  public var height: DeenIslamSDK.ConstraintItem {
+    get
+  }
+}
+extension DeenIslamSDK.AudioQuality : Swift.Equatable {}
+extension DeenIslamSDK.AudioQuality : Swift.Hashable {}
+extension DeenIslamSDK.AudioQuality : Swift.RawRepresentable {}
+extension DeenIslamSDK.AudioPlayerBufferingStrategy : Swift.Equatable {}
+extension DeenIslamSDK.AudioPlayerBufferingStrategy : Swift.Hashable {}
+extension DeenIslamSDK.AudioPlayerBufferingStrategy : Swift.RawRepresentable {}
+extension DeenIslamSDK.VGPlayerState : Swift.Equatable {}
+extension DeenIslamSDK.VGPlayerState : Swift.Hashable {}
+extension DeenIslamSDK.VGPlayerState : Swift.RawRepresentable {}
+extension DeenIslamSDK.VGPlayerBufferstate : Swift.Equatable {}
+extension DeenIslamSDK.VGPlayerBufferstate : Swift.Hashable {}
+extension DeenIslamSDK.VGPlayerBufferstate : Swift.RawRepresentable {}
+extension DeenIslamSDK.VGVideoGravityMode : Swift.Equatable {}
+extension DeenIslamSDK.VGVideoGravityMode : Swift.Hashable {}
+extension DeenIslamSDK.VGVideoGravityMode : Swift.RawRepresentable {}
+extension DeenIslamSDK.VGPlayerBackgroundMode : Swift.Equatable {}
+extension DeenIslamSDK.VGPlayerBackgroundMode : Swift.Hashable {}
+extension DeenIslamSDK.VGPlayerBackgroundMode : Swift.RawRepresentable {}
+extension DeenIslamSDK.YouTubePlayerState : Swift.Equatable {}
+extension DeenIslamSDK.YouTubePlayerState : Swift.Hashable {}
+extension DeenIslamSDK.YouTubePlayerState : Swift.RawRepresentable {}
+extension DeenIslamSDK.YouTubePlayerEvents : Swift.Equatable {}
+extension DeenIslamSDK.YouTubePlayerEvents : Swift.Hashable {}
+extension DeenIslamSDK.YouTubePlayerEvents : Swift.RawRepresentable {}
+extension DeenIslamSDK.YouTubePlaybackQuality : Swift.Equatable {}
+extension DeenIslamSDK.YouTubePlaybackQuality : Swift.Hashable {}
+extension DeenIslamSDK.YouTubePlaybackQuality : Swift.RawRepresentable {}
+extension DeenIslamSDK.VGPlayerCacheActionType : Swift.Equatable {}
+extension DeenIslamSDK.VGPlayerCacheActionType : Swift.Hashable {}
+extension DeenIslamSDK.VGPlayerCacheActionType : Swift.RawRepresentable {}
+extension DeenIslamSDK.VGPlayerViewPanGestureDirection : Swift.Equatable {}
+extension DeenIslamSDK.VGPlayerViewPanGestureDirection : Swift.Hashable {}
+extension DeenIslamSDK.VGPlayerViewPanGestureDirection : Swift.RawRepresentable {}
+@available(iOSApplicationExtension, unavailable)
+extension DeenIslamSDK.IQAutoToolbarManageBehaviour : Swift.Equatable {}
+@available(iOSApplicationExtension, unavailable)
+extension DeenIslamSDK.IQAutoToolbarManageBehaviour : Swift.Hashable {}
+@available(iOSApplicationExtension, unavailable)
+extension DeenIslamSDK.IQAutoToolbarManageBehaviour : Swift.RawRepresentable {}
+@available(iOSApplicationExtension, unavailable)
+extension DeenIslamSDK.IQPreviousNextDisplayMode : Swift.Equatable {}
+@available(iOSApplicationExtension, unavailable)
+extension DeenIslamSDK.IQPreviousNextDisplayMode : Swift.Hashable {}
+@available(iOSApplicationExtension, unavailable)
+extension DeenIslamSDK.IQPreviousNextDisplayMode : Swift.RawRepresentable {}
+@available(iOSApplicationExtension, unavailable)
+extension DeenIslamSDK.IQEnableMode : Swift.Equatable {}
+@available(iOSApplicationExtension, unavailable)
+extension DeenIslamSDK.IQEnableMode : Swift.Hashable {}
+@available(iOSApplicationExtension, unavailable)
+extension DeenIslamSDK.IQEnableMode : Swift.RawRepresentable {}
+extension DeenIslamSDK.subtitlesFormat : Swift.Equatable {}
+extension DeenIslamSDK.subtitlesFormat : Swift.Hashable {}
+extension DeenIslamSDK.subtitlesFormat : Swift.RawRepresentable {}
+extension DeenIslamSDK.VGPlayerMediaFormat : Swift.Equatable {}
+extension DeenIslamSDK.VGPlayerMediaFormat : Swift.Hashable {}
+extension DeenIslamSDK.VGPlayerMediaFormat : Swift.RawRepresentable {}
+extension DeenIslamSDK.AppFeature : Swift.Equatable {}
+extension DeenIslamSDK.AppFeature : Swift.Hashable {}
+extension DeenIslamSDK.AppFeature : Swift.RawRepresentable {}
