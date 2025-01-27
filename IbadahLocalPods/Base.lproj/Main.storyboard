@@ -16,25 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Y3-n8-qU7" customClass="CustomView" customModule="DeenIslamSDK">
-                                <rect key="frame" x="0.0" y="59" width="393" height="300"/>
-                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JhU-bu-WEU">
+                                <rect key="frame" x="0.0" y="59" width="393" height="350"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="hX6-Cn-dqz"/>
+                                    <constraint firstAttribute="height" constant="350" id="kZk-Rk-6Ys"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2Y3-n8-qU7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Znc-dh-Jwl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Y3-n8-qU7" secondAttribute="trailing" id="baU-7E-coz"/>
-                            <constraint firstItem="2Y3-n8-qU7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fce-AF-qld"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JhU-bu-WEU" secondAttribute="trailing" id="Xtl-si-MQD"/>
+                            <constraint firstItem="JhU-bu-WEU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hAu-6B-tO1"/>
+                            <constraint firstItem="JhU-bu-WEU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mMj-dX-chl"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="c" destination="2Y3-n8-qU7" id="5BX-8D-mUZ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,8 +42,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

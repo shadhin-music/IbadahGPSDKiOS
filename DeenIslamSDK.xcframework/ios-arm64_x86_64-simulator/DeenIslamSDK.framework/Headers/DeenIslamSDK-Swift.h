@@ -410,45 +410,6 @@ SWIFT_CLASS("_TtC12DeenIslamSDK8BaseView")
 
 
 
-SWIFT_CLASS("_TtC12DeenIslamSDK10CustomView")
-@interface CustomView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)didMoveToSuperview;
-@end
-
-
-@class UIViewController;
-@class UIPresentationController;
-
-@interface CustomView (SWIFT_EXTENSION(DeenIslamSDK)) <UIViewControllerTransitioningDelegate>
-- (UIPresentationController * _Nullable)presentationControllerForPresentedViewController:(UIViewController * _Nonnull)presented presentingViewController:(UIViewController * _Nullable)presenting sourceViewController:(UIViewController * _Nonnull)source SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@class UICollectionView;
-@class NSIndexPath;
-@class UICollectionViewCell;
-@class UICollectionViewLayout;
-
-@interface CustomView (SWIFT_EXTENSION(DeenIslamSDK)) <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
-- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (UIEdgeInsets)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout insetForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-SWIFT_CLASS("_TtC12DeenIslamSDK19DeenIslamCustomView")
-@interface DeenIslamCustomView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-@end
-
-
 SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 @interface DeenIslamGPSDK : NSObject
 /// initilizer
@@ -457,7 +418,6 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 @end
 
 
-@class UITabBarController;
 @class UINavigationController;
 @protocol DeenIslamSDKNotifier;
 @class UIEvent;
@@ -465,9 +425,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 @interface DeenIslamGPSDK (SWIFT_EXTENSION(DeenIslamSDK))
 /// \param msisdn user mobile number
 ///
-/// \param isBL number is BL or not
-///
-- (void)logInWith:(NSString * _Nonnull)msisdn isBL:(BOOL)isBL complete:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))complete;
+- (void)logInWith:(NSString * _Nonnull)msisdn complete:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))complete;
 /// \param tabBar UITabBarController for quran show
 ///
 /// \param nav UINavigationController for navigate view controller
@@ -478,9 +436,8 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 ///
 /// \param isBL initialize number is BL or not
 ///
-- (void)initializeWith:(UITabBarController * _Nullable)tabBar nav:(UINavigationController * _Nonnull)nav delegate:(id <DeenIslamSDKNotifier> _Nonnull)delegate token:(NSString * _Nonnull)token isBL:(BOOL)isBL;
+- (void)initializeWith:(UINavigationController * _Nonnull)nav delegate:(id <DeenIslamSDKNotifier> _Nonnull)delegate;
 - (void)gotoHome;
-- (void)gotoWithFeature:(enum AppFeature)feature;
 - (void)eventRegisterWith:(UIEvent * _Nonnull)event;
 - (void)terminate;
 - (void)openFromRCWithCode:(NSString * _Nonnull)code;
@@ -492,11 +449,15 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 
 SWIFT_PROTOCOL("_TtP12DeenIslamSDK20DeenIslamSDKNotifier_")
 @protocol DeenIslamSDKNotifier <NSObject>
+/// Token status callback
 /// \param isValid if token is valid <code>true</code> else <code>false</code>
 ///
 /// \param error if token is invalid throw error
 ///
-- (void)tokenStatusWithToken:(BOOL)isValid error:(NSString * _Nullable)error;
+/// \param completion callback to provide token when empty
+///
+- (void)tokenStatusWithToken:(BOOL)isValid error:(NSString * _Nullable)error completion:(void (^ _Nullable)(NSString * _Nonnull))completion;
+- (void)getTokenWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
 /// Description
 /// \param error any error occure this func call with error message
 ///
@@ -531,6 +492,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK8DropDown")
 @end
 
 @class UITableView;
+@class NSIndexPath;
 
 @interface DropDown (SWIFT_EXTENSION(DeenIslamSDK)) <UITableViewDelegate>
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -620,6 +582,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK12IQInvocation") SWIFT_AVAILABILITY(ios_app_exten
 enum IQPreviousNextDisplayMode : NSInteger;
 @class UIFont;
 @class UITapGestureRecognizer;
+@class UIViewController;
 
 /// Codeless drop-in universal library allows to prevent issues of keyboard sliding up and cover UITextField/UITextView. Neither need to write any code nor any setup required and much more. A generic version of KeyboardManagement. https://developer.apple.com/library/ios/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/KeyboardManagement/KeyboardManagement.html
 SWIFT_CLASS("_TtC12DeenIslamSDK17IQKeyboardManager") SWIFT_AVAILABILITY(ios_app_extension,unavailable)
@@ -727,13 +690,6 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 
 SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 @interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
-/// reloadInputViews to reload toolbar buttons enable/disable state on the fly Enhancement ID #434.
-- (void)reloadInputViews;
-@end
-
-
-SWIFT_AVAILABILITY(ios_app_extension,unavailable)
-@interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
 @property (nonatomic) BOOL enableDebugging;
 /// @warning Use below methods to completely enable/disable notifications registered by library internally.
 /// Please keep in mind that library is totally dependent on NSNotification of UITextField, UITextField, Keyboard etc.
@@ -741,6 +697,13 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 /// You should use below methods at your own risk.
 - (void)registerAllNotifications;
 - (void)unregisterAllNotifications;
+@end
+
+
+SWIFT_AVAILABILITY(ios_app_extension,unavailable)
+@interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
+/// reloadInputViews to reload toolbar buttons enable/disable state on the fly Enhancement ID #434.
+- (void)reloadInputViews;
 @end
 
 
@@ -760,21 +723,21 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 
 SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 @interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
-/// moved distance to the top used to maintain distance between keyboard and textField. Most of the time this will be a positive value.
-@property (nonatomic, readonly) CGFloat movedDistance;
-/// Will be called then movedDistance will be changed
-@property (nonatomic, copy) void (^ _Nullable movedDistanceChanged)(CGFloat);
-@end
-
-
-SWIFT_AVAILABILITY(ios_app_extension,unavailable)
-@interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
 - (void)registerKeyboardSizeChangeWithIdentifier:(NSObject * _Nonnull)identifier sizeHandler:(void (^ _Nonnull)(CGSize))sizeHandler;
 - (void)unregisterKeyboardSizeChangeWithIdentifier:(NSObject * _Nonnull)identifier;
 /// Boolean to know if keyboard is showing.
 @property (nonatomic, readonly) BOOL keyboardShowing;
 /// To save keyboard rame.
 @property (nonatomic, readonly) CGRect keyboardFrame;
+@end
+
+
+SWIFT_AVAILABILITY(ios_app_extension,unavailable)
+@interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
+/// moved distance to the top used to maintain distance between keyboard and textField. Most of the time this will be a positive value.
+@property (nonatomic, readonly) CGFloat movedDistance;
+/// Will be called then movedDistance will be changed
+@property (nonatomic, copy) void (^ _Nullable movedDistanceChanged)(CGFloat);
 @end
 
 @protocol UITextViewDelegate;
@@ -914,6 +877,37 @@ SWIFT_CLASS("_TtC12DeenIslamSDK9IQToolbar") SWIFT_AVAILABILITY(ios_app_extension
 @property (nonatomic, strong) UIColor * _Null_unspecified tintColor;
 - (void)layoutSubviews;
 @property (nonatomic, readonly) BOOL enableInputClicksWhenVisible;
+@end
+
+
+SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
+@interface IbadahHome : UIView
+- (nonnull instancetype)initWithSdk:(DeenIslamGPSDK * _Nonnull)sdk frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)didMoveToSuperview;
+@end
+
+
+@class UIPresentationController;
+
+@interface IbadahHome (SWIFT_EXTENSION(DeenIslamSDK)) <UIViewControllerTransitioningDelegate>
+- (UIPresentationController * _Nullable)presentationControllerForPresentedViewController:(UIViewController * _Nonnull)presented presentingViewController:(UIViewController * _Nullable)presenting sourceViewController:(UIViewController * _Nonnull)source SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@class UICollectionView;
+@class UICollectionViewCell;
+@class UICollectionViewLayout;
+
+@interface IbadahHome (SWIFT_EXTENSION(DeenIslamSDK)) <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (UIEdgeInsets)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout insetForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -1685,45 +1679,6 @@ SWIFT_CLASS("_TtC12DeenIslamSDK8BaseView")
 
 
 
-SWIFT_CLASS("_TtC12DeenIslamSDK10CustomView")
-@interface CustomView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)didMoveToSuperview;
-@end
-
-
-@class UIViewController;
-@class UIPresentationController;
-
-@interface CustomView (SWIFT_EXTENSION(DeenIslamSDK)) <UIViewControllerTransitioningDelegate>
-- (UIPresentationController * _Nullable)presentationControllerForPresentedViewController:(UIViewController * _Nonnull)presented presentingViewController:(UIViewController * _Nullable)presenting sourceViewController:(UIViewController * _Nonnull)source SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@class UICollectionView;
-@class NSIndexPath;
-@class UICollectionViewCell;
-@class UICollectionViewLayout;
-
-@interface CustomView (SWIFT_EXTENSION(DeenIslamSDK)) <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
-- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (UIEdgeInsets)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout insetForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-SWIFT_CLASS("_TtC12DeenIslamSDK19DeenIslamCustomView")
-@interface DeenIslamCustomView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-@end
-
-
 SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 @interface DeenIslamGPSDK : NSObject
 /// initilizer
@@ -1732,7 +1687,6 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 @end
 
 
-@class UITabBarController;
 @class UINavigationController;
 @protocol DeenIslamSDKNotifier;
 @class UIEvent;
@@ -1740,9 +1694,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 @interface DeenIslamGPSDK (SWIFT_EXTENSION(DeenIslamSDK))
 /// \param msisdn user mobile number
 ///
-/// \param isBL number is BL or not
-///
-- (void)logInWith:(NSString * _Nonnull)msisdn isBL:(BOOL)isBL complete:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))complete;
+- (void)logInWith:(NSString * _Nonnull)msisdn complete:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))complete;
 /// \param tabBar UITabBarController for quran show
 ///
 /// \param nav UINavigationController for navigate view controller
@@ -1753,9 +1705,8 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 ///
 /// \param isBL initialize number is BL or not
 ///
-- (void)initializeWith:(UITabBarController * _Nullable)tabBar nav:(UINavigationController * _Nonnull)nav delegate:(id <DeenIslamSDKNotifier> _Nonnull)delegate token:(NSString * _Nonnull)token isBL:(BOOL)isBL;
+- (void)initializeWith:(UINavigationController * _Nonnull)nav delegate:(id <DeenIslamSDKNotifier> _Nonnull)delegate;
 - (void)gotoHome;
-- (void)gotoWithFeature:(enum AppFeature)feature;
 - (void)eventRegisterWith:(UIEvent * _Nonnull)event;
 - (void)terminate;
 - (void)openFromRCWithCode:(NSString * _Nonnull)code;
@@ -1767,11 +1718,15 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 
 SWIFT_PROTOCOL("_TtP12DeenIslamSDK20DeenIslamSDKNotifier_")
 @protocol DeenIslamSDKNotifier <NSObject>
+/// Token status callback
 /// \param isValid if token is valid <code>true</code> else <code>false</code>
 ///
 /// \param error if token is invalid throw error
 ///
-- (void)tokenStatusWithToken:(BOOL)isValid error:(NSString * _Nullable)error;
+/// \param completion callback to provide token when empty
+///
+- (void)tokenStatusWithToken:(BOOL)isValid error:(NSString * _Nullable)error completion:(void (^ _Nullable)(NSString * _Nonnull))completion;
+- (void)getTokenWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
 /// Description
 /// \param error any error occure this func call with error message
 ///
@@ -1806,6 +1761,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK8DropDown")
 @end
 
 @class UITableView;
+@class NSIndexPath;
 
 @interface DropDown (SWIFT_EXTENSION(DeenIslamSDK)) <UITableViewDelegate>
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -1895,6 +1851,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK12IQInvocation") SWIFT_AVAILABILITY(ios_app_exten
 enum IQPreviousNextDisplayMode : NSInteger;
 @class UIFont;
 @class UITapGestureRecognizer;
+@class UIViewController;
 
 /// Codeless drop-in universal library allows to prevent issues of keyboard sliding up and cover UITextField/UITextView. Neither need to write any code nor any setup required and much more. A generic version of KeyboardManagement. https://developer.apple.com/library/ios/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/KeyboardManagement/KeyboardManagement.html
 SWIFT_CLASS("_TtC12DeenIslamSDK17IQKeyboardManager") SWIFT_AVAILABILITY(ios_app_extension,unavailable)
@@ -2002,13 +1959,6 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 
 SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 @interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
-/// reloadInputViews to reload toolbar buttons enable/disable state on the fly Enhancement ID #434.
-- (void)reloadInputViews;
-@end
-
-
-SWIFT_AVAILABILITY(ios_app_extension,unavailable)
-@interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
 @property (nonatomic) BOOL enableDebugging;
 /// @warning Use below methods to completely enable/disable notifications registered by library internally.
 /// Please keep in mind that library is totally dependent on NSNotification of UITextField, UITextField, Keyboard etc.
@@ -2016,6 +1966,13 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 /// You should use below methods at your own risk.
 - (void)registerAllNotifications;
 - (void)unregisterAllNotifications;
+@end
+
+
+SWIFT_AVAILABILITY(ios_app_extension,unavailable)
+@interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
+/// reloadInputViews to reload toolbar buttons enable/disable state on the fly Enhancement ID #434.
+- (void)reloadInputViews;
 @end
 
 
@@ -2035,21 +1992,21 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 
 SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 @interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
-/// moved distance to the top used to maintain distance between keyboard and textField. Most of the time this will be a positive value.
-@property (nonatomic, readonly) CGFloat movedDistance;
-/// Will be called then movedDistance will be changed
-@property (nonatomic, copy) void (^ _Nullable movedDistanceChanged)(CGFloat);
-@end
-
-
-SWIFT_AVAILABILITY(ios_app_extension,unavailable)
-@interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
 - (void)registerKeyboardSizeChangeWithIdentifier:(NSObject * _Nonnull)identifier sizeHandler:(void (^ _Nonnull)(CGSize))sizeHandler;
 - (void)unregisterKeyboardSizeChangeWithIdentifier:(NSObject * _Nonnull)identifier;
 /// Boolean to know if keyboard is showing.
 @property (nonatomic, readonly) BOOL keyboardShowing;
 /// To save keyboard rame.
 @property (nonatomic, readonly) CGRect keyboardFrame;
+@end
+
+
+SWIFT_AVAILABILITY(ios_app_extension,unavailable)
+@interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
+/// moved distance to the top used to maintain distance between keyboard and textField. Most of the time this will be a positive value.
+@property (nonatomic, readonly) CGFloat movedDistance;
+/// Will be called then movedDistance will be changed
+@property (nonatomic, copy) void (^ _Nullable movedDistanceChanged)(CGFloat);
 @end
 
 @protocol UITextViewDelegate;
@@ -2189,6 +2146,37 @@ SWIFT_CLASS("_TtC12DeenIslamSDK9IQToolbar") SWIFT_AVAILABILITY(ios_app_extension
 @property (nonatomic, strong) UIColor * _Null_unspecified tintColor;
 - (void)layoutSubviews;
 @property (nonatomic, readonly) BOOL enableInputClicksWhenVisible;
+@end
+
+
+SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
+@interface IbadahHome : UIView
+- (nonnull instancetype)initWithSdk:(DeenIslamGPSDK * _Nonnull)sdk frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)didMoveToSuperview;
+@end
+
+
+@class UIPresentationController;
+
+@interface IbadahHome (SWIFT_EXTENSION(DeenIslamSDK)) <UIViewControllerTransitioningDelegate>
+- (UIPresentationController * _Nullable)presentationControllerForPresentedViewController:(UIViewController * _Nonnull)presented presentingViewController:(UIViewController * _Nullable)presenting sourceViewController:(UIViewController * _Nonnull)source SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@class UICollectionView;
+@class UICollectionViewCell;
+@class UICollectionViewLayout;
+
+@interface IbadahHome (SWIFT_EXTENSION(DeenIslamSDK)) <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (UIEdgeInsets)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout insetForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
