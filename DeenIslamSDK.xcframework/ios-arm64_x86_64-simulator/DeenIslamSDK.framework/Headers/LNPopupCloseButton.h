@@ -2,54 +2,49 @@
 //  LNPopupCloseButton.h
 //  LNPopupController
 //
-//  Created by Leo Natan on 7/24/15.
-//  Copyright © 2015 Leo Natan. All rights reserved.
+//  Created by Léo Natan on 2015-08-23.
+//  Copyright © 2015-2024 Léo Natan. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "LNPopupDefinitions.h"
 
-/**
- * Available styles for the popup close button
- */
-typedef NS_ENUM(NSUInteger, LNPopupCloseButtonStyle) {
-    /**
-     * Use the most appropriate close button style for the current operating system version—uses cehvron button style for iOS 10 and above, otherwise round button.
-     */
-    LNPopupCloseButtonStyleDefault,
-    
-    /**
-     * Round close button style
-     */
-    LNPopupCloseButtonStyleRound,
-    /**
-     * Chevron close button style
-     */
-    LNPopupCloseButtonStyleChevron,
-    /**
-     * No close button
-     */
-    LNPopupCloseButtonStyleNone = 0xFFFF
-};
+/// Available styles for the popup close button.
+typedef NS_ENUM(NSInteger, LNPopupCloseButtonStyle) {
+	/// The default close button style for the current environment.
+	LNPopupCloseButtonStyleDefault,
+	
+	/// Round close button style.
+	LNPopupCloseButtonStyleRound,
+	
+	/// Chevron close button style.
+	LNPopupCloseButtonStyleChevron,
+	
+	/// Grabber close button style.
+	LNPopupCloseButtonStyleGrabber,
+	
+	/// No close button.
+	LNPopupCloseButtonStyleNone = 0xFFFF,
+	
+	LNPopupCloseButtonStyleFlat LN_DEPRECATED_API("Use LNPopupCloseButtonStyle.grabber instead.") = LNPopupCloseButtonStyleGrabber
+} NS_SWIFT_NAME(LNPopupCloseButton.Style);
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LNPopupCloseButton : UIButton
+/// The popup content close button.
+NS_SWIFT_UI_ACTOR
+@interface LNPopupCloseButton : UIButton <UIAppearanceContainer>
 
-/**
- * The current style of the popup close button. (read-only)
- *
- * @note In order to change the button's style, set the @c popupCloseButtonStyle property of the content view.
- */
-@property (nonatomic, readonly) LNPopupCloseButtonStyle dn_style;
+/// Gets or sets the style of the popup close button. Has the same effect as setting the `LNPopupContentView.popupCloseButtonStyle` property of the popup content view.
+@property (nonatomic) LNPopupCloseButtonStyle style UI_APPEARANCE_SELECTOR;
 
-/**
- * The button’s background view. (read-only)
- *
- * The value of this property will be @c nil if @c style is not set to @c LNPopupCloseButtonStyleRound.
- *
- * @note Although this property is read-only, its own properties are read/write. Use these properties to configure the appearance and behavior of the button’s background view.
- */
-@property (nonatomic, strong, readonly) UIVisualEffectView* dn_backgroundView;
+/// The button’s background view. (read-only)
+///
+/// The value of this property will be `nil` if ``style`` is not set to `LNPopupCloseButtonStyleRound`.
+///
+/// @note Although this property is read-only, its own properties are read/write. Use these properties to configure the appearance and behavior of the button’s background view.
+@property (nonatomic, strong, readonly) UIVisualEffectView* backgroundView;
 
 @end
+
 NS_ASSUME_NONNULL_END

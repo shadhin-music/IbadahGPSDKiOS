@@ -1,65 +1,70 @@
 //
-//  _LNPopupBarSupportObject.h
+//  LNPopupController.h
 //  LNPopupController
 //
-//  Created by Leo Natan on 7/24/15.
-//  Copyright © 2015 Leo Natan. All rights reserved.
+//  Created by Léo Natan on 2015-08-23.
+//  Copyright © 2015-2024 Léo Natan. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "LNPopupBar+Private.h"
 #import "UIViewController+LNPopupSupportPrivate.h"
 #import "LNPopupCloseButton.h"
-#import "LNPopupContentView.h"
+#import "LNPopupContentView+Private.h"
+#import "LNPopupBar+Private.h"
 
-@interface LNPopupContentView ()
+CF_EXTERN_C_BEGIN
 
-- (instancetype)initWithFrame:(CGRect)frame;
+#define _LNPopupPresentationStateTransitioning ((LNPopupPresentationState)2)
 
-@property (nonatomic, strong, readwrite) UIPanGestureRecognizer* dn_popupInteractionGestureRecognizer;
-@property (nonatomic, strong, readwrite) LNPopupCloseButton* dn_popupCloseButton;
-@property (nonatomic, strong) UIVisualEffectView* dn_effectView;
+@interface LNPopupController : NSObject <_LNPopupBarDelegate>
 
-@property (nonatomic, weak) UIViewController* dn_currentPopupContentViewController;
+- (instancetype)initWithContainerViewController:(__kindof UIViewController*)containerController;
+
+@property (nonatomic, weak) UIView* bottomBar;
+
+@property (nonatomic, strong) LNPopupBar* popupBar;
+@property (nonatomic, strong, readonly) LNPopupBar* popupBarStorage;
+@property (nonatomic, strong, readonly) LNPopupBar* popupBarNoCreate;
+@property (nonatomic, strong) LNPopupContentView* popupContentView;
+@property (nonatomic, strong) UIScrollView* popupContentContainerView;
+
+@property (nonatomic) LNPopupPresentationState popupControllerPublicState;
+@property (nonatomic) LNPopupPresentationState popupControllerInternalState;
+@property (nonatomic) LNPopupPresentationState popupControllerTargetState;
+
+@property (nonatomic, weak) id<LNPopupPresentationDelegate> userPopupPresentationDelegate;
+
+@property (nonatomic, strong) __kindof UIViewController* currentContentController;
+@property (nonatomic, weak) __kindof UIViewController* containerController;
+
+@property (nonatomic) CGPoint lastPopupBarLocation;
+@property (nonatomic) CFTimeInterval lastSeenMovement;
+
+@property (nonatomic, weak) UIViewController* effectiveStatusBarUpdateController;
+
+@property (assign) BOOL wantsFeedbackGeneration;
+
+- (CGFloat)_percentFromPopupBar;
+
+- (void)_setContentToState:(LNPopupPresentationState)state;
+- (void)_setContentToState:(LNPopupPresentationState)state animated:(BOOL)animated;
+
+- (void)_movePopupBarAndContentToBottomBarSuperview;
+
+- (void)presentPopupBarWithContentViewController:(UIViewController*)contentViewController openPopup:(BOOL)open animated:(BOOL)animated completion:(void(^)(void))completionBlock;
+- (void)openPopupAnimated:(BOOL)animated completion:(void(^)(void))completionBlock;
+- (void)closePopupAnimated:(BOOL)animated completion:(void(^)(void))completionBlock;
+- (void)dismissPopupBarAnimated:(BOOL)animated completion:(void(^)(void))completionBlock;
+
+- (void)_configurePopupBarFromBottomBar;
+- (void)_configurePopupBarFromBottomBarModifyingGroupingIdentifier:(BOOL)modifyingGroupingIdentifier;
+- (void)_updateBarExtensionStyleFromPopupBar;
+
++ (CGFloat)_statusBarHeightForView:(UIView*)view;
+
+- (void)_fixupGestureRecognizer:(UIGestureRecognizer*)obj;
 
 @end
 
-@interface LNPopupController : NSObject
-
-- (instancetype)initDnWithContainerViewController:(__kindof UIViewController*)containerController;
-
-@property (nonatomic, weak) UIView* dn_bottomBar;
-
-@property (nonatomic, strong) LNPopupBar* dn_popupBar;
-@property (nonatomic, strong, readonly) LNPopupBar* dn_popupBarStorage;
-@property (nonatomic, strong) LNPopupContentView* dn_popupContentView;
-@property (nonatomic, strong) UIScrollView* dn_popupContentContainerView;
-
-@property (nonatomic) LNPopupPresentationState dn_popupControllerState;
-@property (nonatomic) LNPopupPresentationState dn_popupControllerTargetState;
-
-@property (nonatomic, weak) __kindof UIViewController* dn_containerController;
-
-@property (nonatomic) CGPoint dn_lastPopupBarLocation;
-@property (nonatomic) CFTimeInterval dn_lastSeenMovement;
-
-@property (nonatomic, weak) UIViewController* dn_effectiveStatusBarUpdateController;
-
-- (CGFloat)dn__percentFromPopupBar;
-
-- (void)_dn_setContentToState:(LNPopupPresentationState)state;
-
-- (void)_dn_movePopupBarAndContentToBottomBarSuperview;
-
-- (void)_dn_repositionPopupCloseButton;
-
-- (void)dn_presentPopupBarAnimated:(BOOL)animated openPopup:(BOOL)open completion:(void(^)(void))completionBlock;
-- (void)dn_openPopupAnimated:(BOOL)animated completion:(void(^)(void))completionBlock;
-- (void)dn_closePopupAnimated:(BOOL)animated completion:(void(^)(void))completionBlock;
-- (void)dn_dismissPopupBarAnimated:(BOOL)animated completion:(void(^)(void))completionBlock;
-
-- (void)_dn_configurePopupBarFromBottomBar;
-
-+ (CGFloat)_dn_statusBarHeightForView:(UIView*)view;
-
-@end
+CF_EXTERN_C_END

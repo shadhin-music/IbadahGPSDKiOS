@@ -2,214 +2,179 @@
 //  LNPopupBar.h
 //  LNPopupController
 //
-//  Created by Leo Natan on 7/24/15.
-//  Copyright © 2015 Leo Natan. All rights reserved.
+//  Created by Léo Natan on 2015-08-23.
+//  Copyright © 2015-2024 Léo Natan. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "LNPopupDefinitions.h"
 #import "LNPopupItem.h"
 #import "LNPopupCustomBarViewController.h"
+#import "LNPopupBarAppearance.h"
 
-#define LN_DEPRECATED_API(x) __attribute__((deprecated(x)))
-#define LN_DEPRECATED_PREVIEWING_MSG "Add context menu interaction or register for previewing directly on the popup bar view. This API will be removed soon."
+#define LN_UNAVAILABLE_PREVIEWING_MSG "Add context menu interaction or register for previewing directly on the popup bar view."
 
 NS_ASSUME_NONNULL_BEGIN
 
-extern const UIBlurEffectStyle LNBackgroundStyleInherit;
+/// Available styles for the popup bar.
+typedef NS_ENUM(NSInteger, LNPopupBarStyle) {
+	/// The default bar style for the current environment.
+	LNPopupBarStyleDefault,
+	
+	/// Compact bar style.
+	LNPopupBarStyleCompact,
+	
+	/// Prominent bar style.
+	LNPopupBarStyleProminent,
+	
+	/// Floating bar style.
+	LNPopupBarStyleFloating,
+	
+	/// Custom bar style.
+	///
+	/// Do not set this style directly. Instead, set the `LNPopupBar.customBarViewController` property and the framework will use this style.
+	LNPopupBarStyleCustom = 0xFFFF
+} NS_SWIFT_NAME(LNPopupBar.Style);
 
-/**
- * Available styles for the popup bar
- */
-typedef NS_ENUM(NSUInteger, LNPopupBarStyle) {
-    /**
-     * Use the most appropriate style for the current operating system version—uses prominent style for iOS 10 and above, otherwise compact.
-     */
-    LNPopupBarStyleDefault,
-    
-    /**
-     * Compact bar style
-     */
-    LNPopupBarStyleCompact,
-    /**
-     * Prominent bar style
-     */
-    LNPopupBarStyleProminent,
-    /**
-     * Custom bar style
-     *
-     * @note Do not set this style directly. Instead set @c LNPopupBar.customBarViewController and the framework will use this style.
-     */
-    LNPopupBarStyleCustom
-};
-
-typedef NS_ENUM(NSUInteger, LNPopupBarProgressViewStyle) {
-    /**
-     * Use the most appropriate style for the current operating system version—uses none for iOS 10 and above, otherwise bottom.
-     */
-    LNPopupBarProgressViewStyleDefault,
-    
-    /**
-     * Progress view on bottom
-     */
-    LNPopupBarProgressViewStyleBottom,
-    /**
-     * Progress view on bottom
-     */
+/// Available styles for the popup bar progress view.
+typedef NS_ENUM(NSInteger, LNPopupBarProgressViewStyle) {
+	/// Use the most appropriate style for the current operating system version.
+	LNPopupBarProgressViewStyleDefault,
+	
+	/// Progress view on bottom
+	LNPopupBarProgressViewStyleBottom,
+	
+	/// Progress view on bottom
     LNPopupBarProgressViewStyleTop,
-    /**
-     * No progress view
-     */
-    LNPopupBarProgressViewStyleNone
-};
+	
+	/// No progress view
+	LNPopupBarProgressViewStyleNone = 0xFFFF
+} NS_SWIFT_NAME(LNPopupBar.ProgressViewStyle);
 
-/**
- * A popup bar is a control that displays popup information. Content is popuplated from @c LNPopupItem items.
- */
+NS_SWIFT_UI_ACTOR
+/// A popup bar is a control that displays popup information. Content is populated from ``LNPopupItem`` items.
 @interface LNPopupBar : UIView <UIAppearanceContainer>
 
-/**
- * If @c YES, the popup bar will automatically inherit its style from the bottom docking view.
- */
-@property (nonatomic, assign) BOOL dn_inheritsVisualStyleFromDockingView UI_APPEARANCE_SELECTOR;
+/// If `true`, the popup bar will automatically inherit its appearance from the bottom docking view.
+@property (nonatomic, assign) BOOL inheritsAppearanceFromDockingView UI_APPEARANCE_SELECTOR;
 
-/**
- * The currently displayed popup item. (read-only)
- */
-@property (nullable, nonatomic, weak, readonly) LNPopupItem* dn_popupItem;
+/// The currently displayed popup item. (read-only)
+@property (nullable, nonatomic, weak, readonly) LNPopupItem* popupItem;
 
-/**
- * An array of custom bar button items to display on the left side. (read-only)
- */
-@property (nullable, nonatomic, copy, readonly) NSArray<UIBarButtonItem*>* dn_leftBarButtonItems;
+/// An array of custom bar button items. (read-only)
+///
+/// For compact popup bars, this property is equivalent to `trailingBarButtonItems`.
+@property (nullable, nonatomic, copy, readonly) NSArray<UIBarButtonItem*>* barButtonItems;
 
-/**
- * An array of custom bar button items to display on the right side. (read-only)
- */
-@property (nullable, nonatomic, copy, readonly) NSArray<UIBarButtonItem*>* dn_rightBarButtonItems;
+/// An array of custom bar button items to display on the left side. (read-only)
+@property (nullable, nonatomic, copy, readonly) NSArray<UIBarButtonItem*>* leadingBarButtonItems;
 
-/**
- * An image view displayed when the bar style is prominent. (read-only)
- */
-@property (nonatomic, strong, readonly) UIImageView* dn_imageView;
+/// An array of custom bar button items to display on the right side. (read-only)
+@property (nullable, nonatomic, copy, readonly) NSArray<UIBarButtonItem*>* trailingBarButtonItems;
 
-/**
- * The popup bar style.
- */
-@property (nonatomic, assign) LNPopupBarStyle dn_barStyle UI_APPEARANCE_SELECTOR;
+/// An image view displayed when the bar style is prominent. (read-only)
+@property (nonatomic, strong, readonly) UIImageView* imageView;
 
-/**
- * The popup bar's progress style.
- */
-@property (nonatomic, assign) LNPopupBarProgressViewStyle dn_progressViewStyle UI_APPEARANCE_SELECTOR;
+/// The popup bar style.
+@property (nonatomic, assign) LNPopupBarStyle barStyle UI_APPEARANCE_SELECTOR;
 
-/**
-* The progress view displayed on the popup bar.
-*/
-@property (nonatomic, strong, readonly) UIProgressView* dn_progressView;
+/// The effective popup bar style used by the system. (read-only)
+///
+/// Use this property's value to determine, at runtime, what the result of `LNPopupBarStyleDefault` is.
+@property (nonatomic, assign, readonly) LNPopupBarStyle effectiveBarStyle;
 
-/**
- * The popup bar background style that specifies its appearance.
- *
- * Use @c LNBackgroundStyleInherit value to inherit the docking view's bar style if possible.
- */
-@property (nonatomic, assign) UIBlurEffectStyle dn_backgroundStyle UI_APPEARANCE_SELECTOR;
+/// In wide enough environments, such as iPadOS, limit the width of content of floating bars to a system-determined value.
+///
+/// Defaults to `true`.
+@property (nonatomic, assign) BOOL limitFloatingContentWidth;
 
-/**
- * The tint color to apply to the popup bar background.
- */
-@property (nullable, nonatomic, strong) UIColor* dn_barTintColor UI_APPEARANCE_SELECTOR;
+/// Describes the appearance attributes for the popup bar to use.
+@property (nonatomic, copy, null_resettable) LNPopupBarAppearance* standardAppearance UI_APPEARANCE_SELECTOR;
 
-/**
- * A Boolean value that indicates whether the popup bar is translucent (@c YES) or not (@c NO).
- */
-@property(nonatomic, assign, getter=isTranslucent) BOOL dn_translucent UI_APPEARANCE_SELECTOR;
+/// The popup bar's progress view style.
+@property (nonatomic, assign) LNPopupBarProgressViewStyle progressViewStyle UI_APPEARANCE_SELECTOR;
 
-/**
- * Display attributes for the popup bar’s title text.
- *
- * You may specify the font, text color, and shadow properties for the title in the text attributes dictionary, using the keys found in @c NSAttributedString.h.
- */
-@property (nullable, nonatomic, copy) NSDictionary<NSAttributedStringKey, id>* dn_titleTextAttributes UI_APPEARANCE_SELECTOR;
+/// The progress view displayed on the popup bar. (read-only)
+@property (nonatomic, strong, readonly) UIProgressView* progressView;
 
-/**
- * Display attributes for the popup bar’s subtitle text.
- *
- * You may specify the font, text color, and shadow properties for the title in the text attributes dictionary, using the keys found in @c NSAttributedString.h.
- */
-@property (nullable, nonatomic, copy) NSDictionary<NSAttributedStringKey, id>* dn_subtitleTextAttributes UI_APPEARANCE_SELECTOR;
+/// A semantic description of the bar items, used to determine the order of bar items when switching between left-to-right and right-to-left layouts.
+///
+/// Defaults to `UISemanticContentAttributePlayback`.
+///
+/// See also `UIView.semanticContentAttribute`
+@property (nonatomic) UISemanticContentAttribute barItemsSemanticContentAttribute;
 
-/**
- * A semantic description of the bar items, used to determine the order of bar items when switching between left-to-right and right-to-left layouts.
- *
- * Defaults to @c UISemanticContentAttributePlayback
- *
- * See also @c UIView.semanticContentAttribute
- */
-@property (nonatomic) UISemanticContentAttribute dn_barItemsSemanticContentAttribute;
+/// The gesture recognizer responsible for opening the popup when the user taps on the popup bar. (read-only)
+@property (nonatomic, strong, readonly) UITapGestureRecognizer* popupOpenGestureRecognizer;
 
-/**
- * When enabled, titles and subtitles that are longer than the space available will scroll text over time. By default, this is set to @c false for iOS 10 and above, @c true otherwise.
- */
-@property (nonatomic, assign) BOOL dn_marqueeScrollEnabled;
+/// The gesture recognizer responsible for highlighting the popup bar when the user touches on the popup bar. (read-only)
+@property (nonatomic, strong, readonly) UILongPressGestureRecognizer* barHighlightGestureRecognizer;
 
-/**
- * When enabled, the title and subtitle marquee scroll will be coordinated, and if either the title or subtitle of the current popup item change, the animation will reset so the two can scroll together. Enabled by default.
- */
-@property (nonatomic, assign) BOOL dn_coordinateMarqueeScroll;
-
-/**
- * The gesture recognizer responsible for ing the popup when the user taps on the popup bar. (read-only)
- */
-@property (nonatomic, strong, readonly) UITapGestureRecognizer* dn_popupOpenGestureRecognizer;
-
-/**
- * The gesture recognizer responsible for highlighting the popup bar when the user touches on the popup bar. (read-only)
- */
-@property (nonatomic, strong, readonly) UILongPressGestureRecognizer* dn_barHighlightGestureRecognizer;
-
-/**
- * Set this property with an @c LNPopupCustomBarViewController subclass object to provide a popup bar with custom content.
- */
-@property (nullable, nonatomic, strong) LNPopupCustomBarViewController* dn_customBarViewController;
+/// Set this property to an ``LNPopupCustomBarViewController`` subclass object to provide a popup bar with custom content.
+@property (nullable, nonatomic, strong) __kindof LNPopupCustomBarViewController* customBarViewController;
 
 @end
 
-#pragma mark Deprecatations
+#pragma mark Deprecations
 
-#if ! TARGET_OS_MACCATALYST
-LN_DEPRECATED_API(LN_DEPRECATED_PREVIEWING_MSG)
-@protocol LNPopupBarPreviewingDelegate <NSObject>
+extern const UIBlurEffectStyle LNBackgroundStyleInherit LN_UNAVAILABLE_API("Use LNPopupBarAppearance instead.");
 
-@required
+@interface LNPopupBar (Deprecated)
 
-/**
- * Called when the user performs a peek action on the popup bar.
- *
- * The default implementation returns @c nil and no preview is displayed.
- *
- * @return The view controller whose view you want to provide as the preview (peek), or @c nil to disable preview.
- */
-- (nullable UIViewController*)dn_previewingViewControllerForPopupBar:(LNPopupBar*)dn_popupBar LN_DEPRECATED_API(LN_DEPRECATED_PREVIEWING_MSG);
+/// If `true`, the popup bar will automatically inherit its style from the bottom docking view.
+@property (nonatomic, assign) BOOL inheritsVisualStyleFromDockingView LN_UNAVAILABLE_API("Use inheritsAppearanceFromDockingView instead.");
 
-@optional
+/// The popup bar background style that specifies its appearance.
+///
+/// Use `LNBackgroundStyleInherit` value to inherit the docking view's bar style if possible, or use a system default.
+///
+/// Defaults to `LNBackgroundStyleInherit`.
+@property (nonatomic, assign) UIBlurEffectStyle backgroundStyle LN_UNAVAILABLE_API("Use LNPopupBarAppearance.backgroundEffect instead.");
 
-/**
- * Called when the user performs a pop action on the popup bar.
- *
- * The default implementation does not commit the view controller.
- */
-- (void)dn_popupBar:(LNPopupBar*)dn_popupBar commitPreviewingViewController:(UIViewController*)viewController LN_DEPRECATED_API(LN_DEPRECATED_PREVIEWING_MSG);
+/// The tint color to apply to the popup bar background.
+@property (nullable, nonatomic, strong) UIColor* barTintColor LN_UNAVAILABLE_API("Use LNPopupBarAppearance.backgroundColor instead.");
+
+/// A Boolean value that indicates whether the popup bar is translucent (`true`) or not (`false`).
+@property(nonatomic, assign, getter=isTranslucent) BOOL translucent LN_UNAVAILABLE_API("Use LNPopupBarAppearance.configureWithOpaqueBackground() instead.");
+
+/// Display attributes for the popup bar’s title text.
+///
+/// You may specify the font, text color, and shadow properties for the title in the text attributes dictionary, using the keys found in `NSAttributedString.h`.
+@property (nullable, nonatomic, copy) NSDictionary<NSAttributedStringKey, id>* titleTextAttributes LN_UNAVAILABLE_API("Use LNPopupBarAppearance.titleTextAttributes instead.");
+
+/// Display attributes for the popup bar’s subtitle text.
+///
+/// You may specify the font, text color, and shadow properties for the title in the text attributes dictionary, using the keys found in `NSAttributedString.h`.
+@property (nullable, nonatomic, copy) NSDictionary<NSAttributedStringKey, id>* subtitleTextAttributes LN_UNAVAILABLE_API("Use LNPopupBarAppearance.subtitleTextAttributes instead.");
+
+/// When enabled, titles and subtitles that are longer than the space available will scroll text over time.
+///
+/// Defaults to `false`.
+@property (nonatomic, assign) BOOL marqueeScrollEnabled LN_UNAVAILABLE_API("Use LNPopupBarAppearance.marqueeScrollEnabled instead.");
+
+/// The scroll rate, in points, of the title and subtitle marquee animation.
+///
+/// Defaults to `30`.
+@property (nonatomic, assign) CGFloat marqueeScrollRate LN_UNAVAILABLE_API("Use LNPopupBarAppearance.marqueeScrollRate instead.");
+
+/// The delay, in seconds, before starting the title and subtitle marquee animation.
+///
+/// Defaults to `2`.
+@property (nonatomic, assign) NSTimeInterval marqueeScrollDelay LN_UNAVAILABLE_API("Use LNPopupBarAppearance.marqueeScrollDelay instead.");
+
+/// When enabled, the title and subtitle marquee scroll animations will be coordinated.
+///
+/// If either the title or subtitle of the current popup item change, the animation will reset so the two can scroll together.
+///
+/// Defaults to `true`.
+@property (nonatomic, assign) BOOL coordinateMarqueeScroll LN_UNAVAILABLE_API("Use LNPopupBarAppearance.coordinateMarqueeScroll instead.");
+
+/// An array of custom bar button items to display on the left side. (read-only)
+@property (nullable, nonatomic, copy, readonly) NSArray<UIBarButtonItem*>* leftBarButtonItems LN_UNAVAILABLE_API("Use leadingBarButtonItems instead.");
+
+/// An array of custom bar button items to display on the right side. (read-only)
+@property (nullable, nonatomic, copy, readonly) NSArray<UIBarButtonItem*>* rightBarButtonItems LN_UNAVAILABLE_API("Use barButtonItems or trailingBarButtonItems instead.");
 
 @end
-
-@interface LNPopupBar ()
-
-/**
- * The previewing delegate object mediates the presentation of views from the preview (peek) view controller and the commit (pop) view controller. In practice, these two are typically the same view controller. The delegate performs this mediation through your implementation of the methods of the @c LNPopupBarPreviewingDelegate protocol.
- */
-@property (nullable, nonatomic, weak) id<LNPopupBarPreviewingDelegate> dn_previewingDelegate LN_DEPRECATED_API(LN_DEPRECATED_PREVIEWING_MSG);
-
-@end
-#endif
 
 NS_ASSUME_NONNULL_END

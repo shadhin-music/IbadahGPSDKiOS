@@ -2,45 +2,65 @@
 //  LNPopupBarContentViewController.h
 //  LNPopupController
 //
-//  Created by Leo Natan on 15/12/2016.
-//  Copyright © 2016 Leo Natan. All rights reserved.
+//  Created by Léo Natan on 2016-12-30.
+//  Copyright © 2015-2024 Léo Natan. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "LNPopupDefinitions.h"
 
 @class LNPopupBar;
 
-@interface LNPopupCustomBarViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
-/**
- * The containing popup bar. (read-only)
- */
-@property (nonatomic, weak, readonly) LNPopupBar* dn_containingPopupBar;
+NS_SWIFT_UI_ACTOR
+/// An object that manages a custom popup bar view hierarchy.
+///
+/// Implement the `UIPointerInteractionDelegate` methods to customize pointer interactions.
+@interface LNPopupCustomBarViewController : UIViewController <UIPointerInteractionDelegate>
 
-/**
- * Indicates whether the default tap gesture recognizer should be added to the popup bar.
- *
- * Defaults to @c YES.
- */
-@property (nonatomic, assign, readonly) BOOL dn_wantsDefaultTapGestureRecognizer;
+/// The containing popup bar. (read-only)
+@property (nonatomic, weak, readonly, nullable) LNPopupBar* containingPopupBar;
 
-/**
- * Indicates whether the default pan gesture recognizer should be added to the popup bar.
- *
- * Defaults to @c YES.
- */
-@property (nonatomic, assign, readonly) BOOL dn_wantsDefaultPanGestureRecognizer;
+/// Indicates whether the default tap gesture recognizer should be added to the popup bar.
+///
+/// Defaults to `true`.
+@property (nonatomic, assign, readonly) BOOL wantsDefaultTapGestureRecognizer;
 
-/*
- * The @c preferredContentSize is used for height calculation of the popup bar.
- */
+/// Indicates whether the default pan gesture recognizer should be added to the popup bar.
+///
+/// Defaults to `true`.
+@property (nonatomic, assign, readonly) BOOL wantsDefaultPanGestureRecognizer;
+
+/// Indicates whether the default highlight gesture recognizer should be added to the popup bar.
+///
+/// Defaults to `true`.
+@property (nonatomic, assign, readonly) BOOL wantsDefaultHighlightGestureRecognizer;
+
+/// The content size of the popup bar view.
+///
+/// This property's value is used for height calculation of the popup bar. Update this property if you need to resize the popup bar.
 @property (nonatomic, assign) CGSize preferredContentSize;
 
-/**
- * Called by the framework to notify the popup content view controller that one or more keys of the the popup item have been updated, or the entire popup item has changed.
- *
- * @note You must call the @c super implementation of this method.
- */
-- (void)dn_popupItemDidUpdate NS_REQUIRES_SUPER;
+/// Called after the view has been loaded. For view controllers created in code, this is after `loadView()`. For view controllers unarchived from a nib, this is after the view is set.
+- (void)viewDidLoad NS_REQUIRES_SUPER;
+
+/// Called by the framework to notify the popup bar content view controller that one or more keys of the the popup item have been updated, or the entire popup item has changed.
+- (void)popupItemDidUpdate;
+
+/// Called by the framework no notify the popup bar content view controller that the custom bar is about to move to a popup bar.
+///
+/// - Parameter newPopupBar: The new popup bar
+- (void)willMoveToPopupBar:(nullable LNPopupBar*)newPopupBar;
+
+/// Called by the framework no notify the popup bar content view controller that the custom bar has moved to a popup bar.
+- (void)didMoveToPopupBar;
+
+/// Called by the framework to notify the popup bar content view controller that the active appearance has changed.
+///
+/// - Parameter activeAppearance: A merged appearance from the popup item, the system appearance and popup bar appearance, as appropriate.
+- (void)activeAppearanceDidChange:(LNPopupBarAppearance*)activeAppearance;
 
 @end
+
+NS_ASSUME_NONNULL_END

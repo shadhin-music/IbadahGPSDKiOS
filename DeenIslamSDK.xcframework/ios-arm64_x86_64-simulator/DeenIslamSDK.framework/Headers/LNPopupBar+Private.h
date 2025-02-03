@@ -2,74 +2,106 @@
 //  LNPopupBar+Private.h
 //  LNPopupController
 //
-//  Created by Leo Natan on 7/25/15.
-//  Copyright © 2015 Leo Natan. All rights reserved.
+//  Created by Léo Natan on 2015-08-23.
+//  Copyright © 2015-2024 Léo Natan. All rights reserved.
 //
 
 #import "LNPopupBar.h"
+#import "LNPopupBarAppearanceChainProxy.h"
+#import "LNPopupBarAppearance+Private.h"
+#import "_LNPopupBarBackgroundView.h"
+#import "_LNPopupBackgroundShadowView.h"
+#import "_LNPopupBarBackgroundMaskView.h"
+
+CF_EXTERN_C_BEGIN
 
 extern const CGFloat LNPopupBarHeightCompact;
 extern const CGFloat LNPopupBarHeightProminent;
+extern const CGFloat LNPopupBarHeightFloating;
 
-inline __attribute__((always_inline)) CGFloat _LNPopupBarHeightForBarStyle(LNPopupBarStyle style, LNPopupCustomBarViewController* customBarVC)
-{
-    if(customBarVC) { return customBarVC.preferredContentSize.height; }
-    
-    return style == LNPopupBarStyleCompact ? LNPopupBarHeightCompact : LNPopupBarHeightProminent;
-}
+extern CGFloat _LNPopupBarHeightForPopupBar(LNPopupBar* popupBar);
 
 inline __attribute__((always_inline)) LNPopupBarStyle _LNPopupResolveBarStyleFromBarStyle(LNPopupBarStyle style)
 {
-    LNPopupBarStyle rv = style;
-    if(rv == LNPopupBarStyleDefault)
-    {
-        rv = [[NSProcessInfo processInfo] operatingSystemVersion].majorVersion > 9 ? LNPopupBarStyleProminent : LNPopupBarStyleCompact;
-    }
-    return rv;
+	LNPopupBarStyle rv = style;
+	if(rv == LNPopupBarStyleDefault)
+	{
+		if(@available(iOS 17, *)) {
+			rv = LNPopupBarStyleFloating;
+		}
+		else
+		{
+			rv = LNPopupBarStyleProminent;
+		}
+	}
+	return rv;
 }
 
 @protocol _LNPopupBarDelegate <NSObject>
 
 - (void)_traitCollectionForPopupBarDidChange:(LNPopupBar*)bar;
-- (void)_dn_popupBarStyleDidChange:(LNPopupBar*)bar;
+- (void)_popupBarMetricsDidChange:(LNPopupBar*)bar;
+- (void)_popupBarMetricsDidChange:(LNPopupBar*)bar shouldLayout:(BOOL)layout;
+- (void)_popupBarStyleDidChange:(LNPopupBar*)bar;
+- (void)_popupBar:(LNPopupBar*)bar updateCustomBarController:(LNPopupCustomBarViewController*)customController cleanup:(BOOL)cleanup;
+- (void)_removeInteractionGestureForPopupBar:(LNPopupBar*)bar;
 
 @end
 
 @protocol _LNPopupBarSupport <NSObject>
 
-@property (nonatomic, assign) UIBarStyle barStyle;
-@property (nonatomic, retain) UIColor* barTintColor;
-@property(nonatomic, assign, getter=isTranslucent) BOOL translucent;
+@property (nonatomic, strong) UIColor *barTintColor;
+@property (nonatomic, strong) UIBarAppearance* standardAppearance;
 
 @end
 
-@interface LNPopupBar ()
+@interface LNPopupBar () <UIPointerInteractionDelegate, _LNPopupBarAppearanceDelegate>
 
-@property (nonatomic, assign) UIBarStyle systemBarStyle;
++ (void)setAnimatesItemSetter:(BOOL)animate;
+
+@property (nonatomic, assign, readonly) LNPopupBarStyle resolvedStyle;
+
 @property (nonatomic, strong) UIColor* systemTintColor;
-@property (nonatomic, strong) UIColor* systemBarTintColor;
 @property (nonatomic, strong) UIColor* systemBackgroundColor;
-@property (nonatomic, strong) UIColor* systemShadowColor;
+@property (nonatomic, strong) UIBarAppearance* systemAppearance;
+@property (nonatomic, readonly, strong) LNPopupBarAppearance* activeAppearance;
+@property (nonatomic, readonly, strong) LNPopupBarAppearanceChainProxy* activeAppearanceChain;
 
-@property (nonatomic, strong) UIView* bottomShadowView;
+- (void)_recalcActiveAppearanceChain;
 
-@property (nonatomic, weak, readwrite) LNPopupItem* dn_popupItem;
+@property (nonatomic, strong) UIImageView* shadowView;
+@property (nonatomic, strong) UIImageView* bottomShadowView;
 
+@property (nonatomic, weak, readwrite) LNPopupItem* popupItem;
+
+@property (nonatomic, weak) __kindof UIViewController* barContainingController;
 @property (nonatomic, weak) id<_LNPopupBarDelegate> _barDelegate;
 
-@property (nonatomic, copy) NSString* title;
-@property (nonatomic, copy) NSString* subtitle;
+@property (nonatomic, copy) NSAttributedString* attributedTitle;
+@property (nonatomic, copy) NSAttributedString* attributedSubtitle;
+
+@property (nonatomic) NSDirectionalEdgeInsets _hackyMargins;
 
 @property (nonatomic, strong) UIImage* image;
 
 @property (nonatomic, strong) UIView* highlightView;
 - (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated;
 
-@property (nonatomic, strong, readwrite) UIProgressView* dn_progressView;
+@property (nonatomic, strong, readwrite) UIProgressView* progressView;
 
-@property (nonatomic, strong) UIView* contentView;
-//@property (nonatomic, strong) UIToolbar* toolbar;
-@property (nonatomic, strong) UIVisualEffectView* backgroundView;
+@property (nonatomic, strong) _LNPopupBarBackgroundView* contentView;
+@property (nonatomic, strong) UIView* contentMaskView;
+
+@property (nonatomic, strong) _LNPopupBarBackgroundView* backgroundView;
+@property (nonatomic, strong) UIView* backgroundMaskView;
+@property (nonatomic) BOOL wantsBackgroundCutout;
+- (void)setWantsBackgroundCutout:(BOOL)wantsBackgroundCutout allowImplicitAnimations:(BOOL)allowImplicitAnimations;
+@property (nonatomic, strong) _LNPopupBarBackgroundMaskView* backgroundGradientMaskView;
+
+@property (nonatomic, strong) _LNPopupBackgroundShadowView* floatingBackgroundShadowView;
+
+@property (nonatomic, strong) NSString* effectGroupingIdentifier;
+- (void)_applyGroupingIdentifierToVisualEffectView:(UIVisualEffectView*)visualEffectView;
 
 @property (nonatomic, copy) NSString* accessibilityCenterLabel;
 @property (nonatomic, copy) NSString* accessibilityCenterHint;
@@ -77,21 +109,37 @@ inline __attribute__((always_inline)) LNPopupBarStyle _LNPopupResolveBarStyleFro
 @property (nonatomic, copy) NSString* accessibilityProgressLabel;
 @property (nonatomic, copy) NSString* accessibilityProgressValue;
 
-@property (nonatomic, copy, readwrite) NSArray<UIBarButtonItem*>* leftBarButtonItems;
-@property (nonatomic, copy, readwrite) NSArray<UIBarButtonItem*>* rightBarButtonItems;
+@property (nonatomic, copy, readwrite) NSArray<UIBarButtonItem*>* leadingBarButtonItems;
+@property (nonatomic, copy, readwrite) NSArray<UIBarButtonItem*>* trailingBarButtonItems;
 
 @property (nonatomic, strong, readwrite) UITapGestureRecognizer* popupOpenGestureRecognizer;
 @property (nonatomic, strong, readwrite) UILongPressGestureRecognizer* barHighlightGestureRecognizer;
+- (void)_cancelGestureRecognizers;
 
+@property (nonatomic) BOOL acceptsSizing;
+
+@property (nonatomic) BOOL _applySwiftUILayoutFixes;
+
+@property (nonatomic, strong) UIFont* swiftuiInheritedFont;
+
+@property (nonatomic, strong) UIView* swiftuiTitleContentView;
+
+@property (nonatomic, strong) UIViewController* swiftuiImageController;
+@property (nonatomic, strong) UIViewController* swiftuiHiddenLeadingController;
+@property (nonatomic, strong) UIViewController* swiftuiHiddenTrailingController;
 
 - (void)_delayBarButtonLayout;
 - (void)_layoutBarButtonItems;
 
 - (void)_setTitleViewMarqueesPaused:(BOOL)paused;
 
-- (void)_removeAnimationFromBarItems;
-
 - (void)_transitionCustomBarViewControllerWithPopupContainerSize:(CGSize)size withCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator;
 - (void)_transitionCustomBarViewControllerWithPopupContainerTraitCollection:(UITraitCollection *)newCollection withCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator;
 
+- (void)_cancelAnyUserInteraction;
+
+- (BOOL)isWidePad;
+
 @end
+
+CF_EXTERN_C_END

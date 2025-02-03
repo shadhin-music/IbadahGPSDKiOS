@@ -32,8 +32,7 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency final public class IbadahHome : UIKit.UIView {
-  @_Concurrency.MainActor @preconcurrency public static let shared: DeenIslamSDK.IbadahHome
-  @objc @_Concurrency.MainActor @preconcurrency public init(sdk: DeenIslamSDK.DeenIslamGPSDK, frame: CoreFoundation.CGRect = .zero)
+  @objc @_Concurrency.MainActor @preconcurrency public init(sdk: DeenIslamSDK.DeenIslamGPSDK, frame: CoreFoundation.CGRect = .zero, designType: Swift.String)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc override final public func didMoveToSuperview()
   @objc deinit
@@ -214,9 +213,10 @@ extension DeenIslamSDK.IQKeyboardManager {
   @objc deinit
 }
 @objc public protocol DeenIslamSDKNotifier : ObjectiveC.NSObjectProtocol {
-  @objc func tokenStatus(token isValid: Swift.Bool, error: Swift.String?, completion: ((Swift.String) -> Swift.Void)?)
+  @objc func tokenStatus(token isValid: Swift.Bool, completion: ((Swift.String) -> Swift.Void)?)
   @objc func getToken(completion: @escaping (Swift.String) -> Swift.Void)
   @objc func errorMessage(error: Swift.String)
+  @objc func onDeenTriggerEvent(event_name: Swift.String, param: Swift.String)
 }
 @_hasMissingDesignatedInitializers public class ConstraintMakerRelatable {
   @discardableResult
@@ -1379,8 +1379,7 @@ public func videoIDFromYouTubeURL(_ videoURL: Foundation.URL) -> Swift.String?
 }
 extension DeenIslamSDK.DeenIslamGPSDK {
   @objc final public func logIn(with msisdn: Swift.String, complete: @escaping (Swift.String?, Swift.String?) -> Swift.Void)
-  @objc final public func initialize(with nav: UIKit.UINavigationController, delegate: any DeenIslamSDK.DeenIslamSDKNotifier)
-  @objc final public func gotoHome()
+  @objc final public func initialize(with nav: UIKit.UINavigationController, delegate: any DeenIslamSDK.DeenIslamSDKNotifier, language: Swift.String, baseApiUrl: Swift.String, baseServiceUrl: Swift.String, baseResourceUrl: Swift.String, baseGPHomeUrl: Swift.String)
   final public func goto(feature: DeenIslamSDK.AppFeature)
   @objc final public func eventRegister(with event: UIKit.UIEvent)
   @objc final public func terminate()
@@ -1565,6 +1564,57 @@ public struct AudioPlayerMode : Swift.OptionSet {
 extension DeenIslamSDK.IQKeyboardManager : UIKit.UIGestureRecognizerDelegate {
   @_Concurrency.MainActor @preconcurrency @objc final public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency @objc final public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
+}
+extension Swift.Double {
+  public static var defaultPopupSnapPercent: Swift.Double {
+    get
+  }
+}
+extension UIKit.UIViewController {
+  public enum PopupInteractionStyle {
+    case `default`
+    case drag
+    case snap
+    case customizedSnap(percent: Swift.Double)
+    case scroll
+    case none
+  }
+  @_Concurrency.MainActor @preconcurrency public var popupInteractionStyle: UIKit.UIViewController.PopupInteractionStyle {
+    get
+    set
+  }
+}
+extension DeenIslamSDK.LNPopupItem {
+  @available(iOS 15, *)
+  @_Concurrency.MainActor @preconcurrency public var attributedTitle: Foundation.AttributedString? {
+    get
+    set
+  }
+  @available(iOS 15, *)
+  @_Concurrency.MainActor @preconcurrency public var attributedSubtitle: Foundation.AttributedString? {
+    get
+    set
+  }
+}
+extension DeenIslamSDK.LNPopupBarAppearance {
+  @available(iOS 15, *)
+  @_Concurrency.MainActor @preconcurrency public var titleTextAttributes: Foundation.AttributeContainer? {
+    get
+    set
+  }
+  @available(iOS 15, *)
+  @_Concurrency.MainActor @preconcurrency public var subtitleTextAttributes: Foundation.AttributeContainer? {
+    get
+    set
+  }
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency public func presentPopupBar(with contentViewController: UIKit.UIViewController, openPopup: Swift.Bool = false, animated: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @available(*, deprecated, message: "Use presentPopupBar(with:openPopup:animated:completion:) instead.")
+  @_Concurrency.MainActor @preconcurrency public func presentPopupBar(withContentViewController contentViewController: UIKit.UIViewController, openPopup: Swift.Bool = false, animated: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public func openPopup(animated: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public func closePopup(animated: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public func dismissPopupBar(animated: Swift.Bool, completion: (() -> Swift.Void)? = nil)
 }
 public protocol VGPlayerViewDelegate : AnyObject {
   func vgPlayerView(_ playerView: DeenIslamSDK.VGPlayerView, willFullscreen isFullscreen: Swift.Bool)

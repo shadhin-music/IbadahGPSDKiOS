@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import DeenIslamSDK
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

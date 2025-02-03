@@ -6,22 +6,29 @@
 //
 
 import UIKit
+import DeenIslamSDK
+
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-            guard let windowScene = (scene as? UIWindowScene) else { return }
+        func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+            guard let windowScene = (scene as? UIWindowScene) else {
+                print("Failed to cast scene to UIWindowScene")
+                return
+            }
             
-            let window = UIWindow(windowScene: windowScene)
-            let viewController = ViewController()
-            let navigationController = UINavigationController(rootViewController: viewController)
-            
-            window.rootViewController = navigationController
-            window.makeKeyAndVisible()
-            self.window = window
+            // Initialize window on main thread
+            DispatchQueue.main.async {
+                let window = UIWindow(windowScene: windowScene)
+                let viewController = ViewController()
+                let navigationController = UINavigationController(rootViewController: viewController)
+                
+                window.rootViewController = navigationController
+                window.makeKeyAndVisible()
+                self.window = window
+            }
         }
 
     func sceneDidDisconnect(_ scene: UIScene) {

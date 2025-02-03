@@ -436,8 +436,29 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 ///
 /// \param isBL initialize number is BL or not
 ///
-- (void)initializeWith:(UINavigationController * _Nonnull)nav delegate:(id <DeenIslamSDKNotifier> _Nonnull)delegate;
-- (void)gotoHome;
+- (void)initializeWith:(UINavigationController * _Nonnull)nav delegate:(id <DeenIslamSDKNotifier> _Nonnull)delegate language:(NSString * _Nonnull)language baseApiUrl:(NSString * _Nonnull)baseApiUrl baseServiceUrl:(NSString * _Nonnull)baseServiceUrl baseResourceUrl:(NSString * _Nonnull)baseResourceUrl baseGPHomeUrl:(NSString * _Nonnull)baseGPHomeUrl;
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
 - (void)eventRegisterWith:(UIEvent * _Nonnull)event;
 - (void)terminate;
 - (void)openFromRCWithCode:(NSString * _Nonnull)code;
@@ -456,12 +477,13 @@ SWIFT_PROTOCOL("_TtP12DeenIslamSDK20DeenIslamSDKNotifier_")
 ///
 /// \param completion callback to provide token when empty
 ///
-- (void)tokenStatusWithToken:(BOOL)isValid error:(NSString * _Nullable)error completion:(void (^ _Nullable)(NSString * _Nonnull))completion;
+- (void)tokenStatusWithToken:(BOOL)isValid completion:(void (^ _Nullable)(NSString * _Nonnull))completion;
 - (void)getTokenWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
 /// Description
 /// \param error any error occure this func call with error message
 ///
 - (void)errorMessageWithError:(NSString * _Nonnull)error;
+- (void)onDeenTriggerEventWithEvent_name:(NSString * _Nonnull)event_name param:(NSString * _Nonnull)param;
 @end
 
 
@@ -882,7 +904,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK9IQToolbar") SWIFT_AVAILABILITY(ios_app_extension
 
 SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 @interface IbadahHome : UIView
-- (nonnull instancetype)initWithSdk:(DeenIslamGPSDK * _Nonnull)sdk frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSdk:(DeenIslamGPSDK * _Nonnull)sdk frame:(CGRect)frame designType:(NSString * _Nonnull)designType OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)didMoveToSuperview;
@@ -894,7 +916,6 @@ SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 @interface IbadahHome (SWIFT_EXTENSION(DeenIslamSDK)) <UIViewControllerTransitioningDelegate>
 - (UIPresentationController * _Nullable)presentationControllerForPresentedViewController:(UIViewController * _Nonnull)presented presentingViewController:(UIViewController * _Nullable)presenting sourceViewController:(UIViewController * _Nonnull)source SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 @class UICollectionView;
 @class UICollectionViewCell;
@@ -909,6 +930,9 @@ SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 - (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
+
 
 
 SWIFT_CLASS("_TtC12DeenIslamSDK16LayoutConstraint")
@@ -934,10 +958,10 @@ SWIFT_CLASS("_TtC12DeenIslamSDK16LayoutConstraint")
 
 
 
+
 @interface UIButton (SWIFT_EXTENSION(DeenIslamSDK))
 - (UIView * _Nullable)hitTest:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 
 
@@ -1060,6 +1084,7 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 
 
 
+
 SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 @interface UIViewController (SWIFT_EXTENSION(DeenIslamSDK))
 /// This method is provided to override by viewController’s if the library lifts a viewController which you doesn’t want to lift . This may happen if you have implemented side menu feature in your app and the library try to lift the side menu controller. Overriding this method in side menu class to return correct controller should fix the problem.
@@ -1068,6 +1093,7 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 /// @deprecated    Due to change in core-logic of handling distance between textField and keyboard distance, this layout contraint tweak is no longer needed and things will just work out of the box regardless of constraint pinned with safeArea/layoutGuide/superview
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable IQLayoutGuideConstraint SWIFT_DEPRECATED_MSG("Due to change in core-logic of handling distance between textField and keyboard distance, this layout contraint tweak is no longer needed and things will just work out of the box regardless of constraint pinned with safeArea/layoutGuide/superview.");
 @end
+
 
 
 
@@ -1705,8 +1731,29 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 ///
 /// \param isBL initialize number is BL or not
 ///
-- (void)initializeWith:(UINavigationController * _Nonnull)nav delegate:(id <DeenIslamSDKNotifier> _Nonnull)delegate;
-- (void)gotoHome;
+- (void)initializeWith:(UINavigationController * _Nonnull)nav delegate:(id <DeenIslamSDKNotifier> _Nonnull)delegate language:(NSString * _Nonnull)language baseApiUrl:(NSString * _Nonnull)baseApiUrl baseServiceUrl:(NSString * _Nonnull)baseServiceUrl baseResourceUrl:(NSString * _Nonnull)baseResourceUrl baseGPHomeUrl:(NSString * _Nonnull)baseGPHomeUrl;
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
+/// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
 - (void)eventRegisterWith:(UIEvent * _Nonnull)event;
 - (void)terminate;
 - (void)openFromRCWithCode:(NSString * _Nonnull)code;
@@ -1725,12 +1772,13 @@ SWIFT_PROTOCOL("_TtP12DeenIslamSDK20DeenIslamSDKNotifier_")
 ///
 /// \param completion callback to provide token when empty
 ///
-- (void)tokenStatusWithToken:(BOOL)isValid error:(NSString * _Nullable)error completion:(void (^ _Nullable)(NSString * _Nonnull))completion;
+- (void)tokenStatusWithToken:(BOOL)isValid completion:(void (^ _Nullable)(NSString * _Nonnull))completion;
 - (void)getTokenWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
 /// Description
 /// \param error any error occure this func call with error message
 ///
 - (void)errorMessageWithError:(NSString * _Nonnull)error;
+- (void)onDeenTriggerEventWithEvent_name:(NSString * _Nonnull)event_name param:(NSString * _Nonnull)param;
 @end
 
 
@@ -2151,7 +2199,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK9IQToolbar") SWIFT_AVAILABILITY(ios_app_extension
 
 SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 @interface IbadahHome : UIView
-- (nonnull instancetype)initWithSdk:(DeenIslamGPSDK * _Nonnull)sdk frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSdk:(DeenIslamGPSDK * _Nonnull)sdk frame:(CGRect)frame designType:(NSString * _Nonnull)designType OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)didMoveToSuperview;
@@ -2163,7 +2211,6 @@ SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 @interface IbadahHome (SWIFT_EXTENSION(DeenIslamSDK)) <UIViewControllerTransitioningDelegate>
 - (UIPresentationController * _Nullable)presentationControllerForPresentedViewController:(UIViewController * _Nonnull)presented presentingViewController:(UIViewController * _Nullable)presenting sourceViewController:(UIViewController * _Nonnull)source SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 @class UICollectionView;
 @class UICollectionViewCell;
@@ -2178,6 +2225,9 @@ SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 - (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
+
 
 
 SWIFT_CLASS("_TtC12DeenIslamSDK16LayoutConstraint")
@@ -2203,10 +2253,10 @@ SWIFT_CLASS("_TtC12DeenIslamSDK16LayoutConstraint")
 
 
 
+
 @interface UIButton (SWIFT_EXTENSION(DeenIslamSDK))
 - (UIView * _Nullable)hitTest:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 
 
@@ -2329,6 +2379,7 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 
 
 
+
 SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 @interface UIViewController (SWIFT_EXTENSION(DeenIslamSDK))
 /// This method is provided to override by viewController’s if the library lifts a viewController which you doesn’t want to lift . This may happen if you have implemented side menu feature in your app and the library try to lift the side menu controller. Overriding this method in side menu class to return correct controller should fix the problem.
@@ -2337,6 +2388,7 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 /// @deprecated    Due to change in core-logic of handling distance between textField and keyboard distance, this layout contraint tweak is no longer needed and things will just work out of the box regardless of constraint pinned with safeArea/layoutGuide/superview
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable IQLayoutGuideConstraint SWIFT_DEPRECATED_MSG("Due to change in core-logic of handling distance between textField and keyboard distance, this layout contraint tweak is no longer needed and things will just work out of the box regardless of constraint pinned with safeArea/layoutGuide/superview.");
 @end
+
 
 
 
