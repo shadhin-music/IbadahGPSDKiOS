@@ -53,7 +53,6 @@ class ViewController: UIViewController {
                 DeenIslamGPSDK.shared.initialize(
                     with: navigationController,
                     delegate: self,
-                    language: "en",    // Set appropriate language
                     baseApiUrl: "https://your-api-url.com",        // Replace with actual URL
                     baseServiceUrl: "https://your-service-url.com", // Replace with actual URL
                     baseResourceUrl: "https://your-resource-url.com", // Replace with actual URL

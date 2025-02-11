@@ -1379,7 +1379,7 @@ public func videoIDFromYouTubeURL(_ videoURL: Foundation.URL) -> Swift.String?
 }
 extension DeenIslamSDK.DeenIslamGPSDK {
   @objc final public func logIn(with msisdn: Swift.String, complete: @escaping (Swift.String?, Swift.String?) -> Swift.Void)
-  @objc final public func initialize(with nav: UIKit.UINavigationController, delegate: any DeenIslamSDK.DeenIslamSDKNotifier, language: Swift.String, baseApiUrl: Swift.String, baseServiceUrl: Swift.String, baseResourceUrl: Swift.String, baseGPHomeUrl: Swift.String)
+  @objc final public func initialize(with nav: UIKit.UINavigationController, delegate: any DeenIslamSDK.DeenIslamSDKNotifier, baseApiUrl: Swift.String, baseServiceUrl: Swift.String, baseResourceUrl: Swift.String, baseGPHomeUrl: Swift.String)
   final public func goto(feature: DeenIslamSDK.AppFeature)
   @objc final public func eventRegister(with event: UIKit.UIEvent)
   @objc final public func terminate()

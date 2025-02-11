@@ -436,7 +436,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 ///
 /// \param isBL initialize number is BL or not
 ///
-- (void)initializeWith:(UINavigationController * _Nonnull)nav delegate:(id <DeenIslamSDKNotifier> _Nonnull)delegate language:(NSString * _Nonnull)language baseApiUrl:(NSString * _Nonnull)baseApiUrl baseServiceUrl:(NSString * _Nonnull)baseServiceUrl baseResourceUrl:(NSString * _Nonnull)baseResourceUrl baseGPHomeUrl:(NSString * _Nonnull)baseGPHomeUrl;
+- (void)initializeWith:(UINavigationController * _Nonnull)nav delegate:(id <DeenIslamSDKNotifier> _Nonnull)delegate baseApiUrl:(NSString * _Nonnull)baseApiUrl baseServiceUrl:(NSString * _Nonnull)baseServiceUrl baseResourceUrl:(NSString * _Nonnull)baseResourceUrl baseGPHomeUrl:(NSString * _Nonnull)baseGPHomeUrl;
 /// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
 /// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
 /// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
@@ -1731,7 +1731,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 ///
 /// \param isBL initialize number is BL or not
 ///
-- (void)initializeWith:(UINavigationController * _Nonnull)nav delegate:(id <DeenIslamSDKNotifier> _Nonnull)delegate language:(NSString * _Nonnull)language baseApiUrl:(NSString * _Nonnull)baseApiUrl baseServiceUrl:(NSString * _Nonnull)baseServiceUrl baseResourceUrl:(NSString * _Nonnull)baseResourceUrl baseGPHomeUrl:(NSString * _Nonnull)baseGPHomeUrl;
+- (void)initializeWith:(UINavigationController * _Nonnull)nav delegate:(id <DeenIslamSDKNotifier> _Nonnull)delegate baseApiUrl:(NSString * _Nonnull)baseApiUrl baseServiceUrl:(NSString * _Nonnull)baseServiceUrl baseResourceUrl:(NSString * _Nonnull)baseResourceUrl baseGPHomeUrl:(NSString * _Nonnull)baseGPHomeUrl;
 /// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
 /// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
 /// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )

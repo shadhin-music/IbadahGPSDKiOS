@@ -8,13 +8,13 @@
 		<data>
 		naPwUrxWEtFsxmSTua4zTA/xdSE=
 		</data>
+		<key>AllNotification.nib</key>
+		<data>
+		B+yepY9/ORvwH8BzH0mcseFWBfk=
+		</data>
 		<key>AllSurahVC.nib</key>
 		<data>
 		mX8CfvGj2EKiya9HQKyQxRgqTZU=
-		</data>
-		<key>AllahNamesCell.nib</key>
-		<data>
-		q4sXXa3kgAf2iO/wPtY+iMgMi5c=
 		</data>
 		<key>AllahNamesHeader.nib</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		ecCwY0ns/mFKr6QqMXIiuaeNp3o=
+		a3Z7tO4s1qRwGRTbYoP0ITWX1xY=
 		</data>
 		<key>AutoRenewOffCell.nib</key>
 		<data>
@@ -346,7 +346,7 @@
 		</data>
 		<key>Headers/DeenIslamSDK-Swift.h</key>
 		<data>
-		5CbWRVIFSqw7tsNAsLnVEz35Dfw=
+		tni78QaE6CW49i7v59xmrdGzOk0=
 		</data>
 		<key>Headers/DeenIslamSDK.h</key>
 		<data>
@@ -554,7 +554,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bQ1OZcgvCvKCJtQR0r4Xc8eevlA=
+		jWs0un37qHTPal3Ec1N5g4AT7Jw=
 		</data>
 		<key>IslamicBoyanVC.nib</key>
 		<data>
@@ -654,51 +654,55 @@
 		</data>
 		<key>MoccaModinaLiveVcCell.nib</key>
 		<data>
-		WQcFYlbYMfdh+MvwpRD8SPAQXlM=
+		SPlWDXX/Bizi4JZh1/XVeZGLsO0=
 		</data>
-		<key>MoccaModinaLiveVideoVC.nib</key>
+		<key>MoccaModinaLiveVideoVC.nib/objects-14.0+.nib</key>
 		<data>
-		j7ELUPHKAkAGbioGEnJRRus1N34=
+		JSQ65Fmo/jKHZQ5qGP6Q+9G7v3I=
+		</data>
+		<key>MoccaModinaLiveVideoVC.nib/runtime.nib</key>
+		<data>
+		JSQ65Fmo/jKHZQ5qGP6Q+9G7v3I=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		uR++IGCdktIQYRniCsYG3Bpe1Ao=
+		ctZJ2iNjkfqOxCfCS1iXRWTWYw4=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		4kOnMqlSFsDDBzVb3olWvfztdOM=
+		ZuAuzUaj4fgn/iFO086Y7wO9X6k=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		IpaJqo76gzPBOPYrzksUqXy5hWE=
+		dw10ymSnoxBdBN/P2cwpQUwxe0U=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		4kOnMqlSFsDDBzVb3olWvfztdOM=
+		ZuAuzUaj4fgn/iFO086Y7wO9X6k=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		r1EXxYDy5rNBq2gZ65OPff+dWxU=
+		eAVEUdsFyNcXLTNKzvnkPPsOrXY=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		uR++IGCdktIQYRniCsYG3Bpe1Ao=
+		ctZJ2iNjkfqOxCfCS1iXRWTWYw4=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/7MOrryt3xsTNpu0We4VulTVaJ0=
+		Ip0+glodhrgAp1nn+gEXBUqfTWo=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		bH+x6AwkKm8eCCd3WI5zkswvedo=
+		8SBMEZsYoR++pOMlgEoZlK8IaKA=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/7MOrryt3xsTNpu0We4VulTVaJ0=
+		Ip0+glodhrgAp1nn+gEXBUqfTWo=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		82ZUyTfPLF8Py+Pi+tu1+21YLC0=
+		YSHQSxyipH6WoPZVtKwA5NEjekU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -742,15 +746,15 @@
 		</data>
 		<key>NamazLearningVisualVC.nib</key>
 		<data>
-		oP1BJcKnzHvA+voJtxfTNgoPC3E=
+		vGMPKN1rf4r9GH8l9Bbp2+22wEQ=
 		</data>
 		<key>NameCard.nib/objects-14.0+.nib</key>
 		<data>
-		wtiUAukM1KCnc5CV1BG0b+VPlI8=
+		sRFma+5AZZOMO8bv9W/8I/qxUb8=
 		</data>
 		<key>NameCard.nib/runtime.nib</key>
 		<data>
-		Kx6CrQoJWara+tqWEKI4TY7UqMg=
+		q7Y0yKP5ukmZu32Ut9wyAz/78e4=
 		</data>
 		<key>NameCategoreyDetailsVc.nib</key>
 		<data>
@@ -898,7 +902,7 @@
 		</data>
 		<key>PrayerTimeNotificationVC.nib</key>
 		<data>
-		0TP70Lqu6GfRWKzzLcyeIQeSnCg=
+		B4pQ01yOFlxquP1mu7qnBOOhC7o=
 		</data>
 		<key>PrayerTimeVC.nib</key>
 		<data>
@@ -906,7 +910,7 @@
 		</data>
 		<key>PremiumCell.nib</key>
 		<data>
-		d0HlgN27F+Pem7sEmQD0OJK41Uw=
+		tvPeKh6qyzkR2ofNZhj6Zzjhj2s=
 		</data>
 		<key>PrivacyRoles.nib</key>
 		<data>
@@ -1066,11 +1070,11 @@
 		</data>
 		<key>TasbeehVC.nib</key>
 		<data>
-		B6pir2vocYDZzdMlo7PYSUihip0=
+		Z0TVUj+g8qjyOS5735dDk+nWicE=
 		</data>
 		<key>TashbeeResetVC.nib</key>
 		<data>
-		dJNF6Q6E2sIzSf7ygGVLzJEt9IM=
+		aiEbU77mJOoFxQ4B1r1OKBYTTxU=
 		</data>
 		<key>TashbeehHomeInfoCell.nib</key>
 		<data>
@@ -1228,7 +1232,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GehN2Wa0dSGiSmK22bB3Ta9Lroc=
+			OPeUs1i8NdsGSdw4gBgYC72QAsU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1260,18 +1264,18 @@
 			TgQECTU0+Lzjiu3awDscC5/DymttK9V05Hox6n+nHnw=
 			</data>
 		</dict>
+		<key>AllNotification.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			56t/LFY8GF8feN2F4OfGX3dOOSg/iLs+9eG6ZtehkoY=
+			</data>
+		</dict>
 		<key>AllSurahVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			qNqzP1gnrvA7D0kvAaEVBewMrQxRYBv9bI5jBs2PFcM=
-			</data>
-		</dict>
-		<key>AllahNamesCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9o6L3HZEGJWx+wW8BXebfQb9RTdY8uuxd8GRWT519s8=
 			</data>
 		</dict>
 		<key>AllahNamesHeader.nib</key>
@@ -1285,7 +1289,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tgA/vLnQaBjgFzN7rPbR63XzE14efz8wzWUuKEuoimo=
+			izXeMcUWbM8fIa1WJoygNF3jgkTDRMicR9rsLEXZzKw=
 			</data>
 		</dict>
 		<key>AutoRenewOffCell.nib</key>
@@ -1852,7 +1856,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KpYkYNvDmP2D8N3NBW3KwRCa9Il7DGcO0oqQOXRxDJE=
+			5FNLe0nbq8/mUtsdfdH+vk7yDzhLbdhaSbiYbpjsSe0=
 			</data>
 		</dict>
 		<key>Headers/DeenIslamSDK.h</key>
@@ -2384,84 +2388,91 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eNi2m9plC8+clIfuB6ntXQP7yHGMsRJ1o4XnX9SfO5s=
+			MLSbp/3Rosj9fzOSfpw0jMpCKJ290aNnD4DThlaRg5o=
 			</data>
 		</dict>
-		<key>MoccaModinaLiveVideoVC.nib</key>
+		<key>MoccaModinaLiveVideoVC.nib/objects-14.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QFXlQQddZnuwIxodPFaK6Mf5KqiUODpxDVL9xCLr9V8=
+			yXIwp48YdBCTzzmYEo0Bcxk/adisdjiwPBmzLG5QbUI=
+			</data>
+		</dict>
+		<key>MoccaModinaLiveVideoVC.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yXIwp48YdBCTzzmYEo0Bcxk/adisdjiwPBmzLG5QbUI=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gpfwyCqB0NanKqk3CQPKwc6KtfWYvQThn0i/VGaTLhA=
+			Q80jGJu4pkmFcu+ur2pqoa7ydzFMvg+nDImkmMLUiiE=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bj8sHJYZsW8norE+jVI1zDKGbogbTKhOJLrssy7MYMM=
+			FY6bPLz1fJ09zrTB2015TOPEzdP2zR+HUlPoHNZpCGw=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c+Uy40F4VNL4XIE5eHCBrWfWA4kTqsoVjW0MLaDxhwU=
+			QVUS7ZXHPcjDQqkM3QfbmFFtX+RKj6UfqUWArxRANcc=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bj8sHJYZsW8norE+jVI1zDKGbogbTKhOJLrssy7MYMM=
+			FY6bPLz1fJ09zrTB2015TOPEzdP2zR+HUlPoHNZpCGw=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TQasWYsD3FPp4Tn3yReTBGEjFJrz1z7r+FXGZ4kSSTI=
+			iXKndrcKopzmWtPFHPLoxRJszwcvUOieeX6qVfD3Yhk=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gpfwyCqB0NanKqk3CQPKwc6KtfWYvQThn0i/VGaTLhA=
+			Q80jGJu4pkmFcu+ur2pqoa7ydzFMvg+nDImkmMLUiiE=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/CdboHmgYI9m2jBGwKtPNQ5LOPWFBIft/LGR3XBqDDY=
+			LjtYheL7KOeVLChl4a1q6i1QH+zk/XhgMYlG0x5fo7k=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GXGLrmiwo+ndOjZH30/7DDUVXgMl7zehFZUlV/rgSiU=
+			OHZ25cNbkxngdE4bn1M6aFX0AcbaBD2y8dDPwdE2fdQ=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/CdboHmgYI9m2jBGwKtPNQ5LOPWFBIft/LGR3XBqDDY=
+			LjtYheL7KOeVLChl4a1q6i1QH+zk/XhgMYlG0x5fo7k=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yoQpX5Wq0lPee48c6Tqz1fxs4R3jqvDQ+ptYSPuuybQ=
+			AUClN7wm28pSLliYSQt03fM1DvT11Wf2l8pNv4bZt/s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -2538,21 +2549,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CSRwBWAdL1qUXYaSzPbdOudjEhX6E4kaOd6+YxNIF/g=
+			cm1JpwB2U2beSPFcSsVLeDx8NOvopQreKpNW3BEgWKA=
 			</data>
 		</dict>
 		<key>NameCard.nib/objects-14.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ln3IzYhvMk2d+2Hzy7pTGPyBVPtOptKUNspRm/FfvIY=
+			zCbUvXO6Ez0e4xjgOA+X5JEZFrTPIYGXc5z4MY0qNEA=
 			</data>
 		</dict>
 		<key>NameCard.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M68S/99yrXKRFmByYPZSRmjd3nDUR8EbXrlVGW62924=
+			RE1T9ksrcY7kB7T3uCrZ+9e4FD+6wiZJkrPInS9u/w4=
 			</data>
 		</dict>
 		<key>NameCategoreyDetailsVc.nib</key>
@@ -2811,7 +2822,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qbeAl3HUrM1mIQflQqljsFk2C7L8I4iWeFagN+Mgzfg=
+			DaotjoUdkQAWjA0QDmeyg3nwWduvV7SYoQOVOWLlimQ=
 			</data>
 		</dict>
 		<key>PrayerTimeVC.nib</key>
@@ -2825,7 +2836,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sh7tPsBoDd+Q7f29hYQ+yJm74zqJCVfv/yHpuvNMTR4=
+			nSdIfQ/tgEBL+ZvREaQUiExOWDc1ZTx2zkA2KBZZy9M=
 			</data>
 		</dict>
 		<key>PrivacyRoles.nib</key>
@@ -3105,14 +3116,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/Y5ulA4xqZYF2c9/D9hOjs3Gkt/xVEkj8m/3qSbo7Q0=
+			4R2CHFaolFrK3dNSULXz/aSUnNfp1AfXU7OKHAqmBv8=
 			</data>
 		</dict>
 		<key>TashbeeResetVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T9G4wNQTOTJZDqUTWUZyDIQZzsP0Uz5k720PNGqFluU=
+			LAiwCvt2N3i8lKpFCQBp7NabPoJwWNNiBwdvb4m1bVk=
 			</data>
 		</dict>
 		<key>TashbeehHomeInfoCell.nib</key>
@@ -3385,7 +3396,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xj4JMKXaA/jX9SE1qpdFer+etFz+B45Rkln6cAy7S/o=
+			v6VOnytWG3zKIfyU+ICsNWqgJXyuOSrQqB/icy8Oqv8=
 			</data>
 			<key>optional</key>
 			<true/>

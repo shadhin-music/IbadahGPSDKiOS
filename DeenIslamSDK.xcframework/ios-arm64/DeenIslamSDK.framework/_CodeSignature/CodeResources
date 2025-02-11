@@ -8,13 +8,13 @@
 		<data>
 		naPwUrxWEtFsxmSTua4zTA/xdSE=
 		</data>
+		<key>AllNotification.nib</key>
+		<data>
+		B+yepY9/ORvwH8BzH0mcseFWBfk=
+		</data>
 		<key>AllSurahVC.nib</key>
 		<data>
 		mX8CfvGj2EKiya9HQKyQxRgqTZU=
-		</data>
-		<key>AllahNamesCell.nib</key>
-		<data>
-		q4sXXa3kgAf2iO/wPtY+iMgMi5c=
 		</data>
 		<key>AllahNamesHeader.nib</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		8sjcm3EM0hfDHRipebU74Adn3WE=
+		JvSji/dJ4igVX+p5l53KVkwu36o=
 		</data>
 		<key>AutoRenewOffCell.nib</key>
 		<data>
@@ -346,7 +346,7 @@
 		</data>
 		<key>Headers/DeenIslamSDK-Swift.h</key>
 		<data>
-		Xxbf3j8M35Bub3M/Zt3WvHocHOw=
+		6bB53y5u4iA7rZKhT1fVw9V3Op4=
 		</data>
 		<key>Headers/DeenIslamSDK.h</key>
 		<data>
@@ -554,7 +554,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rNS/G0mgHnNi46BJmOcZvLQzSAA=
+		HDBpOWVpqF4t0Qoci5efuoFh3RI=
 		</data>
 		<key>IslamicBoyanVC.nib</key>
 		<data>
@@ -654,31 +654,35 @@
 		</data>
 		<key>MoccaModinaLiveVcCell.nib</key>
 		<data>
-		WQcFYlbYMfdh+MvwpRD8SPAQXlM=
+		SPlWDXX/Bizi4JZh1/XVeZGLsO0=
 		</data>
-		<key>MoccaModinaLiveVideoVC.nib</key>
+		<key>MoccaModinaLiveVideoVC.nib/objects-14.0+.nib</key>
 		<data>
-		j7ELUPHKAkAGbioGEnJRRus1N34=
+		JSQ65Fmo/jKHZQ5qGP6Q+9G7v3I=
+		</data>
+		<key>MoccaModinaLiveVideoVC.nib/runtime.nib</key>
+		<data>
+		JSQ65Fmo/jKHZQ5qGP6Q+9G7v3I=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		CTPB97PNjJvi5gfJ7MHNGmIm4ek=
+		vzMQ94D3AYfLXJM8NUYfRB2m3Qo=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		/k2LHmHJi0h7u7auMxd9H6sU1aI=
+		QZhMA0L5jmowkTMXF/BqlXxfE4Y=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		EFi1O5L5gMVR0JPDxRD/fvjeJi8=
+		KDCqQYNLgIMTK7XD/oD2+LbAPl8=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		/k2LHmHJi0h7u7auMxd9H6sU1aI=
+		QZhMA0L5jmowkTMXF/BqlXxfE4Y=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		uZHJoHBRaxoHChSa2ixrWLWAghk=
+		vBxpXziSWkHF3ASw6egi+OLRYuY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -722,15 +726,15 @@
 		</data>
 		<key>NamazLearningVisualVC.nib</key>
 		<data>
-		oP1BJcKnzHvA+voJtxfTNgoPC3E=
+		vGMPKN1rf4r9GH8l9Bbp2+22wEQ=
 		</data>
 		<key>NameCard.nib/objects-14.0+.nib</key>
 		<data>
-		wtiUAukM1KCnc5CV1BG0b+VPlI8=
+		sRFma+5AZZOMO8bv9W/8I/qxUb8=
 		</data>
 		<key>NameCard.nib/runtime.nib</key>
 		<data>
-		Kx6CrQoJWara+tqWEKI4TY7UqMg=
+		q7Y0yKP5ukmZu32Ut9wyAz/78e4=
 		</data>
 		<key>NameCategoreyDetailsVc.nib</key>
 		<data>
@@ -878,7 +882,7 @@
 		</data>
 		<key>PrayerTimeNotificationVC.nib</key>
 		<data>
-		0TP70Lqu6GfRWKzzLcyeIQeSnCg=
+		B4pQ01yOFlxquP1mu7qnBOOhC7o=
 		</data>
 		<key>PrayerTimeVC.nib</key>
 		<data>
@@ -886,7 +890,7 @@
 		</data>
 		<key>PremiumCell.nib</key>
 		<data>
-		d0HlgN27F+Pem7sEmQD0OJK41Uw=
+		tvPeKh6qyzkR2ofNZhj6Zzjhj2s=
 		</data>
 		<key>PrivacyRoles.nib</key>
 		<data>
@@ -1046,11 +1050,11 @@
 		</data>
 		<key>TasbeehVC.nib</key>
 		<data>
-		B6pir2vocYDZzdMlo7PYSUihip0=
+		Z0TVUj+g8qjyOS5735dDk+nWicE=
 		</data>
 		<key>TashbeeResetVC.nib</key>
 		<data>
-		dJNF6Q6E2sIzSf7ygGVLzJEt9IM=
+		aiEbU77mJOoFxQ4B1r1OKBYTTxU=
 		</data>
 		<key>TashbeehHomeInfoCell.nib</key>
 		<data>
@@ -1208,7 +1212,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GehN2Wa0dSGiSmK22bB3Ta9Lroc=
+			OPeUs1i8NdsGSdw4gBgYC72QAsU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1240,18 +1244,18 @@
 			TgQECTU0+Lzjiu3awDscC5/DymttK9V05Hox6n+nHnw=
 			</data>
 		</dict>
+		<key>AllNotification.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			56t/LFY8GF8feN2F4OfGX3dOOSg/iLs+9eG6ZtehkoY=
+			</data>
+		</dict>
 		<key>AllSurahVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			qNqzP1gnrvA7D0kvAaEVBewMrQxRYBv9bI5jBs2PFcM=
-			</data>
-		</dict>
-		<key>AllahNamesCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9o6L3HZEGJWx+wW8BXebfQb9RTdY8uuxd8GRWT519s8=
 			</data>
 		</dict>
 		<key>AllahNamesHeader.nib</key>
@@ -1265,7 +1269,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mOXVHJyPguPq9fc5iG2hROjX/QMm0QvErsKmkQD6Bwo=
+			Q+WOBfusp/pqbR+RUMukv9h9bYjyJnsNl8vOQM3u7E4=
 			</data>
 		</dict>
 		<key>AutoRenewOffCell.nib</key>
@@ -1832,7 +1836,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xxm9dshmvCjha1Lkl+RISDYB0uj0A566An8bM2VtiCU=
+			dISwym5l8/rVtk1fW35ucUdXAEOq6NpP3AHxu25qAYQ=
 			</data>
 		</dict>
 		<key>Headers/DeenIslamSDK.h</key>
@@ -2364,49 +2368,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eNi2m9plC8+clIfuB6ntXQP7yHGMsRJ1o4XnX9SfO5s=
+			MLSbp/3Rosj9fzOSfpw0jMpCKJ290aNnD4DThlaRg5o=
 			</data>
 		</dict>
-		<key>MoccaModinaLiveVideoVC.nib</key>
+		<key>MoccaModinaLiveVideoVC.nib/objects-14.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QFXlQQddZnuwIxodPFaK6Mf5KqiUODpxDVL9xCLr9V8=
+			yXIwp48YdBCTzzmYEo0Bcxk/adisdjiwPBmzLG5QbUI=
+			</data>
+		</dict>
+		<key>MoccaModinaLiveVideoVC.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yXIwp48YdBCTzzmYEo0Bcxk/adisdjiwPBmzLG5QbUI=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R2MMHzdBdSX2bKDr2I8SL30zkwNVmCNGBR9kIJIQzAQ=
+			sYbtwvbD9VCb9BinzLlt4zzjxIppl/O1ZeXJI5WL9Yo=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xGjdZbY/RbuMih7r0KMJviinpGSmaKUWp7Z9YPyBnCo=
+			IqkrKDIXtTveIVRSERu9SQEChe2JmoL3vLV0l6+8i54=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x1cNSj7gCDou7yUijyaKX13d5BDZeJI2jTsUZ6YsxFw=
+			uMchLKoZEdJqE/LszHrq4zPs3R1glhVXa80RRIMdHKQ=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xGjdZbY/RbuMih7r0KMJviinpGSmaKUWp7Z9YPyBnCo=
+			IqkrKDIXtTveIVRSERu9SQEChe2JmoL3vLV0l6+8i54=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DR+hpZ1M0XBnwWeivpx5gWIi7Bwep4So7sV1p+nyCbo=
+			AeBk636i+1EKVNYrNaWAFMYGfayFmcGad7xOAWtj0no=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -2483,21 +2494,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CSRwBWAdL1qUXYaSzPbdOudjEhX6E4kaOd6+YxNIF/g=
+			cm1JpwB2U2beSPFcSsVLeDx8NOvopQreKpNW3BEgWKA=
 			</data>
 		</dict>
 		<key>NameCard.nib/objects-14.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ln3IzYhvMk2d+2Hzy7pTGPyBVPtOptKUNspRm/FfvIY=
+			zCbUvXO6Ez0e4xjgOA+X5JEZFrTPIYGXc5z4MY0qNEA=
 			</data>
 		</dict>
 		<key>NameCard.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M68S/99yrXKRFmByYPZSRmjd3nDUR8EbXrlVGW62924=
+			RE1T9ksrcY7kB7T3uCrZ+9e4FD+6wiZJkrPInS9u/w4=
 			</data>
 		</dict>
 		<key>NameCategoreyDetailsVc.nib</key>
@@ -2756,7 +2767,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qbeAl3HUrM1mIQflQqljsFk2C7L8I4iWeFagN+Mgzfg=
+			DaotjoUdkQAWjA0QDmeyg3nwWduvV7SYoQOVOWLlimQ=
 			</data>
 		</dict>
 		<key>PrayerTimeVC.nib</key>
@@ -2770,7 +2781,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sh7tPsBoDd+Q7f29hYQ+yJm74zqJCVfv/yHpuvNMTR4=
+			nSdIfQ/tgEBL+ZvREaQUiExOWDc1ZTx2zkA2KBZZy9M=
 			</data>
 		</dict>
 		<key>PrivacyRoles.nib</key>
@@ -3050,14 +3061,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/Y5ulA4xqZYF2c9/D9hOjs3Gkt/xVEkj8m/3qSbo7Q0=
+			4R2CHFaolFrK3dNSULXz/aSUnNfp1AfXU7OKHAqmBv8=
 			</data>
 		</dict>
 		<key>TashbeeResetVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T9G4wNQTOTJZDqUTWUZyDIQZzsP0Uz5k720PNGqFluU=
+			LAiwCvt2N3i8lKpFCQBp7NabPoJwWNNiBwdvb4m1bVk=
 			</data>
 		</dict>
 		<key>TashbeehHomeInfoCell.nib</key>
@@ -3330,7 +3341,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xj4JMKXaA/jX9SE1qpdFer+etFz+B45Rkln6cAy7S/o=
+			v6VOnytWG3zKIfyU+ICsNWqgJXyuOSrQqB/icy8Oqv8=
 			</data>
 			<key>optional</key>
 			<true/>
