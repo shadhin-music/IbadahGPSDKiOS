@@ -53,10 +53,10 @@ class ViewController: UIViewController {
                 DeenIslamGPSDK.shared.initialize(
                     with: navigationController,
                     delegate: self,
-                    baseApiUrl: "https://your-api-url.com",        // Replace with actual URL
-                    baseServiceUrl: "https://your-service-url.com", // Replace with actual URL
-                    baseResourceUrl: "https://your-resource-url.com", // Replace with actual URL
-                    baseGPHomeUrl: "https://your-gphome-url.com"    // Replace with actual URL
+                    baseApiUrl: "",        // Replace with actual URL
+                    baseServiceUrl: "", // Replace with actual URL
+                    baseResourceUrl: "", // Replace with actual URL
+                    baseGPHomeUrl: ""    // Replace with actual URL
                 )
                 
                 // Setup IbadahHome after SDK initialization
