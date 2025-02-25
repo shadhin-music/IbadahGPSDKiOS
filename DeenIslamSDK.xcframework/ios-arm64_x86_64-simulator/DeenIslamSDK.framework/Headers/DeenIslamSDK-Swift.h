@@ -917,6 +917,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 - (UIPresentationController * _Nullable)presentationControllerForPresentedViewController:(UIViewController * _Nonnull)presented presentingViewController:(UIViewController * _Nullable)presenting sourceViewController:(UIViewController * _Nonnull)source SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
 @class UICollectionView;
 @class UICollectionViewCell;
 @class UICollectionViewLayout;
@@ -930,7 +931,6 @@ SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 - (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 
 
@@ -1003,6 +1003,7 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 /// To set customized distance from keyboard for textField/textView. Can’t be less than zero
 @property (nonatomic) BOOL shouldRestoreScrollViewContentOffset;
 @end
+
 
 
 
@@ -2212,6 +2213,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 - (UIPresentationController * _Nullable)presentationControllerForPresentedViewController:(UIViewController * _Nonnull)presented presentingViewController:(UIViewController * _Nullable)presenting sourceViewController:(UIViewController * _Nonnull)source SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
 @class UICollectionView;
 @class UICollectionViewCell;
 @class UICollectionViewLayout;
@@ -2225,7 +2227,6 @@ SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 - (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 
 
@@ -2298,6 +2299,7 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 /// To set customized distance from keyboard for textField/textView. Can’t be less than zero
 @property (nonatomic) BOOL shouldRestoreScrollViewContentOffset;
 @end
+
 
 
 
