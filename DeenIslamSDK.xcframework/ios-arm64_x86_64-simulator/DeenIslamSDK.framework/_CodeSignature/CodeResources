@@ -674,7 +674,7 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		QQXDj5/PS0aYdnA/KrW8wZjd0IY=
+		XPrAe/JdvkF1u7U1dE19LpobCHg=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -690,11 +690,11 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		SUDCIkClM8tF1shQ0Bo/Trzh08M=
+		yf2PMX0NASFQEyXU0sYVKI3goK0=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		QQXDj5/PS0aYdnA/KrW8wZjd0IY=
+		XPrAe/JdvkF1u7U1dE19LpobCHg=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -710,7 +710,7 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		B3aOZ+dl3Jl2Umeo5jVOnI/+tUs=
+		/UP3hmRv2vI3lUaTZEO71G4st+o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -2431,7 +2431,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gfHlmUSEwXOzNViukLyatus8QCt3pMUQ87fDqlxD+zA=
+			O5dMMbeXsMpj7hOlMP2Yij1IchbKuCvdY31nFnfyfnA=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -2459,14 +2459,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5L0sJgy8YG0EWo6SMGizuY4IL5Eg3Gi7gEXFvaEqeKQ=
+			RHsQua0v87LTK3FvRTfyD3tD/1p06kGI6vt41und06E=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gfHlmUSEwXOzNViukLyatus8QCt3pMUQ87fDqlxD+zA=
+			O5dMMbeXsMpj7hOlMP2Yij1IchbKuCvdY31nFnfyfnA=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -2494,7 +2494,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mmWjDawb7FC/DjfhFWJjzunk3+0ABA7yjIZRiUVZ9OM=
+			YXoXnl1JHSpFx3DGzlPY+xGupO5o+JD+qb3EaM9U9xw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

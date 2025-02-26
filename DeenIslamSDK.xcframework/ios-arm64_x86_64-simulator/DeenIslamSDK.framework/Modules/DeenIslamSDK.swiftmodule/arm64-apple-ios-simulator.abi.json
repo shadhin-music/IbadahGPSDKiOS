@@ -86586,203 +86586,203 @@
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15623,
+      "offset": 15745,
       "length": 6,
       "value": "\"Wakt\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15708,
+      "offset": 15830,
       "length": 6,
       "value": "\"Fajr\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15731,
+      "offset": 15853,
       "length": 6,
       "value": "\"Asar\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15754,
+      "offset": 15876,
       "length": 6,
       "value": "\"Zuhr\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15779,
+      "offset": 15901,
       "length": 9,
       "value": "\"Maghrib\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15805,
+      "offset": 15927,
       "length": 6,
       "value": "\"Isha\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15832,
+      "offset": 15954,
       "length": 10,
       "value": "\"Tahajjut\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15861,
+      "offset": 15983,
       "length": 8,
       "value": "\"Ishrak\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15887,
+      "offset": 16009,
       "length": 7,
       "value": "\"Sehri\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15914,
+      "offset": 16036,
       "length": 9,
       "value": "\"Sunrise\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15942,
+      "offset": 16064,
       "length": 8,
       "value": "\"Sunset\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15967,
+      "offset": 16089,
       "length": 6,
       "value": "\"Noon\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15993,
+      "offset": 16115,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 20911,
+      "offset": 21032,
       "length": 9,
       "value": "\"Success\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 20944,
+      "offset": 21065,
       "length": 9,
       "value": "\"Message\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 20979,
+      "offset": 21100,
       "length": 11,
       "value": "\"TotalData\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21011,
+      "offset": 21132,
       "length": 6,
       "value": "\"Data\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21349,
+      "offset": 21470,
       "length": 6,
       "value": "\"Date\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21375,
+      "offset": 21496,
       "length": 5,
       "value": "\"Day\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21402,
+      "offset": 21523,
       "length": 7,
       "value": "\"Sehri\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21430,
+      "offset": 21551,
       "length": 6,
       "value": "\"Fajr\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21460,
+      "offset": 21581,
       "length": 9,
       "value": "\"Sunrise\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21490,
+      "offset": 21611,
       "length": 6,
       "value": "\"Noon\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21517,
+      "offset": 21638,
       "length": 6,
       "value": "\"Juhr\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21543,
+      "offset": 21664,
       "length": 5,
       "value": "\"Asr\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21571,
+      "offset": 21692,
       "length": 8,
       "value": "\"Magrib\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21600,
+      "offset": 21721,
       "length": 6,
       "value": "\"Isha\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21631,
+      "offset": 21752,
       "length": 10,
       "value": "\"Tahajjut\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21664,
+      "offset": 21785,
       "length": 8,
       "value": "\"Ishrak\""
     },
@@ -95688,7 +95688,7 @@
       "kind": "IntegerLiteral",
       "offset": 785,
       "length": 4,
-      "value": "1005"
+      "value": "1116"
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/SubscriptionResponse.swift",
