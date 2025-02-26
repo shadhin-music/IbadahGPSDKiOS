@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             setupUI()
+            
+            UserDefaults.standard.set("en", forKey: "language")
         }
         
         override func viewDidAppear(_ animated: Bool) {

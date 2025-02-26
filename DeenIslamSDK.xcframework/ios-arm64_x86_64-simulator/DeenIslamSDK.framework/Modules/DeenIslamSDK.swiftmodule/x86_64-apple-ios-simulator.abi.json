@@ -10207,6 +10207,46 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DeenIslamSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DeenIslamSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DeenIslamSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DeenIslamSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -12403,26 +12443,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DeenIslamSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "DeenIslamSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -14352,6 +14372,126 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "DeenIslamSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DeenIslamSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DeenIslamSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DeenIslamSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DeenIslamSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DeenIslamSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DeenIslamSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DeenIslamSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DeenIslamSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DeenIslamSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DeenIslamSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DeenIslamSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DeenIslamSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -17051,46 +17191,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DeenIslamSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DeenIslamSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "DeenIslamSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "DeenIslamSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -17130,6 +17230,26 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DeenIslamSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DeenIslamSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "DeenIslamSDK",
         "declAttributes": [
@@ -37841,6 +37961,26 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DeenIslamSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DeenIslamSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "CoreGraphics",
         "printedName": "CoreGraphics",
         "declKind": "Import",
@@ -50401,26 +50541,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "DeenIslamSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DeenIslamSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -50435,126 +50555,6 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "DeenIslamSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "DeenIslamSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "DeenIslamSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "DeenIslamSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "DeenIslamSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DeenIslamSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "DeenIslamSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DeenIslamSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DeenIslamSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "DeenIslamSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "DeenIslamSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DeenIslamSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DeenIslamSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -78228,35 +78228,35 @@
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/IbadahHome.swift",
       "kind": "Array",
-      "offset": 2219,
+      "offset": 2391,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/IbadahHome.swift",
       "kind": "Dictionary",
-      "offset": 2272,
+      "offset": 2444,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/IbadahHome.swift",
       "kind": "StringLiteral",
-      "offset": 2467,
+      "offset": 2639,
       "length": 63,
       "value": "\"District changed: \""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/IbadahHome.swift",
       "kind": "StringLiteral",
-      "offset": 2529,
+      "offset": 2701,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/IbadahHome.swift",
       "kind": "Array",
-      "offset": 2741,
+      "offset": 2913,
       "length": 2,
       "value": "[]"
     },
@@ -80487,6 +80487,20 @@
       "value": "\"https:\/\/api.quran.com\/api\/v4\/chapters?language=bn\""
     },
     {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Ramadan\/Fajayel\/FazayelAdapter.swift",
+      "kind": "Array",
+      "offset": 404,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Ramadan\/Fajayel\/FazayelVM.swift",
+      "kind": "Array",
+      "offset": 452,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/Library \/AudioPlayer\/item\/AudioItemQueue.swift",
       "kind": "IntegerLiteral",
       "offset": 1563,
@@ -81815,6 +81829,20 @@
       "offset": 5286,
       "length": 1,
       "value": "3"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/NamajTime\/PrayerTimeVC\/PrayerTimeImageDataCell\/PrayerTimeImageDataCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1271,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/NamajTime\/PrayerTimeVC\/PrayerTimeImageDataCell\/PrayerTimeImageDataCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1307,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/Library \/Alamofire\/Request.swift",
@@ -83201,6 +83229,517 @@
       "offset": 2971,
       "length": 1,
       "value": "5"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/CategoryDetails\/NameCategoreyDetailsVc.swift",
+      "kind": "Array",
+      "offset": 373,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/CategoryDetails\/NameCategoreyDetailsVc.swift",
+      "kind": "StringLiteral",
+      "offset": 409,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/CategoryDetails\/NameCategoreyDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 436,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/CategoryItemCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 382,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/CategoryItemCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 460,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/CategoryItemCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 628,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/CategoryItemCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 675,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/CategoryItemCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 899,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/CategoryItemCell.swift",
+      "kind": "StringLiteral",
+      "offset": 951,
+      "length": 15,
+      "value": "\"chevron.right\""
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/IslamicNameDetails.swift",
+      "kind": "BooleanLiteral",
+      "offset": 390,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/IslamicNameDetails.swift",
+      "kind": "IntegerLiteral",
+      "offset": 468,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/IslamicNameDetails.swift",
+      "kind": "BooleanLiteral",
+      "offset": 635,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/IslamicNameDetails.swift",
+      "kind": "IntegerLiteral",
+      "offset": 686,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/IslamicNameDetails.swift",
+      "kind": "BooleanLiteral",
+      "offset": 910,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/IslamicNameDetails.swift",
+      "kind": "IntegerLiteral",
+      "offset": 957,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/IslamicNameDetails.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1216,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/IslamicNameDetails.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1263,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/IslamicNameDetails.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1470,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/CategoryCollectionAdapter.swift",
+      "kind": "Array",
+      "offset": 405,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "Array",
+      "offset": 374,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "StringLiteral",
+      "offset": 463,
+      "length": 3,
+      "value": "\"A\""
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "StringLiteral",
+      "offset": 497,
+      "length": 6,
+      "value": "\"male\""
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "BooleanLiteral",
+      "offset": 720,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 800,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "StringLiteral",
+      "offset": 857,
+      "length": 23,
+      "value": "\"নামসমূহ\""
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 887,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "BooleanLiteral",
+      "offset": 902,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "StringLiteral",
+      "offset": 957,
+      "length": 27,
+      "value": "\"নাম বিভাগ\""
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 991,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1006,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1419,
+      "length": 2,
+      "value": "62"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1422,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1434,
+      "length": 3,
+      "value": "125"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1438,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1449,
+      "length": 3,
+      "value": "117"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1453,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "FloatLiteral",
+      "offset": 1465,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1588,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1666,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1739,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1743,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "FloatLiteral",
+      "offset": 1817,
+      "length": 3,
+      "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2243,
+      "length": 2,
+      "value": "62"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2246,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2258,
+      "length": 3,
+      "value": "125"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2262,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2273,
+      "length": 3,
+      "value": "117"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2277,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "FloatLiteral",
+      "offset": 2289,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2432,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2436,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2659,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2717,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2765,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2927,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2970,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3105,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3301,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3486,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3529,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3664,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3848,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3876,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4043,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "FloatLiteral",
+      "offset": 4095,
+      "length": 4,
+      "value": "0.95"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
+      "kind": "FloatLiteral",
+      "offset": 4108,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/NameCollectionAdapter.swift",
+      "kind": "Array",
+      "offset": 349,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/NewIslamicNameDetails\/NewNamesDetailsVc.swift",
+      "kind": "BooleanLiteral",
+      "offset": 364,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/NewIslamicNameDetails\/NewNamesDetailsVc.swift",
+      "kind": "BooleanLiteral",
+      "offset": 420,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/NewIslamicNameDetails\/NewNamesDetailsVc.swift",
+      "kind": "BooleanLiteral",
+      "offset": 478,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/NewIslamicNameDetails\/NewNamesDetailsVc.swift",
+      "kind": "BooleanLiteral",
+      "offset": 702,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/NewIslamicNameDetails\/NewNamesDetailsVc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 738,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/NewIslamicNameAdapter.swift",
+      "kind": "Array",
+      "offset": 426,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/PlayerViewController\/PlayerViewControllerAdapter.swift",
@@ -84629,20 +85168,6 @@
       "offset": 1563,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Ramadan\/Fajayel\/FazayelAdapter.swift",
-      "kind": "Array",
-      "offset": 404,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Ramadan\/Fajayel\/FazayelVM.swift",
-      "kind": "Array",
-      "offset": 452,
-      "length": 2,
-      "value": "[]"
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Islamic Calender\/CalenderCell\/CalendarCollectionViewCell.swift",
@@ -86090,174 +86615,174 @@
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
       "offset": 15779,
-      "length": 8,
-      "value": "\"Magrib\""
+      "length": 9,
+      "value": "\"Maghrib\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15804,
+      "offset": 15805,
       "length": 6,
       "value": "\"Isha\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15831,
+      "offset": 15832,
       "length": 10,
       "value": "\"Tahajjut\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15860,
+      "offset": 15861,
       "length": 8,
       "value": "\"Ishrak\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15886,
+      "offset": 15887,
       "length": 7,
       "value": "\"Sehri\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15913,
+      "offset": 15914,
       "length": 9,
       "value": "\"Sunrise\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15941,
+      "offset": 15942,
       "length": 8,
       "value": "\"Sunset\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15966,
+      "offset": 15967,
       "length": 6,
       "value": "\"Noon\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 15992,
+      "offset": 15993,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 20910,
+      "offset": 20911,
       "length": 9,
       "value": "\"Success\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 20943,
+      "offset": 20944,
       "length": 9,
       "value": "\"Message\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 20978,
+      "offset": 20979,
       "length": 11,
       "value": "\"TotalData\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21010,
+      "offset": 21011,
       "length": 6,
       "value": "\"Data\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21348,
+      "offset": 21349,
       "length": 6,
       "value": "\"Date\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21374,
+      "offset": 21375,
       "length": 5,
       "value": "\"Day\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21401,
+      "offset": 21402,
       "length": 7,
       "value": "\"Sehri\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21429,
+      "offset": 21430,
       "length": 6,
       "value": "\"Fajr\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21459,
+      "offset": 21460,
       "length": 9,
       "value": "\"Sunrise\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21489,
+      "offset": 21490,
       "length": 6,
       "value": "\"Noon\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21516,
+      "offset": 21517,
       "length": 6,
       "value": "\"Juhr\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21542,
+      "offset": 21543,
       "length": 5,
       "value": "\"Asr\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21570,
+      "offset": 21571,
       "length": 8,
       "value": "\"Magrib\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21599,
+      "offset": 21600,
       "length": 6,
       "value": "\"Isha\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21630,
+      "offset": 21631,
       "length": 10,
       "value": "\"Tahajjut\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/PrayerTimeDateWiseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 21663,
+      "offset": 21664,
       "length": 8,
       "value": "\"Ishrak\""
     },
@@ -91981,6 +92506,34 @@
       "value": "0b100"
     },
     {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Zakat\/ZakatCell\/ZakatDetails\/ZakatDetailsVC.swift",
+      "kind": "Array",
+      "offset": 367,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Zakat\/ZakatCell\/ZakatDetails\/ZakatDetailsVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 529,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Zakat\/ZakatCell\/ZakatDetails\/ZakatDetailsVC.swift",
+      "kind": "Array",
+      "offset": 592,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Zakat\/ZakatCell\/ZakatDetails\/ZakatDetailsVC.swift",
+      "kind": "StringLiteral",
+      "offset": 632,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Ramadan\/RamadanPatchVM.swift",
       "kind": "Array",
       "offset": 382,
@@ -93092,545 +93645,6 @@
       "offset": 2393,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Zakat\/ZakatCell\/ZakatDetails\/ZakatDetailsVC.swift",
-      "kind": "Array",
-      "offset": 367,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Zakat\/ZakatCell\/ZakatDetails\/ZakatDetailsVC.swift",
-      "kind": "IntegerLiteral",
-      "offset": 529,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Zakat\/ZakatCell\/ZakatDetails\/ZakatDetailsVC.swift",
-      "kind": "Array",
-      "offset": 592,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Zakat\/ZakatCell\/ZakatDetails\/ZakatDetailsVC.swift",
-      "kind": "StringLiteral",
-      "offset": 632,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/CategoryDetails\/NameCategoreyDetailsVc.swift",
-      "kind": "Array",
-      "offset": 373,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/CategoryDetails\/NameCategoreyDetailsVc.swift",
-      "kind": "StringLiteral",
-      "offset": 409,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/CategoryDetails\/NameCategoreyDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 436,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/CategoryItemCell.swift",
-      "kind": "BooleanLiteral",
-      "offset": 382,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/CategoryItemCell.swift",
-      "kind": "IntegerLiteral",
-      "offset": 460,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/CategoryItemCell.swift",
-      "kind": "BooleanLiteral",
-      "offset": 628,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/CategoryItemCell.swift",
-      "kind": "IntegerLiteral",
-      "offset": 675,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/CategoryItemCell.swift",
-      "kind": "BooleanLiteral",
-      "offset": 899,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/CategoryItemCell.swift",
-      "kind": "StringLiteral",
-      "offset": 951,
-      "length": 15,
-      "value": "\"chevron.right\""
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/IslamicNameDetails.swift",
-      "kind": "BooleanLiteral",
-      "offset": 390,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/IslamicNameDetails.swift",
-      "kind": "IntegerLiteral",
-      "offset": 468,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/IslamicNameDetails.swift",
-      "kind": "BooleanLiteral",
-      "offset": 635,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/IslamicNameDetails.swift",
-      "kind": "IntegerLiteral",
-      "offset": 686,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/IslamicNameDetails.swift",
-      "kind": "BooleanLiteral",
-      "offset": 910,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/IslamicNameDetails.swift",
-      "kind": "IntegerLiteral",
-      "offset": 957,
-      "length": 2,
-      "value": "18"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/IslamicNameDetails.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1216,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/IslamicNameDetails.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1263,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/Cell\/IslamicNameDetails.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1470,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/CategoryCollectionAdapter.swift",
-      "kind": "Array",
-      "offset": 405,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "Array",
-      "offset": 374,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "StringLiteral",
-      "offset": 463,
-      "length": 3,
-      "value": "\"A\""
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "StringLiteral",
-      "offset": 497,
-      "length": 6,
-      "value": "\"male\""
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "BooleanLiteral",
-      "offset": 720,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 800,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "StringLiteral",
-      "offset": 857,
-      "length": 23,
-      "value": "\"নামসমূহ\""
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 887,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "BooleanLiteral",
-      "offset": 902,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "StringLiteral",
-      "offset": 957,
-      "length": 27,
-      "value": "\"নাম বিভাগ\""
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 991,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1006,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1419,
-      "length": 2,
-      "value": "62"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1422,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1434,
-      "length": 3,
-      "value": "125"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1438,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1449,
-      "length": 3,
-      "value": "117"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1453,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "FloatLiteral",
-      "offset": 1465,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1588,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1666,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1739,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1743,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "FloatLiteral",
-      "offset": 1817,
-      "length": 3,
-      "value": "0.3"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2243,
-      "length": 2,
-      "value": "62"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2246,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2258,
-      "length": 3,
-      "value": "125"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2262,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2273,
-      "length": 3,
-      "value": "117"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2277,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "FloatLiteral",
-      "offset": 2289,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2432,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2436,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2659,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2717,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2765,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2927,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2970,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3105,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3301,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3486,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3529,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3664,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3848,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3876,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4043,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "FloatLiteral",
-      "offset": 4095,
-      "length": 4,
-      "value": "0.95"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/GenderWiseDetailsVc.swift",
-      "kind": "FloatLiteral",
-      "offset": 4108,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/GenderWiseName\/NameCollectionAdapter.swift",
-      "kind": "Array",
-      "offset": 349,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/NewIslamicNameDetails\/NewNamesDetailsVc.swift",
-      "kind": "BooleanLiteral",
-      "offset": 364,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/NewIslamicNameDetails\/NewNamesDetailsVc.swift",
-      "kind": "BooleanLiteral",
-      "offset": 420,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/NewIslamicNameDetails\/NewNamesDetailsVc.swift",
-      "kind": "BooleanLiteral",
-      "offset": 478,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/NewIslamicNameDetails\/NewNamesDetailsVc.swift",
-      "kind": "BooleanLiteral",
-      "offset": 702,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/NewIslamicNameDetails\/NewNamesDetailsVc.swift",
-      "kind": "IntegerLiteral",
-      "offset": 738,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/IslamicName\/NewIslamicNameVC\/NewIslamicNameAdapter.swift",
-      "kind": "Array",
-      "offset": 426,
-      "length": 2,
-      "value": "[]"
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Home\/HomeCategoryCell\/HomeCategoryCell.swift",
@@ -95672,9 +95686,9 @@
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/TasbeehVC\/TasbeehVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 784,
+      "offset": 785,
       "length": 4,
-      "value": "1104"
+      "value": "1005"
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ApiResponse\/SubscriptionResponse.swift",
