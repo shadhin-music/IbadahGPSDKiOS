@@ -87418,71 +87418,78 @@
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Subscription\/SubscriptionVC.swift",
+      "kind": "StringLiteral",
+      "offset": 393,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Subscription\/SubscriptionVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 659,
+      "offset": 637,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Subscription\/SubscriptionVC.swift",
       "kind": "StringLiteral",
-      "offset": 23297,
+      "offset": 23475,
       "length": 9,
       "value": "\"Success\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Subscription\/SubscriptionVC.swift",
       "kind": "StringLiteral",
-      "offset": 23334,
+      "offset": 23512,
       "length": 9,
       "value": "\"Message\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Subscription\/SubscriptionVC.swift",
       "kind": "StringLiteral",
-      "offset": 23368,
+      "offset": 23546,
       "length": 6,
       "value": "\"Data\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Subscription\/SubscriptionVC.swift",
       "kind": "StringLiteral",
-      "offset": 23827,
+      "offset": 24005,
       "length": 9,
       "value": "\"Success\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Subscription\/SubscriptionVC.swift",
       "kind": "StringLiteral",
-      "offset": 23864,
+      "offset": 24042,
       "length": 9,
       "value": "\"Message\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Subscription\/SubscriptionVC.swift",
       "kind": "StringLiteral",
-      "offset": 23898,
+      "offset": 24076,
       "length": 6,
       "value": "\"Data\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Subscription\/SubscriptionVC.swift",
       "kind": "StringLiteral",
-      "offset": 24135,
+      "offset": 24313,
       "length": 9,
       "value": "\"Success\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Subscription\/SubscriptionVC.swift",
       "kind": "StringLiteral",
-      "offset": 24172,
+      "offset": 24350,
       "length": 9,
       "value": "\"Message\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/ViewController\/Subscription\/SubscriptionVC.swift",
       "kind": "StringLiteral",
-      "offset": 24206,
+      "offset": 24384,
       "length": 6,
       "value": "\"Data\""
     },

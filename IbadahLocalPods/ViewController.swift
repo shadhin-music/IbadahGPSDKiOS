@@ -116,7 +116,7 @@ class ViewController: UIViewController {
         
         func getToken(completion: @escaping (String) -> Void) {
             DispatchQueue.main.async { [weak self] in
-                DeenIslamGPSDK.shared.logIn(with: "8801708093636") { token, error in
+                DeenIslamGPSDK.shared.logIn(with: "8801738609138") { token, error in
                     if let token = token {
                         completion(token)
                     } else {
