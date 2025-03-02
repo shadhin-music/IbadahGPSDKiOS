@@ -22,7 +22,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		hIm5QvOyP+/tv6+bMJx1ETb1RwA=
+		BrUWKXjuAkOrQR2sx/yDV45ICnA=
 		</data>
 		<key>AutoRenewOffCell.nib</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>CardCell.nib</key>
 		<data>
-		2rUEbBDoUJhD/r40premO/6l4g8=
+		o7TGgqpDH0UvhmiO1u/QoZlNRn0=
 		</data>
 		<key>CatFooter.nib</key>
 		<data>
@@ -258,7 +258,7 @@
 		</data>
 		<key>GPPopUp.nib</key>
 		<data>
-		zvKVrN/i6Z51OCbRa+ZfpSASFP8=
+		i7ltXuJ51+aVUGSADrDR0m/QDbE=
 		</data>
 		<key>GenderWiseDetailsVc.nib</key>
 		<data>
@@ -354,7 +354,7 @@
 		</data>
 		<key>Headers/DeenIslamSDK-Swift.h</key>
 		<data>
-		Pc0JItywKIxR3NFciEEjRpa7r3o=
+		T0NRg7yed1fWBNvWndjCkDLXdno=
 		</data>
 		<key>Headers/DeenIslamSDK.h</key>
 		<data>
@@ -554,7 +554,7 @@
 		</data>
 		<key>IbadahHome.nib</key>
 		<data>
-		qOImm5uGzvF07BkSnH2pEsyDBa8=
+		+GlvpqaloK7loxZbbyxPA22Clio=
 		</data>
 		<key>ImageCell.nib</key>
 		<data>
@@ -674,11 +674,11 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		ectod5iZQP5ui/XHPx+2P7963oo=
+		9mD1FRPd4WEHyKPgoTT7rCZ7sWc=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		QZhMA0L5jmowkTMXF/BqlXxfE4Y=
+		7N0qlFY+QWjt2K12Swhljth+Bew=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -686,11 +686,11 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		QZhMA0L5jmowkTMXF/BqlXxfE4Y=
+		7N0qlFY+QWjt2K12Swhljth+Bew=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		udsr0VwI17m/UeT0DsLeeGoCrU0=
+		gF6y23Z8AumNkijdVTZwfExJq4I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -984,6 +984,10 @@
 		<data>
 		wx03Q/ug8poHZAMTy9D+YGKjtHg=
 		</data>
+		<key>RRTimeDataCell.nib</key>
+		<data>
+		YDzqwdCo7jvDwH3LcZABfn20QKc=
+		</data>
 		<key>RamadanCalendarCell.nib</key>
 		<data>
 		ME9ehYUI6okQvHSqOj+CYZ6uLNM=
@@ -991,6 +995,10 @@
 		<key>RamadanCalender.nib</key>
 		<data>
 		poJGeelIY6YQccF5eyeKgbUAzlE=
+		</data>
+		<key>RamadanRegularVC.nib</key>
+		<data>
+		Iv3idgrOs/JXuYUTYiUhcJ1mBVY=
 		</data>
 		<key>RamadanVC.nib</key>
 		<data>
@@ -1102,7 +1110,7 @@
 		</data>
 		<key>TimeDetails.nib</key>
 		<data>
-		YiG2kyyU/V8aD2j+msui6DCkpRw=
+		R8rUC/aBroB5gpX1FEP2/C2h91s=
 		</data>
 		<key>TodaysDuaCell.nib</key>
 		<data>
@@ -1277,7 +1285,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jo+S9z85XxbHsq03djsJZ8qYmbCMmk9L0yoeHAYF+u4=
+			v+jLoTA8c2HK2Lath8oq+wHjr7xmmEL1FjYp6OXtW1g=
 			</data>
 		</dict>
 		<key>AutoRenewOffCell.nib</key>
@@ -1347,7 +1355,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vWAGgvtjnicKUvI8jNPA7EyfqroHYOIFksePA6kXq9E=
+			k7zjMn81AcU7spvqkamdV03gYhkc+1pG7qFenOiSHfU=
 			</data>
 		</dict>
 		<key>CatFooter.nib</key>
@@ -1690,7 +1698,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1/DZ+nH5Z96akVQSlPdmbgeDdoCoYbcslD1LafsoKh8=
+			WJZLzKh3P67Hnr0of/QRcRdT/ong4AomeiW4TDSvNuY=
 			</data>
 		</dict>
 		<key>GenderWiseDetailsVc.nib</key>
@@ -1858,7 +1866,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W3VhXbpb6Rnwiacw328wWj7p/IJ0rI0xkIMbP5PAMjY=
+			vJLEgc/O1tfFUeUaOBSvlTF0UChy2vkOBZTMAa5JMUs=
 			</data>
 		</dict>
 		<key>Headers/DeenIslamSDK.h</key>
@@ -2208,7 +2216,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aGMlfYhM79gkgm4OzzvrNhbNP0Yh91GSRRJgIIxWt8E=
+			ziDN0pTgHxIZwD6eBlYf2z6SaxA5LthZsoM4daXqDss=
 			</data>
 		</dict>
 		<key>ImageCell.nib</key>
@@ -2411,14 +2419,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WMhRFdgXbeymMUmacDR+9WoJX3IDdBLbiv5n9wK8fIM=
+			2abduSn6sGioga5UCNFgkBZmgQO38Ih2OfDzKcFOJks=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IqkrKDIXtTveIVRSERu9SQEChe2JmoL3vLV0l6+8i54=
+			9SqsXQvOVTvVqw6hpwkOuYB8tVo70/y8ozQt4EvL3js=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -2432,14 +2440,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IqkrKDIXtTveIVRSERu9SQEChe2JmoL3vLV0l6+8i54=
+			9SqsXQvOVTvVqw6hpwkOuYB8tVo70/y8ozQt4EvL3js=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3xZzfMImBfvJkADXP7uxx/WXY4JvofSTiqJUnLEjoHs=
+			w5pvbDJt8zqV4IqFo1gjmNbfjkz14sz/ec6k3oT0gmE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -2953,6 +2961,13 @@
 			RaykJvhppMyW8uLa0AnwVD4KqWB+KxHxPtt0ycl65Cg=
 			</data>
 		</dict>
+		<key>RRTimeDataCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			u7KQ66L816Y+jwljZCzf2+7hXQGeDZrWjL66Fd/OU74=
+			</data>
+		</dict>
 		<key>RamadanCalendarCell.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -2965,6 +2980,13 @@
 			<key>hash2</key>
 			<data>
 			rzvqryTaRsXthhn4U+FlnaAXEcMnSEgihkO+NQgoYUg=
+			</data>
+		</dict>
+		<key>RamadanRegularVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EPo3KpL4bWuSt/Fig6XFSZKJuMuKGYAZs0SfzJ5fZ50=
 			</data>
 		</dict>
 		<key>RamadanVC.nib</key>
@@ -3160,7 +3182,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i/8Iei7bEgdlHEP2XyOo6MF7r+Yvj4wixivVPpUHF94=
+			1/kzZ9pTNXtFvKDJV4qZDFiroOFF0T/MskU22/YJlfY=
 			</data>
 		</dict>
 		<key>TodaysDuaCell.nib</key>

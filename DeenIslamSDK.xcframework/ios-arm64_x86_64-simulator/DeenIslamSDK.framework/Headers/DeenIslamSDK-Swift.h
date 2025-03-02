@@ -326,13 +326,14 @@ typedef SWIFT_ENUM(NSInteger, AppFeature, open) {
   AppFeatureDuaAndAmol = 14,
   AppFeatureIslamicLearningStory = 15,
   AppFeatureRamadan = 16,
-  AppFeatureHajjAndUmrah = 17,
-  AppFeatureKhotomQuran = 18,
-  AppFeatureQurbani = 19,
-  AppFeatureIslamicBoyan = 20,
-  AppFeatureIslamicCalender = 21,
-  AppFeatureLivePodcast = 22,
-  AppFeatureAllahNames = 23,
+  AppFeatureRramadan = 17,
+  AppFeatureHajjAndUmrah = 18,
+  AppFeatureKhotomQuran = 19,
+  AppFeatureQurbani = 20,
+  AppFeatureIslamicBoyan = 21,
+  AppFeatureIslamicCalender = 22,
+  AppFeatureLivePodcast = 23,
+  AppFeatureAllahNames = 24,
 };
 
 @class NSString;
@@ -1622,13 +1623,14 @@ typedef SWIFT_ENUM(NSInteger, AppFeature, open) {
   AppFeatureDuaAndAmol = 14,
   AppFeatureIslamicLearningStory = 15,
   AppFeatureRamadan = 16,
-  AppFeatureHajjAndUmrah = 17,
-  AppFeatureKhotomQuran = 18,
-  AppFeatureQurbani = 19,
-  AppFeatureIslamicBoyan = 20,
-  AppFeatureIslamicCalender = 21,
-  AppFeatureLivePodcast = 22,
-  AppFeatureAllahNames = 23,
+  AppFeatureRramadan = 17,
+  AppFeatureHajjAndUmrah = 18,
+  AppFeatureKhotomQuran = 19,
+  AppFeatureQurbani = 20,
+  AppFeatureIslamicBoyan = 21,
+  AppFeatureIslamicCalender = 22,
+  AppFeatureLivePodcast = 23,
+  AppFeatureAllahNames = 24,
 };
 
 @class NSString;

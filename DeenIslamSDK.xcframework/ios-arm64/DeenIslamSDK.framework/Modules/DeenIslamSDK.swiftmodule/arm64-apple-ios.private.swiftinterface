@@ -2408,6 +2408,7 @@ extension Foundation.URLComponents : DeenIslamSDK.URLConvertible {
   case duaAndAmol
   case islamicLearningStory
   case ramadan
+  case rramadan
   case HajjAndUmrah
   case KhotomQuran
   case Qurbani
