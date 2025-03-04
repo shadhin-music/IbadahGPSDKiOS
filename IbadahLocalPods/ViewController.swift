@@ -89,7 +89,11 @@ class ViewController: UIViewController {
         }
     }
 
-    extension ViewController: DeenIslamSDKNotifier {
+extension ViewController: DeenIslamSDKNotifier {
+    func notificationURL(url: String) {
+        print("azan url: \(url)")
+    }
+    
         func tokenStatus(token isValid: Bool, completion: ((String) -> Void)?) {
             DispatchQueue.main.async { [weak self] in
                 guard let self = self else { return }

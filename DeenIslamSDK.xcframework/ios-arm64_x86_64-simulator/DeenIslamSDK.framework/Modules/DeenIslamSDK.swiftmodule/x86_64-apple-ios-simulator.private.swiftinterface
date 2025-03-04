@@ -216,6 +216,7 @@ extension DeenIslamSDK.IQKeyboardManager {
   @objc func tokenStatus(token isValid: Swift.Bool, completion: ((Swift.String) -> Swift.Void)?)
   @objc func getToken(completion: @escaping (Swift.String) -> Swift.Void)
   @objc func errorMessage(error: Swift.String)
+  @objc func notificationURL(url: Swift.String)
   @objc func onDeenTriggerEvent(event_name: Swift.String, param: Swift.String)
 }
 @_hasMissingDesignatedInitializers public class ConstraintMakerRelatable {
@@ -1387,6 +1388,7 @@ extension DeenIslamSDK.DeenIslamGPSDK {
   @objc final public func isPrayerNotificationEnabled() -> Swift.Bool
   @objc final public func clearAllPrayerNotification()
   @objc final public func prayerNotification(isEnable: Swift.Bool)
+  @objc final public func logout()
 }
 @_hasMissingDesignatedInitializers final public class Constraint {
   final public var layoutConstraints: [DeenIslamSDK.LayoutConstraint]

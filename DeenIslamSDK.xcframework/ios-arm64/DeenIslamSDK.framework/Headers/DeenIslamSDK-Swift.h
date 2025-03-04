@@ -466,6 +466,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 - (BOOL)isPrayerNotificationEnabled SWIFT_WARN_UNUSED_RESULT;
 - (void)clearAllPrayerNotification;
 - (void)prayerNotificationWithIsEnable:(BOOL)isEnable;
+- (void)logout;
 @end
 
 
@@ -484,6 +485,7 @@ SWIFT_PROTOCOL("_TtP12DeenIslamSDK20DeenIslamSDKNotifier_")
 /// \param error any error occure this func call with error message
 ///
 - (void)errorMessageWithError:(NSString * _Nonnull)error;
+- (void)notificationURLWithUrl:(NSString * _Nonnull)url;
 - (void)onDeenTriggerEventWithEvent_name:(NSString * _Nonnull)event_name param:(NSString * _Nonnull)param;
 @end
 

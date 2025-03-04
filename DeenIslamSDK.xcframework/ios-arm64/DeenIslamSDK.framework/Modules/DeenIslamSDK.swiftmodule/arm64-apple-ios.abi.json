@@ -3435,6 +3435,36 @@
           },
           {
             "kind": "Function",
+            "name": "notificationURL",
+            "printedName": "notificationURL(url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DeenIslamSDK@objc(pl)DeenIslamSDKNotifier(im)notificationURLWithUrl:",
+            "mangledName": "$s12DeenIslamSDK0aB11SDKNotifierP15notificationURL3urlySS_tF",
+            "moduleName": "DeenIslamSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : DeenIslamSDK.DeenIslamSDKNotifier>",
+            "sugared_genericSig": "<Self where Self : DeenIslamSDK.DeenIslamSDKNotifier>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "onDeenTriggerEvent",
             "printedName": "onDeenTriggerEvent(event_name:param:)",
             "children": [
@@ -34324,6 +34354,29 @@
             "mangledName": "$s12DeenIslamSDK0aB5GPSDKC18prayerNotification8isEnableySb_tF",
             "moduleName": "DeenIslamSDK",
             "objc_name": "prayerNotificationWithIsEnable:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logout",
+            "printedName": "logout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@DeenIslamSDK@objc(cs)DeenIslamGPSDK(im)logout",
+            "mangledName": "$s12DeenIslamSDK0aB5GPSDKC6logoutyyF",
+            "moduleName": "DeenIslamSDK",
             "declAttributes": [
               "Final",
               "AccessControl",
