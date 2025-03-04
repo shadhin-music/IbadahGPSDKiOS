@@ -466,7 +466,6 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 - (BOOL)isPrayerNotificationEnabled SWIFT_WARN_UNUSED_RESULT;
 - (void)clearAllPrayerNotification;
 - (void)prayerNotificationWithIsEnable:(BOOL)isEnable;
-- (void)logout;
 @end
 
 
@@ -1765,7 +1764,6 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 - (BOOL)isPrayerNotificationEnabled SWIFT_WARN_UNUSED_RESULT;
 - (void)clearAllPrayerNotification;
 - (void)prayerNotificationWithIsEnable:(BOOL)isEnable;
-- (void)logout;
 @end
 
 

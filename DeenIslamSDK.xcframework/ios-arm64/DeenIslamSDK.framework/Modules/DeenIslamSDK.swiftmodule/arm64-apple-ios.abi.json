@@ -34361,29 +34361,6 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "logout",
-            "printedName": "logout()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@DeenIslamSDK@objc(cs)DeenIslamGPSDK(im)logout",
-            "mangledName": "$s12DeenIslamSDK0aB5GPSDKC6logoutyyF",
-            "moduleName": "DeenIslamSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -98452,7 +98429,7 @@
       "kind": "FloatLiteral",
       "offset": 1251,
       "length": 4,
-      "value": "0.47"
+      "value": "0.50"
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/HalfScreenPresentationController.swift",

@@ -1388,7 +1388,6 @@ extension DeenIslamSDK.DeenIslamGPSDK {
   @objc final public func isPrayerNotificationEnabled() -> Swift.Bool
   @objc final public func clearAllPrayerNotification()
   @objc final public func prayerNotification(isEnable: Swift.Bool)
-  @objc final public func logout()
 }
 @_hasMissingDesignatedInitializers final public class Constraint {
   final public var layoutConstraints: [DeenIslamSDK.LayoutConstraint]
