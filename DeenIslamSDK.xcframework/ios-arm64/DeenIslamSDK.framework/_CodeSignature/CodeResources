@@ -690,7 +690,7 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		vW0uZuwZ5+45LOVq12Dbxy9Kdjc=
+		MBIAP3Uizz9Wsjwv3mwN7M7oYhw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -986,7 +986,7 @@
 		</data>
 		<key>RRTimeDataCell.nib</key>
 		<data>
-		Y28WJIMEJNyP0e4PC0T/vHx0fSc=
+		7nZfsXQP8uvpQlAEETPQmW83wAU=
 		</data>
 		<key>RamadanCalendarCell.nib</key>
 		<data>
@@ -1110,7 +1110,7 @@
 		</data>
 		<key>TimeDetails.nib</key>
 		<data>
-		R8rUC/aBroB5gpX1FEP2/C2h91s=
+		NU5mZysBII3RkaawgcECyO8gTDM=
 		</data>
 		<key>TodaysDuaCell.nib</key>
 		<data>
@@ -1228,7 +1228,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OM0ayHGwzob/FArvuwi4/TfjI6w=
+			r/liIyzvX7/xEBvMMDXFL6ccYv8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2447,7 +2447,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vEn109HUTtjWFc1OZSZBWvF06kumPXSXCvm3rOvo7mI=
+			h4AcGkyQCPvwT1G9JptcVGkVlouvAHc2B60jAfF62o0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -2965,7 +2965,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5SkFWlMx0JqwFJyZdF2TI7SdizXNDvTjipSDyi6kgXc=
+			7h2yf9+Pti+xvHm5QHAsyQUfy25JJpxQOCClRRUjxhQ=
 			</data>
 		</dict>
 		<key>RamadanCalendarCell.nib</key>
@@ -3182,7 +3182,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1/kzZ9pTNXtFvKDJV4qZDFiroOFF0T/MskU22/YJlfY=
+			+Nz6zhfWviDP/K55qtxxmqhp21M/5bVXYqAuBEef134=
 			</data>
 		</dict>
 		<key>TodaysDuaCell.nib</key>
@@ -3385,7 +3385,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/34FnMTTWQ3iUVDo+zPNS7hBJ6R1udYzLsd6CwYJ/bA=
+			Rr0fkI0MP1Gxsg7oFi7mRlAIeYWYoRiuiD423TPH+g0=
 			</data>
 			<key>optional</key>
 			<true/>
