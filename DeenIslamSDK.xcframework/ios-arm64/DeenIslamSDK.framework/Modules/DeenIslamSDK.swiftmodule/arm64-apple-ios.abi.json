@@ -34361,6 +34361,29 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logout",
+            "printedName": "logout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@DeenIslamSDK@objc(cs)DeenIslamGPSDK(im)logout",
+            "mangledName": "$s12DeenIslamSDK0aB5GPSDKC6logoutyyF",
+            "moduleName": "DeenIslamSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -78316,21 +78339,21 @@
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/IbadahHome.swift",
       "kind": "StringLiteral",
-      "offset": 2681,
-      "length": 63,
+      "offset": 2718,
+      "length": 31,
       "value": "\"District changed: \""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/IbadahHome.swift",
       "kind": "StringLiteral",
-      "offset": 2743,
+      "offset": 2748,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK\/DeenIslamSDK\/IbadahHome.swift",
       "kind": "Array",
-      "offset": 2955,
+      "offset": 2970,
       "length": 2,
       "value": "[]"
     },

@@ -354,7 +354,7 @@
 		</data>
 		<key>Headers/DeenIslamSDK-Swift.h</key>
 		<data>
-		6//yjxQRdbBLqf3HWs5PS9L4go8=
+		527iSe+THr1ofPll1/r6kf6vxwY=
 		</data>
 		<key>Headers/DeenIslamSDK.h</key>
 		<data>
@@ -674,11 +674,11 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		kTXM5P0G+t+rY+Mkq+d0jmCeOWs=
+		r3V7SaGbjN4qIEfkBQYmeH+5bks=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Ehxu8/YodY1vvg7gFdY9JYIe2ls=
+		OoGXOlO6CGIdpdivpEtUosOyqq8=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -686,11 +686,11 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Ehxu8/YodY1vvg7gFdY9JYIe2ls=
+		OoGXOlO6CGIdpdivpEtUosOyqq8=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		MBIAP3Uizz9Wsjwv3mwN7M7oYhw=
+		9TirfGZwHNdFSTe0gKmTBSAGzUo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1866,7 +1866,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b182/DFju4Ah1OfOjPHzKplUeP02v8ASMgHtTGve38Q=
+			qaMRLJ0cysFm+Lrn+UNS/gJ7BG48dAWNXCl/5pT7llU=
 			</data>
 		</dict>
 		<key>Headers/DeenIslamSDK.h</key>
@@ -2419,14 +2419,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t4MT5lBzfH/Wm/cIb3LzAMxoHt7HBa1TMZJYocYe9/A=
+			LaHJYwSoH7sGbuIqqriNYyS2tI24zw0WZMmL12zGPXg=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pYR88kBsYNar5dIUo+9WJT8RB8goRhlKIF4A10wF0KY=
+			LxeTdPbhDQ360qJvjXoBB+OJ40g5gY1ASo2Wpa1zJU4=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -2440,14 +2440,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pYR88kBsYNar5dIUo+9WJT8RB8goRhlKIF4A10wF0KY=
+			LxeTdPbhDQ360qJvjXoBB+OJ40g5gY1ASo2Wpa1zJU4=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h4AcGkyQCPvwT1G9JptcVGkVlouvAHc2B60jAfF62o0=
+			dNxg4BgnWMkFHsYwUaZ76apL8vaSKDi4q0uYOgk9ftI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

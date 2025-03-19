@@ -15,14 +15,14 @@ class ViewController: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             setupUI()
-            
+            initializeSDK()
             UserDefaults.standard.set("en", forKey: "language")
         }
         
         override func viewDidAppear(_ animated: Bool) {
             super.viewDidAppear(animated)
             // Initialize SDK after view appears and navigation controller is definitely set
-            initializeSDK()
+            
         }
         
         private func setupUI() {

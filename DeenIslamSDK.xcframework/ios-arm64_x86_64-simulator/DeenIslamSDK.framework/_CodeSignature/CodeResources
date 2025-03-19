@@ -354,7 +354,7 @@
 		</data>
 		<key>Headers/DeenIslamSDK-Swift.h</key>
 		<data>
-		9cyz7x2zI4wVs3GFcpI9WmMw/aU=
+		58bczn1gVwgPKAMoSmwGtJd5EeI=
 		</data>
 		<key>Headers/DeenIslamSDK.h</key>
 		<data>
@@ -674,11 +674,11 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		nVGPYZB++okAKQWwkh+ETChSnEI=
+		r0x0hX9UQSOLLLbkqeU+ClQemDw=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		bwuZo3pRLwIiH6bTe3ejzc/AmrA=
+		tRPlS5HqWFlUhI0Dcaq4WbYNexM=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -686,19 +686,19 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		bwuZo3pRLwIiH6bTe3ejzc/AmrA=
+		tRPlS5HqWFlUhI0Dcaq4WbYNexM=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		H1+T7lCnnHH7j5KfgKHqQEgf620=
+		29S3RKVs0UEHkkftj4ggi6T6BkQ=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		nVGPYZB++okAKQWwkh+ETChSnEI=
+		r0x0hX9UQSOLLLbkqeU+ClQemDw=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Hm4BnPEApqs4anm5aVJ4J7IponM=
+		ZMljO7NZXbtTrhO9AljxOkk+NKE=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -706,11 +706,11 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Hm4BnPEApqs4anm5aVJ4J7IponM=
+		ZMljO7NZXbtTrhO9AljxOkk+NKE=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QAs+eFz2couS1VK5icrNQnKNYXw=
+		M4cYtEF6whJT9VHSGqbofPuIUbA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1886,7 +1886,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			P9pS5Da5PEXL2drXsuux0ZYAzi+mIZZbaravZoEhqUg=
+			4wwIuK56tVazeZcv0o95HHK+JdWZ/2oEBojzN3N4N20=
 			</data>
 		</dict>
 		<key>Headers/DeenIslamSDK.h</key>
@@ -2439,14 +2439,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xztXUphAbBMIKl0yBrUtgTPAj3aMBleB10Qvf2wApQY=
+			ykTi1QkF4Ibe98BTkx7kfOqTIBXQwKfvVrBONQNP5/k=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oP9i90s85H7cy0iPE/UNIyHSmbuL6HAW53o02faf+HI=
+			owkyh5oKfmvJRQdSEYWKd6xWVt9HloBoSfIiMhGc2rQ=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -2460,28 +2460,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oP9i90s85H7cy0iPE/UNIyHSmbuL6HAW53o02faf+HI=
+			owkyh5oKfmvJRQdSEYWKd6xWVt9HloBoSfIiMhGc2rQ=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qhHTMj6pGoSkKqXK9vtJm1O6ylg3gsMkSjYTkAG7ve0=
+			pqH4awlj0K2yv8BeN7Ruhf9AGfJjf53i7gUHCokIXi8=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xztXUphAbBMIKl0yBrUtgTPAj3aMBleB10Qvf2wApQY=
+			ykTi1QkF4Ibe98BTkx7kfOqTIBXQwKfvVrBONQNP5/k=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WZTvCkkmHHQwRf7ld8qicmJ92j3HElhoXyiG+2BSDtE=
+			KC+IsUCiRXfrdpQtDTzonYZ0Y4Bh8rfQacR1DFo0d7k=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -2495,14 +2495,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WZTvCkkmHHQwRf7ld8qicmJ92j3HElhoXyiG+2BSDtE=
+			KC+IsUCiRXfrdpQtDTzonYZ0Y4Bh8rfQacR1DFo0d7k=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/rhT+H82UIGX/jQ9zicpGDZFsC4rV2NKyImOM0K+PyI=
+			SP4BGsck6MWj18XI/RP7mQZOv+CtayLwK4lUK64rtk0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
