@@ -22,7 +22,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		hIm5QvOyP+/tv6+bMJx1ETb1RwA=
+		DyCLF8ah3Zq4W5mvJrinBU6pxpc=
 		</data>
 		<key>AutoRenewOffCell.nib</key>
 		<data>
@@ -674,7 +674,7 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		r3V7SaGbjN4qIEfkBQYmeH+5bks=
+		J5SVsuTdMSwnY6iES3PEKelFZTM=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -690,7 +690,7 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		9TirfGZwHNdFSTe0gKmTBSAGzUo=
+		hYxQ7bhP8rZefyiiZjQooW3NS+4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -815,6 +815,10 @@
 		<key>PlayerViewController.nib</key>
 		<data>
 		qyxqyMZST/4cCFg85Ic90Dlnov4=
+		</data>
+		<key>PodcastLiveVC.nib</key>
+		<data>
+		Bpjw42vbPpbarVsn81GwYh1HtQI=
 		</data>
 		<key>PodcastPlayerView.nib</key>
 		<data>
@@ -1128,6 +1132,10 @@
 		<data>
 		GEDVduTVT8pOc20/QUigQY82GsM=
 		</data>
+		<key>UserCommentCell.nib</key>
+		<data>
+		T2eCP/QVUS7TJloIBgtjkHtCQsU=
+		</data>
 		<key>VideoDetailsCell.nib</key>
 		<data>
 		0sYDm9yXH5RszfdH2azso2SktjY=
@@ -1285,7 +1293,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jo+S9z85XxbHsq03djsJZ8qYmbCMmk9L0yoeHAYF+u4=
+			gvrANBNidINZUU01vk15OGIp414rsfLKQ9F9WGzrlOE=
 			</data>
 		</dict>
 		<key>AutoRenewOffCell.nib</key>
@@ -2419,7 +2427,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LaHJYwSoH7sGbuIqqriNYyS2tI24zw0WZMmL12zGPXg=
+			njHZMPV3D35O3f9N6/EFxn1bBgGxRlrP+537g5QYn50=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -2447,7 +2455,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dNxg4BgnWMkFHsYwUaZ76apL8vaSKDi4q0uYOgk9ftI=
+			uFkqZ+rd3SRJTEx6GvR0p6FgE5EI2uj+89WnmwKAnPY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -2665,6 +2673,13 @@
 			<key>hash2</key>
 			<data>
 			Kr2rmfOfzOK+PZk4nHJ9M7gzkQQuecnQw9aIvG1v8pk=
+			</data>
+		</dict>
+		<key>PodcastLiveVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NNEqyaUe+s/r8hjYRAQN1V+iSH/xu6tHvCTcktDmd2A=
 			</data>
 		</dict>
 		<key>PodcastPlayerView.nib</key>
@@ -3211,6 +3226,13 @@
 			<key>hash2</key>
 			<data>
 			/Z1pmIJqGT/3C/jiiiWEQR5qI/VTX1AusRSQIIZu8zg=
+			</data>
+		</dict>
+		<key>UserCommentCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Wat4oB60v4tm21lm0TkaQ1VkKbM1ST5jtti7GVrI5Qc=
 			</data>
 		</dict>
 		<key>VideoDetailsCell.nib</key>

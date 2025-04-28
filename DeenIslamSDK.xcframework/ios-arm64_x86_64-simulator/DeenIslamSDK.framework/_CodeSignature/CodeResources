@@ -22,7 +22,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		PMX5/wbnPAdlc1GQbrv2MFd494Y=
+		4Siz/h6xt9LfaUcr7qfnu5i7dmA=
 		</data>
 		<key>AutoRenewOffCell.nib</key>
 		<data>
@@ -674,7 +674,7 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		r0x0hX9UQSOLLLbkqeU+ClQemDw=
+		/mcYQSZcLRejuyf+QWX5y0OsCuo=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -690,11 +690,11 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		29S3RKVs0UEHkkftj4ggi6T6BkQ=
+		emeRAhjstm+egkCky6L/HiFzaQA=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		r0x0hX9UQSOLLLbkqeU+ClQemDw=
+		/mcYQSZcLRejuyf+QWX5y0OsCuo=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -710,7 +710,7 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		M4cYtEF6whJT9VHSGqbofPuIUbA=
+		gjD9s2YjQ+h8AoNUn5En5+U6Swc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -835,6 +835,10 @@
 		<key>PlayerViewController.nib</key>
 		<data>
 		qyxqyMZST/4cCFg85Ic90Dlnov4=
+		</data>
+		<key>PodcastLiveVC.nib</key>
+		<data>
+		Bpjw42vbPpbarVsn81GwYh1HtQI=
 		</data>
 		<key>PodcastPlayerView.nib</key>
 		<data>
@@ -1148,6 +1152,10 @@
 		<data>
 		GEDVduTVT8pOc20/QUigQY82GsM=
 		</data>
+		<key>UserCommentCell.nib</key>
+		<data>
+		T2eCP/QVUS7TJloIBgtjkHtCQsU=
+		</data>
 		<key>VideoDetailsCell.nib</key>
 		<data>
 		0sYDm9yXH5RszfdH2azso2SktjY=
@@ -1305,7 +1313,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NeK2kziAJ4aJPJzkCibKpdm940wRcfZyLh52cRq2B/Y=
+			x8poHPNjk87kYTaNyU9x+Iqk28EofhmGMW/XRBsv1Bs=
 			</data>
 		</dict>
 		<key>AutoRenewOffCell.nib</key>
@@ -2439,7 +2447,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ykTi1QkF4Ibe98BTkx7kfOqTIBXQwKfvVrBONQNP5/k=
+			d3qcvEURihg+2BmW8mRBvBhnry27jzqfA3Zki+Eo5BU=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -2467,14 +2475,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pqH4awlj0K2yv8BeN7Ruhf9AGfJjf53i7gUHCokIXi8=
+			lOWUtiwcFOm8ZQkBTSNKMM1igbkFRZoMyU7O3XNPiFw=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ykTi1QkF4Ibe98BTkx7kfOqTIBXQwKfvVrBONQNP5/k=
+			d3qcvEURihg+2BmW8mRBvBhnry27jzqfA3Zki+Eo5BU=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -2502,7 +2510,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SP4BGsck6MWj18XI/RP7mQZOv+CtayLwK4lUK64rtk0=
+			dnXXimTKcVYPJuSD/m2gFjYww1hv258OQMGdf0uPQbs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -2720,6 +2728,13 @@
 			<key>hash2</key>
 			<data>
 			Kr2rmfOfzOK+PZk4nHJ9M7gzkQQuecnQw9aIvG1v8pk=
+			</data>
+		</dict>
+		<key>PodcastLiveVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NNEqyaUe+s/r8hjYRAQN1V+iSH/xu6tHvCTcktDmd2A=
 			</data>
 		</dict>
 		<key>PodcastPlayerView.nib</key>
@@ -3266,6 +3281,13 @@
 			<key>hash2</key>
 			<data>
 			/Z1pmIJqGT/3C/jiiiWEQR5qI/VTX1AusRSQIIZu8zg=
+			</data>
+		</dict>
+		<key>UserCommentCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Wat4oB60v4tm21lm0TkaQ1VkKbM1ST5jtti7GVrI5Qc=
 			</data>
 		</dict>
 		<key>VideoDetailsCell.nib</key>
