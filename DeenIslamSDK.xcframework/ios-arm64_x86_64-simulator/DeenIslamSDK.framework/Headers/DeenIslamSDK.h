@@ -2,7 +2,7 @@
 //  DeenIslamSDK.h
 //  DeenIslamSDK
 //
-//  Created by Joy on 20/8/23.
+//  Created by Deep on 20/08/24.
 //
 
 #import <Foundation/Foundation.h>

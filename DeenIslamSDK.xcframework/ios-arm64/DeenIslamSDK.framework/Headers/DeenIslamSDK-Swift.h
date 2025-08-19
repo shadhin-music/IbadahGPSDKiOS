@@ -539,6 +539,15 @@ SWIFT_CLASS("_TtC12DeenIslamSDK8DropDown")
 @end
 
 
+SWIFT_CLASS("_TtC12DeenIslamSDK9GraphView")
+@interface GraphView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
+- (void)drawRect:(CGRect)rect;
+@end
+
+
 /// <code>IQAutoToolbarBySubviews</code>
 /// Creates Toolbar according to subview’s hirarchy of Textfield’s in view.
 /// <code>IQAutoToolbarByTag</code>
@@ -715,6 +724,13 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 
 SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 @interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
+/// reloadInputViews to reload toolbar buttons enable/disable state on the fly Enhancement ID #434.
+- (void)reloadInputViews;
+@end
+
+
+SWIFT_AVAILABILITY(ios_app_extension,unavailable)
+@interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
 @property (nonatomic) BOOL enableDebugging;
 /// @warning Use below methods to completely enable/disable notifications registered by library internally.
 /// Please keep in mind that library is totally dependent on NSNotification of UITextField, UITextField, Keyboard etc.
@@ -722,13 +738,6 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 /// You should use below methods at your own risk.
 - (void)registerAllNotifications;
 - (void)unregisterAllNotifications;
-@end
-
-
-SWIFT_AVAILABILITY(ios_app_extension,unavailable)
-@interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
-/// reloadInputViews to reload toolbar buttons enable/disable state on the fly Enhancement ID #434.
-- (void)reloadInputViews;
 @end
 
 
@@ -961,10 +970,10 @@ SWIFT_CLASS("_TtC12DeenIslamSDK16LayoutConstraint")
 
 
 
-
 @interface UIButton (SWIFT_EXTENSION(DeenIslamSDK))
 - (UIView * _Nullable)hitTest:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 

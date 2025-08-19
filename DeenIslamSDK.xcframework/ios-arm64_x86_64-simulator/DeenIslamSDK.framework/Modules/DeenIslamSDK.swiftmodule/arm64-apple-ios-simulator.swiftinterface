@@ -2032,6 +2032,12 @@ infix operator |> : AdditionPrecedence
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class BaseView : UIKit.UIView {
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class GraphView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func draw(_ rect: CoreFoundation.CGRect)
+  @objc deinit
+}
 public typealias ConstraintInterfaceLayoutDirection = UIKit.UIUserInterfaceLayoutDirection
 public struct ConstraintConfig {
   public static var interfaceLayoutDirection: DeenIslamSDK.ConstraintInterfaceLayoutDirection
