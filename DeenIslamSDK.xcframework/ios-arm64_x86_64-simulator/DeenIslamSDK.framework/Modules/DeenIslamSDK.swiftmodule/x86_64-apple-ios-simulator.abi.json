@@ -79429,7 +79429,7 @@
       "kind": "StringLiteral",
       "offset": 156,
       "length": 9,
-      "value": "\"v1.1.20\""
+      "value": "\"v1.1.21\""
     },
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK-Deep\/DeenIslamSDK\/Library \/Kingfisher\/Image\/ImageDrawing.swift",
@@ -82024,7 +82024,7 @@
     {
       "filePath": "\/Users\/talutmahamud\/ios_projects\/SDK\/SDK_MYGP_IBADAH\/DeenGPSDK-Deep\/DeenIslamSDK\/ViewController\/NamajTime\/PrayerTimeVC\/PrayerTimeVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 1054,
+      "offset": 1102,
       "length": 5,
       "value": "false"
     },
