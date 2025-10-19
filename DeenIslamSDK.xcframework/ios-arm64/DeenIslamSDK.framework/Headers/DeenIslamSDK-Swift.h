@@ -923,6 +923,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 @end
 
 
+
 @class UIPresentationController;
 
 @interface IbadahHome (SWIFT_EXTENSION(DeenIslamSDK)) <UIViewControllerTransitioningDelegate>
@@ -970,10 +971,10 @@ SWIFT_CLASS("_TtC12DeenIslamSDK16LayoutConstraint")
 
 
 
+
 @interface UIButton (SWIFT_EXTENSION(DeenIslamSDK))
 - (UIView * _Nullable)hitTest:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 
 
