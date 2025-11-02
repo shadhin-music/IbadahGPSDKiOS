@@ -718,7 +718,7 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		6/wDDkVQwDHEkv8NM32KfogS5Bk=
+		edkDloAfAouS6dhSruJMFLZCrpc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -2552,7 +2552,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BFqZAg4jTQEAwqv0jDQ51wn0lgiq5mJpAdh6s2mzWiU=
+			BYP+3V3pSubcHxvgfnuQDjHnJsio6Ex8A5IcuR7DwV8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
