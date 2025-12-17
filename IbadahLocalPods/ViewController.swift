@@ -73,7 +73,7 @@ class ViewController: UIViewController {
             }
             
             // Create IbadahHome
-            ibadahHomeView = IbadahHome(sdk: DeenIslamGPSDK.shared, designType: "default")
+            ibadahHomeView = IbadahHome(sdk: DeenIslamGPSDK.shared, designType: "default", DeenAIVisible: true)
             
             // Add to container
             cView.addSubview(ibadahHomeView)

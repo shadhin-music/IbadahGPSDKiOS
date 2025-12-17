@@ -4,6 +4,22 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AIAnswerCell.nib</key>
+		<data>
+		k+NDkhxY84XnBo6RheY7s29jFlI=
+		</data>
+		<key>AITypingCell.nib</key>
+		<data>
+		vvNqnwbKAjpuweBNu6b1UB2vTUM=
+		</data>
+		<key>AiCell.nib</key>
+		<data>
+		0yMFLJ08isOd43XGqpqc3KPa5b4=
+		</data>
+		<key>AiMainCell.nib</key>
+		<data>
+		0uLYVp7siotZZdVcNn01wezzTxQ=
+		</data>
 		<key>AlQuranVC.nib</key>
 		<data>
 		naPwUrxWEtFsxmSTua4zTA/xdSE=
@@ -22,11 +38,15 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		N8IAmzstASMQOh0j3MIE66EMOxc=
+		D6KrNMO0bwuVxSB3o0IYS9tG+a8=
 		</data>
 		<key>AutoRenewOffCell.nib</key>
 		<data>
 		gDVjjLHhq3redXXAr/Pf7e0suGc=
+		</data>
+		<key>BillBoardOtherCell.nib</key>
+		<data>
+		Unk/fLMzwdOIUdqstrhJF8b7+1k=
 		</data>
 		<key>BoyanCategoryDetails.nib</key>
 		<data>
@@ -127,6 +147,10 @@
 		<key>DailyVerseHadithSubCell.nib</key>
 		<data>
 		C7XJU7V09wg8VhOVeb35k9vxOlQ=
+		</data>
+		<key>DeenAIVC.nib</key>
+		<data>
+		JNWPJoJSj2jGfxIB8i3PzhTYass=
 		</data>
 		<key>DeenEmptyView.nib</key>
 		<data>
@@ -248,6 +272,14 @@
 		<data>
 		VNBUqWWhCUQVJ1NpNBtTvfZujaQ=
 		</data>
+		<key>FeatureCell.nib</key>
+		<data>
+		al0pmoxRllM5uUgJDC3NnYRUrxI=
+		</data>
+		<key>FeedbackCell.nib</key>
+		<data>
+		3SzvVhHnWlKIfJprnvqk7d6KFZs=
+		</data>
 		<key>FilterCell.nib</key>
 		<data>
 		aUWWmOpqBCaQkjku0Gpvf/6IFb0=
@@ -299,6 +331,10 @@
 		<key>GpPrayerCell.nib</key>
 		<data>
 		3VXOmD/Jeukt8SZ98dotCDZWKKI=
+		</data>
+		<key>GpPrayerTimeCell.nib</key>
+		<data>
+		+wgj1D7uXeXFgwcfU5jrbPARzV8=
 		</data>
 		<key>GraphCollectionViewCell.nib</key>
 		<data>
@@ -382,7 +418,7 @@
 		</data>
 		<key>Headers/DeenIslamSDK-Swift.h</key>
 		<data>
-		r+Z1weeXboZpSevskXurU/IWoSA=
+		EVvU3qmFxz5Qyq7pg7VDaNDSvJE=
 		</data>
 		<key>Headers/DeenIslamSDK.h</key>
 		<data>
@@ -526,7 +562,7 @@
 		</data>
 		<key>HomeBillBoardCentreCell.nib</key>
 		<data>
-		6zbSTVmoI76HVGLQSNeGaA/KY+I=
+		rZwnoPYX400Fksf2r3JqTawpMCg=
 		</data>
 		<key>HomeBillboardCell.nib</key>
 		<data>
@@ -574,7 +610,7 @@
 		</data>
 		<key>HomeVC.nib</key>
 		<data>
-		zaxznA7ZQv5KtfDwa+rGc6WCpC4=
+		avF+9U5P5uvKtbPM7vyxUnpSQkQ=
 		</data>
 		<key>HomeYTPlayer.nib</key>
 		<data>
@@ -582,7 +618,7 @@
 		</data>
 		<key>IbadahHome.nib</key>
 		<data>
-		+GlvpqaloK7loxZbbyxPA22Clio=
+		+hg++tffblirQoKs9arj1SYxiZE=
 		</data>
 		<key>ImageCell.nib</key>
 		<data>
@@ -702,23 +738,23 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		zV63wezCW6iYY5VAYRq4E4WM3nQ=
+		DldZzeTJbWi/SIHPV7av1N91VYw=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		rbumLDbbLbq4KPzlaDxC/7jUNwY=
+		sRxH/xiFOFtY2sgXdzrODMSXVk8=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		KDCqQYNLgIMTK7XD/oD2+LbAPl8=
+		kDnO+1jV9Yov5Zek0hlB5vE6zyc=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		rbumLDbbLbq4KPzlaDxC/7jUNwY=
+		sRxH/xiFOFtY2sgXdzrODMSXVk8=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		edkDloAfAouS6dhSruJMFLZCrpc=
+		cJPJfwM4hEYNDOdPHT7UWrCYF8w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1180,6 +1216,10 @@
 		<data>
 		T2eCP/QVUS7TJloIBgtjkHtCQsU=
 		</data>
+		<key>UserQuestionCell.nib</key>
+		<data>
+		/cz0Zh4puQJMhb2K7s2rib2h1cY=
+		</data>
 		<key>VideoDetailsCell.nib</key>
 		<data>
 		0sYDm9yXH5RszfdH2azso2SktjY=
@@ -1264,6 +1304,10 @@
 		<data>
 		qEb2kf63p46qVBjU/B0Crn6t0yo=
 		</data>
+		<key>ai_typing.json</key>
+		<data>
+		8unOocSjrxuRh1DVyhdDt2JhhHY=
+		</data>
 		<key>arabicFont.otf</key>
 		<data>
 		I4aKY8xxiPlIdbl8oMYKOx0XKRk=
@@ -1285,6 +1329,10 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>deen_ai.json</key>
+		<data>
+		w+w1l+RCvE8P6Elx71dOFnm21rs=
+		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1309,6 +1357,34 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AIAnswerCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Cgb513BuA1dYvSfQUfAPm9amwKfTbMINN0IH2Qbb7rQ=
+			</data>
+		</dict>
+		<key>AITypingCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SNBjLR1Eneja3ZqHBYvr7Ac/FO2ie50YoLnyoVH8yzg=
+			</data>
+		</dict>
+		<key>AiCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XLu8v27UzCkOjdss4c7fZAlK/gwP54lEOQi+FnYeER4=
+			</data>
+		</dict>
+		<key>AiMainCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rDVhtZESN4U6ScISPFRG6St9fBVN1JjJDxopbgSFk4w=
+			</data>
+		</dict>
 		<key>AlQuranVC.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -1341,7 +1417,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SGSRujcrvAJGHgFWkxIrc8CeJOX1k4H7QwF2/rUhXfo=
+			GQZ4Z9g2q0QQrLQ/l90XqJRI37JzlnbATEsuqCkWvmk=
 			</data>
 		</dict>
 		<key>AutoRenewOffCell.nib</key>
@@ -1349,6 +1425,13 @@
 			<key>hash2</key>
 			<data>
 			UuoDYSw6FfvpF3XdpS2XIvs0XRx2KX47L3Xb7ERnH6M=
+			</data>
+		</dict>
+		<key>BillBoardOtherCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wj2S0HIM2DDqPxdh3p7jcjJIm3RUcf/Hqaqja4Q57/M=
 			</data>
 		</dict>
 		<key>BoyanCategoryDetails.nib</key>
@@ -1524,6 +1607,13 @@
 			<key>hash2</key>
 			<data>
 			421/emYyQbTM2x7R+i5WHPFVnW9TXtsUA52t1vcifdA=
+			</data>
+		</dict>
+		<key>DeenAIVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/hY6wy1lw7lRQXUtAg8ZBFF+U+E0+KLV+RArEg+9bks=
 			</data>
 		</dict>
 		<key>DeenEmptyView.nib</key>
@@ -1736,6 +1826,20 @@
 			0UTnbpHexE3snj1JaWXJm6mqPG6ewnlxm376iBJRo1g=
 			</data>
 		</dict>
+		<key>FeatureCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XTZ6fGK1oUGPSn5e3cDfyCqV/Z2tE3gp2tYN9oqWvek=
+			</data>
+		</dict>
+		<key>FeedbackCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VbRn0BlO6kYIVhwxJahC5GSnQ24m8S1Hfh2v3IjW4T4=
+			</data>
+		</dict>
 		<key>FilterCell.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -1825,6 +1929,13 @@
 			<key>hash2</key>
 			<data>
 			OvLX631FYHcQIWsr8OtWLsa51vJ8K21TK5LyGPuY41U=
+			</data>
+		</dict>
+		<key>GpPrayerTimeCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1+Rhz4Cy7Qq1NxWIakaL5dFD+T/BI/Tz3LK1xoYUjXU=
 			</data>
 		</dict>
 		<key>GraphCollectionViewCell.nib</key>
@@ -1971,7 +2082,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0LamIEeFclpAwNw1MxdqKdpayvCq4wUTaMiqAnK6AuY=
+			MYEXjOwMKp5ZuBO217ur1s+fz2HyPNep+omqqoOcNdw=
 			</data>
 		</dict>
 		<key>Headers/DeenIslamSDK.h</key>
@@ -2223,7 +2334,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			unzlk4uIWtu3HePh0epcKvHG2+AKBWDo6FTF6DopApE=
+			2ivGYkIbr14HimAtF0+fQ6qn5+duxdNeKIfOHfww7eY=
 			</data>
 		</dict>
 		<key>HomeBillboardCell.nib</key>
@@ -2307,7 +2418,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2nCnYG4lHYBfxhrdGCECI0NhFJJK3UKyJebT5AF29d0=
+			ctRK1+ZlSLCFy2xkyM4ztsJ+iUkMK5sdLZhQbA0YMM4=
 			</data>
 		</dict>
 		<key>HomeYTPlayer.nib</key>
@@ -2321,7 +2432,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ziDN0pTgHxIZwD6eBlYf2z6SaxA5LthZsoM4daXqDss=
+			//av+EMtHG+jKW2I/BQt3VbeOeDfkZyTTZQj0KWZTc8=
 			</data>
 		</dict>
 		<key>ImageCell.nib</key>
@@ -2524,35 +2635,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5wyFmb2OKRkHFD1U+5zu/xMk/cdofgmLKDPMTf8Rxeo=
+			Y+kxnLVQ8IdF83+zWFrgJf8sQJBGcNIEKzo48cCGM7M=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hb1sOqhhunZBQXbcxoMybwzvXs/iYwJGl6iM7q9UtUk=
+			TXGH5qO+SRypeQ8jeUgNh+syfvL63RaMawAZo6EEM6E=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uMchLKoZEdJqE/LszHrq4zPs3R1glhVXa80RRIMdHKQ=
+			lwOjwzLwRHYAGyGcHuLQtkyPWyRO3nWtX0pkSFLL2FE=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hb1sOqhhunZBQXbcxoMybwzvXs/iYwJGl6iM7q9UtUk=
+			TXGH5qO+SRypeQ8jeUgNh+syfvL63RaMawAZo6EEM6E=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BYP+3V3pSubcHxvgfnuQDjHnJsio6Ex8A5IcuR7DwV8=
+			JeXyil9nJ1VemT4/s+Win7A2h8V1KtdSEwfAaNI28X4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -3360,6 +3471,13 @@
 			Wat4oB60v4tm21lm0TkaQ1VkKbM1ST5jtti7GVrI5Qc=
 			</data>
 		</dict>
+		<key>UserQuestionCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mE+E1l1ZjZ+saz4VVlU8uuTRt6zfDq0NIRN5gmLTbCk=
+			</data>
+		</dict>
 		<key>VideoDetailsCell.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -3507,6 +3625,13 @@
 			unC4baMOT4Z/h56Um8p4wekudXmiO1Um/CRCTnv2ZGc=
 			</data>
 		</dict>
+		<key>ai_typing.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CbLDO6h+7Hek/uhKuDSU5OnyvfLEExw0fYC2GSBnqFA=
+			</data>
+		</dict>
 		<key>arabicFont.otf</key>
 		<dict>
 			<key>hash2</key>
@@ -3536,6 +3661,13 @@
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>deen_ai.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QvLlG1gH3Fq+jBNZvpa+OW1xR32cLgjNpnbAXrd8owc=
+			</data>
 		</dict>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>

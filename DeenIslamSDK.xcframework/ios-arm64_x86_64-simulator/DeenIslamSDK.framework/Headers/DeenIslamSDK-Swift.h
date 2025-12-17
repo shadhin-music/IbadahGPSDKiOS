@@ -308,6 +308,68 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+@class NSCoder;
+@class UITouch;
+@class UIEvent;
+
+/// Lottie comes prepacked with a two Animated Controls, <code>AnimatedSwitch</code> and
+/// <code>AnimatedButton</code>. Both of these controls are built on top of <code>AnimatedControl</code>
+/// <code>AnimatedControl</code> is a subclass of <code>UIControl</code> that provides an interactive
+/// mechanism for controlling the visual state of an animation in response to
+/// user actions.
+/// The <code>AnimatedControl</code> will show and hide layers depending on the current
+/// <code>UIControl.State</code> of the control.
+/// Users of <code>AnimationControl</code> can set a Layer Name for each <code>UIControl.State</code>.
+/// When the state is change the <code>AnimationControl</code> will change the visibility
+/// of its layers.
+/// NOTE: Do not initialize directly. This is intended to be subclassed.
+SWIFT_CLASS("_TtC12DeenIslamSDK15AnimatedControl")
+@interface AnimatedControl : UIControl
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, getter=isEnabled) BOOL enabled;
+@property (nonatomic, getter=isSelected) BOOL selected;
+@property (nonatomic, getter=isHighlighted) BOOL highlighted;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
+- (BOOL)beginTrackingWithTouch:(UITouch * _Nonnull)touch withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)continueTrackingWithTouch:(UITouch * _Nonnull)touch withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
+- (void)endTrackingWithTouch:(UITouch * _Nullable)touch withEvent:(UIEvent * _Nullable)event;
+- (void)cancelTrackingWithEvent:(UIEvent * _Nullable)event;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+/// An interactive button that plays an animation when pressed.
+SWIFT_CLASS("_TtC12DeenIslamSDK14AnimatedButton")
+@interface AnimatedButton : AnimatedControl
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)beginTrackingWithTouch:(UITouch * _Nonnull)touch withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
+- (void)endTrackingWithTouch:(UITouch * _Nullable)touch withEvent:(UIEvent * _Nullable)event;
+@property (nonatomic) UIAccessibilityTraits accessibilityTraits;
+@end
+
+
+
+/// An interactive switch with an ‘On’ and ‘Off’ state. When the user taps on the
+/// switch the state is toggled and the appropriate animation is played.
+/// Both the ‘On’ and ‘Off’ have an animation play range associated with their state.
+SWIFT_CLASS("_TtC12DeenIslamSDK14AnimatedSwitch")
+@interface AnimatedSwitch : AnimatedControl
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)endTrackingWithTouch:(UITouch * _Nullable)touch withEvent:(UIEvent * _Nullable)event;
+@property (nonatomic) UIAccessibilityTraits accessibilityTraits;
+@end
+
+
+/// A view that can be added to a keypath of an AnimationView
+SWIFT_CLASS("_TtC12DeenIslamSDK16AnimationSubview")
+@interface AnimationSubview : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 typedef SWIFT_ENUM(NSInteger, AppFeature, open) {
   AppFeatureHome = 0,
   AppFeatureDua = 1,
@@ -334,6 +396,7 @@ typedef SWIFT_ENUM(NSInteger, AppFeature, open) {
   AppFeatureIslamicCalender = 22,
   AppFeatureLivePodcast = 23,
   AppFeatureAllahNames = 24,
+  AppFeatureDeenAI = 25,
 };
 
 @class NSString;
@@ -399,7 +462,6 @@ typedef SWIFT_ENUM(NSInteger, AudioPlayerBufferingStrategy, open) {
   AudioPlayerBufferingStrategyPlayWhenBufferNotEmpty = 2,
 };
 
-@class NSCoder;
 
 SWIFT_CLASS("_TtC12DeenIslamSDK8BaseView")
 @interface BaseView : UIView
@@ -409,6 +471,91 @@ SWIFT_CLASS("_TtC12DeenIslamSDK8BaseView")
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@class NSBundle;
+
+/// An Objective-C compatible wrapper around Lottie’s Animation class.
+/// Use in tandem with CompatibleAnimationView when using Lottie in Objective-C
+SWIFT_CLASS("_TtC12DeenIslamSDK19CompatibleAnimation")
+@interface CompatibleAnimation : NSObject
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name bundle:(NSBundle * _Nonnull)bundle OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// An Objective-C compatible wrapper around Lottie’s AnimationKeypath
+SWIFT_CLASS("_TtC12DeenIslamSDK26CompatibleAnimationKeypath")
+@interface CompatibleAnimationKeypath : NSObject
+/// Creates a keypath from a dot separated string. The string is separated by “.”
+- (nonnull instancetype)initWithKeypath:(NSString * _Nonnull)keypath OBJC_DESIGNATED_INITIALIZER;
+/// Creates a keypath from a list of strings.
+- (nonnull instancetype)initWithKeys:(NSArray<NSString *> * _Nonnull)keys OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UIColor;
+
+/// An Objective-C compatible wrapper around Lottie’s LottieAnimationView.
+SWIFT_CLASS("_TtC12DeenIslamSDK23CompatibleAnimationView")
+@interface CompatibleAnimationView : UIView
+- (nonnull instancetype)initWithCompatibleAnimation:(CompatibleAnimation * _Nonnull)compatibleAnimation OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)_ SWIFT_UNAVAILABLE;
+@property (nonatomic, strong) CompatibleAnimation * _Nullable compatibleAnimation;
+@property (nonatomic) CGFloat loopAnimationCount;
+@property (nonatomic) UIViewContentMode contentMode;
+@property (nonatomic) BOOL shouldRasterizeWhenIdle;
+@property (nonatomic) CGFloat currentProgress;
+@property (nonatomic) NSTimeInterval currentTime;
+@property (nonatomic) CGFloat currentFrame;
+@property (nonatomic, readonly) CGFloat realtimeAnimationFrame;
+@property (nonatomic, readonly) CGFloat realtimeAnimationProgress;
+@property (nonatomic) CGFloat animationSpeed;
+@property (nonatomic) BOOL respectAnimationFrameRate;
+@property (nonatomic, readonly) BOOL isAnimationPlaying;
+- (void)play;
+- (void)playWithCompletion:(void (^ _Nullable)(BOOL))completion;
+- (void)playFromProgress:(CGFloat)fromProgress toProgress:(CGFloat)toProgress completion:(void (^ _Nullable)(BOOL))completion;
+- (void)playFromFrame:(CGFloat)fromFrame toFrame:(CGFloat)toFrame completion:(void (^ _Nullable)(BOOL))completion;
+- (void)playFromMarker:(NSString * _Nonnull)fromMarker toMarker:(NSString * _Nonnull)toMarker completion:(void (^ _Nullable)(BOOL))completion;
+- (void)playWithMarker:(NSString * _Nonnull)marker completion:(void (^ _Nullable)(BOOL))completion;
+- (void)stop;
+- (void)pause;
+- (void)reloadImages;
+- (void)forceDisplayUpdate;
+- (id _Nullable)getValueFor:(CompatibleAnimationKeypath * _Nonnull)keypath atFrame:(CGFloat)atFrame SWIFT_WARN_UNUSED_RESULT;
+- (void)logHierarchyKeypaths;
+- (void)setColorValue:(UIColor * _Nonnull)color forKeypath:(CompatibleAnimationKeypath * _Nonnull)keypath;
+- (UIColor * _Nullable)getColorValueFor:(CompatibleAnimationKeypath * _Nonnull)keypath atFrame:(CGFloat)atFrame SWIFT_WARN_UNUSED_RESULT;
+- (void)addSubview:(AnimationSubview * _Nonnull)subview forLayerAt:(CompatibleAnimationKeypath * _Nonnull)keypath;
+- (CGRect)convertWithRect:(CGRect)rect toLayerAt:(CompatibleAnimationKeypath * _Nullable)keypath SWIFT_WARN_UNUSED_RESULT;
+- (CGPoint)convertWithPoint:(CGPoint)point toLayerAt:(CompatibleAnimationKeypath * _Nullable)keypath SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)progressTimeForMarker:(NSString * _Nonnull)named SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)frameTimeForMarker:(NSString * _Nonnull)named SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)durationFrameTimeForMarker:(NSString * _Nonnull)named SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
@@ -421,7 +568,6 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 
 @class UINavigationController;
 @protocol DeenIslamSDKNotifier;
-@class UIEvent;
 
 @interface DeenIslamGPSDK (SWIFT_EXTENSION(DeenIslamSDK))
 /// \param msisdn user mobile number
@@ -492,7 +638,6 @@ SWIFT_PROTOCOL("_TtP12DeenIslamSDK20DeenIslamSDKNotifier_")
 
 
 
-@class UIColor;
 
 SWIFT_CLASS("_TtC12DeenIslamSDK8DropDown")
 @interface DropDown : UITextField
@@ -710,7 +855,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IQKeyboardMa
 
 
 @class UIGestureRecognizer;
-@class UITouch;
 
 SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 @interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK)) <UIGestureRecognizerDelegate>
@@ -724,13 +868,6 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 
 SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 @interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
-/// reloadInputViews to reload toolbar buttons enable/disable state on the fly Enhancement ID #434.
-- (void)reloadInputViews;
-@end
-
-
-SWIFT_AVAILABILITY(ios_app_extension,unavailable)
-@interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
 @property (nonatomic) BOOL enableDebugging;
 /// @warning Use below methods to completely enable/disable notifications registered by library internally.
 /// Please keep in mind that library is totally dependent on NSNotification of UITextField, UITextField, Keyboard etc.
@@ -738,6 +875,13 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 /// You should use below methods at your own risk.
 - (void)registerAllNotifications;
 - (void)unregisterAllNotifications;
+@end
+
+
+SWIFT_AVAILABILITY(ios_app_extension,unavailable)
+@interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
+/// reloadInputViews to reload toolbar buttons enable/disable state on the fly Enhancement ID #434.
+- (void)reloadInputViews;
 @end
 
 
@@ -757,21 +901,21 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 
 SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 @interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
+/// moved distance to the top used to maintain distance between keyboard and textField. Most of the time this will be a positive value.
+@property (nonatomic, readonly) CGFloat movedDistance;
+/// Will be called then movedDistance will be changed
+@property (nonatomic, copy) void (^ _Nullable movedDistanceChanged)(CGFloat);
+@end
+
+
+SWIFT_AVAILABILITY(ios_app_extension,unavailable)
+@interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
 - (void)registerKeyboardSizeChangeWithIdentifier:(NSObject * _Nonnull)identifier sizeHandler:(void (^ _Nonnull)(CGSize))sizeHandler;
 - (void)unregisterKeyboardSizeChangeWithIdentifier:(NSObject * _Nonnull)identifier;
 /// Boolean to know if keyboard is showing.
 @property (nonatomic, readonly) BOOL keyboardShowing;
 /// To save keyboard rame.
 @property (nonatomic, readonly) CGRect keyboardFrame;
-@end
-
-
-SWIFT_AVAILABILITY(ios_app_extension,unavailable)
-@interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
-/// moved distance to the top used to maintain distance between keyboard and textField. Most of the time this will be a positive value.
-@property (nonatomic, readonly) CGFloat movedDistance;
-/// Will be called then movedDistance will be changed
-@property (nonatomic, copy) void (^ _Nullable movedDistanceChanged)(CGFloat);
 @end
 
 @protocol UITextViewDelegate;
@@ -916,11 +1060,12 @@ SWIFT_CLASS("_TtC12DeenIslamSDK9IQToolbar") SWIFT_AVAILABILITY(ios_app_extension
 
 SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 @interface IbadahHome : UIView
-- (nonnull instancetype)initWithSdk:(DeenIslamGPSDK * _Nonnull)sdk frame:(CGRect)frame designType:(NSString * _Nonnull)designType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSdk:(DeenIslamGPSDK * _Nonnull)sdk frame:(CGRect)frame designType:(NSString * _Nonnull)designType DeenAIVisible:(BOOL)DeenAIVisible OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)didMoveToSuperview;
 @end
+
 
 
 
@@ -930,6 +1075,11 @@ SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 - (UIPresentationController * _Nullable)presentationControllerForPresentedViewController:(UIViewController * _Nonnull)presented presentingViewController:(UIViewController * _Nullable)presenting sourceViewController:(UIViewController * _Nonnull)source SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+
+@interface IbadahHome (SWIFT_EXTENSION(DeenIslamSDK))
+- (void)layoutSubviews;
+@end
 
 @class UICollectionView;
 @class UICollectionViewCell;
@@ -948,6 +1098,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 
 
 
+
 SWIFT_CLASS("_TtC12DeenIslamSDK16LayoutConstraint")
 @interface LayoutConstraint : NSLayoutConstraint
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -957,6 +1108,30 @@ SWIFT_CLASS("_TtC12DeenIslamSDK16LayoutConstraint")
 @interface LayoutConstraint (SWIFT_EXTENSION(DeenIslamSDK))
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
+
+
+/// The base view for <code>LottieAnimationView</code> on iOS, tvOS, watchOS, and macCatalyst.
+/// Enables the <code>LottieAnimationView</code> implementation to be shared across platforms.
+SWIFT_CLASS("_TtC12DeenIslamSDK23LottieAnimationViewBase")
+@interface LottieAnimationViewBase : UIView
+@property (nonatomic) UIViewContentMode contentMode;
+- (void)didMoveToWindow;
+- (void)layoutSubviews;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC12DeenIslamSDK19LottieAnimationView")
+@interface LottieAnimationView : LottieAnimationViewBase
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
+@end
+
+
+
 
 
 
@@ -975,6 +1150,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK16LayoutConstraint")
 @interface UIButton (SWIFT_EXTENSION(DeenIslamSDK))
 - (UIView * _Nullable)hitTest:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 
@@ -1617,6 +1793,68 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+@class NSCoder;
+@class UITouch;
+@class UIEvent;
+
+/// Lottie comes prepacked with a two Animated Controls, <code>AnimatedSwitch</code> and
+/// <code>AnimatedButton</code>. Both of these controls are built on top of <code>AnimatedControl</code>
+/// <code>AnimatedControl</code> is a subclass of <code>UIControl</code> that provides an interactive
+/// mechanism for controlling the visual state of an animation in response to
+/// user actions.
+/// The <code>AnimatedControl</code> will show and hide layers depending on the current
+/// <code>UIControl.State</code> of the control.
+/// Users of <code>AnimationControl</code> can set a Layer Name for each <code>UIControl.State</code>.
+/// When the state is change the <code>AnimationControl</code> will change the visibility
+/// of its layers.
+/// NOTE: Do not initialize directly. This is intended to be subclassed.
+SWIFT_CLASS("_TtC12DeenIslamSDK15AnimatedControl")
+@interface AnimatedControl : UIControl
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, getter=isEnabled) BOOL enabled;
+@property (nonatomic, getter=isSelected) BOOL selected;
+@property (nonatomic, getter=isHighlighted) BOOL highlighted;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
+- (BOOL)beginTrackingWithTouch:(UITouch * _Nonnull)touch withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)continueTrackingWithTouch:(UITouch * _Nonnull)touch withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
+- (void)endTrackingWithTouch:(UITouch * _Nullable)touch withEvent:(UIEvent * _Nullable)event;
+- (void)cancelTrackingWithEvent:(UIEvent * _Nullable)event;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+/// An interactive button that plays an animation when pressed.
+SWIFT_CLASS("_TtC12DeenIslamSDK14AnimatedButton")
+@interface AnimatedButton : AnimatedControl
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)beginTrackingWithTouch:(UITouch * _Nonnull)touch withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
+- (void)endTrackingWithTouch:(UITouch * _Nullable)touch withEvent:(UIEvent * _Nullable)event;
+@property (nonatomic) UIAccessibilityTraits accessibilityTraits;
+@end
+
+
+
+/// An interactive switch with an ‘On’ and ‘Off’ state. When the user taps on the
+/// switch the state is toggled and the appropriate animation is played.
+/// Both the ‘On’ and ‘Off’ have an animation play range associated with their state.
+SWIFT_CLASS("_TtC12DeenIslamSDK14AnimatedSwitch")
+@interface AnimatedSwitch : AnimatedControl
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)endTrackingWithTouch:(UITouch * _Nullable)touch withEvent:(UIEvent * _Nullable)event;
+@property (nonatomic) UIAccessibilityTraits accessibilityTraits;
+@end
+
+
+/// A view that can be added to a keypath of an AnimationView
+SWIFT_CLASS("_TtC12DeenIslamSDK16AnimationSubview")
+@interface AnimationSubview : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 typedef SWIFT_ENUM(NSInteger, AppFeature, open) {
   AppFeatureHome = 0,
   AppFeatureDua = 1,
@@ -1643,6 +1881,7 @@ typedef SWIFT_ENUM(NSInteger, AppFeature, open) {
   AppFeatureIslamicCalender = 22,
   AppFeatureLivePodcast = 23,
   AppFeatureAllahNames = 24,
+  AppFeatureDeenAI = 25,
 };
 
 @class NSString;
@@ -1708,7 +1947,6 @@ typedef SWIFT_ENUM(NSInteger, AudioPlayerBufferingStrategy, open) {
   AudioPlayerBufferingStrategyPlayWhenBufferNotEmpty = 2,
 };
 
-@class NSCoder;
 
 SWIFT_CLASS("_TtC12DeenIslamSDK8BaseView")
 @interface BaseView : UIView
@@ -1718,6 +1956,91 @@ SWIFT_CLASS("_TtC12DeenIslamSDK8BaseView")
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@class NSBundle;
+
+/// An Objective-C compatible wrapper around Lottie’s Animation class.
+/// Use in tandem with CompatibleAnimationView when using Lottie in Objective-C
+SWIFT_CLASS("_TtC12DeenIslamSDK19CompatibleAnimation")
+@interface CompatibleAnimation : NSObject
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name bundle:(NSBundle * _Nonnull)bundle OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// An Objective-C compatible wrapper around Lottie’s AnimationKeypath
+SWIFT_CLASS("_TtC12DeenIslamSDK26CompatibleAnimationKeypath")
+@interface CompatibleAnimationKeypath : NSObject
+/// Creates a keypath from a dot separated string. The string is separated by “.”
+- (nonnull instancetype)initWithKeypath:(NSString * _Nonnull)keypath OBJC_DESIGNATED_INITIALIZER;
+/// Creates a keypath from a list of strings.
+- (nonnull instancetype)initWithKeys:(NSArray<NSString *> * _Nonnull)keys OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UIColor;
+
+/// An Objective-C compatible wrapper around Lottie’s LottieAnimationView.
+SWIFT_CLASS("_TtC12DeenIslamSDK23CompatibleAnimationView")
+@interface CompatibleAnimationView : UIView
+- (nonnull instancetype)initWithCompatibleAnimation:(CompatibleAnimation * _Nonnull)compatibleAnimation OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)_ SWIFT_UNAVAILABLE;
+@property (nonatomic, strong) CompatibleAnimation * _Nullable compatibleAnimation;
+@property (nonatomic) CGFloat loopAnimationCount;
+@property (nonatomic) UIViewContentMode contentMode;
+@property (nonatomic) BOOL shouldRasterizeWhenIdle;
+@property (nonatomic) CGFloat currentProgress;
+@property (nonatomic) NSTimeInterval currentTime;
+@property (nonatomic) CGFloat currentFrame;
+@property (nonatomic, readonly) CGFloat realtimeAnimationFrame;
+@property (nonatomic, readonly) CGFloat realtimeAnimationProgress;
+@property (nonatomic) CGFloat animationSpeed;
+@property (nonatomic) BOOL respectAnimationFrameRate;
+@property (nonatomic, readonly) BOOL isAnimationPlaying;
+- (void)play;
+- (void)playWithCompletion:(void (^ _Nullable)(BOOL))completion;
+- (void)playFromProgress:(CGFloat)fromProgress toProgress:(CGFloat)toProgress completion:(void (^ _Nullable)(BOOL))completion;
+- (void)playFromFrame:(CGFloat)fromFrame toFrame:(CGFloat)toFrame completion:(void (^ _Nullable)(BOOL))completion;
+- (void)playFromMarker:(NSString * _Nonnull)fromMarker toMarker:(NSString * _Nonnull)toMarker completion:(void (^ _Nullable)(BOOL))completion;
+- (void)playWithMarker:(NSString * _Nonnull)marker completion:(void (^ _Nullable)(BOOL))completion;
+- (void)stop;
+- (void)pause;
+- (void)reloadImages;
+- (void)forceDisplayUpdate;
+- (id _Nullable)getValueFor:(CompatibleAnimationKeypath * _Nonnull)keypath atFrame:(CGFloat)atFrame SWIFT_WARN_UNUSED_RESULT;
+- (void)logHierarchyKeypaths;
+- (void)setColorValue:(UIColor * _Nonnull)color forKeypath:(CompatibleAnimationKeypath * _Nonnull)keypath;
+- (UIColor * _Nullable)getColorValueFor:(CompatibleAnimationKeypath * _Nonnull)keypath atFrame:(CGFloat)atFrame SWIFT_WARN_UNUSED_RESULT;
+- (void)addSubview:(AnimationSubview * _Nonnull)subview forLayerAt:(CompatibleAnimationKeypath * _Nonnull)keypath;
+- (CGRect)convertWithRect:(CGRect)rect toLayerAt:(CompatibleAnimationKeypath * _Nullable)keypath SWIFT_WARN_UNUSED_RESULT;
+- (CGPoint)convertWithPoint:(CGPoint)point toLayerAt:(CompatibleAnimationKeypath * _Nullable)keypath SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)progressTimeForMarker:(NSString * _Nonnull)named SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)frameTimeForMarker:(NSString * _Nonnull)named SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)durationFrameTimeForMarker:(NSString * _Nonnull)named SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
@@ -1730,7 +2053,6 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 
 @class UINavigationController;
 @protocol DeenIslamSDKNotifier;
-@class UIEvent;
 
 @interface DeenIslamGPSDK (SWIFT_EXTENSION(DeenIslamSDK))
 /// \param msisdn user mobile number
@@ -1801,7 +2123,6 @@ SWIFT_PROTOCOL("_TtP12DeenIslamSDK20DeenIslamSDKNotifier_")
 
 
 
-@class UIColor;
 
 SWIFT_CLASS("_TtC12DeenIslamSDK8DropDown")
 @interface DropDown : UITextField
@@ -2019,7 +2340,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IQKeyboardMa
 
 
 @class UIGestureRecognizer;
-@class UITouch;
 
 SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 @interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK)) <UIGestureRecognizerDelegate>
@@ -2033,13 +2353,6 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 
 SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 @interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
-/// reloadInputViews to reload toolbar buttons enable/disable state on the fly Enhancement ID #434.
-- (void)reloadInputViews;
-@end
-
-
-SWIFT_AVAILABILITY(ios_app_extension,unavailable)
-@interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
 @property (nonatomic) BOOL enableDebugging;
 /// @warning Use below methods to completely enable/disable notifications registered by library internally.
 /// Please keep in mind that library is totally dependent on NSNotification of UITextField, UITextField, Keyboard etc.
@@ -2047,6 +2360,13 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 /// You should use below methods at your own risk.
 - (void)registerAllNotifications;
 - (void)unregisterAllNotifications;
+@end
+
+
+SWIFT_AVAILABILITY(ios_app_extension,unavailable)
+@interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
+/// reloadInputViews to reload toolbar buttons enable/disable state on the fly Enhancement ID #434.
+- (void)reloadInputViews;
 @end
 
 
@@ -2066,21 +2386,21 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 
 SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 @interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
+/// moved distance to the top used to maintain distance between keyboard and textField. Most of the time this will be a positive value.
+@property (nonatomic, readonly) CGFloat movedDistance;
+/// Will be called then movedDistance will be changed
+@property (nonatomic, copy) void (^ _Nullable movedDistanceChanged)(CGFloat);
+@end
+
+
+SWIFT_AVAILABILITY(ios_app_extension,unavailable)
+@interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
 - (void)registerKeyboardSizeChangeWithIdentifier:(NSObject * _Nonnull)identifier sizeHandler:(void (^ _Nonnull)(CGSize))sizeHandler;
 - (void)unregisterKeyboardSizeChangeWithIdentifier:(NSObject * _Nonnull)identifier;
 /// Boolean to know if keyboard is showing.
 @property (nonatomic, readonly) BOOL keyboardShowing;
 /// To save keyboard rame.
 @property (nonatomic, readonly) CGRect keyboardFrame;
-@end
-
-
-SWIFT_AVAILABILITY(ios_app_extension,unavailable)
-@interface IQKeyboardManager (SWIFT_EXTENSION(DeenIslamSDK))
-/// moved distance to the top used to maintain distance between keyboard and textField. Most of the time this will be a positive value.
-@property (nonatomic, readonly) CGFloat movedDistance;
-/// Will be called then movedDistance will be changed
-@property (nonatomic, copy) void (^ _Nullable movedDistanceChanged)(CGFloat);
 @end
 
 @protocol UITextViewDelegate;
@@ -2225,11 +2545,12 @@ SWIFT_CLASS("_TtC12DeenIslamSDK9IQToolbar") SWIFT_AVAILABILITY(ios_app_extension
 
 SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 @interface IbadahHome : UIView
-- (nonnull instancetype)initWithSdk:(DeenIslamGPSDK * _Nonnull)sdk frame:(CGRect)frame designType:(NSString * _Nonnull)designType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSdk:(DeenIslamGPSDK * _Nonnull)sdk frame:(CGRect)frame designType:(NSString * _Nonnull)designType DeenAIVisible:(BOOL)DeenAIVisible OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)didMoveToSuperview;
 @end
+
 
 
 
@@ -2239,6 +2560,11 @@ SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 - (UIPresentationController * _Nullable)presentationControllerForPresentedViewController:(UIViewController * _Nonnull)presented presentingViewController:(UIViewController * _Nullable)presenting sourceViewController:(UIViewController * _Nonnull)source SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+
+@interface IbadahHome (SWIFT_EXTENSION(DeenIslamSDK))
+- (void)layoutSubviews;
+@end
 
 @class UICollectionView;
 @class UICollectionViewCell;
@@ -2257,6 +2583,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 
 
 
+
 SWIFT_CLASS("_TtC12DeenIslamSDK16LayoutConstraint")
 @interface LayoutConstraint : NSLayoutConstraint
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -2266,6 +2593,30 @@ SWIFT_CLASS("_TtC12DeenIslamSDK16LayoutConstraint")
 @interface LayoutConstraint (SWIFT_EXTENSION(DeenIslamSDK))
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
+
+
+/// The base view for <code>LottieAnimationView</code> on iOS, tvOS, watchOS, and macCatalyst.
+/// Enables the <code>LottieAnimationView</code> implementation to be shared across platforms.
+SWIFT_CLASS("_TtC12DeenIslamSDK23LottieAnimationViewBase")
+@interface LottieAnimationViewBase : UIView
+@property (nonatomic) UIViewContentMode contentMode;
+- (void)didMoveToWindow;
+- (void)layoutSubviews;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC12DeenIslamSDK19LottieAnimationView")
+@interface LottieAnimationView : LottieAnimationViewBase
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
+@end
+
+
+
 
 
 
@@ -2284,6 +2635,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK16LayoutConstraint")
 @interface UIButton (SWIFT_EXTENSION(DeenIslamSDK))
 - (UIView * _Nullable)hitTest:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 
