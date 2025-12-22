@@ -3270,6 +3270,9 @@ extension Foundation.URLComponents : DeenIslamSDK.URLConvertible {
   case LivePodcast
   case AllahNames
   case DeenAI
+  case eidemilad
+  case ijtema
+  case deenAsk
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
