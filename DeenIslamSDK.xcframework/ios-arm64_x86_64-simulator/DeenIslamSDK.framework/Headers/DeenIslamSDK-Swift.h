@@ -1081,6 +1081,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 - (void)layoutSubviews;
 @end
 
+
 @class UICollectionView;
 @class UICollectionViewCell;
 @class UICollectionViewLayout;
@@ -1094,7 +1095,6 @@ SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 - (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 
 
@@ -2566,6 +2566,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 - (void)layoutSubviews;
 @end
 
+
 @class UICollectionView;
 @class UICollectionViewCell;
 @class UICollectionViewLayout;
@@ -2579,7 +2580,6 @@ SWIFT_CLASS("_TtC12DeenIslamSDK10IbadahHome")
 - (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 
 

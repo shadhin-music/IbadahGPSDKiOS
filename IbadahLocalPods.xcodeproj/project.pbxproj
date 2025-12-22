@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7497A7A92EF2B1C000A05A37 /* DeenIslamSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7497A7A72EF2B19D00A05A37 /* DeenIslamSDK.xcframework */; };
-		7497A7AA2EF2B1C000A05A37 /* DeenIslamSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7497A7A72EF2B19D00A05A37 /* DeenIslamSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F3129C2EF95D82004C9ECA /* DeenIslamSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F3129A2EF95D7D004C9ECA /* DeenIslamSDK.xcframework */; };
+		74F3129D2EF95D82004C9ECA /* DeenIslamSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74F3129A2EF95D7D004C9ECA /* DeenIslamSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +18,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7497A7AA2EF2B1C000A05A37 /* DeenIslamSDK.xcframework in Embed Frameworks */,
+				74F3129D2EF95D82004C9ECA /* DeenIslamSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -26,8 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7497A7A72EF2B19D00A05A37 /* DeenIslamSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DeenIslamSDK.xcframework; sourceTree = "<group>"; };
 		74A6C4CA2D3F958400269C89 /* IbadahLocalPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IbadahLocalPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74F3129A2EF95D7D004C9ECA /* DeenIslamSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DeenIslamSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7497A7A92EF2B1C000A05A37 /* DeenIslamSDK.xcframework in Frameworks */,
+				74F3129C2EF95D82004C9ECA /* DeenIslamSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 		74A6C4E22D3F95A100269C89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7497A7A72EF2B19D00A05A37 /* DeenIslamSDK.xcframework */,
+				74F3129A2EF95D7D004C9ECA /* DeenIslamSDK.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

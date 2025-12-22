@@ -38,7 +38,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		D6KrNMO0bwuVxSB3o0IYS9tG+a8=
+		J+QhtNddTj6xW2vlta5ZfvQpiRQ=
 		</data>
 		<key>AutoRenewOffCell.nib</key>
 		<data>
@@ -150,7 +150,11 @@
 		</data>
 		<key>DeenAIVC.nib</key>
 		<data>
-		JNWPJoJSj2jGfxIB8i3PzhTYass=
+		PaPCWL2/PE2FamozdgTuxYFemlw=
+		</data>
+		<key>DeenAskVC.nib</key>
+		<data>
+		aEGLEZMxKdqLnvQw6zdvPh/AyBQ=
 		</data>
 		<key>DeenEmptyView.nib</key>
 		<data>
@@ -418,7 +422,7 @@
 		</data>
 		<key>Headers/DeenIslamSDK-Swift.h</key>
 		<data>
-		EVvU3qmFxz5Qyq7pg7VDaNDSvJE=
+		BkailzeiM9jeFtcNimQxwCG03Ng=
 		</data>
 		<key>Headers/DeenIslamSDK.h</key>
 		<data>
@@ -578,7 +582,7 @@
 		</data>
 		<key>HomeDailyDuaCell.nib</key>
 		<data>
-		ixVW26zy8dbElJFEIHGk3nBCXSM=
+		0kpA9xDb7jI32TyIF6FaIwQzfFY=
 		</data>
 		<key>HomeDailyVerseCell.nib</key>
 		<data>
@@ -619,6 +623,10 @@
 		<key>IbadahHome.nib</key>
 		<data>
 		+hg++tffblirQoKs9arj1SYxiZE=
+		</data>
+		<key>IjtemaVC.nib</key>
+		<data>
+		KdS6leTp2Ri909xKxtNbyNkyYcw=
 		</data>
 		<key>ImageCell.nib</key>
 		<data>
@@ -738,7 +746,7 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		DldZzeTJbWi/SIHPV7av1N91VYw=
+		w43EEekKk5yENcIjWtWBg5Khjpo=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -754,7 +762,7 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		cJPJfwM4hEYNDOdPHT7UWrCYF8w=
+		zAhVBnScBs/nW+aqO7gXyEjeYhI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1144,6 +1152,14 @@
 		<data>
 		YIKuBPw5nL6QOxQ2Vhkb29ARzsQ=
 		</data>
+		<key>TashbeeCell.nib/objects-14.0+.nib</key>
+		<data>
+		iDK0h8z/DgFXzLq5PnjaVh1lTxU=
+		</data>
+		<key>TashbeeCell.nib/runtime.nib</key>
+		<data>
+		IuwPBGK5HS8PzksZLbdcKmwIkTA=
+		</data>
 		<key>TashbeeCountCell.nib</key>
 		<data>
 		SN9UPAG7rt1ZyOHI49nkSLJ6AAY=
@@ -1158,7 +1174,7 @@
 		</data>
 		<key>TashbeehHomeInfoCell.nib</key>
 		<data>
-		brdAFNvDFd9IzVd8g9Jvv3CLjck=
+		JNxb2oz33R43+n2iZb4HjlAs6Ik=
 		</data>
 		<key>TashbeehJikkirCVContainerCell.nib</key>
 		<data>
@@ -1222,7 +1238,7 @@
 		</data>
 		<key>VideoDetailsCell.nib</key>
 		<data>
-		0sYDm9yXH5RszfdH2azso2SktjY=
+		roXFY8lTadGdtT9mvohOc84/U44=
 		</data>
 		<key>WhenSubcribedCell.nib</key>
 		<data>
@@ -1342,6 +1358,14 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ijtemaLiveCell.nib</key>
+		<data>
+		h9Wk9vGXeS6jNNBgiv+p8uz8Guw=
+		</data>
+		<key>ijtemaMapVC.nib</key>
+		<data>
+		QUVxM1bMlnx+4R28LDav6uh7M8w=
+		</data>
 		<key>indopak.ttf</key>
 		<data>
 		wVsf2l1Iu25vPMruuKdbx3OtByI=
@@ -1417,7 +1441,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GQZ4Z9g2q0QQrLQ/l90XqJRI37JzlnbATEsuqCkWvmk=
+			qZ75M3gYz0s4YlwxMu84Nnu7VhWt0MPKoIfFIHGRaoE=
 			</data>
 		</dict>
 		<key>AutoRenewOffCell.nib</key>
@@ -1613,7 +1637,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/hY6wy1lw7lRQXUtAg8ZBFF+U+E0+KLV+RArEg+9bks=
+			YW37aOe52W47xZ17YsVrky9F0uVHo8NS1m5YA9Cj+tI=
+			</data>
+		</dict>
+		<key>DeenAskVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			62UzZeQmirWoLqn9EI2j6O3ttbY8BoC/cy3DMALJIqY=
 			</data>
 		</dict>
 		<key>DeenEmptyView.nib</key>
@@ -2082,7 +2113,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MYEXjOwMKp5ZuBO217ur1s+fz2HyPNep+omqqoOcNdw=
+			3Mle//AzuoH/zG5yBeHw0fcdobQw4Vo1X+mUwlSRpW8=
 			</data>
 		</dict>
 		<key>Headers/DeenIslamSDK.h</key>
@@ -2362,7 +2393,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zYLYFiO2IwZ66h3CB2Qna2InX9TqJKsB1YBCn6HAWnU=
+			pjMevVJn+LOEJVBvFCnVRJH27xCzZsaYXUa9Z2OIpwM=
 			</data>
 		</dict>
 		<key>HomeDailyVerseCell.nib</key>
@@ -2433,6 +2464,13 @@
 			<key>hash2</key>
 			<data>
 			//av+EMtHG+jKW2I/BQt3VbeOeDfkZyTTZQj0KWZTc8=
+			</data>
+		</dict>
+		<key>IjtemaVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			d26XaKC5R8h4CQ1nv8iPg1oa6cwrlRRMssLkQOxDWvs=
 			</data>
 		</dict>
 		<key>ImageCell.nib</key>
@@ -2635,7 +2673,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y+kxnLVQ8IdF83+zWFrgJf8sQJBGcNIEKzo48cCGM7M=
+			6MsXdS+C54i/pJNPOb71r7Ym16JTyDQo+yrMQO16c/g=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -2663,7 +2701,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JeXyil9nJ1VemT4/s+Win7A2h8V1KtdSEwfAaNI28X4=
+			OOg22QIr/K8oD7d+J19nSI+5u0uKyLndbJYX4QRSU7g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -3345,6 +3383,20 @@
 			tzRDbMqBBAiXYjiXuFv2C/RgEUKr8ntTG9N8Vi/9TmA=
 			</data>
 		</dict>
+		<key>TashbeeCell.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aiKwGMy5MPFSFi7/hobvtjOc5Pe1ztwLBt0TkJ1J1ZQ=
+			</data>
+		</dict>
+		<key>TashbeeCell.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bf6SHzsxe5nLYltUr7jM0H7E7RP0asdMf53m6vWWdpE=
+			</data>
+		</dict>
 		<key>TashbeeCountCell.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -3370,7 +3422,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5L0BVaFd14RY70Xg1IRiVKGut/9eSeeBfM7Z+v96Psg=
+			7yGR0jWfolD1ZwVfKtoaEIYa/JeiFvl2LQqhKPAFYQw=
 			</data>
 		</dict>
 		<key>TashbeehJikkirCVContainerCell.nib</key>
@@ -3482,7 +3534,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QgsSBlF3iIJN/Spt9BDNiwvQYmds6LoegMQeMnGcCns=
+			Rqe4/PQzKUC1h+2CZiI6NH81ZaVTejcJjltl0BPFBgI=
 			</data>
 		</dict>
 		<key>WhenSubcribedCell.nib</key>
@@ -3677,6 +3729,20 @@
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>ijtemaLiveCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0agayAFnNGV0JjLhQerAoJTqDtoRdDx67o2Dtckr/Ws=
+			</data>
+		</dict>
+		<key>ijtemaMapVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			u7FEosGCyCyPSyQ4Ikd5kgoGd3F5/2jj/XR4lbj11Fo=
+			</data>
 		</dict>
 		<key>indopak.ttf</key>
 		<dict>
