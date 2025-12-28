@@ -746,7 +746,7 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		qyCzAai0EzlddVo1W+8UtA6LMGI=
+		Xr85UR+CKL8tVCaUofLcHe7b3Ko=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -762,11 +762,11 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		kBAlHLUi7Hu2LWEmcEDlqNGmcDA=
+		kd1X5LgeOcv198F7Cj4qCk+T7QA=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		qyCzAai0EzlddVo1W+8UtA6LMGI=
+		Xr85UR+CKL8tVCaUofLcHe7b3Ko=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -782,7 +782,7 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Da3VzXVCZiqm3KaETDr6QEyXS+I=
+		2aNSIfpO1IvWza8iAMnTzxktoO8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1002,7 +1002,7 @@
 		</data>
 		<key>PremiumCell.nib</key>
 		<data>
-		tvPeKh6qyzkR2ofNZhj6Zzjhj2s=
+		xkIK6mxTanXMrMNyvVFw09k1Bjc=
 		</data>
 		<key>PrivacyRoles.nib</key>
 		<data>
@@ -2693,7 +2693,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lGjtxUjTZIj2w8XwCDp7dQlDhD8WHuyghBhCGDa98L0=
+			Yh98AdaXA7vz2qBnd7jLGtdUJs9J2IYsJffYypuCsuc=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -2721,14 +2721,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UrjikbLe4oNpNCEQ2NguiBpfCFOyFo8d/xxjwLxoqXk=
+			VVVz97mncZ9FiAFsDh7cmfULD09Z1+IHZgXXcsqpds8=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lGjtxUjTZIj2w8XwCDp7dQlDhD8WHuyghBhCGDa98L0=
+			Yh98AdaXA7vz2qBnd7jLGtdUJs9J2IYsJffYypuCsuc=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -2756,7 +2756,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1UtZty+uy111j+B507Sb52+wCs9trnvpPApWHA9uJCY=
+			7H0VhJ1wmG/lERPODLpbb0TOuKTUzFxovvRAgjL9iFg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -3141,7 +3141,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nSdIfQ/tgEBL+ZvREaQUiExOWDc1ZTx2zkA2KBZZy9M=
+			r/S+oPmwwi9xkoT6l+zWfiewcHlekYzN+MX8aERyZnk=
 			</data>
 		</dict>
 		<key>PrivacyRoles.nib</key>
