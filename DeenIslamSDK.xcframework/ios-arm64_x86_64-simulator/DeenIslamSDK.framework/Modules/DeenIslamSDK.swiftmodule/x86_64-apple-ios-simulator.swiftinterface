@@ -21,6 +21,7 @@ import ImageIO
 import MediaPlayer
 import MobileCoreServices
 import ObjectiveC
+import PDFKit
 import QuartzCore
 import Swift
 import SwiftUI
@@ -28,6 +29,10 @@ import SystemConfiguration
 import UIKit
 import UniformTypeIdentifiers
 import UserNotifications
+import Vmax
+import VmaxNativeHelper
+import VmaxOM
+import VmaxVideoHelper
 import WebKit
 import _Concurrency
 import _StringProcessing
@@ -1983,6 +1988,11 @@ public typealias LottieCompletionBlock = (Swift.Bool) -> Swift.Void
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class DeenIslamVmaxInitializer : ObjectiveC.NSObject {
+  public static let shared: DeenIslamSDK.DeenIslamVmaxInitializer
+  final public func initialize(accountKey: Swift.String, appId: Swift.String, privateKey: Swift.String, keyId: Swift.String, delegate: any Vmax.InitializationStatusDelegate)
   @objc deinit
 }
 final public class FloatValueProvider {

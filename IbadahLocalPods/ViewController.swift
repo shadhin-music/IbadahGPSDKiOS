@@ -7,8 +7,11 @@
 
 import UIKit
 import DeenIslamSDK
+import Vmax
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
+    
+    
     private var cView: UIView!
         private var ibadahHomeView: IbadahHome!
         
@@ -60,6 +63,8 @@ class ViewController: UIViewController {
                     baseResourceUrl: "", // Replace with actual URL
                     baseGPHomeUrl: ""    // Replace with actual URL
                 )
+                
+                DeenIslamVmaxInitializer.shared.initialize(accountKey: "grameenphone", appId: "4408990", privateKey: "MdNu7w/hwDiLqeXJ/txC+wVoojWIW/HQ+d6sAhcJXNA=", keyId: "fe7144aad27afba69d4c7090046d7c2a875c9e10b0a36d7969c882b3069e02e8", delegate: self)
                 
                 // Setup IbadahHome after SDK initialization
                 self.setupIbadahHomeView()
@@ -147,3 +152,12 @@ extension ViewController: DeenIslamSDKNotifier {
             }
         }
     }
+
+extension ViewController: InitializationStatusDelegate {
+    func onSuccess() {
+        print("Developer: VmaxManager initialization Success")
+    }
+    func onFailure(error: VmaxError) {
+        print("Developer: VmaxManager initialization Failed, Error: \(error.description)")
+    }
+}
