@@ -38,7 +38,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		GOWajJCcx2N184TcJemFHERlxlk=
+		Wzemh3DWU50mHIqhL4TPDY98Nok=
 		</data>
 		<key>AutoRenewOffCell.nib</key>
 		<data>
@@ -319,10 +319,6 @@
 		<key>FojilotCell.nib</key>
 		<data>
 		O2jAW2Jx77N1HB1Lh17dXl1HM7k=
-		</data>
-		<key>Frameworks/libswift_Concurrency.dylib</key>
-		<data>
-		D/zidROon/vafoFW79nZXT6+CM8=
 		</data>
 		<key>FullSuraVC.nib/objects-14.0+.nib</key>
 		<data>
@@ -672,6 +668,14 @@
 		<data>
 		unySpLRe7YbecY6WgWsLl40rQsE=
 		</data>
+		<key>IslamicBookCategoryVC.nib</key>
+		<data>
+		GEEx03PR260hlTmUT2JWF6S6UAM=
+		</data>
+		<key>IslamicBookDetailsVC.nib</key>
+		<data>
+		OKJnsW9Pqb4TVi19Dwg1ugj4h+0=
+		</data>
 		<key>IslamicBookVC.nib</key>
 		<data>
 		cpJogqvVzzTJQYmW9HXN/4pA4O4=
@@ -790,7 +794,7 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		uWyddqDL0hFah3KpOLqHn4EoAfg=
+		resUebwlv0sp5Jr3SGxdJ5EZq0I=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -806,7 +810,7 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		GFo0qgc6oX6InXT0XxfIMpFr2oc=
+		2MxdTPQETGqcPhag0cev726tgHk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1489,7 +1493,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0oXucuETu4VTkGQFaIIqB+qs8+lAYNVRzR9bdTZMONo=
+			CwFjc7i7ip5oYnudUO6CbCsU4eWWk19YK/nd+BYntDQ=
 			</data>
 		</dict>
 		<key>AutoRenewOffCell.nib</key>
@@ -1980,13 +1984,6 @@
 			<key>hash2</key>
 			<data>
 			jmGMS6nbzYnSGTL9VSD+bteh4LYhZpFqawY9HD8ujEY=
-			</data>
-		</dict>
-		<key>Frameworks/libswift_Concurrency.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EB177FIUAkjTIQ4jDtpxevbKSH4bzfTSD0i+sszUFQQ=
 			</data>
 		</dict>
 		<key>FullSuraVC.nib/objects-14.0+.nib</key>
@@ -2591,6 +2588,20 @@
 			hPdYTFGM/9Sria8DnKCKh3lmrbm0JhA3ickPYNMOlYQ=
 			</data>
 		</dict>
+		<key>IslamicBookCategoryVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XN5gtxBqmCxk2vwLyU+BmJy64lf1njqOQWIN3NJlkgU=
+			</data>
+		</dict>
+		<key>IslamicBookDetailsVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			s9cPB9DswQHFSTDHJIgYTzijvJ0lE7mmKTCzWJQGVIc=
+			</data>
+		</dict>
 		<key>IslamicBookVC.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -2798,7 +2809,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LRHrnT5xL+L8mRIL8p13Wwev/t6LLOIEZdNX1Q5VZbs=
+			6OVXFCnXTruBaHaLg5aml82f2cKdTlan3VtDs0kr/RU=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -2826,7 +2837,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bhqh/GBz0NS/CQMpiJrEnBqFcHsTMucS0tPAvCfNWY0=
+			LunOLaf3diO2O9r5LZmLSpDfklAFfzY8Si3BKV0HQQI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

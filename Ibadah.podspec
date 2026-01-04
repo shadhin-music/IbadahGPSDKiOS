@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "Ibadah"
-  spec.version      = "1.1.33"
+  spec.version      = "1.1.34"
   spec.summary      = "An Islamic SDK for MyGP iOS app"
   spec.description  = <<-DESC
     Ibadah provides Islamic content and features for the MyGP iOS app, including prayer times, 
