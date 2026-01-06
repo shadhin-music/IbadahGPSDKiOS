@@ -38,7 +38,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		Wzemh3DWU50mHIqhL4TPDY98Nok=
+		r4hwmzEuKCifBxplY+D2s0eg/OE=
 		</data>
 		<key>AutoRenewOffCell.nib</key>
 		<data>
@@ -674,7 +674,7 @@
 		</data>
 		<key>IslamicBookDetailsVC.nib</key>
 		<data>
-		OKJnsW9Pqb4TVi19Dwg1ugj4h+0=
+		YbRMyl5PUwKErB/PTR8guHNxKVw=
 		</data>
 		<key>IslamicBookVC.nib</key>
 		<data>
@@ -756,6 +756,10 @@
 		<data>
 		sEKWDjL3NqR9gCDNgvRSx87aOVc=
 		</data>
+		<key>IslamicWriterVC.nib</key>
+		<data>
+		SJGPtAJc3D5aLEXAc1TZJ/0NRCM=
+		</data>
 		<key>KQuranReusableView.nib</key>
 		<data>
 		qeaLevJ0GD9CA8bNVHE55RgQjhw=
@@ -794,7 +798,7 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		resUebwlv0sp5Jr3SGxdJ5EZq0I=
+		+BdYvbWGo3thkRZDwpr5NWbAKdY=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -810,7 +814,7 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		2MxdTPQETGqcPhag0cev726tgHk=
+		fixj4rOCslko8FlJywPiuwS6+vQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1014,7 +1018,7 @@
 		</data>
 		<key>PrayerTimeDataCell.nib</key>
 		<data>
-		kVGU1+KU2I1L7SJi1pY3aSEinC8=
+		J6zXGPSPjb9Essfr5Nmlw/b/JZA=
 		</data>
 		<key>PrayerTimeImageDataCRVCell.nib</key>
 		<data>
@@ -1493,7 +1497,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CwFjc7i7ip5oYnudUO6CbCsU4eWWk19YK/nd+BYntDQ=
+			8N2S7iPxnrv4yOEkjiHtML+OZbUBuS3jw7AR48T+ZQA=
 			</data>
 		</dict>
 		<key>AutoRenewOffCell.nib</key>
@@ -2599,7 +2603,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			s9cPB9DswQHFSTDHJIgYTzijvJ0lE7mmKTCzWJQGVIc=
+			8FV3OqNvoY6Mr9KW0DYjJWp6iIYS6Zae5EiMNh4P2Gk=
 			</data>
 		</dict>
 		<key>IslamicBookVC.nib</key>
@@ -2742,6 +2746,13 @@
 			7J2SJYdQZ+2utx2P7otdUQUgChrf5ylsrCSinxxpaSw=
 			</data>
 		</dict>
+		<key>IslamicWriterVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			e38Sjx5Wavq6UntTYpl3hVM5nHl3KwNE60tS29gLD8A=
+			</data>
+		</dict>
 		<key>KQuranReusableView.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -2809,7 +2820,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6OVXFCnXTruBaHaLg5aml82f2cKdTlan3VtDs0kr/RU=
+			NS9eDLOAoYZHsn5LKrdrV8W/85QRAFqyPp7kprgtuAw=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -2837,7 +2848,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LunOLaf3diO2O9r5LZmLSpDfklAFfzY8Si3BKV0HQQI=
+			p06tvCijQlo2+aeBrMO5SowbWOWcnH63VOY/DOqQVWA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -3194,7 +3205,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			n+TxuIwXXKw1yUClT2F+vjg/DztXIOwF59XaKFiNuVw=
+			EHJ2eiedH6jOIw6CwWJ/UtlyTbqS7GytI9jc+mKzc5U=
 			</data>
 		</dict>
 		<key>PrayerTimeImageDataCRVCell.nib</key>
