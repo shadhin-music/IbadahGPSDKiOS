@@ -38,7 +38,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		r4hwmzEuKCifBxplY+D2s0eg/OE=
+		vewhV3xZeb6Lzz4isgzRNx65bgw=
 		</data>
 		<key>AutoRenewOffCell.nib</key>
 		<data>
@@ -798,7 +798,7 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		+BdYvbWGo3thkRZDwpr5NWbAKdY=
+		sI3P61hVgIRwgA38+gT0teh69tw=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -814,7 +814,7 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		fixj4rOCslko8FlJywPiuwS6+vQ=
+		nQ6dE5zCBHGTfLO8JrG13NAaQ7w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -934,7 +934,7 @@
 		</data>
 		<key>PdfVC.nib</key>
 		<data>
-		VGemjjq8eKHsdIeCYv1y75o9rTI=
+		RiIKVEACkAPtoV5P1lSq41neAM4=
 		</data>
 		<key>PickerCell.nib</key>
 		<data>
@@ -1128,6 +1128,10 @@
 		<data>
 		7nZfsXQP8uvpQlAEETPQmW83wAU=
 		</data>
+		<key>RamadanBannerCell.nib</key>
+		<data>
+		b2OMKjsuRF9TIk6Dd8xwPdeKvnI=
+		</data>
 		<key>RamadanCalendarCell.nib</key>
 		<data>
 		ME9ehYUI6okQvHSqOj+CYZ6uLNM=
@@ -1135,6 +1139,14 @@
 		<key>RamadanCalender.nib</key>
 		<data>
 		poJGeelIY6YQccF5eyeKgbUAzlE=
+		</data>
+		<key>RamadanMenuCell.nib</key>
+		<data>
+		xguozfMBAvgpY2WhL9CJKLgN35U=
+		</data>
+		<key>RamadanPlannerVC.nib</key>
+		<data>
+		aEGLEZMxKdqLnvQw6zdvPh/AyBQ=
 		</data>
 		<key>RamadanRegularVC.nib</key>
 		<data>
@@ -1497,7 +1509,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8N2S7iPxnrv4yOEkjiHtML+OZbUBuS3jw7AR48T+ZQA=
+			eUB3RzLSWj4x0Va//FEBvlRar0VhzwXnFVTZCgZnTMk=
 			</data>
 		</dict>
 		<key>AutoRenewOffCell.nib</key>
@@ -2820,7 +2832,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NS9eDLOAoYZHsn5LKrdrV8W/85QRAFqyPp7kprgtuAw=
+			zZlKxjYwOcY6APyEtdKpIJdblWk0k9m2ItRJ90EtRe8=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -2848,7 +2860,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			p06tvCijQlo2+aeBrMO5SowbWOWcnH63VOY/DOqQVWA=
+			for9JkMTKTSvfql8hGYeEHLsNCC3I30pVbjLi4r9MHg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -3058,7 +3070,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SH5GTLoZIOwPUo10HMBPc4tv1G3NRYu4Rcmg1tIs1Qs=
+			Xi8hnDu3syachQUq5/Xdz29yodXCiBsI5vJ9L+fxyQo=
 			</data>
 		</dict>
 		<key>PickerCell.nib</key>
@@ -3397,6 +3409,13 @@
 			7h2yf9+Pti+xvHm5QHAsyQUfy25JJpxQOCClRRUjxhQ=
 			</data>
 		</dict>
+		<key>RamadanBannerCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p2L4PL/ZdFHUL5kDSBVgJEYfrpvuUboNUCzXsAYHKIc=
+			</data>
+		</dict>
 		<key>RamadanCalendarCell.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -3409,6 +3428,20 @@
 			<key>hash2</key>
 			<data>
 			rzvqryTaRsXthhn4U+FlnaAXEcMnSEgihkO+NQgoYUg=
+			</data>
+		</dict>
+		<key>RamadanMenuCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mW0bVLcLEygj3rk8NrLrnItyK0l4OAXWbuMXYwSPzek=
+			</data>
+		</dict>
+		<key>RamadanPlannerVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			62UzZeQmirWoLqn9EI2j6O3ttbY8BoC/cy3DMALJIqY=
 			</data>
 		</dict>
 		<key>RamadanRegularVC.nib</key>
