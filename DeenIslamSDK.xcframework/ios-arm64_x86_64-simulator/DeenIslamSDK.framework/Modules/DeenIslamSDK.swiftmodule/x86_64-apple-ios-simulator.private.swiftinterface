@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DeenIslamSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DeenIslamSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import AVFoundation
 import AVKit
 import Accelerate
@@ -53,21 +53,27 @@ extension DeenIslamSDK.IbadahHome : UIKit.UICollectionViewDataSource, UIKit.UICo
   @_Concurrency.MainActor @preconcurrency @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, minimumLineSpacingForSectionAt section: Swift.Int) -> CoreFoundation.CGFloat
 }
 extension DeenIslamSDK.IbadahHome : UIKit.UIViewControllerTransitioningDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc final public func presentationController(forPresented presented: UIKit.UIViewController, presenting: UIKit.UIViewController?, source: UIKit.UIViewController) -> UIKit.UIPresentationController?
+  #endif
 }
 extension DeenIslamSDK.IbadahHome {
   @_Concurrency.MainActor @preconcurrency @objc override final public func layoutSubviews()
 }
 public typealias ConstraintView = UIKit.UIView
 public protocol VGPlayerResourceLoaderManagerDelegate : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   func resourceLoaderManager(_ loadURL: Foundation.URL, didFailWithError error: (any Swift.Error)?)
+  #endif
 }
 @objc @_inheritsConvenienceInitializers open class VGPlayerResourceLoaderManager : ObjectiveC.NSObject {
   weak open var delegate: (any DeenIslamSDK.VGPlayerResourceLoaderManagerDelegate)?
   @objc override dynamic public init()
   open func cleanCache()
   open func cancelLoaders()
+  #if compiler(>=5.3) && $NonescapableTypes
   open func assetURL(_ url: Foundation.URL?) -> Foundation.URL?
+  #endif
   open func playerItem(_ url: Foundation.URL) -> AVFoundation.AVPlayerItem
   @objc deinit
 }
@@ -76,16 +82,28 @@ extension DeenIslamSDK.VGPlayerResourceLoaderManager : AVFoundation.AVAssetResou
   @objc dynamic public func resourceLoader(_ resourceLoader: AVFoundation.AVAssetResourceLoader, didCancel loadingRequest: AVFoundation.AVAssetResourceLoadingRequest)
 }
 extension DeenIslamSDK.VGPlayerResourceLoaderManager : DeenIslamSDK.VGPlayerResourceLoaderDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func resourceLoader(_ resourceLoader: DeenIslamSDK.VGPlayerResourceLoader, didFailWithError error: (any Swift.Error)?)
+  #endif
 }
 public protocol ConstraintDSL {
+  #if compiler(>=5.3) && $NonescapableTypes
   var target: Swift.AnyObject? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func setLabel(_ value: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func label() -> Swift.String?
+  #endif
 }
 extension DeenIslamSDK.ConstraintDSL {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func setLabel(_ value: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func label() -> Swift.String?
+  #endif
 }
 public protocol ConstraintBasicAttributesDSL : DeenIslamSDK.ConstraintDSL {
 }
@@ -133,6 +151,7 @@ extension DeenIslamSDK.ConstraintBasicAttributesDSL {
 public protocol ConstraintAttributesDSL : DeenIslamSDK.ConstraintBasicAttributesDSL {
 }
 extension DeenIslamSDK.ConstraintAttributesDSL {
+  @available(*, deprecated: 3.0, message: "Use .lastBaseline instead")
   public var baseline: DeenIslamSDK.ConstraintItem {
     get
   }
@@ -190,19 +209,25 @@ extension DeenIslamSDK.IQKeyboardManager {
   @objc final public var movedDistance: CoreFoundation.CGFloat {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var movedDistanceChanged: ((CoreFoundation.CGFloat) -> Swift.Void)? {
     @objc get
     @objc set(newValue)
   }
+  #endif
 }
 @available(iOSApplicationExtension, unavailable)
 @objc extension UIKit.UIViewController {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic open func parentIQContainerViewController() -> UIKit.UIViewController?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @available(*, deprecated, message: "Due to change in core-logic of handling distance between textField and keyboard distance, this layout contraint tweak is no longer needed and things will just work out of the box regardless of constraint pinned with safeArea/layoutGuide/superview.")
   @IBOutlet @_Concurrency.MainActor @preconcurrency dynamic public var IQLayoutGuideConstraint: UIKit.NSLayoutConstraint? {
     @objc get
     @objc set(newValue)
   }
+  #endif
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class VGPlayerLoadingIndicator : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
@@ -222,7 +247,9 @@ extension DeenIslamSDK.IQKeyboardManager {
   @objc deinit
 }
 @objc public protocol DeenIslamSDKNotifier : ObjectiveC.NSObjectProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func tokenStatus(token isValid: Swift.Bool, completion: ((Swift.String) -> Swift.Void)?)
+  #endif
   @objc func getToken(completion: @escaping (Swift.String) -> Swift.Void)
   @objc func errorMessage(error: Swift.String)
   @objc func notificationURL(url: Swift.String)
@@ -334,43 +361,61 @@ extension UIKit.UIEdgeInsets : DeenIslamSDK.ConstraintConstantTarget {
 }
 @_inheritsConvenienceInitializers @available(iOSApplicationExtension, unavailable)
 @objc @_Concurrency.MainActor @preconcurrency open class IQTextView : UIKit.UITextView {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect, textContainer: UIKit.NSTextContainer?)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func awakeFromNib()
   @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var placeholderTextColor: UIKit.UIColor? {
     @objc get
     @objc set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var placeholder: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open var attributedPlaceholder: Foundation.NSAttributedString? {
     get
     set
   }
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open var text: Swift.String! {
     @objc get
     @objc set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open var attributedText: Foundation.NSAttributedString! {
     @objc get
     @objc set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open var font: UIKit.UIFont? {
     @objc get
     @objc set
   }
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open var textAlignment: UIKit.NSTextAlignment {
     @objc get
     @objc set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override weak dynamic open var delegate: (any UIKit.UITextViewDelegate)? {
     @objc get
     @objc set
   }
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
     @objc get
   }
@@ -401,9 +446,15 @@ extension DeenIslamSDK.AudioPlayer {
   public func next()
   public func nextOrStop()
   public func stop()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func seek(to time: Foundation.TimeInterval, byAdaptingTimeToFitSeekableRanges: Swift.Bool = false, toleranceBefore: CoreMedia.CMTime = CMTime.positiveInfinity, toleranceAfter: CoreMedia.CMTime = CMTime.positiveInfinity, completionHandler: ((Swift.Bool) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func seekToSeekableRangeStart(padding: Foundation.TimeInterval, completionHandler: ((Swift.Bool) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func seekToSeekableRangeEnd(padding: Foundation.TimeInterval, completionHandler: ((Swift.Bool) -> Swift.Void)? = nil)
+  #endif
   public func remoteControlReceived(with event: UIKit.UIEvent)
 }
 @available(iOSApplicationExtension, unavailable)
@@ -420,14 +471,20 @@ extension DeenIslamSDK.IQKeyboardManager {
 public protocol VGPlayerDownloadeURLSessionManagerDelegate : ObjectiveC.NSObjectProtocol {
   func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive response: Foundation.URLResponse, completionHandler: @escaping (Foundation.URLSession.ResponseDisposition) -> Swift.Void)
   func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive data: Foundation.Data)
+  #if compiler(>=5.3) && $NonescapableTypes
   func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWithError error: (any Swift.Error)?)
+  #endif
 }
 @objc open class VGPlayerDownloadURLSessionManager : ObjectiveC.NSObject, Foundation.URLSessionDataDelegate {
   weak open var delegate: (any DeenIslamSDK.VGPlayerDownloadeURLSessionManagerDelegate)?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(delegate: (any DeenIslamSDK.VGPlayerDownloadeURLSessionManagerDelegate)?)
+  #endif
   @objc public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive response: Foundation.URLResponse, completionHandler: @escaping (Foundation.URLSession.ResponseDisposition) -> Swift.Void)
   @objc public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive data: Foundation.Data)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWithError error: (any Swift.Error)?)
+  #endif
   @objc deinit
 }
 @available(iOSApplicationExtension, unavailable)
@@ -456,7 +513,9 @@ public enum AudioQuality : Swift.Int {
   case low
   case medium
   case high
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -465,11 +524,17 @@ public enum AudioQuality : Swift.Int {
 public struct AudioItemURL {
   public let quality: DeenIslamSDK.AudioQuality
   public let url: Foundation.URL
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(quality: DeenIslamSDK.AudioQuality, url: Foundation.URL?)
+  #endif
 }
 @objc open class AudioItem : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init?(highQualitySoundURL: Foundation.URL? = nil, mediumQualitySoundURL: Foundation.URL? = nil, lowQualitySoundURL: Foundation.URL? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(soundURLs: [DeenIslamSDK.AudioQuality : Foundation.URL])
+  #endif
   open var highestQualityURL: DeenIslamSDK.AudioItemURL {
     get
   }
@@ -484,10 +549,12 @@ public struct AudioItemURL {
   @objc dynamic open var album: Swift.String?
   @objc dynamic open var trackCount: Foundation.NSNumber?
   @objc dynamic open var trackNumber: Foundation.NSNumber?
+  #if compiler(>=5.3) && $NonescapableTypes
   open var artworkImage: DeenIslamSDK.Image? {
     get
     set
   }
+  #endif
   @objc dynamic open var artwork: MediaPlayer.MPMediaItemArtwork?
   open func parseMetadata(_ items: [AVFoundation.AVMetadataItem])
   @objc deinit
@@ -495,7 +562,9 @@ public struct AudioItemURL {
 @_inheritsConvenienceInitializers @available(iOSApplicationExtension, unavailable)
 @objc @_Concurrency.MainActor @preconcurrency open class IQPreviousNextView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 public struct PrayerDisplayData {
@@ -517,10 +586,12 @@ public struct PrayerDisplayData {
     @objc get
     @objc set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open var title: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency open var titleColor: UIKit.UIColor? {
     @objc get
     @objc set
@@ -529,16 +600,24 @@ public struct PrayerDisplayData {
     @objc get
     @objc set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override open var invocation: DeenIslamSDK.IQInvocation? {
     @objc get
     @objc set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency convenience public init(title: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 public protocol VGPlayerResourceLoadingRequestDelegate : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   func resourceLoadingRequest(_ resourceLoadingRequest: DeenIslamSDK.VGPlayerResourceLoadingRequest, didCompleteWithError error: (any Swift.Error)?)
+  #endif
 }
 @objc open class VGPlayerResourceLoadingRequest : ObjectiveC.NSObject {
   open var request: AVFoundation.AVAssetResourceLoadingRequest {
@@ -553,7 +632,9 @@ public protocol VGPlayerResourceLoadingRequestDelegate : AnyObject {
 }
 extension DeenIslamSDK.VGPlayerResourceLoadingRequest : DeenIslamSDK.VGPlayerDownloaderDelegate {
   public func downloader(_ downloader: DeenIslamSDK.VGPlayerDownloader, didReceiveData data: Foundation.Data)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func downloader(_ downloader: DeenIslamSDK.VGPlayerDownloader, didFinishedWithError error: (any Swift.Error)?)
+  #endif
   public func downloader(_ downloader: DeenIslamSDK.VGPlayerDownloader, didReceiveResponse response: Foundation.URLResponse)
 }
 public struct VGPlayerError : Swift.CustomStringConvertible {
@@ -563,21 +644,31 @@ public struct VGPlayerError : Swift.CustomStringConvertible {
 }
 public typealias TimeRange = (earliest: Foundation.TimeInterval, latest: Foundation.TimeInterval)
 extension DeenIslamSDK.AudioPlayer {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var currentItemProgression: Foundation.TimeInterval? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var currentItemDuration: Foundation.TimeInterval? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var currentItemSeekableRange: DeenIslamSDK.TimeRange? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var currentItemLoadedRange: DeenIslamSDK.TimeRange? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var currentItemLoadedAhead: Foundation.TimeInterval? {
     get
   }
+  #endif
 }
 @available(iOS 8.0, *)
 public typealias ConstraintLayoutSupport = UIKit.UILayoutSupport
@@ -601,10 +692,12 @@ extension UIKit.UILayoutGuide {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class LayoutConstraint : UIKit.NSLayoutConstraint {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public var label: Swift.String? {
     get
     set
   }
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init()
   @objc deinit
 }
@@ -639,6 +732,7 @@ extension UIKit.UILayoutGuide {
   public var centerY: DeenIslamSDK.ConstraintMakerExtendable {
     get
   }
+  @available(*, deprecated: 3.0, message: "Use lastBaseline instead")
   public var baseline: DeenIslamSDK.ConstraintMakerExtendable {
     get
   }
@@ -705,21 +799,35 @@ public typealias ConstraintLayoutGuide = UIKit.UILayoutGuide
 @_inheritsConvenienceInitializers @available(iOSApplicationExtension, unavailable)
 @objc @_Concurrency.MainActor @preconcurrency open class IQBarButtonItem : UIKit.UIBarButtonItem {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open var tintColor: UIKit.UIColor? {
     @objc get
     @objc set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency open func setTarget(_ target: Swift.AnyObject?, action: ObjectiveC.Selector?)
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency open var invocation: DeenIslamSDK.IQInvocation?
   @objc deinit
 }
 @available(iOSApplicationExtension, unavailable)
 @objc extension UIKit.UIView {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func viewContainingController() -> UIKit.UIViewController?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func topMostController() -> UIKit.UIViewController?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func parentContainerViewController() -> UIKit.UIViewController?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func superviewOfClassType(_ classType: UIKit.UIView.Type, belowView: UIKit.UIView? = nil) -> UIKit.UIView?
+  #endif
 }
 public enum AFError : Swift.Error {
   public enum MultipartEncodingFailureReason {
@@ -815,9 +923,11 @@ public enum AFError : Swift.Error {
   case urlRequestValidationFailed(reason: DeenIslamSDK.AFError.URLRequestValidationFailureReason)
 }
 extension Swift.Error {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var asAFError: DeenIslamSDK.AFError? {
     get
   }
+  #endif
   public func asAFError(orFailWith message: @autoclosure () -> Swift.String, file: Swift.StaticString = #file, line: Swift.UInt = #line) -> DeenIslamSDK.AFError
 }
 extension DeenIslamSDK.AFError {
@@ -871,38 +981,58 @@ extension DeenIslamSDK.AFError {
   }
 }
 extension DeenIslamSDK.AFError {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var url: Foundation.URL? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var underlyingError: (any Swift.Error)? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var acceptableContentTypes: [Swift.String]? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var responseContentType: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var responseCode: Swift.Int? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var failedStringEncoding: Swift.String.Encoding? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var sourceURL: Foundation.URL? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var destinationURL: Foundation.URL? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var downloadResumeData: Foundation.Data? {
     get
   }
+  #endif
 }
 extension DeenIslamSDK.AFError : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
+  #endif
 }
 @objc @_inheritsConvenienceInitializers open class VGPlayerCacheSession : ObjectiveC.NSObject {
   public var downloadQueue: Foundation.OperationQueue {
@@ -915,7 +1045,9 @@ extension DeenIslamSDK.AFError : Foundation.LocalizedError {
   case defaultBuffering = 0
   case playWhenPreferredBufferDurationFull = 1
   case playWhenBufferNotEmpty = 2
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -931,7 +1063,9 @@ extension DeenIslamSDK.AFError : Foundation.LocalizedError {
   @objc deinit
   public init(url: Foundation.URL)
   open func cache(_ data: Foundation.Data, forRange range: Foundation.NSRange, closure: (Swift.Bool) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   open func cache(forRange range: Foundation.NSRange) -> Foundation.Data?
+  #endif
   open func cachedDataActions(forRange range: Foundation.NSRange) -> Swift.Array<DeenIslamSDK.VGPlayerCacheAction>
   open func set(cacheMedia: DeenIslamSDK.VGPlayerCacheMedia) -> Swift.Bool
   open func save()
@@ -946,10 +1080,13 @@ extension DeenIslamSDK.AFError : Foundation.LocalizedError {
   @available(*, deprecated, message: "Use priority(.required) instead.")
   @discardableResult
   public func priorityRequired() -> DeenIslamSDK.ConstraintMakerFinalizable
+  @available(*, deprecated: 3.0, message: "Use priority(.high) instead.")
   @discardableResult
   public func priorityHigh() -> DeenIslamSDK.ConstraintMakerFinalizable
+  @available(*, deprecated: 3.0, message: "Use priority(.medium) instead.")
   @discardableResult
   public func priorityMedium() -> DeenIslamSDK.ConstraintMakerFinalizable
+  @available(*, deprecated: 3.0, message: "Use priority(.low) instead.")
   @discardableResult
   public func priorityLow() -> DeenIslamSDK.ConstraintMakerFinalizable
   @objc deinit
@@ -971,7 +1108,9 @@ public enum VGPlayerState : Swift.Int {
   case paused
   case playFinished
   case error
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -983,7 +1122,9 @@ public enum VGPlayerBufferstate : Swift.Int {
   case buffering
   case stop
   case bufferFinished
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -993,7 +1134,9 @@ public enum VGVideoGravityMode : Swift.Int {
   case resize
   case resizeAspect
   case resizeAspectFill
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1003,7 +1146,9 @@ public enum VGPlayerBackgroundMode : Swift.Int {
   case suspend
   case autoPlayAndPaused
   case proceed
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1064,7 +1209,9 @@ extension DeenIslamSDK.VGPlayerDelegate {
   open var error: DeenIslamSDK.VGPlayerError {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(URL: Foundation.URL?, playerView: DeenIslamSDK.VGPlayerView?)
+  #endif
   convenience public init(URL: Foundation.URL)
   convenience public init(playerView: DeenIslamSDK.VGPlayerView)
   @objc override convenience dynamic public init()
@@ -1077,10 +1224,14 @@ extension DeenIslamSDK.VGPlayer {
   public func play()
   public func pause()
   public func seekTime(_ time: Foundation.TimeInterval)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func seekTime(_ time: Foundation.TimeInterval, completion: ((Swift.Bool) -> Swift.Void)?)
+  #endif
 }
 extension DeenIslamSDK.VGPlayer {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic open func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  #endif
 }
 public typealias Metadata = [AVFoundation.AVMetadataItem]
 public protocol AudioPlayerDelegate : AnyObject {
@@ -1114,40 +1265,52 @@ extension Swift.Double : DeenIslamSDK.ConstraintOffsetTarget {
 extension CoreFoundation.CGFloat : DeenIslamSDK.ConstraintOffsetTarget {
 }
 extension UIKit.UIView {
+  @available(*, deprecated: 3.0, message: "Use newer snp.* syntax.")
   @_Concurrency.MainActor @preconcurrency public var snp_left: DeenIslamSDK.ConstraintItem {
     get
   }
+  @available(*, deprecated: 3.0, message: "Use newer snp.* syntax.")
   @_Concurrency.MainActor @preconcurrency public var snp_top: DeenIslamSDK.ConstraintItem {
     get
   }
+  @available(*, deprecated: 3.0, message: "Use newer snp.* syntax.")
   @_Concurrency.MainActor @preconcurrency public var snp_right: DeenIslamSDK.ConstraintItem {
     get
   }
+  @available(*, deprecated: 3.0, message: "Use newer snp.* syntax.")
   @_Concurrency.MainActor @preconcurrency public var snp_bottom: DeenIslamSDK.ConstraintItem {
     get
   }
+  @available(*, deprecated: 3.0, message: "Use newer snp.* syntax.")
   @_Concurrency.MainActor @preconcurrency public var snp_leading: DeenIslamSDK.ConstraintItem {
     get
   }
+  @available(*, deprecated: 3.0, message: "Use newer snp.* syntax.")
   @_Concurrency.MainActor @preconcurrency public var snp_trailing: DeenIslamSDK.ConstraintItem {
     get
   }
+  @available(*, deprecated: 3.0, message: "Use newer snp.* syntax.")
   @_Concurrency.MainActor @preconcurrency public var snp_width: DeenIslamSDK.ConstraintItem {
     get
   }
+  @available(*, deprecated: 3.0, message: "Use newer snp.* syntax.")
   @_Concurrency.MainActor @preconcurrency public var snp_height: DeenIslamSDK.ConstraintItem {
     get
   }
+  @available(*, deprecated: 3.0, message: "Use newer snp.* syntax.")
   @_Concurrency.MainActor @preconcurrency public var snp_centerX: DeenIslamSDK.ConstraintItem {
     get
   }
+  @available(*, deprecated: 3.0, message: "Use newer snp.* syntax.")
   @_Concurrency.MainActor @preconcurrency public var snp_centerY: DeenIslamSDK.ConstraintItem {
     get
   }
+  @available(*, deprecated: 3.0, message: "Use newer snp.* syntax.")
   @_Concurrency.MainActor @preconcurrency public var snp_baseline: DeenIslamSDK.ConstraintItem {
     get
   }
   @available(iOS 8.0, macOS 10.11, *)
+  @available(*, deprecated: 3.0, message: "Use newer snp.* syntax.")
   @_Concurrency.MainActor @preconcurrency public var snp_lastBaseline: DeenIslamSDK.ConstraintItem {
     get
   }
@@ -1196,12 +1359,15 @@ extension UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency public var snp_centerYWithinMargins: DeenIslamSDK.ConstraintItem {
     get
   }
+  @available(*, deprecated: 3.0, message: "Use newer snp.* syntax.")
   @_Concurrency.MainActor @preconcurrency public var snp_edges: DeenIslamSDK.ConstraintItem {
     get
   }
+  @available(*, deprecated: 3.0, message: "Use newer snp.* syntax.")
   @_Concurrency.MainActor @preconcurrency public var snp_size: DeenIslamSDK.ConstraintItem {
     get
   }
+  @available(*, deprecated: 3.0, message: "Use newer snp.* syntax.")
   @_Concurrency.MainActor @preconcurrency public var snp_center: DeenIslamSDK.ConstraintItem {
     get
   }
@@ -1215,10 +1381,15 @@ extension UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency public var snp_centerWithinMargins: DeenIslamSDK.ConstraintItem {
     get
   }
+  @available(*, deprecated: 3.0, message: "Use newer snp.* syntax.")
   @_Concurrency.MainActor @preconcurrency public func snp_prepareConstraints(_ closure: (_ make: DeenIslamSDK.ConstraintMaker) -> Swift.Void) -> [DeenIslamSDK.Constraint]
+  @available(*, deprecated: 3.0, message: "Use newer snp.* syntax.")
   @_Concurrency.MainActor @preconcurrency public func snp_makeConstraints(_ closure: (_ make: DeenIslamSDK.ConstraintMaker) -> Swift.Void)
+  @available(*, deprecated: 3.0, message: "Use newer snp.* syntax.")
   @_Concurrency.MainActor @preconcurrency public func snp_remakeConstraints(_ closure: (_ make: DeenIslamSDK.ConstraintMaker) -> Swift.Void)
+  @available(*, deprecated: 3.0, message: "Use newer snp.* syntax.")
   @_Concurrency.MainActor @preconcurrency public func snp_updateConstraints(_ closure: (_ make: DeenIslamSDK.ConstraintMaker) -> Swift.Void)
+  @available(*, deprecated: 3.0, message: "Use newer snp.* syntax.")
   @_Concurrency.MainActor @preconcurrency public func snp_removeConstraints()
   @_Concurrency.MainActor @preconcurrency public var snp: DeenIslamSDK.ConstraintViewDSL {
     get
@@ -1242,9 +1413,13 @@ extension UIKit.UIView {
   public var downloadSpeed: Swift.Double? {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
   @objc public func encode(with aCoder: Foundation.NSCoder)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  #endif
   @objc override dynamic open var debugDescription: Swift.String {
     @objc get
   }
@@ -1259,12 +1434,16 @@ extension DeenIslamSDK.VGPlayerCacheMediaConfiguration {
   open func add(_ downloadedBytes: Swift.UInt64, time: Foundation.TimeInterval)
 }
 extension DeenIslamSDK.AudioPlayer {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var items: [DeenIslamSDK.AudioItem]? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var currentItemIndexInQueue: Swift.Int? {
     get
   }
+  #endif
   public var hasNext: Swift.Bool {
     get
   }
@@ -1289,11 +1468,11 @@ public struct AnimationKeypath : Swift.Hashable, Swift.ExpressibleByStringLitera
   public init(keypath: Swift.String)
   public init(stringLiteral: Swift.String)
   public init(keys: [Swift.String])
-  public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: DeenIslamSDK.AnimationKeypath, b: DeenIslamSDK.AnimationKeypath) -> Swift.Bool
   public typealias ExtendedGraphemeClusterLiteralType = Swift.String
   public typealias StringLiteralType = Swift.String
   public typealias UnicodeScalarLiteralType = Swift.String
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1382,22 +1561,40 @@ public enum AnyValueProviderStorage {
     @objc get
   }
   @objc @_Concurrency.MainActor @preconcurrency final public func play()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency final public func play(completion: ((Swift.Bool) -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency final public func play(fromProgress: CoreFoundation.CGFloat, toProgress: CoreFoundation.CGFloat, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency final public func play(fromFrame: CoreFoundation.CGFloat, toFrame: CoreFoundation.CGFloat, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency final public func play(fromMarker: Swift.String, toMarker: Swift.String, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency final public func play(marker: Swift.String, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency final public func stop()
   @objc @_Concurrency.MainActor @preconcurrency final public func pause()
   @objc @_Concurrency.MainActor @preconcurrency final public func reloadImages()
   @objc @_Concurrency.MainActor @preconcurrency final public func forceDisplayUpdate()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency final public func getValue(for keypath: DeenIslamSDK.CompatibleAnimationKeypath, atFrame: CoreFoundation.CGFloat) -> Any?
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency final public func logHierarchyKeypaths()
   @objc @_Concurrency.MainActor @preconcurrency final public func setColorValue(_ color: UIKit.UIColor, forKeypath keypath: DeenIslamSDK.CompatibleAnimationKeypath)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency final public func getColorValue(for keypath: DeenIslamSDK.CompatibleAnimationKeypath, atFrame: CoreFoundation.CGFloat) -> UIKit.UIColor?
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency final public func addSubview(_ subview: DeenIslamSDK.AnimationSubview, forLayerAt keypath: DeenIslamSDK.CompatibleAnimationKeypath)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency final public func convert(rect: CoreFoundation.CGRect, toLayerAt keypath: DeenIslamSDK.CompatibleAnimationKeypath?) -> CoreFoundation.CGRect
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency final public func convert(point: CoreFoundation.CGPoint, toLayerAt keypath: DeenIslamSDK.CompatibleAnimationKeypath?) -> CoreFoundation.CGPoint
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency final public func progressTime(forMarker named: Swift.String) -> CoreFoundation.CGFloat
   @objc @_Concurrency.MainActor @preconcurrency final public func frameTime(forMarker named: Swift.String) -> CoreFoundation.CGFloat
   @objc @_Concurrency.MainActor @preconcurrency final public func durationFrameTime(forMarker named: Swift.String) -> CoreFoundation.CGFloat
@@ -1426,8 +1623,8 @@ public struct LottieConfiguration : Swift.Hashable {
   public static var shared: DeenIslamSDK.LottieConfiguration
   public var renderingEngine: DeenIslamSDK.RenderingEngineOption
   public var decodingStrategy: DeenIslamSDK.DecodingStrategy
-  public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: DeenIslamSDK.LottieConfiguration, b: DeenIslamSDK.LottieConfiguration) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1447,7 +1644,9 @@ public enum RenderingEngine : Swift.Hashable {
   case coreAnimation
 }
 extension DeenIslamSDK.RenderingEngineOption : Swift.RawRepresentable, Swift.CustomStringConvertible {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public var rawValue: Swift.String {
     get
   }
@@ -1457,7 +1656,9 @@ extension DeenIslamSDK.RenderingEngineOption : Swift.RawRepresentable, Swift.Cus
   public typealias RawValue = Swift.String
 }
 extension DeenIslamSDK.RenderingEngine : Swift.RawRepresentable, Swift.CustomStringConvertible {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public var rawValue: Swift.String {
     get
   }
@@ -1483,7 +1684,9 @@ public enum LayerType : Swift.Int, Swift.Codable {
   case shape
   case text
   public init(from decoder: any Swift.Decoder) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1494,7 +1697,9 @@ public enum MatteType : Swift.Int, Swift.Codable {
   case add
   case invert
   case unknown
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1517,7 +1722,9 @@ public enum BlendMode : Swift.Int, Swift.Codable {
   case saturation
   case color
   case luminosity
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1526,7 +1733,9 @@ public enum BlendMode : Swift.Int, Swift.Codable {
 public enum CoordinateSpace : Swift.Int, Swift.Codable {
   case type2d
   case type3d
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1547,8 +1756,12 @@ final public class LottieAnimation : Swift.Codable {
   final public func encode(to encoder: any Swift.Encoder) throws
 }
 final public class Keyframe<T> {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(_ value: T, spatialInTangent: DeenIslamSDK.LottieVector3D? = nil, spatialOutTangent: DeenIslamSDK.LottieVector3D? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(value: T, time: DeenIslamSDK.AnimationFrameTime, isHold: Swift.Bool = false, inTangent: DeenIslamSDK.LottieVector2D? = nil, outTangent: DeenIslamSDK.LottieVector2D? = nil, spatialInTangent: DeenIslamSDK.LottieVector3D? = nil, spatialOutTangent: DeenIslamSDK.LottieVector3D? = nil)
+  #endif
   final public let value: T
   final public let time: DeenIslamSDK.AnimationFrameTime
   final public let isHold: Swift.Bool
@@ -1607,8 +1820,8 @@ public typealias Vector2D = DeenIslamSDK.LottieVector2D
 public struct LottieVector2D : Swift.Codable, Swift.Hashable {
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
-  public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: DeenIslamSDK.LottieVector2D, b: DeenIslamSDK.LottieVector2D) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1638,9 +1851,13 @@ extension DeenIslamSDK.LottieColor : Swift.Codable {
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class AnimatedSwitch : DeenIslamSDK.AnimatedControl {
   @_Concurrency.MainActor @preconcurrency override public init(animation: DeenIslamSDK.LottieAnimation, configuration: DeenIslamSDK.LottieConfiguration = .shared)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
   @_Concurrency.MainActor @preconcurrency override open func animationDidSet()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func endTracking(_ touch: UIKit.UITouch?, with event: UIKit.UIEvent?)
+  #endif
   public enum CancelBehavior {
     case reverse
     case none
@@ -1690,10 +1907,14 @@ extension DeenIslamSDK.LottieLoopMode : Swift.Equatable {
 @available(*, deprecated, renamed: "LottieAnimationView", message: "`AnimationView` has been renamed to `LottieAnimationView`, for consistency with the new `LottieAnimation` type. This notice will be removed in Lottie 4.0.")
 public typealias AnimationView = DeenIslamSDK.LottieAnimationView
 @objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency final public class LottieAnimationView : DeenIslamSDK.LottieAnimationViewBase {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(animation: DeenIslamSDK.LottieAnimation?, imageProvider: (any DeenIslamSDK.AnimationImageProvider)? = nil, textProvider: any DeenIslamSDK.AnimationTextProvider = DefaultTextProvider(), fontProvider: any DeenIslamSDK.AnimationFontProvider = DefaultFontProvider(), configuration: DeenIslamSDK.LottieConfiguration = .shared, logger: DeenIslamSDK.LottieLogger = .shared)
+  #endif
   @_Concurrency.MainActor @preconcurrency public init(configuration: DeenIslamSDK.LottieConfiguration = .shared, logger: DeenIslamSDK.LottieLogger = .shared)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
   @_Concurrency.MainActor @preconcurrency final public let configuration: DeenIslamSDK.LottieConfiguration
   @_Concurrency.MainActor @preconcurrency final public var valueProviders: [DeenIslamSDK.AnimationKeypath : any DeenIslamSDK.AnyValueProvider] {
     get
@@ -1765,40 +1986,70 @@ public typealias AnimationView = DeenIslamSDK.LottieAnimationView
   @_Concurrency.MainActor @preconcurrency @objc override final public var intrinsicContentSize: CoreFoundation.CGSize {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency final public var currentRenderingEngine: DeenIslamSDK.RenderingEngine? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency final public func play(completion: DeenIslamSDK.LottieCompletionBlock? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency final public func play(fromProgress: DeenIslamSDK.AnimationProgressTime? = nil, toProgress: DeenIslamSDK.AnimationProgressTime, loopMode: DeenIslamSDK.LottieLoopMode? = nil, completion: DeenIslamSDK.LottieCompletionBlock? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency final public func play(fromFrame: DeenIslamSDK.AnimationFrameTime? = nil, toFrame: DeenIslamSDK.AnimationFrameTime, loopMode: DeenIslamSDK.LottieLoopMode? = nil, completion: DeenIslamSDK.LottieCompletionBlock? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency final public func play(fromMarker: Swift.String? = nil, toMarker: Swift.String, loopMode: DeenIslamSDK.LottieLoopMode? = nil, completion: DeenIslamSDK.LottieCompletionBlock? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency final public func play(marker: Swift.String, loopMode: DeenIslamSDK.LottieLoopMode? = nil, completion: DeenIslamSDK.LottieCompletionBlock? = nil)
+  #endif
   @_Concurrency.MainActor @preconcurrency final public func stop()
   @_Concurrency.MainActor @preconcurrency final public func pause()
   @_Concurrency.MainActor @preconcurrency final public func reloadImages()
   @_Concurrency.MainActor @preconcurrency final public func forceDisplayUpdate()
   @_Concurrency.MainActor @preconcurrency final public func setValueProvider(_ valueProvider: any DeenIslamSDK.AnyValueProvider, keypath: DeenIslamSDK.AnimationKeypath)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency final public func getValue(for keypath: DeenIslamSDK.AnimationKeypath, atFrame: DeenIslamSDK.AnimationFrameTime?) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency final public func getOriginalValue(for keypath: DeenIslamSDK.AnimationKeypath, atFrame: DeenIslamSDK.AnimationFrameTime?) -> Any?
+  #endif
   @_Concurrency.MainActor @preconcurrency final public func logHierarchyKeypaths()
   @_Concurrency.MainActor @preconcurrency final public func addSubview(_ subview: DeenIslamSDK.AnimationSubview, forLayerAt keypath: DeenIslamSDK.AnimationKeypath)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency final public func convert(_ rect: CoreFoundation.CGRect, toLayerAt keypath: DeenIslamSDK.AnimationKeypath?) -> CoreFoundation.CGRect?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency final public func convert(_ point: CoreFoundation.CGPoint, toLayerAt keypath: DeenIslamSDK.AnimationKeypath?) -> CoreFoundation.CGPoint?
+  #endif
   @_Concurrency.MainActor @preconcurrency final public func setNodeIsEnabled(isEnabled: Swift.Bool, keypath: DeenIslamSDK.AnimationKeypath)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency final public func progressTime(forMarker named: Swift.String) -> DeenIslamSDK.AnimationProgressTime?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency final public func frameTime(forMarker named: Swift.String) -> DeenIslamSDK.AnimationFrameTime?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency final public func durationFrameTime(forMarker named: Swift.String) -> DeenIslamSDK.AnimationFrameTime?
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class AnimationSubview : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 infix operator +| : DefaultPrecedence
 infix operator +- : DefaultPrecedence
 final public class GradientValueProvider {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(block: @escaping DeenIslamSDK.GradientValueProvider.ColorsValueBlock, locations: DeenIslamSDK.GradientValueProvider.ColorLocationsBlock? = nil)
+  #endif
   public init(_ colors: [DeenIslamSDK.LottieColor], locations: [Swift.Double] = [])
   public typealias ColorsValueBlock = (CoreFoundation.CGFloat) -> [DeenIslamSDK.LottieColor]
   public typealias ColorLocationsBlock = (CoreFoundation.CGFloat) -> [Swift.Double]
@@ -1837,8 +2088,8 @@ public struct LottieColor : Swift.Hashable {
   public var b: Swift.Double
   public var a: Swift.Double
   public init(r: Swift.Double, g: Swift.Double, b: Swift.Double, a: Swift.Double, denominator: DeenIslamSDK.ColorFormatDenominator = .One)
-  public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: DeenIslamSDK.LottieColor, b: DeenIslamSDK.LottieColor) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1850,17 +2101,25 @@ public protocol Interpolatable : DeenIslamSDK.AnyInterpolatable {
   func interpolate(to: Self, amount: CoreFoundation.CGFloat) -> Self
 }
 public protocol SpatialInterpolatable : DeenIslamSDK.AnyInterpolatable {
+  #if compiler(>=5.3) && $NonescapableTypes
   func interpolate(to: Self, amount: CoreFoundation.CGFloat, spatialOutTangent: CoreFoundation.CGPoint?, spatialInTangent: CoreFoundation.CGPoint?) -> Self
+  #endif
 }
 public protocol AnyInterpolatable {
+  #if compiler(>=5.3) && $NonescapableTypes
   func _interpolate(to: Self, amount: CoreFoundation.CGFloat, spatialOutTangent: CoreFoundation.CGPoint?, spatialInTangent: CoreFoundation.CGPoint?) -> Self
+  #endif
 }
 extension DeenIslamSDK.Interpolatable {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func _interpolate(to: Self, amount: CoreFoundation.CGFloat, spatialOutTangent _: CoreFoundation.CGPoint?, spatialInTangent _: CoreFoundation.CGPoint?) -> Self
+  #endif
 }
 extension DeenIslamSDK.SpatialInterpolatable {
   public func interpolate(to: Self, amount: CoreFoundation.CGFloat) -> Self
+  #if compiler(>=5.3) && $NonescapableTypes
   public func _interpolate(to: Self, amount: CoreFoundation.CGFloat, spatialOutTangent: CoreFoundation.CGPoint?, spatialInTangent: CoreFoundation.CGPoint?) -> Self
+  #endif
 }
 extension Swift.Double : DeenIslamSDK.Interpolatable {
 }
@@ -1878,7 +2137,9 @@ extension CoreFoundation.CGSize : DeenIslamSDK.Interpolatable {
   public func interpolate(to: CoreFoundation.CGSize, amount: CoreFoundation.CGFloat) -> CoreFoundation.CGSize
 }
 extension CoreFoundation.CGPoint : DeenIslamSDK.SpatialInterpolatable {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func interpolate(to: CoreFoundation.CGPoint, amount: CoreFoundation.CGFloat, spatialOutTangent: CoreFoundation.CGPoint?, spatialInTangent: CoreFoundation.CGPoint?) -> CoreFoundation.CGPoint
+  #endif
 }
 extension DeenIslamSDK.LottieColor : DeenIslamSDK.Interpolatable {
   public func interpolate(to: DeenIslamSDK.LottieColor, amount: CoreFoundation.CGFloat) -> DeenIslamSDK.LottieColor
@@ -1887,24 +2148,40 @@ extension DeenIslamSDK.LottieVector1D : DeenIslamSDK.Interpolatable {
   public func interpolate(to: DeenIslamSDK.LottieVector1D, amount: CoreFoundation.CGFloat) -> DeenIslamSDK.LottieVector1D
 }
 extension DeenIslamSDK.LottieVector2D : DeenIslamSDK.SpatialInterpolatable {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func interpolate(to: DeenIslamSDK.LottieVector2D, amount: CoreFoundation.CGFloat, spatialOutTangent: CoreFoundation.CGPoint?, spatialInTangent: CoreFoundation.CGPoint?) -> DeenIslamSDK.LottieVector2D
+  #endif
 }
 extension DeenIslamSDK.LottieVector3D : DeenIslamSDK.SpatialInterpolatable {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func interpolate(to: DeenIslamSDK.LottieVector3D, amount: CoreFoundation.CGFloat, spatialOutTangent: CoreFoundation.CGPoint?, spatialInTangent: CoreFoundation.CGPoint?) -> DeenIslamSDK.LottieVector3D
+  #endif
 }
 extension Swift.Array : DeenIslamSDK.Interpolatable, DeenIslamSDK.AnyInterpolatable where Element : DeenIslamSDK.Interpolatable {
   public func interpolate(to: [Element], amount: CoreFoundation.CGFloat) -> [Element]
 }
 public class BundleImageProvider : DeenIslamSDK.AnimationImageProvider {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(bundle: Foundation.Bundle, searchPath: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func imageForAsset(asset: DeenIslamSDK.ImageAsset) -> CoreGraphics.CGImage?
+  #endif
   @objc deinit
 }
 extension DeenIslamSDK.LottieAnimationView {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency convenience public init(name: Swift.String, bundle: Foundation.Bundle = Bundle.main, imageProvider: (any DeenIslamSDK.AnimationImageProvider)? = nil, animationCache: (any DeenIslamSDK.AnimationCacheProvider)? = LRUAnimationCache.sharedCache, configuration: DeenIslamSDK.LottieConfiguration = .shared)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency convenience public init(filePath: Swift.String, imageProvider: (any DeenIslamSDK.AnimationImageProvider)? = nil, animationCache: (any DeenIslamSDK.AnimationCacheProvider)? = LRUAnimationCache.sharedCache, configuration: DeenIslamSDK.LottieConfiguration = .shared)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency convenience public init(url: Foundation.URL, imageProvider: (any DeenIslamSDK.AnimationImageProvider)? = nil, closure: @escaping DeenIslamSDK.LottieAnimationView.DownloadClosure, animationCache: (any DeenIslamSDK.AnimationCacheProvider)? = LRUAnimationCache.sharedCache, configuration: DeenIslamSDK.LottieConfiguration = .shared)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency convenience public init(asset name: Swift.String, bundle: Foundation.Bundle = Bundle.main, imageProvider: (any DeenIslamSDK.AnimationImageProvider)? = nil, animationCache: (any DeenIslamSDK.AnimationCacheProvider)? = LRUAnimationCache.sharedCache, configuration: DeenIslamSDK.LottieConfiguration = .shared)
+  #endif
   public typealias DownloadClosure = ((any Swift.Error)?) -> Swift.Void
 }
 public class LRUAnimationCache : DeenIslamSDK.AnimationCacheProvider {
@@ -1912,14 +2189,18 @@ public class LRUAnimationCache : DeenIslamSDK.AnimationCacheProvider {
   public static let sharedCache: DeenIslamSDK.LRUAnimationCache
   public var cacheSize: Swift.Int
   public func clearCache()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func animation(forKey: Swift.String) -> DeenIslamSDK.LottieAnimation?
+  #endif
   public func setAnimation(_ animation: DeenIslamSDK.LottieAnimation, forKey: Swift.String)
   @objc deinit
 }
 public class FilepathImageProvider : DeenIslamSDK.AnimationImageProvider {
   public init(filepath: Swift.String)
   public init(filepath: Foundation.URL)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func imageForAsset(asset: DeenIslamSDK.ImageAsset) -> CoreGraphics.CGImage?
+  #endif
   @objc deinit
 }
 @available(*, deprecated, renamed: "LottieVector1D", message: "`Lottie.Vector1D` has been renamed to `LottieVector1D` for consistency with the new `LottieVector3D` type. This notice will be removed in Lottie 4.0.")
@@ -1927,8 +2208,8 @@ public typealias Vector1D = DeenIslamSDK.LottieVector1D
 public struct LottieVector1D : Swift.Hashable {
   public init(_ value: Swift.Double)
   public let value: Swift.Double
-  public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: DeenIslamSDK.LottieVector1D, b: DeenIslamSDK.LottieVector1D) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1940,14 +2221,16 @@ public struct LottieVector3D : Swift.Hashable {
   public let y: Swift.Double
   public let z: Swift.Double
   public init(x: Swift.Double, y: Swift.Double, z: Swift.Double)
-  public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: DeenIslamSDK.LottieVector3D, b: DeenIslamSDK.LottieVector3D) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
 public protocol AnimationImageProvider {
+  #if compiler(>=5.3) && $NonescapableTypes
   func imageForAsset(asset: DeenIslamSDK.ImageAsset) -> CoreGraphics.CGImage?
+  #endif
 }
 extension UIKit.UIColor {
   public var lottieColorValue: DeenIslamSDK.LottieColor {
@@ -1974,7 +2257,9 @@ final public class SizeValueProvider {
 public typealias AnimationFrameTime = CoreFoundation.CGFloat
 public typealias AnimationProgressTime = CoreFoundation.CGFloat
 public protocol AnimationCacheProvider {
+  #if compiler(>=5.3) && $NonescapableTypes
   func animation(forKey: Swift.String) -> DeenIslamSDK.LottieAnimation?
+  #endif
   func setAnimation(_ animation: DeenIslamSDK.LottieAnimation, forKey: Swift.String)
   func clearCache()
 }
@@ -1987,7 +2272,9 @@ public typealias LottieCompletionBlock = (Swift.Bool) -> Swift.Void
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToWindow()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class DeenIslamVmaxInitializer : ObjectiveC.NSObject {
@@ -2013,11 +2300,15 @@ final public class FloatValueProvider {
   @objc deinit
 }
 public protocol AnimationFontProvider {
+  #if compiler(>=5.3) && $NonescapableTypes
   func fontFor(family: Swift.String, size: CoreFoundation.CGFloat) -> CoreText.CTFont?
+  #endif
 }
 final public class DefaultFontProvider : DeenIslamSDK.AnimationFontProvider {
   public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func fontFor(family: Swift.String, size: CoreFoundation.CGFloat) -> CoreText.CTFont?
+  #endif
   @objc deinit
 }
 @objc final public class CompatibleAnimationKeypath : ObjectiveC.NSObject {
@@ -2029,9 +2320,15 @@ final public class DefaultFontProvider : DeenIslamSDK.AnimationFontProvider {
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class AnimatedButton : DeenIslamSDK.AnimatedControl {
   @_Concurrency.MainActor @preconcurrency override public init(animation: DeenIslamSDK.LottieAnimation, configuration: DeenIslamSDK.LottieConfiguration = .shared)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func beginTracking(_ touch: UIKit.UITouch, with event: UIKit.UIEvent?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func endTracking(_ touch: UIKit.UITouch?, with event: UIKit.UIEvent?)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public var accessibilityTraits: UIKit.UIAccessibilityTraits {
     @objc get
     @objc set
@@ -2051,14 +2348,28 @@ extension DeenIslamSDK.LottieAnimation {
   final public var size: CoreFoundation.CGSize {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func named(_ name: Swift.String, bundle: Foundation.Bundle = Bundle.main, subdirectory: Swift.String? = nil, animationCache: (any DeenIslamSDK.AnimationCacheProvider)? = nil) -> DeenIslamSDK.LottieAnimation?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func filepath(_ filepath: Swift.String, animationCache: (any DeenIslamSDK.AnimationCacheProvider)? = nil) -> DeenIslamSDK.LottieAnimation?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func asset(_ name: Swift.String, bundle: Foundation.Bundle = Bundle.main, animationCache: (any DeenIslamSDK.AnimationCacheProvider)? = nil) -> DeenIslamSDK.LottieAnimation?
+  #endif
   public static func from(data: Foundation.Data, strategy: DeenIslamSDK.DecodingStrategy = LottieConfiguration.shared.decodingStrategy) throws -> DeenIslamSDK.LottieAnimation
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func loadedFrom(url: Foundation.URL, session: Foundation.URLSession = .shared, closure: @escaping DeenIslamSDK.LottieAnimation.DownloadClosure, animationCache: (any DeenIslamSDK.AnimationCacheProvider)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func progressTime(forMarker named: Swift.String) -> DeenIslamSDK.AnimationProgressTime?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func frameTime(forMarker named: Swift.String) -> DeenIslamSDK.AnimationFrameTime?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func durationFrameTime(forMarker named: Swift.String) -> DeenIslamSDK.AnimationFrameTime?
+  #endif
   final public func progressTime(forFrame frameTime: DeenIslamSDK.AnimationFrameTime, clamped: Swift.Bool = true) -> DeenIslamSDK.AnimationProgressTime
   final public func frameTime(forProgress progressTime: DeenIslamSDK.AnimationProgressTime) -> DeenIslamSDK.AnimationFrameTime
   final public func time(forFrame frameTime: DeenIslamSDK.AnimationFrameTime) -> Foundation.TimeInterval
@@ -2084,7 +2395,9 @@ final public class PointValueProvider {
 @objc @_Concurrency.MainActor @preconcurrency open class AnimatedControl : UIKit.UIControl {
   @_Concurrency.MainActor @preconcurrency public init(animation: DeenIslamSDK.LottieAnimation, configuration: DeenIslamSDK.LottieConfiguration = .shared)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open var isEnabled: Swift.Bool {
     @objc get
     @objc set
@@ -2100,10 +2413,18 @@ final public class PointValueProvider {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func beginTracking(_ touch: UIKit.UITouch, with event: UIKit.UIEvent?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func continueTracking(_ touch: UIKit.UITouch, with event: UIKit.UIEvent?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func endTracking(_ touch: UIKit.UITouch?, with event: UIKit.UIEvent?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func cancelTracking(with event: UIKit.UIEvent?)
+  #endif
   @_Concurrency.MainActor @preconcurrency open func animationDidSet()
   @_Concurrency.MainActor @preconcurrency final public let animationView: DeenIslamSDK.LottieAnimationView
   @_Concurrency.MainActor @preconcurrency public var animation: DeenIslamSDK.LottieAnimation? {
@@ -2131,7 +2452,9 @@ extension DeenIslamSDK.IQKeyboardManager {
   }
 }
 public protocol VGPlayerResourceLoaderDelegate : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   func resourceLoader(_ resourceLoader: DeenIslamSDK.VGPlayerResourceLoader, didFailWithError error: (any Swift.Error)?)
+  #endif
 }
 @objc open class VGPlayerResourceLoader : ObjectiveC.NSObject {
   open var url: Foundation.URL {
@@ -2145,7 +2468,9 @@ public protocol VGPlayerResourceLoaderDelegate : AnyObject {
   open func cancel()
 }
 extension DeenIslamSDK.VGPlayerResourceLoader : DeenIslamSDK.VGPlayerResourceLoadingRequestDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func resourceLoadingRequest(_ resourceLoadingRequest: DeenIslamSDK.VGPlayerResourceLoadingRequest, didCompleteWithError error: (any Swift.Error)?)
+  #endif
 }
 public enum YouTubePlayerState : Swift.String {
   case Unstarted
@@ -2154,7 +2479,9 @@ public enum YouTubePlayerState : Swift.String {
   case Paused
   case Buffering
   case Queued
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -2165,7 +2492,9 @@ public enum YouTubePlayerEvents : Swift.String {
   case Ready
   case StateChange
   case PlaybackQualityChange
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -2178,7 +2507,9 @@ public enum YouTubePlaybackQuality : Swift.String {
   case HD720
   case HD1080
   case HighResolution
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -2194,7 +2525,9 @@ extension DeenIslamSDK.YouTubePlayerDelegate {
   public func playerStateChanged(_ videoPlayer: DeenIslamSDK.YouTubePlayerView, playerState: DeenIslamSDK.YouTubePlayerState)
   public func playerQualityChanged(_ videoPlayer: DeenIslamSDK.YouTubePlayerView, playbackQuality: DeenIslamSDK.YouTubePlaybackQuality)
 }
+#if compiler(>=5.3) && $NonescapableTypes
 public func videoIDFromYouTubeURL(_ videoURL: Foundation.URL) -> Swift.String?
+#endif
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class YouTubePlayerView : UIKit.UIView, WebKit.WKNavigationDelegate {
   public typealias YouTubePlayerParameters = [Swift.String : Swift.AnyObject]
   @_Concurrency.MainActor @preconcurrency public var baseURL: Swift.String
@@ -2210,7 +2543,9 @@ public func videoIDFromYouTubeURL(_ videoURL: Foundation.URL) -> Swift.String?
   @_Concurrency.MainActor @preconcurrency open var playerVars: DeenIslamSDK.YouTubePlayerView.YouTubePlayerParameters
   @_Concurrency.MainActor @preconcurrency weak open var delegate: (any DeenIslamSDK.YouTubePlayerDelegate)?
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency open func loadVideoURL(_ videoURL: Foundation.URL)
   @_Concurrency.MainActor @preconcurrency open func loadVideoID(_ videoID: Swift.String)
@@ -2222,8 +2557,12 @@ public func videoIDFromYouTubeURL(_ videoURL: Foundation.URL) -> Swift.String?
   @_Concurrency.MainActor @preconcurrency open func stop()
   @_Concurrency.MainActor @preconcurrency open func clear()
   @_Concurrency.MainActor @preconcurrency open func seekTo(_ seconds: Swift.Float, seekAhead: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open func getDuration(completion: ((Swift.Double?) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open func getCurrentTime(completion: ((Swift.Double?) -> Swift.Void)? = nil)
+  #endif
   @_Concurrency.MainActor @preconcurrency open func previousVideo()
   @_Concurrency.MainActor @preconcurrency open func nextVideo()
   @_Concurrency.MainActor @preconcurrency @objc open func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
@@ -2234,7 +2573,9 @@ public func videoIDFromYouTubeURL(_ videoURL: Foundation.URL) -> Swift.String?
   @objc deinit
 }
 extension DeenIslamSDK.DeenIslamGPSDK {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func logIn(with msisdn: Swift.String, complete: @escaping (Swift.String?, Swift.String?) -> Swift.Void)
+  #endif
   @objc final public func initialize(with nav: UIKit.UINavigationController, delegate: any DeenIslamSDK.DeenIslamSDKNotifier, baseApiUrl: Swift.String, baseServiceUrl: Swift.String, baseResourceUrl: Swift.String, baseGPHomeUrl: Swift.String)
   final public func goto(feature: DeenIslamSDK.AppFeature)
   @objc final public func eventRegister(with event: UIKit.UIEvent)
@@ -2251,7 +2592,9 @@ extension DeenIslamSDK.DeenIslamGPSDK {
     get
     set
   }
+  @available(*, deprecated: 3.0, message: "Use activate().")
   final public func install()
+  @available(*, deprecated: 3.0, message: "Use deactivate().")
   final public func uninstall()
   final public func activate()
   final public func deactivate()
@@ -2263,12 +2606,19 @@ extension DeenIslamSDK.DeenIslamGPSDK {
   final public func update(priority: any DeenIslamSDK.ConstraintPriorityTarget) -> DeenIslamSDK.Constraint
   @discardableResult
   final public func update(priority: DeenIslamSDK.ConstraintPriority) -> DeenIslamSDK.Constraint
+  @available(*, deprecated: 3.0, message: "Use update(offset: ConstraintOffsetTarget) instead.")
   final public func updateOffset(amount: any DeenIslamSDK.ConstraintOffsetTarget)
+  @available(*, deprecated: 3.0, message: "Use update(inset: ConstraintInsetTarget) instead.")
   final public func updateInsets(amount: any DeenIslamSDK.ConstraintInsetTarget)
+  @available(*, deprecated: 3.0, message: "Use update(priority: ConstraintPriorityTarget) instead.")
   final public func updatePriority(amount: any DeenIslamSDK.ConstraintPriorityTarget)
+  @available(*, obsoleted: 3.0, message: "Use update(priority: ConstraintPriorityTarget) instead.")
   final public func updatePriorityRequired()
+  @available(*, obsoleted: 3.0, message: "Use update(priority: ConstraintPriorityTarget) instead.")
   final public func updatePriorityHigh()
+  @available(*, obsoleted: 3.0, message: "Use update(priority: ConstraintPriorityTarget) instead.")
   final public func updatePriorityMedium()
+  @available(*, obsoleted: 3.0, message: "Use update(priority: ConstraintPriorityTarget) instead.")
   final public func updatePriorityLow()
   @objc deinit
 }
@@ -2302,14 +2652,18 @@ public struct ConstraintViewDSL : DeenIslamSDK.ConstraintAttributesDSL {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var target: Swift.AnyObject? {
     get
   }
+  #endif
 }
 public enum VGPlayerCacheActionType : Swift.Int {
   case local
   case remote
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -2442,36 +2796,54 @@ extension UIKit.UIViewController {
   }
 }
 extension DeenIslamSDK.LNPopupItem {
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 15, *)
   @_Concurrency.MainActor @preconcurrency public var attributedTitle: Foundation.AttributedString? {
     get
     set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 15, *)
   @_Concurrency.MainActor @preconcurrency public var attributedSubtitle: Foundation.AttributedString? {
     get
     set
   }
+  #endif
 }
 extension DeenIslamSDK.LNPopupBarAppearance {
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 15, *)
   @_Concurrency.MainActor @preconcurrency public var titleTextAttributes: Foundation.AttributeContainer? {
     get
     set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 15, *)
   @_Concurrency.MainActor @preconcurrency public var subtitleTextAttributes: Foundation.AttributeContainer? {
     get
     set
   }
+  #endif
 }
 extension UIKit.UIViewController {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func presentPopupBar(with contentViewController: UIKit.UIViewController, openPopup: Swift.Bool = false, animated: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Use presentPopupBar(with:openPopup:animated:completion:) instead.")
   @_Concurrency.MainActor @preconcurrency public func presentPopupBar(withContentViewController contentViewController: UIKit.UIViewController, openPopup: Swift.Bool = false, animated: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func openPopup(animated: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func closePopup(animated: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func dismissPopupBar(animated: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  #endif
 }
 public protocol VGPlayerViewDelegate : AnyObject {
   func vgPlayerView(_ playerView: DeenIslamSDK.VGPlayerView, willFullscreen isFullscreen: Swift.Bool)
@@ -2486,7 +2858,9 @@ extension DeenIslamSDK.VGPlayerViewDelegate {
 public enum VGPlayerViewPanGestureDirection : Swift.Int {
   case vertical
   case horizontal
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -2527,7 +2901,9 @@ public enum VGPlayerViewPanGestureDirection : Swift.Int {
   @_Concurrency.MainActor @preconcurrency open var panGesture: UIKit.UIPanGestureRecognizer
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc convenience dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
   @objc deinit
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency open func setvgPlayer(vgPlayer: DeenIslamSDK.VGPlayer)
@@ -2561,7 +2937,9 @@ extension DeenIslamSDK.VGPlayerView {
   case bySubviews
   case byTag
   case byPosition
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   @available(iOSApplicationExtension, unavailable)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -2573,7 +2951,9 @@ extension DeenIslamSDK.VGPlayerView {
   case `default`
   case alwaysHide
   case alwaysShow
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   @available(iOSApplicationExtension, unavailable)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -2585,7 +2965,9 @@ extension DeenIslamSDK.VGPlayerView {
   case `default`
   case enabled
   case disabled
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   @available(iOSApplicationExtension, unavailable)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -2594,7 +2976,9 @@ extension DeenIslamSDK.VGPlayerView {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOSApplicationExtension, unavailable)
 @objc @_Concurrency.MainActor @preconcurrency open class IQToolbar : UIKit.UIToolbar, UIKit.UIInputViewAudioFeedback {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency open var previousBarButton: DeenIslamSDK.IQBarButtonItem {
     @objc get
     @objc set(newValue)
@@ -2616,10 +3000,12 @@ extension DeenIslamSDK.VGPlayerView {
     @objc set(newValue)
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func sizeThatFits(_ size: CoreFoundation.CGSize) -> CoreFoundation.CGSize
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open var tintColor: UIKit.UIColor! {
     @objc get
     @objc set
   }
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency @objc open var enableInputClicksWhenVisible: Swift.Bool {
     @objc get
@@ -2629,7 +3015,9 @@ extension DeenIslamSDK.VGPlayerView {
 public protocol VGPlayerDownloadActionWorkerDelegate : ObjectiveC.NSObjectProtocol {
   func downloadActionWorker(_ actionWorker: DeenIslamSDK.VGPlayerDownloadActionWorker, didReceive response: Foundation.URLResponse)
   func downloadActionWorker(_ actionWorker: DeenIslamSDK.VGPlayerDownloadActionWorker, didReceive data: Foundation.Data, isLocal: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
   func downloadActionWorker(_ actionWorker: DeenIslamSDK.VGPlayerDownloadActionWorker, didFinishWithError error: (any Swift.Error)?)
+  #endif
 }
 @objc open class VGPlayerDownloadActionWorker : ObjectiveC.NSObject {
   open var actions: [DeenIslamSDK.VGPlayerCacheAction] {
@@ -2660,7 +3048,9 @@ public protocol VGPlayerDownloadActionWorkerDelegate : ObjectiveC.NSObjectProtoc
   open func cancel()
 }
 extension DeenIslamSDK.VGPlayerDownloadActionWorker : DeenIslamSDK.VGPlayerDownloadeURLSessionManagerDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWithError error: (any Swift.Error)?)
+  #endif
   public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive data: Foundation.Data)
   public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive response: Foundation.URLResponse, completionHandler: @escaping (Foundation.URLSession.ResponseDisposition) -> Swift.Void)
 }
@@ -2668,7 +3058,9 @@ public enum subtitlesFormat : Swift.String {
   case unknown
   case srt
   case ass
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -2691,7 +3083,9 @@ open class VGSubtitles {
     get
   }
   public init(filePath: Foundation.URL, encoding: Swift.String.Encoding = String.Encoding.utf8)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func search(for time: Foundation.TimeInterval) -> DeenIslamSDK.subtitles?
+  #endif
   @objc deinit
 }
 extension UIKit.UIControl.State : Swift.Hashable {
@@ -2712,14 +3106,18 @@ public struct ConstraintLayoutGuideDSL : DeenIslamSDK.ConstraintAttributesDSL {
   public func remakeConstraints(_ closure: (_ make: DeenIslamSDK.ConstraintMaker) -> Swift.Void)
   public func updateConstraints(_ closure: (_ make: DeenIslamSDK.ConstraintMaker) -> Swift.Void)
   public func removeConstraints()
+  #if compiler(>=5.3) && $NonescapableTypes
   public var target: Swift.AnyObject? {
     get
   }
+  #endif
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class VGPlayerSlider : UIKit.UISlider {
   @_Concurrency.MainActor @preconcurrency open var progressView: UIKit.UIProgressView
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func thumbRect(forBounds bounds: CoreFoundation.CGRect, trackRect rect: CoreFoundation.CGRect, value: Swift.Float) -> CoreFoundation.CGRect
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func trackRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
   @_Concurrency.MainActor @preconcurrency open func setProgress(_ progress: Swift.Float, animated: Swift.Bool)
@@ -2792,6 +3190,7 @@ extension CoreFoundation.CGFloat : DeenIslamSDK.ConstraintMultiplierTarget {
   public var centerY: DeenIslamSDK.ConstraintMakerExtendable {
     get
   }
+  @available(*, deprecated: 3.0, message: "Use lastBaseline instead")
   public var baseline: DeenIslamSDK.ConstraintMakerExtendable {
     get
   }
@@ -2904,7 +3303,9 @@ public enum VGPlayerMediaFormat : Swift.String {
   case mov
   case m4v
   case error
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -2926,12 +3327,16 @@ public struct VGPlayerDownloaderStatus {
 public protocol VGPlayerDownloaderDelegate : AnyObject {
   func downloader(_ downloader: DeenIslamSDK.VGPlayerDownloader, didReceiveResponse response: Foundation.URLResponse)
   func downloader(_ downloader: DeenIslamSDK.VGPlayerDownloader, didReceiveData data: Foundation.Data)
+  #if compiler(>=5.3) && $NonescapableTypes
   func downloader(_ downloader: DeenIslamSDK.VGPlayerDownloader, didFinishedWithError error: (any Swift.Error)?)
+  #endif
 }
 extension DeenIslamSDK.VGPlayerDownloaderDelegate {
   public func downloader(_ downloader: DeenIslamSDK.VGPlayerDownloader, didReceiveResponse response: Foundation.URLResponse)
   public func downloader(_ downloader: DeenIslamSDK.VGPlayerDownloader, didReceiveData data: Foundation.Data)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func downloader(_ downloader: DeenIslamSDK.VGPlayerDownloader, didFinishedWithError error: (any Swift.Error)?)
+  #endif
 }
 @objc open class VGPlayerDownloader : ObjectiveC.NSObject {
   open var url: Foundation.URL {
@@ -2948,7 +3353,9 @@ extension DeenIslamSDK.VGPlayerDownloaderDelegate {
   open func invalidateAndCancel()
 }
 extension DeenIslamSDK.VGPlayerDownloader : DeenIslamSDK.VGPlayerDownloadActionWorkerDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func downloadActionWorker(_ actionWorker: DeenIslamSDK.VGPlayerDownloadActionWorker, didFinishWithError error: (any Swift.Error)?)
+  #endif
   public func downloadActionWorker(_ actionWorker: DeenIslamSDK.VGPlayerDownloadActionWorker, didReceive data: Foundation.Data, isLocal: Swift.Bool)
   public func downloadActionWorker(_ actionWorker: DeenIslamSDK.VGPlayerDownloadActionWorker, didReceive response: Foundation.URLResponse)
 }
@@ -2988,12 +3395,24 @@ extension UIKit.UILayoutSupport {
 }
 @available(iOSApplicationExtension, unavailable)
 @objc extension UIKit.UIImage {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func keyboardLeftImage() -> UIKit.UIImage?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func keyboardRightImage() -> UIKit.UIImage?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func keyboardUpImage() -> UIKit.UIImage?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func keyboardDownImage() -> UIKit.UIImage?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func keyboardPreviousImage() -> UIKit.UIImage?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func keyboardNextImage() -> UIKit.UIImage?
+  #endif
 }
 @available(iOSApplicationExtension, unavailable)
 @objc extension UIKit.UIView {
@@ -3004,32 +3423,74 @@ extension UIKit.UILayoutSupport {
     @objc get
     @objc set(newValue)
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public var toolbarPlaceholder: Swift.String? {
     @objc get
     @objc set(newValue)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public var drawingToolbarPlaceholder: Swift.String? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func addKeyboardToolbarWithTarget(target: Swift.AnyObject?, titleText: Swift.String?, rightBarButtonConfiguration: DeenIslamSDK.IQBarButtonItemConfiguration?, previousBarButtonConfiguration: DeenIslamSDK.IQBarButtonItemConfiguration? = nil, nextBarButtonConfiguration: DeenIslamSDK.IQBarButtonItemConfiguration? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func addDoneOnKeyboardWithTarget(_ target: Swift.AnyObject?, action: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func addDoneOnKeyboardWithTarget(_ target: Swift.AnyObject?, action: ObjectiveC.Selector, titleText: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func addRightButtonOnKeyboardWithImage(_ image: UIKit.UIImage, target: Swift.AnyObject?, action: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func addRightButtonOnKeyboardWithImage(_ image: UIKit.UIImage, target: Swift.AnyObject?, action: ObjectiveC.Selector, titleText: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func addRightButtonOnKeyboardWithText(_ text: Swift.String, target: Swift.AnyObject?, action: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func addRightButtonOnKeyboardWithText(_ text: Swift.String, target: Swift.AnyObject?, action: ObjectiveC.Selector, titleText: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func addCancelDoneOnKeyboardWithTarget(_ target: Swift.AnyObject?, cancelAction: ObjectiveC.Selector, doneAction: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func addRightLeftOnKeyboardWithTarget(_ target: Swift.AnyObject?, leftButtonTitle: Swift.String, rightButtonTitle: Swift.String, leftButtonAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func addRightLeftOnKeyboardWithTarget(_ target: Swift.AnyObject?, leftButtonImage: UIKit.UIImage, rightButtonImage: UIKit.UIImage, leftButtonAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func addCancelDoneOnKeyboardWithTarget(_ target: Swift.AnyObject?, cancelAction: ObjectiveC.Selector, doneAction: ObjectiveC.Selector, titleText: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func addRightLeftOnKeyboardWithTarget(_ target: Swift.AnyObject?, leftButtonTitle: Swift.String, rightButtonTitle: Swift.String, leftButtonAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, titleText: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func addRightLeftOnKeyboardWithTarget(_ target: Swift.AnyObject?, leftButtonImage: UIKit.UIImage, rightButtonImage: UIKit.UIImage, leftButtonAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, titleText: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func addPreviousNextDoneOnKeyboardWithTarget(_ target: Swift.AnyObject?, previousAction: ObjectiveC.Selector, nextAction: ObjectiveC.Selector, doneAction: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func addPreviousNextRightOnKeyboardWithTarget(_ target: Swift.AnyObject?, rightButtonImage: UIKit.UIImage, previousAction: ObjectiveC.Selector, nextAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func addPreviousNextRightOnKeyboardWithTarget(_ target: Swift.AnyObject?, rightButtonTitle: Swift.String, previousAction: ObjectiveC.Selector, nextAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func addPreviousNextDoneOnKeyboardWithTarget(_ target: Swift.AnyObject?, previousAction: ObjectiveC.Selector, nextAction: ObjectiveC.Selector, doneAction: ObjectiveC.Selector, titleText: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func addPreviousNextRightOnKeyboardWithTarget(_ target: Swift.AnyObject?, rightButtonImage: UIKit.UIImage, previousAction: ObjectiveC.Selector, nextAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, titleText: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func addPreviousNextRightOnKeyboardWithTarget(_ target: Swift.AnyObject?, rightButtonTitle: Swift.String, previousAction: ObjectiveC.Selector, nextAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, titleText: Swift.String?)
+  #endif
 }
 public protocol ConstraintRelatableTarget {
 }
@@ -3057,7 +3518,9 @@ extension UIKit.UIView : DeenIslamSDK.ConstraintRelatableTarget {
 extension UIKit.UILayoutGuide : DeenIslamSDK.ConstraintRelatableTarget {
 }
 extension UIKit.UIButton {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func hitTest(_ point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
+  #endif
 }
 @_hasMissingDesignatedInitializers final public class RevocationTrustEvaluator {
   public struct Options : Swift.OptionSet {
@@ -3181,9 +3644,11 @@ extension Foundation.NSNotification.Name {
   public static func cacheDirectory() -> Swift.String
   public static func cacheFilePath(for url: Foundation.URL) -> Swift.String
   public static func cacheConfiguration(forURL url: Foundation.URL) -> DeenIslamSDK.VGPlayerCacheMediaConfiguration
-  open func calculateCacheSize(completion handler: @escaping ((_ size: Swift.UInt) -> ()))
+  open func calculateCacheSize(completion handler: @escaping (_ size: Swift.UInt) -> ())
   open func cleanAllCache()
+  #if compiler(>=5.3) && $NonescapableTypes
   open func cleanOldFiles(completion handler: (() -> ())? = nil)
+  #endif
   @objc deinit
 }
 public enum DeenError : Swift.Error {
@@ -3234,8 +3699,10 @@ extension DeenIslamSDK.IQKeyboardReturnKeyHandler : UIKit.UITextViewDelegate {
   @_Concurrency.MainActor @preconcurrency @objc final public func textView(_ aTextView: UIKit.UITextView, shouldInteractWith URL: Foundation.URL, in characterRange: Foundation.NSRange) -> Swift.Bool
   @available(iOS, deprecated: 10.0)
   @_Concurrency.MainActor @preconcurrency @objc final public func textView(_ aTextView: UIKit.UITextView, shouldInteractWith textAttachment: UIKit.NSTextAttachment, in characterRange: Foundation.NSRange) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 16.0, *)
   @_Concurrency.MainActor @preconcurrency @objc final public func textView(_ aTextView: UIKit.UITextView, editMenuForTextIn range: Foundation.NSRange, suggestedActions: [UIKit.UIMenuElement]) -> UIKit.UIMenu?
+  #endif
   @available(iOS 16.0, *)
   @_Concurrency.MainActor @preconcurrency @objc final public func textView(_ aTextView: UIKit.UITextView, willPresentEditMenuWith animator: any UIKit.UIEditMenuInteractionAnimating)
   @available(iOS 16.0, *)
@@ -3279,11 +3746,13 @@ extension Foundation.URLComponents : DeenIslamSDK.URLConvertible {
   case IslamicCalender
   case LivePodcast
   case AllahNames
-  case DeenAI
+  case deenai
   case eidemilad
   case ijtema
-  case deenAsk
+  case deen_jiggasa
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -3291,9 +3760,11 @@ extension Foundation.URLComponents : DeenIslamSDK.URLConvertible {
 }
 @available(iOS 8.0, *)
 public struct ConstraintLayoutSupportDSL : DeenIslamSDK.ConstraintDSL {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var target: Swift.AnyObject? {
     get
   }
+  #endif
   public var top: DeenIslamSDK.ConstraintItem {
     get
   }

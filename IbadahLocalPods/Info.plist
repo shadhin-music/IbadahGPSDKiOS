@@ -21,13 +21,7 @@
 			</array>
 		</dict>
 	</dict>
-	<key>NSCalendarsUsageDescription</key>
-	<string>need access</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>need location</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>use description</string>
-    <key>NSUserTrackingUsageDescription</key>
-    <string>This identifier will be used to deliver more relevant ads.</string>
+	<key>UIDesignRequiresCompatibility</key>
+	<true/>
 </dict>
 </plist>

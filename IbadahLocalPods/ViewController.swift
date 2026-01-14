@@ -124,6 +124,7 @@ extension ViewController: DeenIslamSDKNotifier {
         }
         
         func getToken(completion: @escaping (String) -> Void) {
+            
             DispatchQueue.main.async { [weak self] in
                 DeenIslamGPSDK.shared.logIn(with: "8801738609138") { token, error in
                     if let token = token {
