@@ -3750,6 +3750,7 @@ extension Foundation.URLComponents : DeenIslamSDK.URLConvertible {
   case eidemilad
   case ijtema
   case deen_jiggasa
+  case islamicBook
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
   #endif

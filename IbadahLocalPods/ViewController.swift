@@ -119,7 +119,10 @@ extension ViewController: DeenIslamSDKNotifier {
         
         func onDeenTriggerEvent(event_name: String, param: String) {
             DispatchQueue.main.async {
-                print("Event received: \(event_name) with params: \(param)")
+                AlertToastHelper.shared.showToast(
+                    message: "event: \(event_name) param: \(param)",
+                    type: .error
+                )
             }
         }
         
