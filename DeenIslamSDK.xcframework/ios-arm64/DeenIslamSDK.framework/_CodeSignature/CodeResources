@@ -38,7 +38,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		V75Lg2GQAgdWbuBMe/KoOqMrfPk=
+		/QWkoZdwSk1c9f1aKizi2O0Vf+8=
 		</data>
 		<key>AutoRenewOffCell.nib</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>BillboardVmaxAdPagerCell.nib</key>
 		<data>
-		wu95UxnfL4NBq/u3tUg6YjZNAq0=
+		pOfNFZ/NZgbpvJmiUNqH7O3vUlo=
 		</data>
 		<key>BookVC.nib</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>CarouselDiscoveryCard.nib</key>
 		<data>
-		Pf6gfq+YD1BARaJxtiHcp5fip8I=
+		zJ9eS3a9k9aeXJkhPYgV6Su0egA=
 		</data>
 		<key>CatFooter.nib</key>
 		<data>
@@ -276,6 +276,10 @@
 		<data>
 		k+ILBeWYQ2adw5hAb3L+z9f8qjw=
 		</data>
+		<key>FastTrackerVC.nib</key>
+		<data>
+		ijLKPu6TZzHu9zzzpusZkvu6iPY=
+		</data>
 		<key>FavCell.nib</key>
 		<data>
 		axro7oxElz9Tprza31nfXVsVJt4=
@@ -430,7 +434,7 @@
 		</data>
 		<key>HajjSingleCardCell.nib</key>
 		<data>
-		dBhnui2BhayFsvuzlJ/XzcLSx5E=
+		kO7OX5zcTWM+Ie5FVhYCa/NTi2k=
 		</data>
 		<key>HeaderEvent.nib</key>
 		<data>
@@ -438,7 +442,7 @@
 		</data>
 		<key>Headers/DeenIslamSDK-Swift.h</key>
 		<data>
-		74pr2BAJFcS25AwvlpVLFG4KmGQ=
+		6sAhaN1K4Ztu1TdqLGjbXDlNZC4=
 		</data>
 		<key>Headers/DeenIslamSDK.h</key>
 		<data>
@@ -638,7 +642,7 @@
 		</data>
 		<key>HomeVmaxAdCell.nib</key>
 		<data>
-		lzxGQARAKShIg3GKjaRe45BNcSc=
+		4lYrmeywjpmieOCyE2lR749EQS0=
 		</data>
 		<key>HomeYTPlayer.nib</key>
 		<data>
@@ -778,7 +782,7 @@
 		</data>
 		<key>MinimalVisualCard.nib</key>
 		<data>
-		abF8FDrU3cBc5ePGNI1d3ausfoE=
+		thsPDDoIcyceQpXSNV3E5r+LmQE=
 		</data>
 		<key>MoccaModinaLiveVC.nib</key>
 		<data>
@@ -798,23 +802,23 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		cKN5a0ZvbSAJc292dPeoyh2ytu8=
+		eYuu2K0JXrYZJVXarOACb5ItXww=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		q5VCm4id8z/zx/D8rwUMMx/XrWg=
+		WrBj4xHDrYsOMRj5ZEJiyitaKk4=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		C3vSSezGJuu2Do+kEkD0+s8FWMU=
+		juHv8hDN9E+T+JvhfR8CMS0nV6E=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		q5VCm4id8z/zx/D8rwUMMx/XrWg=
+		WrBj4xHDrYsOMRj5ZEJiyitaKk4=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		20rVzvHSxBc+fugIfTAfoCzPhvo=
+		roJirCbROcnjT93a2j7Q8gsqCIQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -866,7 +870,7 @@
 		</data>
 		<key>NamazLearningVisualVC.nib</key>
 		<data>
-		w4CF3HEzxR4CbAzeD2mC/OhTW9I=
+		ZiAqRk9ML7K/y9sHE10bv7z+Dmk=
 		</data>
 		<key>NameCard.nib/objects-14.0+.nib</key>
 		<data>
@@ -959,6 +963,10 @@
 		<key>PodcastPlayerView.nib</key>
 		<data>
 		CZoFh8LwNxBsiQ8csv8INDIR2K8=
+		</data>
+		<key>PodcastUrlPlayer.nib</key>
+		<data>
+		XP1zu/ztWdMsBlvodA6rTcQtKBQ=
 		</data>
 		<key>PodcastVC.nib</key>
 		<data>
@@ -1190,7 +1198,7 @@
 		</data>
 		<key>SingleImageCell.nib</key>
 		<data>
-		kynHPX55rIKjqX0KNa1/ScqUsDI=
+		EDwUaD4NzW+/YHt5QZkfcH49OvU=
 		</data>
 		<key>SubscriptionHeader.nib</key>
 		<data>
@@ -1446,6 +1454,10 @@
 		<data>
 		wVsf2l1Iu25vPMruuKdbx3OtByI=
 		</data>
+		<key>megaBanner.nib</key>
+		<data>
+		13vy+JJJXgUEkK+JP6bVzIEHc4g=
+		</data>
 		<key>poshurHut.nib</key>
 		<data>
 		4eC3kENO8BrQq75HO+N6NraOB28=
@@ -1517,7 +1529,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rKH9yPHeHQQmu52JxxODmvZyXttYyrbYzDNJ/kz7G6g=
+			3KE7rS4HHXmsMXDBfRxADCt2e5Ugtw672f/S7t22RPk=
 			</data>
 		</dict>
 		<key>AutoRenewOffCell.nib</key>
@@ -1538,7 +1550,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rbX3YYQ+Dp80KbmW4zmmGGwCF/qHbK471JM+JIphCkc=
+			l6pbKnH3PBI6z7k1CO0IkG2wQfgEy7R0hul5Uovthf4=
 			</data>
 		</dict>
 		<key>BookVC.nib</key>
@@ -1622,7 +1634,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9/3NtSGz71aBpc2fjnkQs0XMmb4Gqb/jQuCYeTYmnRU=
+			VNMXFmGNe8MmnRLZ9XcLh50u8A5/cz4QHbJgqieNnFg=
 			</data>
 		</dict>
 		<key>CatFooter.nib</key>
@@ -1933,6 +1945,13 @@
 			cMZecO6D9wx0t5OWOVB1QGtmeoE/PhrgkjIYH60FxUc=
 			</data>
 		</dict>
+		<key>FastTrackerVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QeWF+3H3r5/Dud2PZ8NhzXovNrn0OdPgDg7Vguhwtms=
+			</data>
+		</dict>
 		<key>FavCell.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -2203,7 +2222,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rVooH1q+HMyY/g2zrdAP0qseS0pVfdisc0LUk5i83js=
+			a3d/JC2vH3ZUY+dL3PuT4IP/aE8F93MdZvqwvwDAT0Q=
 			</data>
 		</dict>
 		<key>HeaderEvent.nib</key>
@@ -2217,7 +2236,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			H6aLF/HEnaYYvIlnhlW6B9g5z6mkrkF41Nr53HABxAI=
+			7Jd9MccatikXWAk46jDU/qRvuGNYYUbcQCtb0Nckvb0=
 			</data>
 		</dict>
 		<key>Headers/DeenIslamSDK.h</key>
@@ -2567,7 +2586,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KpsPYBhw8D7LsnFssjEFiyFtosAC5oWKLivHmFvkqxs=
+			BX+h4LKEyt4GU9DY2eeb2Q4IvTTyyA49Nr5RSCydh8Y=
 			</data>
 		</dict>
 		<key>HomeYTPlayer.nib</key>
@@ -2805,7 +2824,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2zD8b9XFoMs7iSjFGT1ZDtR9m8XdFfoWsaSAL+kq2NM=
+			+k5tQRzDvZnuDvTcL6vjNyVLH2SoAnQEa8dlnrU1O8k=
 			</data>
 		</dict>
 		<key>MoccaModinaLiveVC.nib</key>
@@ -2840,35 +2859,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/u39y2MPVO1iz8y8MdWAMbIev0GK6M7vCXmPDDCLvhU=
+			D39Rwwb0KBAFKlRtVwOhLHmRWe7J8vCN+xcSlhI8I6g=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wjaZ+2H1OUiHphF2jujcJ3AAh8vEyzl3ajAr850MIgo=
+			WY23GMqRljf+NGKvzMDgaVTivgeQUNpcXSfrFXDtmlI=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TE7oYal+n1GV4zqXzCMjoD/79wA5nTWpCZsAtQGHF0Q=
+			UzC1BIgTAnC804HBpiGDQyglqr9zlFJPrIW+y596UqU=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wjaZ+2H1OUiHphF2jujcJ3AAh8vEyzl3ajAr850MIgo=
+			WY23GMqRljf+NGKvzMDgaVTivgeQUNpcXSfrFXDtmlI=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nEyjh3eQ6EvUvizzTl6IDW/g7lVryFhqXmdgtuLQUJM=
+			dW2zRdiGU6myC2PrPfQvOBUiNcXIPr10vfi6P+hAzJ8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -2959,7 +2978,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0EP6ybCVXLydz9lTk+FuZXCgvKaHSCVdI+3L670/mWQ=
+			qzgqlB5WEtMLhHpLxiG+LGC1Ez/in061ssC2uIApjw0=
 			</data>
 		</dict>
 		<key>NameCard.nib/objects-14.0+.nib</key>
@@ -3121,6 +3140,13 @@
 			<key>hash2</key>
 			<data>
 			dK61928UDPS3/putsJUuxzMrP+t3MUSHQbvAYu+OjEw=
+			</data>
+		</dict>
+		<key>PodcastUrlPlayer.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TWQDSB8WKUDsbsOU6hrAlKe2QhVHi1l69+H889dIU+0=
 			</data>
 		</dict>
 		<key>PodcastVC.nib</key>
@@ -3526,7 +3552,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tfo668mqbzzzQzRSn4CjX/JUZ3btsE3v5rkiqLjKGfU=
+			Rghzj/fzgEBudp6CpW3wsadbs8G9t3Wn2BMCJTuoj+I=
 			</data>
 		</dict>
 		<key>SubscriptionHeader.nib</key>
@@ -3958,6 +3984,13 @@
 			<key>hash2</key>
 			<data>
 			TI8ALnU472NRrGdusPLBcI7NF/b4pfxKGdvI6vTd3/U=
+			</data>
+		</dict>
+		<key>megaBanner.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BZJN/CkU+tQgEiTwaUjAwQFpdpS5H6KP9K4D/ghsCdo=
 			</data>
 		</dict>
 		<key>poshurHut.nib</key>

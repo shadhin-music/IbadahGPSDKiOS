@@ -30,9 +30,9 @@ import UIKit
 import UniformTypeIdentifiers
 import UserNotifications
 import Vmax
+import VmaxDisplayHelper
 import VmaxNativeHelper
 import VmaxOM
-import VmaxVideoHelper
 import WebKit
 import _Concurrency
 import _StringProcessing
@@ -3750,6 +3750,7 @@ extension Foundation.URLComponents : DeenIslamSDK.URLConvertible {
   case eidemilad
   case ijtema
   case deen_jiggasa
+  case ramadanPlanner
   case islamicBook
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
