@@ -61,7 +61,7 @@ class ViewController: UIViewController{
                     baseApiUrl: "",        // Replace with actual URL
                     baseServiceUrl: "", // Replace with actual URL
                     baseResourceUrl: "", // Replace with actual URL
-                    baseGPHomeUrl: ""    // Replace with actual URL
+                    baseGPHomeUrl: "https://mygp-home.deenislamic.com/"    // Replace with actual URL
                 )
                 
                 DeenIslamVmaxInitializer.shared.initialize(accountKey: "grameenphone", appId: "4408990", privateKey: "MdNu7w/hwDiLqeXJ/txC+wVoojWIW/HQ+d6sAhcJXNA=", keyId: "fe7144aad27afba69d4c7090046d7c2a875c9e10b0a36d7969c882b3069e02e8", delegate: self)
