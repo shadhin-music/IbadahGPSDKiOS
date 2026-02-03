@@ -14,10 +14,18 @@ class ViewController: UIViewController{
     
     private var cView: UIView!
         private var ibadahHomeView: IbadahHome!
+
+        // MARK: - Bottom input UI
+        private let bottomBar = UIView()
+        private let bottomTextView = UITextView()
+        private let bottomButton = UIButton(type: .system)
+        private var bottomBarBottomConstraint: NSLayoutConstraint?
         
         override func viewDidLoad() {
             super.viewDidLoad()
+            setupBottomInputBar()
             setupUI()
+            setupKeyboardHandling()
             initializeSDK()
             UserDefaults.standard.set("en", forKey: "language")
         }
@@ -39,8 +47,126 @@ class ViewController: UIViewController{
                 cView.topAnchor.constraint(equalTo: view.topAnchor),
                 cView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
                 cView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-                cView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+                // IMPORTANT: cView stays above the bottom bar
+                cView.bottomAnchor.constraint(equalTo: bottomBar.topAnchor)
             ])
+        }
+
+        private func setupBottomInputBar() {
+            bottomBar.translatesAutoresizingMaskIntoConstraints = false
+            bottomBar.backgroundColor = .secondarySystemBackground
+            bottomBar.layer.borderWidth = 0.5
+            bottomBar.layer.borderColor = UIColor.separator.cgColor
+            view.addSubview(bottomBar)
+
+            bottomTextView.translatesAutoresizingMaskIntoConstraints = false
+            bottomTextView.font = .systemFont(ofSize: 15)
+            bottomTextView.isScrollEnabled = false
+            bottomTextView.textContainerInset = UIEdgeInsets(top: 10, left: 8, bottom: 10, right: 8)
+            bottomTextView.layer.cornerRadius = 10
+            bottomTextView.layer.borderWidth = 0.5
+            bottomTextView.layer.borderColor = UIColor.separator.cgColor
+            bottomTextView.backgroundColor = .systemBackground
+            bottomBar.addSubview(bottomTextView)
+
+            bottomButton.translatesAutoresizingMaskIntoConstraints = false
+            bottomButton.setTitle("Send", for: .normal)
+            bottomButton.titleLabel?.font = .systemFont(ofSize: 16, weight: .semibold)
+            bottomButton.addTarget(self, action: #selector(bottomSendTapped), for: .touchUpInside)
+            bottomBar.addSubview(bottomButton)
+
+            // Done button on keyboard
+            addDoneButtonOnKeyboard()
+
+            // Bottom bar constraints
+            bottomBarBottomConstraint = bottomBar.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            bottomBarBottomConstraint?.isActive = true
+
+            NSLayoutConstraint.activate([
+                bottomBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                bottomBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+
+                bottomTextView.topAnchor.constraint(equalTo: bottomBar.topAnchor, constant: 10),
+                bottomTextView.leadingAnchor.constraint(equalTo: bottomBar.leadingAnchor, constant: 12),
+                bottomTextView.bottomAnchor.constraint(equalTo: bottomBar.bottomAnchor, constant: -10),
+                bottomTextView.heightAnchor.constraint(greaterThanOrEqualToConstant: 44),
+
+                bottomButton.leadingAnchor.constraint(equalTo: bottomTextView.trailingAnchor, constant: 10),
+                bottomButton.trailingAnchor.constraint(equalTo: bottomBar.trailingAnchor, constant: -12),
+                bottomButton.centerYAnchor.constraint(equalTo: bottomTextView.centerYAnchor),
+                bottomButton.widthAnchor.constraint(equalToConstant: 70)
+            ])
+        }
+
+        private func addDoneButtonOnKeyboard() {
+            let toolbar = UIToolbar()
+            toolbar.sizeToFit()
+
+            let flex = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+            let done = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(doneTapped))
+            toolbar.items = [flex, done]
+
+            bottomTextView.inputAccessoryView = toolbar
+        }
+
+        @objc private func doneTapped() {
+            view.endEditing(true)
+        }
+
+        @objc private func bottomSendTapped() {
+            let text = bottomTextView.text.trimmingCharacters(in: .whitespacesAndNewlines)
+            guard !text.isEmpty else { return }
+
+            print("Bottom message: \(text)")
+            DeenIslamGPSDK.shared.openFromRC(code: text)
+        }
+
+        private func setupKeyboardHandling() {
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame(_:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        }
+
+        @objc private func keyboardWillChangeFrame(_ notification: Notification) {
+            guard
+                let info = notification.userInfo,
+                let endFrame = (info[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue,
+                let duration = (info[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue,
+                let curveRaw = (info[UIResponder.keyboardAnimationCurveUserInfoKey] as? NSNumber)?.uintValue
+            else { return }
+
+            // Convert keyboard frame to this view's coordinate system
+            let endFrameInView = view.convert(endFrame, from: nil)
+            let keyboardHeight = max(0, view.bounds.maxY - endFrameInView.minY)
+
+            // When keyboard is shown, we move the bottom bar up by keyboard height (minus safe area).
+            let safeBottom = view.safeAreaInsets.bottom
+            bottomBarBottomConstraint?.constant = -(keyboardHeight - safeBottom)
+
+            let options = UIView.AnimationOptions(rawValue: curveRaw << 16)
+            UIView.animate(withDuration: duration, delay: 0, options: options) {
+                self.view.layoutIfNeeded()
+            }
+        }
+
+        @objc private func keyboardWillHide(_ notification: Notification) {
+            guard
+                let info = notification.userInfo,
+                let duration = (info[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue,
+                let curveRaw = (info[UIResponder.keyboardAnimationCurveUserInfoKey] as? NSNumber)?.uintValue
+            else {
+                bottomBarBottomConstraint?.constant = 0
+                return
+            }
+
+            bottomBarBottomConstraint?.constant = 0
+            let options = UIView.AnimationOptions(rawValue: curveRaw << 16)
+            UIView.animate(withDuration: duration, delay: 0, options: options) {
+                self.view.layoutIfNeeded()
+            }
+        }
+
+        deinit {
+            NotificationCenter.default.removeObserver(self)
         }
         
         private func initializeSDK() {

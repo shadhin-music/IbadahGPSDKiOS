@@ -38,7 +38,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		9wQOTqypx1wcTT2i7OiDLZsZWco=
+		HcZrSqN/twOx3+aKyMYJiq6w+NM=
 		</data>
 		<key>AutoRenewOffCell.nib</key>
 		<data>
@@ -438,7 +438,7 @@
 		</data>
 		<key>Headers/DeenIslamSDK-Swift.h</key>
 		<data>
-		5QfmiuuDaCYm5Eoyxvgsyfa3JDk=
+		YwOKUbk6CXTZRkpnC1jAUCKtyKM=
 		</data>
 		<key>Headers/DeenIslamSDK.h</key>
 		<data>
@@ -790,11 +790,11 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		k8qr9xD7hjud29J5ILZF5zxqX4k=
+		DuxW8Yj8NwhFReqTCM7/OU+4NYw=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		PvpERhHK4/SrmJR1Vcto+muyNlY=
+		EiL+UIbTgwoJT9+1PW0YXLE+UGo=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -802,19 +802,19 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		PvpERhHK4/SrmJR1Vcto+muyNlY=
+		EiL+UIbTgwoJT9+1PW0YXLE+UGo=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7QFoVPJWYW4Dw3mOkpmcI5iZAaM=
+		WRzVjgB+yJoF+Jx+R9D+KVjNvC0=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		k8qr9xD7hjud29J5ILZF5zxqX4k=
+		DuxW8Yj8NwhFReqTCM7/OU+4NYw=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		owF2ZjQKpES1Rhf08T25dZ1gAGs=
+		loXu3BbLqYk9mMNC2oqtH5Ivk4s=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -822,11 +822,11 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		owF2ZjQKpES1Rhf08T25dZ1gAGs=
+		loXu3BbLqYk9mMNC2oqtH5Ivk4s=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+Ri7xPYQPnvlURQqwCUPAtLf2KA=
+		emsE17Q7b4iRPy4ogKq0qG/zYew=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1517,7 +1517,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f4qQZYr7NsaZ5oPitUfOaKOp/kEl7k/8s/nA6cAf140=
+			Qxho5Rp+r1SityVCrZcKi+kKqTHUHDkf6uKflSgGYv4=
 			</data>
 		</dict>
 		<key>AutoRenewOffCell.nib</key>
@@ -2217,7 +2217,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SOttlb2xWXVtCLdaoDWZlmj0JYoedzYf+yk3stiGCQI=
+			+B7SS0r44TR2ml8O50lTCzBaebAuHOwI7JulCwdu5Rs=
 			</data>
 		</dict>
 		<key>Headers/DeenIslamSDK.h</key>
@@ -2826,14 +2826,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yXnxalB8L5TjJD60/HeTV7EVfDb9VVArVQtF4KARZPA=
+			ceMABu0XbbsROAgNkE+2Du76wA3m/D7EqtguNP6yYb0=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R9J+XgCpyLZmNqnsAVlTeqouhu9G3yeo0B5h0F/ej1g=
+			JV5VsBJQhgfBN+6LBMrXPG5ptwDLsczog1/7JS482lo=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -2847,28 +2847,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R9J+XgCpyLZmNqnsAVlTeqouhu9G3yeo0B5h0F/ej1g=
+			JV5VsBJQhgfBN+6LBMrXPG5ptwDLsczog1/7JS482lo=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XodYW+3ZpZSDAVANeDKzpKXLlgJW4fh3c6ErT9ds7l0=
+			+esNYQtmK9zdd3rJA5bwRwWjB5mxJ9y5XPAEwgza5xg=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yXnxalB8L5TjJD60/HeTV7EVfDb9VVArVQtF4KARZPA=
+			ceMABu0XbbsROAgNkE+2Du76wA3m/D7EqtguNP6yYb0=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vJQKypZQi/2xqJKUGOVZRTOjfbSYNxBtzv4cZqsd9ag=
+			YsjJgYHVFndiK2FnTDoVVuaW/j55M1P6/mzo/TpzrEg=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -2882,14 +2882,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vJQKypZQi/2xqJKUGOVZRTOjfbSYNxBtzv4cZqsd9ag=
+			YsjJgYHVFndiK2FnTDoVVuaW/j55M1P6/mzo/TpzrEg=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jXFwrNWxZnDUY+HqTDflXP+7wSkNiitcR0I1iCvjY5I=
+			l5826PWMg1itZtm5Yf6Pd7t26bR0Bm5LE3Hn1OwuCcM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

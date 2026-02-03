@@ -2577,10 +2577,10 @@ extension DeenIslamSDK.DeenIslamGPSDK {
   @objc final public func logIn(with msisdn: Swift.String, complete: @escaping (Swift.String?, Swift.String?) -> Swift.Void)
   #endif
   @objc final public func initialize(with nav: UIKit.UINavigationController, delegate: any DeenIslamSDK.DeenIslamSDKNotifier, baseApiUrl: Swift.String, baseServiceUrl: Swift.String, baseResourceUrl: Swift.String, baseGPHomeUrl: Swift.String)
+  @objc final public func openFromRC(code: Swift.String)
   final public func goto(feature: DeenIslamSDK.AppFeature)
   @objc final public func eventRegister(with event: UIKit.UIEvent)
   @objc final public func terminate()
-  @objc final public func openFromRC(code: Swift.String)
   @objc final public func isPrayerNotificationEnabled() -> Swift.Bool
   @objc final public func clearAllPrayerNotification()
   @objc final public func prayerNotification(isEnable: Swift.Bool)
@@ -3735,7 +3735,6 @@ extension Foundation.URLComponents : DeenIslamSDK.URLConvertible {
   case eidJamatPlace
   case namazLearning
   case moccaModinaLive
-  case duaAndAmol
   case islamicLearningStory
   case ramadan
   case rramadan
@@ -3749,9 +3748,11 @@ extension Foundation.URLComponents : DeenIslamSDK.URLConvertible {
   case deenai
   case eidemilad
   case ijtema
+  case ijtema_Live
   case deen_jiggasa
   case ramadanPlanner
   case islamicBook
+  case prayerTracker
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
   #endif

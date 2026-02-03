@@ -381,23 +381,24 @@ typedef SWIFT_ENUM(NSInteger, AppFeature, open) {
   AppFeatureEidJamatPlace = 11,
   AppFeatureNamazLearning = 12,
   AppFeatureMoccaModinaLive = 13,
-  AppFeatureDuaAndAmol = 14,
-  AppFeatureIslamicLearningStory = 15,
-  AppFeatureRamadan = 16,
-  AppFeatureRramadan = 17,
-  AppFeatureHajjAndUmrah = 18,
-  AppFeatureKhotomQuran = 19,
-  AppFeatureQurbani = 20,
-  AppFeatureIslamicBoyan = 21,
-  AppFeatureIslamicCalender = 22,
-  AppFeatureLivePodcast = 23,
-  AppFeatureAllahNames = 24,
-  AppFeatureDeenai = 25,
-  AppFeatureEidemilad = 26,
-  AppFeatureIjtema = 27,
+  AppFeatureIslamicLearningStory = 14,
+  AppFeatureRamadan = 15,
+  AppFeatureRramadan = 16,
+  AppFeatureHajjAndUmrah = 17,
+  AppFeatureKhotomQuran = 18,
+  AppFeatureQurbani = 19,
+  AppFeatureIslamicBoyan = 20,
+  AppFeatureIslamicCalender = 21,
+  AppFeatureLivePodcast = 22,
+  AppFeatureAllahNames = 23,
+  AppFeatureDeenai = 24,
+  AppFeatureEidemilad = 25,
+  AppFeatureIjtema = 26,
+  AppFeatureIjtema_Live = 27,
   AppFeatureDeen_jiggasa = 28,
   AppFeatureRamadanPlanner = 29,
   AppFeatureIslamicBook = 30,
+  AppFeaturePrayerTracker = 31,
 };
 
 @class NSString;
@@ -540,6 +541,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 /// \param isBL initialize number is BL or not
 ///
 - (void)initializeWith:(UINavigationController * _Nonnull)nav delegate:(id <DeenIslamSDKNotifier> _Nonnull)delegate baseApiUrl:(NSString * _Nonnull)baseApiUrl baseServiceUrl:(NSString * _Nonnull)baseServiceUrl baseResourceUrl:(NSString * _Nonnull)baseResourceUrl baseGPHomeUrl:(NSString * _Nonnull)baseGPHomeUrl;
+- (void)openFromRCWithCode:(NSString * _Nonnull)code;
 /// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
 /// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
 /// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
@@ -564,7 +566,6 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 /// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
 - (void)eventRegisterWith:(UIEvent * _Nonnull)event;
 - (void)terminate;
-- (void)openFromRCWithCode:(NSString * _Nonnull)code;
 - (BOOL)isPrayerNotificationEnabled SWIFT_WARN_UNUSED_RESULT;
 - (void)clearAllPrayerNotification;
 - (void)prayerNotificationWithIsEnable:(BOOL)isEnable;
@@ -1682,23 +1683,24 @@ typedef SWIFT_ENUM(NSInteger, AppFeature, open) {
   AppFeatureEidJamatPlace = 11,
   AppFeatureNamazLearning = 12,
   AppFeatureMoccaModinaLive = 13,
-  AppFeatureDuaAndAmol = 14,
-  AppFeatureIslamicLearningStory = 15,
-  AppFeatureRamadan = 16,
-  AppFeatureRramadan = 17,
-  AppFeatureHajjAndUmrah = 18,
-  AppFeatureKhotomQuran = 19,
-  AppFeatureQurbani = 20,
-  AppFeatureIslamicBoyan = 21,
-  AppFeatureIslamicCalender = 22,
-  AppFeatureLivePodcast = 23,
-  AppFeatureAllahNames = 24,
-  AppFeatureDeenai = 25,
-  AppFeatureEidemilad = 26,
-  AppFeatureIjtema = 27,
+  AppFeatureIslamicLearningStory = 14,
+  AppFeatureRamadan = 15,
+  AppFeatureRramadan = 16,
+  AppFeatureHajjAndUmrah = 17,
+  AppFeatureKhotomQuran = 18,
+  AppFeatureQurbani = 19,
+  AppFeatureIslamicBoyan = 20,
+  AppFeatureIslamicCalender = 21,
+  AppFeatureLivePodcast = 22,
+  AppFeatureAllahNames = 23,
+  AppFeatureDeenai = 24,
+  AppFeatureEidemilad = 25,
+  AppFeatureIjtema = 26,
+  AppFeatureIjtema_Live = 27,
   AppFeatureDeen_jiggasa = 28,
   AppFeatureRamadanPlanner = 29,
   AppFeatureIslamicBook = 30,
+  AppFeaturePrayerTracker = 31,
 };
 
 @class NSString;
@@ -1841,6 +1843,7 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 /// \param isBL initialize number is BL or not
 ///
 - (void)initializeWith:(UINavigationController * _Nonnull)nav delegate:(id <DeenIslamSDKNotifier> _Nonnull)delegate baseApiUrl:(NSString * _Nonnull)baseApiUrl baseServiceUrl:(NSString * _Nonnull)baseServiceUrl baseResourceUrl:(NSString * _Nonnull)baseResourceUrl baseGPHomeUrl:(NSString * _Nonnull)baseGPHomeUrl;
+- (void)openFromRCWithCode:(NSString * _Nonnull)code;
 /// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
 /// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
 /// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
@@ -1865,7 +1868,6 @@ SWIFT_CLASS("_TtC12DeenIslamSDK14DeenIslamGPSDK")
 /// /            delegate?.onDeenTriggerEvent(event_name: “ibadah_category_bottom_sheet”, param: eventName )
 - (void)eventRegisterWith:(UIEvent * _Nonnull)event;
 - (void)terminate;
-- (void)openFromRCWithCode:(NSString * _Nonnull)code;
 - (BOOL)isPrayerNotificationEnabled SWIFT_WARN_UNUSED_RESULT;
 - (void)clearAllPrayerNotification;
 - (void)prayerNotificationWithIsEnable:(BOOL)isEnable;
