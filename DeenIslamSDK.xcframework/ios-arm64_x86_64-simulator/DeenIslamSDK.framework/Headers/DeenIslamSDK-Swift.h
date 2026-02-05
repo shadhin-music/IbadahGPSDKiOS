@@ -589,6 +589,7 @@ SWIFT_PROTOCOL("_TtP12DeenIslamSDK20DeenIslamSDKNotifier_")
 - (void)errorMessageWithError:(NSString * _Nonnull)error;
 - (void)notificationURLWithUrl:(NSString * _Nonnull)url;
 - (void)onDeenTriggerEventWithEvent_name:(NSString * _Nonnull)event_name param:(NSString * _Nonnull)param;
+- (void)onDeenSDKRCFailedWithRC_Code:(NSString * _Nonnull)RC_Code;
 @end
 
 SWIFT_CLASS("_TtC12DeenIslamSDK24DeenIslamVmaxInitializer")
@@ -1891,6 +1892,7 @@ SWIFT_PROTOCOL("_TtP12DeenIslamSDK20DeenIslamSDKNotifier_")
 - (void)errorMessageWithError:(NSString * _Nonnull)error;
 - (void)notificationURLWithUrl:(NSString * _Nonnull)url;
 - (void)onDeenTriggerEventWithEvent_name:(NSString * _Nonnull)event_name param:(NSString * _Nonnull)param;
+- (void)onDeenSDKRCFailedWithRC_Code:(NSString * _Nonnull)RC_Code;
 @end
 
 SWIFT_CLASS("_TtC12DeenIslamSDK24DeenIslamVmaxInitializer")

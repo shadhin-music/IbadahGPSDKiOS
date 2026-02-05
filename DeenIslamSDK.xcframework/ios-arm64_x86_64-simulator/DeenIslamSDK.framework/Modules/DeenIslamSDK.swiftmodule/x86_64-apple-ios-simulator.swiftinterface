@@ -254,6 +254,7 @@ extension DeenIslamSDK.IQKeyboardManager {
   @objc func errorMessage(error: Swift.String)
   @objc func notificationURL(url: Swift.String)
   @objc func onDeenTriggerEvent(event_name: Swift.String, param: Swift.String)
+  @objc func onDeenSDKRCFailed(RC_Code: Swift.String)
 }
 @_hasMissingDesignatedInitializers public class ConstraintMakerRelatable {
   @discardableResult
