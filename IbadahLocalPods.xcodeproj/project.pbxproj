@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1478011C2F3759C900E8E5C2 /* DeenIslamSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1478011A2F3759C500E8E5C2 /* DeenIslamSDK.xcframework */; };
-		1478011D2F3759C900E8E5C2 /* DeenIslamSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1478011A2F3759C500E8E5C2 /* DeenIslamSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		147801592F37A79000E8E5C2 /* DeenIslamSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147801572F37A78C00E8E5C2 /* DeenIslamSDK.xcframework */; };
+		1478015A2F37A79000E8E5C2 /* DeenIslamSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 147801572F37A78C00E8E5C2 /* DeenIslamSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7422C1652F0CE5150012BE8A /* OMSDK_Vmax2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7422C1572F0CE4D90012BE8A /* OMSDK_Vmax2.xcframework */; };
 		7422C1662F0CE5150012BE8A /* OMSDK_Vmax2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7422C1572F0CE4D90012BE8A /* OMSDK_Vmax2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7422C1672F0CE5170012BE8A /* Vmax.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7422C1582F0CE4D90012BE8A /* Vmax.xcframework */; };
@@ -35,7 +35,7 @@
 				7422C1682F0CE5170012BE8A /* Vmax.xcframework in Embed Frameworks */,
 				7422C16A2F0CE5180012BE8A /* VmaxDisplayHelper.xcframework in Embed Frameworks */,
 				7422C1662F0CE5150012BE8A /* OMSDK_Vmax2.xcframework in Embed Frameworks */,
-				1478011D2F3759C900E8E5C2 /* DeenIslamSDK.xcframework in Embed Frameworks */,
+				1478015A2F37A79000E8E5C2 /* DeenIslamSDK.xcframework in Embed Frameworks */,
 				7422C16C2F0CE51A0012BE8A /* VmaxNativeHelper.xcframework in Embed Frameworks */,
 				7422C1722F0CE51F0012BE8A /* VmaxVideoHelper.xcframework in Embed Frameworks */,
 				7422C16E2F0CE51B0012BE8A /* VmaxOM.xcframework in Embed Frameworks */,
@@ -47,7 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1478011A2F3759C500E8E5C2 /* DeenIslamSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DeenIslamSDK.xcframework; sourceTree = "<group>"; };
+		147801572F37A78C00E8E5C2 /* DeenIslamSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DeenIslamSDK.xcframework; sourceTree = "<group>"; };
 		7422C1572F0CE4D90012BE8A /* OMSDK_Vmax2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = OMSDK_Vmax2.xcframework; sourceTree = "<group>"; };
 		7422C1582F0CE4D90012BE8A /* Vmax.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Vmax.xcframework; sourceTree = "<group>"; };
 		7422C1592F0CE4D90012BE8A /* VmaxDisplayHelper.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = VmaxDisplayHelper.xcframework; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 				7422C16D2F0CE51B0012BE8A /* VmaxOM.xcframework in Frameworks */,
 				7422C1652F0CE5150012BE8A /* OMSDK_Vmax2.xcframework in Frameworks */,
 				7422C16F2F0CE51D0012BE8A /* VmaxVastHelper.xcframework in Frameworks */,
-				1478011C2F3759C900E8E5C2 /* DeenIslamSDK.xcframework in Frameworks */,
+				147801592F37A79000E8E5C2 /* DeenIslamSDK.xcframework in Frameworks */,
 				7422C1672F0CE5170012BE8A /* Vmax.xcframework in Frameworks */,
 				7422C1712F0CE51F0012BE8A /* VmaxVideoHelper.xcframework in Frameworks */,
 				7422C1692F0CE5180012BE8A /* VmaxDisplayHelper.xcframework in Frameworks */,
@@ -118,7 +118,7 @@
 		74A6C4E22D3F95A100269C89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1478011A2F3759C500E8E5C2 /* DeenIslamSDK.xcframework */,
+				147801572F37A78C00E8E5C2 /* DeenIslamSDK.xcframework */,
 				7422C1572F0CE4D90012BE8A /* OMSDK_Vmax2.xcframework */,
 				7422C1582F0CE4D90012BE8A /* Vmax.xcframework */,
 				7422C1592F0CE4D90012BE8A /* VmaxDisplayHelper.xcframework */,
