@@ -221,7 +221,9 @@ class ViewController: UIViewController{
     }
 
 extension ViewController: DeenIslamSDKNotifier {
+    
     func onDeenSDKRCFailed(RC_Code: String) {
+        
         AlertToastHelper.shared.showToast(
             message: "RC: \(RC_Code)",
             type: .error
