@@ -1731,9 +1731,6 @@ public enum BlendMode : Swift.Int, Swift.Codable {
     get
   }
 }
-public enum ToastPresenter {
-  public static func show(_ message: Swift.String, duration: Foundation.TimeInterval = 2.0, bottomPadding: CoreFoundation.CGFloat = 90)
-}
 public enum CoordinateSpace : Swift.Int, Swift.Codable {
   case type2d
   case type3d
