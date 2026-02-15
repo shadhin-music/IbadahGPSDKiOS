@@ -38,7 +38,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		dPSFXF2bK1IDUL9RTlw0dBoiW2c=
+		7CA1BgJT9UvLilvFZcZ5er3DNh8=
 		</data>
 		<key>AutoRenewOffCell.nib</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>BrandedActionCard.nib</key>
 		<data>
-		ggPBK8Ie21fszVNta562CnBkAG4=
+		tCpaTdy07t3ADqaNmGBO6zeYrTA=
 		</data>
 		<key>CalculatorButtonCell.nib</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>CarouselDiscoveryCard.nib</key>
 		<data>
-		XhugFswCm0IuwTblyBG2Qh2iXbc=
+		mTPPiGmdoZ4AyWdFoVJNtuHo2dg=
 		</data>
 		<key>CatFooter.nib</key>
 		<data>
@@ -642,7 +642,7 @@
 		</data>
 		<key>HomeVmaxAdCell.nib</key>
 		<data>
-		28Xw3sBUkKHoGDqjBIrOEeLu06g=
+		f5u8Yef1O24zhnKlJxCvQby7tIc=
 		</data>
 		<key>HomeYTPlayer.nib</key>
 		<data>
@@ -666,7 +666,7 @@
 		</data>
 		<key>InfoRichPromoCard.nib</key>
 		<data>
-		o9iA6hQkA6HLrB1dFl7tw5Yng6s=
+		VTyATkOpWfLqVoYrMIy4COGQsGg=
 		</data>
 		<key>IslamicBookCategoryVC.nib</key>
 		<data>
@@ -798,7 +798,7 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		dE8aBFzCcNEk/TwwNxubQbuGYn4=
+		HaYZ+Dz6wgnYGM1HYgHq4lnHywU=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -814,11 +814,11 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WMgDVOwx6AlFkHdq1s9DvlLGqYQ=
+		lOzAE1np49CgRNmpq7HMYZO2mzA=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		dE8aBFzCcNEk/TwwNxubQbuGYn4=
+		HaYZ+Dz6wgnYGM1HYgHq4lnHywU=
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -834,7 +834,7 @@
 		</data>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		g8yvP/FLHLXcF7QmpXM3NxPvvQs=
+		kLztvVaqbHOOP4VdtmJeY4QNib0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1549,7 +1549,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T1+4AP1R0uLamETpcmB8T/Xj1WZ8TK4//3XFprw6yY4=
+			0eYz23qHKccm3VXk1nCpZfK6JSJ8Y/jWqfqQ/uAqVTk=
 			</data>
 		</dict>
 		<key>AutoRenewOffCell.nib</key>
@@ -1619,7 +1619,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DVUhgAYxvy2m7s4O7A7N06s89wwX4NAesLtZ4wjadmQ=
+			+bxob9vw4dyNfDni2HfnBseyMrK8oH+u95G0Io4kI+w=
 			</data>
 		</dict>
 		<key>CalculatorButtonCell.nib</key>
@@ -1654,7 +1654,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2BFGxYp7eGLV3dxsqPP8kPi8TETc7dK9J28LfwjlHqA=
+			5DyPEp3WAuWiW7eHdRd+HcNbdfigc/q+EuoTQQ2+Oo0=
 			</data>
 		</dict>
 		<key>CatFooter.nib</key>
@@ -2606,7 +2606,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R4vc4bywPt3XbJtHaSgYRsJ930iZA3XA9TL9I87gxA8=
+			FQUdmYCjyAtEqK6E6clIThKSGTDNTZqiyA284fO1hY8=
 			</data>
 		</dict>
 		<key>HomeYTPlayer.nib</key>
@@ -2641,7 +2641,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BcuwGNgKAHlPMhPJDlCs4LIlkCdvyraMr+7XyO1SLKs=
+			ZPH+DIaYihIP6SVeOreNcGvDff02enRraMx6z0o/91E=
 			</data>
 		</dict>
 		<key>IslamicBookCategoryVC.nib</key>
@@ -2872,7 +2872,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hxlU2NIZ3E0xsh1LcO9Mgakud3YJloQBzkDn3VGK/T0=
+			oyR5eHr+CblPUn1qXLV+rg2TKUcecl3/ffEA254rzU4=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -2900,14 +2900,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DmU9OzxWKO7XYAd3fKkULMKsM6TGBm5NsPdiQmVp72E=
+			HU4OG2nbvYupM1e3yB14n//S9vzD5dGPnorJAMDOswQ=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hxlU2NIZ3E0xsh1LcO9Mgakud3YJloQBzkDn3VGK/T0=
+			oyR5eHr+CblPUn1qXLV+rg2TKUcecl3/ffEA254rzU4=
 			</data>
 		</dict>
 		<key>Modules/DeenIslamSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -2935,7 +2935,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PVdQQ06qSdO5BgO7cOQIVYxOQU6ER36/GM5LVkl6kcI=
+			zardww/F1EAgCZs8JaTdN1CyAZXUQQ4LLfkO2ejKdzo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
